@@ -1,2 +1,5 @@
 original_assets/
 script_notes/
+*.log
+*.7z
+*.zip
