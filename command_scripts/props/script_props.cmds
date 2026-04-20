@@ -1,0 +1,212 @@
+## Scripting crate object, used for object reference frames and scripting data points
+DuplicateTag objects\eldewrito\forge\misc\aiming_vector_empty.model objects\eldewrito\movie\scripting\script_bloc
+EditTag objects\eldewrito\movie\scripting\script_bloc.model 
+SetField RenderModel objects\eldewrito\forge\misc\aiming_vector.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\aiming_vector_collision.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SaveTagChanges
+Exit
+
+## Scripting scenery object, used for scaleable trigger volumes, effects, animations
+DuplicateTag objects\eldewrito\forge\misc\aiming_vector_empty.model objects\eldewrito\movie\scripting\script_scen
+EditTag objects\eldewrito\movie\scripting\script_scen.model 
+SetField RenderModel objects\eldewrito\forge\misc\aiming_vector.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\aiming_vector_collision_mopp.collision_model
+SetField Animation objects\eldewrito\forge\misc\aiming_vector_animations.model_animation_graph
+SaveTagChanges
+Exit
+
+## Scripting vehicle object, used for auto turret opcode
+DuplicateTag objects\eldewrito\forge\misc\aiming_vector_empty.model objects\eldewrito\movie\scripting\script_vehi
+EditTag objects\eldewrito\movie\scripting\script_vehi.model 
+SetField RenderModel objects\eldewrito\forge\misc\aiming_vector.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\aiming_vector_collision.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SetField Animation objects\eldewrito\forge\misc\aiming_vector_animations.model_animation_graph
+SaveTagChanges
+Exit
+
+## Scripting biped object, used for retention of position after performing translation animation
+DuplicateTag objects\eldewrito\forge\misc\aiming_vector_empty.model objects\eldewrito\movie\scripting\script_bipd
+EditTag objects\eldewrito\movie\scripting\script_bipd.model 
+SetField RenderModel objects\eldewrito\forge\misc\aiming_vector.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\aiming_vector_collision.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_box_physics.physics_model
+SetField Animation objects\eldewrito\forge\misc\aiming_vector_animations.model_animation_graph
+SaveTagChanges
+Exit
+
+## Ditto for crate
+CreateTag bloc objects\eldewrito\movie\scripting\script_bloc
+EditTag objects\eldewrito\movie\scripting\script_bloc.crate
+SetField ObjectType.Halo3ODST Crate
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 0.5
+SetField Model objects\eldewrito\movie\scripting\script_bloc.model
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[0].Weight 1
+SetField ChangeColors[0].InitialPermutations[0].ColorUpperBound 1 0 0
+SetField ChangeColors[0].InitialPermutations[0].ColorLowerBound 1 0 0
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+SaveTagChanges
+Exit
+
+## Ditto for scenery
+CreateTag scen objects\eldewrito\movie\scripting\script_scen
+EditTag objects\eldewrito\movie\scripting\script_scen.scenery
+SetField ObjectType.Halo3ODST Scenery
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 0.5
+SetField Model objects\eldewrito\movie\scripting\script_scen.model
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[0].Weight 1
+SetField ChangeColors[0].InitialPermutations[0].ColorUpperBound 0 1 0
+SetField ChangeColors[0].InitialPermutations[0].ColorLowerBound 0 1 0
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+SetField MultiplayerObject[0].StandardRespawnZoneWeight -1000000
+SaveTagChanges
+Exit
+
+## Dummy weapon tag, required for vehicle auto turret to work
+CreateTag weap objects\eldewrito\forge\misc\dummy_weapon
+EditTag objects\eldewrito\forge\misc\dummy_weapon.weapon
+SetField ObjectType.Halo3ODST Weapon
+SaveTagChanges
+Exit
+
+## Ditto for vehicle
+CreateTag vehi objects\eldewrito\movie\scripting\script_vehi
+EditTag objects\eldewrito\movie\scripting\script_vehi.vehicle
+
+SetField ObjectType.Halo3ODST Vehicle
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 0.5
+SetField Model objects\eldewrito\movie\scripting\script_vehi.model
+
+AddBlockElements AiProperties 1
+SetField AiProperties[0].AiSize Immobile
+
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[0].Weight 1
+SetField ChangeColors[0].InitialPermutations[0].ColorUpperBound 0 1 1
+SetField ChangeColors[0].InitialPermutations[0].ColorLowerBound 0 1 1
+
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+
+SetField AimingVelocityMaximum 10000
+SetField AimingAccelerationMaximum 10000
+
+AddBlockElements Weapons
+SetField Weapons[0].Weapon objects\eldewrito\forge\misc\dummy_weapon.weapon
+
+AddBlockElements Seats
+SetField Seats[0].Flags Gunner,ThirdPersonCamera
+SetField Seats[0].Label mongoose_d
+SetField Seats[0].MarkerName origin
+SetField Seats[0].EntryMarkerName origin
+SetField Seats[0].BoardingSeat -1
+SetField Seats[0].AiSeatType Gunner
+SetField Seats[0].PitchRateBounds -90 90
+SetField Seats[0].UnitCamera.PitchRange -90 90
+SetField Seats[0].UnitCamera.CameraMarkerName origin
+AddBlockElements Seats[0].UnitCamera.CameraTracks
+SetField Seats[0].UnitCamera.CameraTracks[0].Track camera\mongoose_d_camera.camera_track
+SetField Seats[0].RuntimeInvisibleSeatRegionIndex -1
+
+AddBlockElements PhysicsTypes.Turret
+
+SaveTagChanges
+Exit
+
+## Ditto for Biped
+CreateTag bipd objects\eldewrito\movie\scripting\script_bipd
+EditTag objects\eldewrito\movie\scripting\script_bipd.biped
+
+SetField ObjectType.Halo3ODST Biped
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 0.5
+SetField Model objects\eldewrito\movie\scripting\script_bipd.model
+
+AddBlockElements AiProperties
+SetField AiProperties[0].AiSize Small
+SetField DefaultTeam Player
+
+SetField CameraFieldOfView 70
+AddBlockElements UnitCamera.CameraTracks
+SetField UnitCamera.CameraTracks[0].Track camera\biped_follow_camera.camera_track
+
+SetField UnitFlags.Flags UnitHasBoost
+SetField Boost.BoostPeakPower 2.25
+SetField Boost.BoostRisePower 0.1
+SetField Boost.BoostPeakTime 30000
+SetField Boost.BoostFallPower 0.1
+
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[0].Weight 1
+SetField ChangeColors[0].InitialPermutations[0].ColorUpperBound 1 1 0
+SetField ChangeColors[0].InitialPermutations[0].ColorLowerBound 1 1 0
+
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+SetField MultiplayerObject[0].DefaultSpawnTime 0
+SetField MultiplayerObject[0].DefaultAbandonTime 32000
+
+SetField PhysicsControlNodeIndex -1
+SetField PelvisNodeIndex -1
+SetField HeadNodeIndex -1
+
+SetField PhysicsFlags.Halo3ODST CenteredAtOrigin,ShapeSpherical,Flying,DeadCharacterCollisionGroup
+
+AddBlockElements Seats
+SetField Seats[0].Flags Driver,ThirdPersonCamera
+SetField Seats[0].Label mongoose_d
+SetField Seats[0].MarkerName origin
+SetField Seats[0].EntryMarkerName origin
+SetField Seats[0].BoardingSeat -1
+SetField Seats[0].AiSeatType Driver
+SetField Seats[0].PitchRateBounds -90 90
+SetField Seats[0].UnitCamera.PitchRange -90 90
+SetField Seats[0].UnitCamera.CameraMarkerName origin
+AddBlockElements Seats[0].UnitCamera.CameraTracks
+SetField Seats[0].UnitCamera.CameraTracks[0].Track camera\mongoose_d_camera.camera_track
+SetField Seats[0].RuntimeInvisibleSeatRegionIndex -1
+
+## Game will crash without these
+AddBlockElements PillShapes
+SetField PillShapes[0].MaterialIndex -1
+SetField PillShapes[0].PhantomIndex -1
+SetField PillShapes[0].ProxyCollisionGroup 2
+CopyBlockElements PillShapes 0 1
+PasteBlockElements PillShapes
+
+SetField CosineStationaryTurningThreshold 1
+SetField MovingTurningSpeed 600
+
+SetField BipedGroundPhysics.RuntimeMinimumNormalK 1
+SetField BipedFlyingPhysics.BankAngle 10
+SetField BipedFlyingPhysics.BankApplyTime 0.1
+SetField BipedFlyingPhysics.BankDecayTime 0.3
+SetField BipedFlyingPhysics.MaximumVelocity 2.5
+SetField BipedFlyingPhysics.MaximumSidestepVelocity 2.5
+SetField BipedFlyingPhysics.Acceleration 7
+SetField BipedFlyingPhysics.Deceleration 7
+SetField BipedFlyingPhysics.AngularVelocityMaximum 720
+SetField BipedFlyingPhysics.AngularAccelerationMaximum 27000
+SetField BipedFlyingPhysics.CrouchVelocityModifier 0.5
+SetField CrouchTransitionVelocity 1
+
+SaveTagChanges
+Exit
+
+## Add to forge palette so they can be moved
+AddForgeItem "SCRIPT BLOC" "PROPS" objects\eldewrito\movie\scripting\script_bloc.crate
+AddForgeItem "SCRIPT SCEN" "PROPS" objects\eldewrito\movie\scripting\script_scen.scenery
+AddForgeItem "SCRIPT VEHI" "PROPS" objects\eldewrito\movie\scripting\script_vehi.vehicle
+AddForgeItem "SCRIPT BIPD" "PROPS" objects\eldewrito\movie\scripting\script_bipd.biped

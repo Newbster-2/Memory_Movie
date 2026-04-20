@@ -1,0 +1,124 @@
+## Frag grenade
+EditTag objects\weapons\grenade\frag_grenade\frag_grenade.physics_model
+
+SetField RigidBodies[0].ShapeType Pill
+
+AddBlockElements Pills
+SetField Pills[*].Name grenade_body
+SetField Pills[*].RuntimeMaterialType 55
+SetField Pills[*].RelativeMassScale 1
+SetField Pills[*].Friction 0.85
+SetField Pills[*].Restitution 0.3
+SetField Pills[*].Volume 0.000192807
+SetField Pills[*].Mass 0.382389
+SetField Pills[*].PhantomIndex -1
+SetField Pills[*].ProxyCollisionGroup -1
+SetField Pills[*].ShapeBase.Count 128
+SetField Pills[*].ShapeBase.ShapeType 3
+SetField Pills[*].ShapeBase.Radius 0.0338
+SetField Pills[*].Bottom 0 1.01E-10 -0.01441501
+SetField Pills[*].BottomRadius 0.0338
+SetField Pills[*].Top 0 1.01E-10 0.02230411
+SetField Pills[*].TopRadius 0.0195
+
+RemoveBlockElements Polyhedra 0 *
+RemoveBlockElements PolyhedronFourVectors 0 *
+RemoveBlockElements PolyhedronPlaneEquations 0 *
+RemoveBlockElements Lists 0 *
+RemoveBlockElements ListShapes 0 *
+
+SaveTagChanges
+Exit
+
+## Bombrun grenade
+EditTag objects\equipment\bombrun\projectiles\bombrun_grenade.physics_model
+
+SetField RigidBodies[0].ShapeType Pill
+
+AddBlockElements Pills
+SetField Pills[*].Name grenade_body
+SetField Pills[*].RuntimeMaterialType 55
+SetField Pills[*].RelativeMassScale 1
+SetField Pills[*].Friction 0.85
+SetField Pills[*].Restitution 0.3
+SetField Pills[*].Volume 0.000192807
+SetField Pills[*].Mass 0.382389
+SetField Pills[*].PhantomIndex -1
+SetField Pills[*].ProxyCollisionGroup -1
+SetField Pills[*].ShapeBase.Count 128
+SetField Pills[*].ShapeBase.ShapeType 3
+SetField Pills[*].ShapeBase.Radius 0.0338
+SetField Pills[*].Bottom 0 1.01E-10 -0.01441501
+SetField Pills[*].BottomRadius 0.0338
+SetField Pills[*].Top 0 1.01E-10 0.02230411
+SetField Pills[*].TopRadius 0.0195
+
+RemoveBlockElements Polyhedra 0 *
+RemoveBlockElements PolyhedronFourVectors 0 *
+RemoveBlockElements PolyhedronPlaneEquations 0 *
+RemoveBlockElements Lists 0 *
+RemoveBlockElements ListShapes 0 *
+
+SaveTagChanges
+Exit
+
+## Plasma grenade
+EditTag objects\weapons\grenade\plasma_grenade\plasma_grenade.physics_model
+
+SetField RigidBodies[0].ShapeType Sphere
+
+AddBlockElements Spheres
+SetField Spheres[*].Name grenade
+SetField Spheres[*].RuntimeMaterialType 60
+SetField Spheres[*].RelativeMassScale 1
+SetField Spheres[*].Friction 0.85
+SetField Spheres[*].Restitution 0.3
+SetField Spheres[*].Volume 0.0001505325
+SetField Spheres[*].Mass 0.2257988
+SetField Spheres[*].PhantomIndex -1
+SetField Spheres[*].ProxyCollisionGroup -1
+SetField Spheres[*].ShapeBase.Count 128
+SetField Spheres[*].ShapeBase.ShapeType 3
+SetField Spheres[*].ShapeBase.Radius 0.033
+SetField Spheres[*].ConvexBase.Count 128
+SetField Spheres[*].ConvexBase.ShapeType 12
+SetField Spheres[*].ConvexBase.Radius 0.033
+SetField Spheres[*].ShapeReference.Shapetype Sphere
+
+RemoveBlockElements Polyhedra 0 *
+RemoveBlockElements PolyhedronFourVectors 0 *
+RemoveBlockElements PolyhedronPlaneEquations 0 *
+
+SaveTagChanges
+Exit
+
+## Firebomb grenade
+EditTag objects\weapons\grenade\firebomb_grenade\firebomb_grenade.physics_model
+
+SetField RigidBodies[0].ShapeType Pill
+
+AddBlockElements Pills
+SetField Pills[*].Name physics
+SetField Pills[*].MaterialIndex 0
+SetField Pills[*].RuntimeMaterialType 60
+SetField Pills[*].RelativeMassScale 1
+SetField Pills[*].Friction 0.85
+SetField Pills[*].Restitution 0.3
+SetField Pills[*].Volume 0.000619941
+SetField Pills[*].Mass 0.9299115
+SetField Pills[*].PhantomIndex -1
+SetField Pills[*].ProxyCollisionGroup -1
+SetField Pills[*].ShapeBase.Count 128
+SetField Pills[*].ShapeBase.ShapeType 7
+SetField Pills[*].ShapeBase.Radius 0.04
+SetField Pills[*].Bottom 7.535998E-09 1.6192E-08 -0.02301604
+SetField Pills[*].BottomRadius 0.04
+SetField Pills[*].Top 2.072399E-08 4.4528E-08 0.04698396
+SetField Pills[*].TopRadius 0.04
+
+RemoveBlockElements Polyhedra 0 *
+RemoveBlockElements PolyhedronFourVectors 0 *
+RemoveBlockElements PolyhedronPlaneEquations 0 *
+
+SaveTagChanges
+Exit

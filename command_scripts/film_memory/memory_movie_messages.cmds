@@ -1,0 +1,8 @@
+CreateTag unic ui\eldewrito\memory_movie_messages
+EditTag ui\eldewrito\memory_movie_messages.multilingual_unicode_string_list
+
+StringId Add memory_movie_message_0
+SetString english memory_movie_message_0 "Made by:"
+
+SaveTagChanges
+Exit

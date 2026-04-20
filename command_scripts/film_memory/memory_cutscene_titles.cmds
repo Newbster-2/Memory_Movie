@@ -1,0 +1,11 @@
+SetField ChapterTitleStrings ui\eldewrito\memory_movie_messages.multilingual_unicode_string_list
+
+AddBlockElements CutsceneTitles
+SetField CutsceneTitles[*].Name memory_movie_message_0
+SetField CutsceneTitles[*].TextBounds 600 0 1000 450
+SetField CutsceneTitles[*].VerticalJustification Bottom2
+SetField CutsceneTitles[*].Font TitleFont
+SetField CutsceneTitles[*].TextColor 255 255 255 255
+SetField CutsceneTitles[*].FadeInTime 0.5
+SetField CutsceneTitles[*].Uptime 8.5
+SetField CutsceneTitles[*].FadeOutTime 0.5

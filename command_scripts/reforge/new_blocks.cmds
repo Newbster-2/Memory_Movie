@@ -1,0 +1,185 @@
+## 2 x 50 x 50 block
+EditTag objects\eldewrito\reforge\block_1x1x1.render_model
+CopyBlockElements Materials 0 *
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\reforge\block_2x50x50
+EditTag objects\eldewrito\reforge\block_2x50x50.render_model
+AddBlockElements Materials
+SetField Materials[*].RenderMethod levels\multi\s3d_turf\shaders\checker.shader
+ReplaceRenderGeometry "working_directory\models\reforge\block_2x50x50.dae"
+RemoveBlockElements Materials 0 *
+PasteBlockElements Materials
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry "working_directory\models\reforge\block_2x50x50.dae" objects\eldewrito\reforge\block_2x50x50
+EditTag objects\eldewrito\reforge\block_2x50x50.collision_model
+SetField Nodes[0].Name root
+SaveTagChanges
+Exit
+
+CreateTag phmo objects\eldewrito\reforge\block_2x50x50
+EditTag objects\eldewrito\reforge\block_2x50x50.physics_model
+
+AddBlockElements RigidBodies
+SetField RigidBodies[*].MotionType Keyframed
+SetField RigidBodies[*].ShapeType Box
+
+AddBlockElements Materials
+SetField Materials[*].Name default
+SetField Materials[*].PhantomType -1
+
+AddBlockElements Boxes
+SetField Boxes[*].RuntimeMaterialType 54
+SetField Boxes[*].RelativeMassScale 1
+SetField Boxes[*].Friction 0.85
+SetField Boxes[*].Restitution 0.3
+SetField Boxes[*].Volume 0.1
+SetField Boxes[*].Mass 100
+SetField Boxes[*].PhantomIndex -1
+SetField Boxes[*].ProxyCollisionGroup -1
+SetField Boxes[*].ShapeBase.Count 128
+SetField Boxes[*].ShapeBase.ShapeType 6
+SetField Boxes[*].ShapeBase.Radius 0.0164
+SetField Boxes[*].HalfExtents 1 25 25
+SetField Boxes[*].HalfExtentsRadius 1
+SetField Boxes[*].ConvexBase.Count 128
+SetField Boxes[*].ConvexBase.ShapeType 13
+SetField Boxes[*].ConvexBase.Radius 0.0164
+SetField Boxes[*].RotationI 1 0 0
+SetField Boxes[*].RotationJ 0 1 0
+SetField Boxes[*].RotationK 0 0 1
+
+AddBlockElements Nodes
+SetField Nodes[*].Name root
+SetField Nodes[*].Parent -1
+SetField Nodes[*].Sibling -1
+SetField Nodes[*].Child -1
+
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\reforge\block_2x50x50
+EditTag objects\eldewrito\reforge\block_2x50x50.model
+SetField RenderModel objects\eldewrito\reforge\block_2x50x50.render_model
+SetField CollisionModel objects\eldewrito\reforge\block_2x50x50.collision_model
+SetField PhysicsModel objects\eldewrito\reforge\block_2x50x50.physics_model
+SaveTagChanges
+Exit
+
+CreateTag bloc objects\eldewrito\reforge\block_2x50x50
+EditTag objects\eldewrito\reforge\block_2x50x50.crate
+SetField ObjectType.Halo3ODST Crate
+SetField ObjectFlags DoesNotCastShadow
+SetField BoundingRadius 36
+SetField Model objects\eldewrito\reforge\block_2x50x50.model
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[*].InitialPermutations
+SetField ChangeColors[*].InitialPermutations[*].Weight 1
+SetField ChangeColors[*].InitialPermutations[*].ColorLowerBound 1 1 1
+SetField ChangeColors[*].InitialPermutations[*].ColorUpperBound 1 1 1
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## 2 x 100 x 100 block
+EditTag objects\eldewrito\reforge\block_1x1x1.render_model
+CopyBlockElements Materials 0 *
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\reforge\block_2x100x100
+EditTag objects\eldewrito\reforge\block_2x100x100.render_model
+AddBlockElements Materials
+SetField Materials[*].RenderMethod levels\multi\s3d_turf\shaders\checker.shader
+ReplaceRenderGeometry "working_directory\models\reforge\block_2x100x100.dae"
+RemoveBlockElements Materials 0 *
+PasteBlockElements Materials
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry "working_directory\models\reforge\block_2x100x100.dae" objects\eldewrito\reforge\block_2x100x100
+EditTag objects\eldewrito\reforge\block_2x100x100.collision_model
+SetField Nodes[0].Name root
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\reforge\block_2x50x50.physics_model objects\eldewrito\reforge\block_2x100x100
+EditTag objects\eldewrito\reforge\block_2x100x100.physics_model
+SetField Boxes[*].HalfExtents 1 50 50
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\reforge\block_2x100x100
+EditTag objects\eldewrito\reforge\block_2x100x100.model
+SetField RenderModel objects\eldewrito\reforge\block_2x100x100.render_model
+SetField CollisionModel objects\eldewrito\reforge\block_2x100x100.collision_model
+SetField PhysicsModel objects\eldewrito\reforge\block_2x100x100.physics_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\reforge\block_2x50x50.crate objects\eldewrito\reforge\block_2x100x100
+EditTag objects\eldewrito\reforge\block_2x100x100.crate
+SetField BoundingRadius 71
+SetField Model objects\eldewrito\reforge\block_2x100x100.model
+SaveTagChanges
+Exit
+
+## 2 x 200 x 200 block
+EditTag objects\eldewrito\reforge\block_1x1x1.render_model
+CopyBlockElements Materials 0 *
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\reforge\block_2x200x200
+EditTag objects\eldewrito\reforge\block_2x200x200.render_model
+AddBlockElements Materials
+SetField Materials[*].RenderMethod levels\multi\s3d_turf\shaders\checker.shader
+ReplaceRenderGeometry "working_directory\models\reforge\block_2x200x200.dae"
+RemoveBlockElements Materials 0 *
+PasteBlockElements Materials
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry "working_directory\models\reforge\block_2x200x200.dae" objects\eldewrito\reforge\block_2x200x200
+EditTag objects\eldewrito\reforge\block_2x200x200.collision_model
+SetField Nodes[0].Name root
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\reforge\block_2x50x50.physics_model objects\eldewrito\reforge\block_2x200x200
+EditTag objects\eldewrito\reforge\block_2x200x200.physics_model
+SetField Boxes[*].HalfExtents 1 100 100
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\reforge\block_2x200x200
+EditTag objects\eldewrito\reforge\block_2x200x200.model
+SetField RenderModel objects\eldewrito\reforge\block_2x200x200.render_model
+SetField CollisionModel objects\eldewrito\reforge\block_2x200x200.collision_model
+SetField PhysicsModel objects\eldewrito\reforge\block_2x200x200.physics_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\reforge\block_2x50x50.crate objects\eldewrito\reforge\block_2x200x200
+EditTag objects\eldewrito\reforge\block_2x200x200.crate
+SetField BoundingRadius 142
+SetField Model objects\eldewrito\reforge\block_2x200x200.model
+SaveTagChanges
+Exit
+
+AddForgeCategory "EXTRA REFORGE" "MOVIE PROPS"
+
+AddForgeItem "Block [2 x 50 x 50]" "EXTRA REFORGE" objects\eldewrito\reforge\block_2x50x50.crate
+AddForgeItem "Block [2 x 100 x 100]" "EXTRA REFORGE" objects\eldewrito\reforge\block_2x100x100.crate
+AddForgeItem "Block [2 x 200 x 200]" "EXTRA REFORGE" objects\eldewrito\reforge\block_2x200x200.crate
+
+## Update forge globals
+EditTag multiplayer\forge_globals.forge_globals_definition
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\reforge\block_2x50x50.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\reforge\block_2x100x100.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\reforge\block_2x200x200.crate
+SaveTagChanges
+Exit

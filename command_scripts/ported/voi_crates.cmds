@@ -1,0 +1,53 @@
+PortTag MPobject objects\vehicles\civilian\truck_cab_large\container_long_hollow\container_long_hollow.crate
+PortTag MPobject objects\levels\solo\040_voi\cart_trailer\cart_trailer.crate
+PortTag MPobject objects\gear\human\military\crate_h_gun_rack_0\crate_h_gun_rack_0.crate
+PortTag MPobject objects\gear\human\military\crate_h_gun_rack_2\crate_h_gun_rack_2.crate
+PortTag MPobject objects\gear\human\residential\h_sofa\h_sofa.crate
+PortTag MPobject objects\gear\human\residential\h_sofa_loveseat\h_sofa_loveseat.crate
+PortTag MPobject objects\gear\human\residential\h_table_coffee\h_table_coffee.crate
+PortTag MPobject objects\vehicles\civilian\truck_cab_large\container_small\container_small.crate
+PortTag MPobject objects\gear\covenant\military\antennae_comm\antennae_comm.crate
+PortTag MPobject objects\gear\human\industrial\dumpster\dumpster.crate
+PortTag MPobject objects\gear\human\industrial\box_cardboard_large_open\box_cardboard_large_open.crate
+PortTag MPobject objects\gear\human\industrial\box_cardboard_medium\box_cardboard_medium.crate
+PortTag MPobject objects\gear\human\industrial\box_cardboard_medium_b\box_cardboard_medium_b.crate
+PortTag MPobject objects\gear\human\industrial\box_wooden_large\box_wooden_large.crate
+PortTag MPobject objects\gear\human\industrial\box_wooden_large_b\box_wooden_large_b.crate
+PortTag MPobject objects\gear\human\industrial\box_wooden_large_c\box_wooden_large_c.crate
+PortTag MPobject objects\gear\human\residential\h_table_dining\h_table_dining.crate
+PortTag MPobject objects\gear\human\residential\h_desk_corner\h_desk_corner.crate
+PortTag MPobject objects\levels\solo\040_voi\hardhat\hardhat.crate
+PortTag MPobject objects\gear\human\residential\desk_telephone\desk_telephone.crate
+PortTag MPobject objects\gear\human\residential\desk_telelphone_handset\desk_telephone_handset.crate
+PortTag MPobject objects\gear\human\industrial\box_cardboard_small\box_cardboard_small.crate
+PortTag MPobject objects\gear\human\industrial\tire_small\tire_small.crate
+PortTag MPobject objects\gear\human\industrial\cinderblock\cinderblock.crate
+PortTag MPobject objects\gear\human\industrial\h_barrel_rusty\h_barrel_explosive.crate
+
+AddForgeCategory "VOI CRATES" "VOI"
+
+AddForgeItem "Semi Box Long" "VOI CRATES" objects\vehicles\civilian\truck_cab_large\container_long_hollow\container_long_hollow.crate
+AddForgeItem "Cart Trailer" "VOI CRATES" objects\levels\solo\040_voi\cart_trailer\cart_trailer.crate
+AddForgeItem "Gun Rack Closed" "VOI CRATES" objects\gear\human\military\crate_h_gun_rack_0\crate_h_gun_rack_0.crate
+AddForgeItem "Gun Rack Double" "VOI CRATES" objects\gear\human\military\crate_h_gun_rack_2\crate_h_gun_rack_2.crate
+AddForgeItem "Sofa" "VOI CRATES" objects\gear\human\residential\h_sofa\h_sofa.crate
+AddForgeItem "Short Sofa" "VOI CRATES" objects\gear\human\residential\h_sofa_loveseat\h_sofa_loveseat.crate
+AddForgeItem "Coffee Table" "VOI CRATES" objects\gear\human\residential\h_table_coffee\h_table_coffee.crate
+AddForgeItem "Semi Box Short" "VOI CRATES" objects\vehicles\civilian\truck_cab_large\container_small\container_small.crate
+AddForgeItem "Cov Antenna" "VOI CRATES" objects\gear\covenant\military\antennae_comm\antennae_comm.crate
+AddForgeItem "Big Dumpster" "VOI CRATES" objects\gear\human\industrial\dumpster\dumpster.crate
+AddForgeItem "Cardboard Box Open" "VOI CRATES" objects\gear\human\industrial\box_cardboard_large_open\box_cardboard_large_open.crate
+AddForgeItem "Cardboard Box Wide" "VOI CRATES" objects\gear\human\industrial\box_cardboard_medium\box_cardboard_medium.crate
+AddForgeItem "Cardboard Box" "VOI CRATES" objects\gear\human\industrial\box_cardboard_medium_b\box_cardboard_medium_b.crate
+AddForgeItem "Wooden Shipping Crate" "VOI CRATES" objects\gear\human\industrial\box_wooden_large\box_wooden_large.crate
+AddForgeItem "Wooden Shipping Crate V2" "VOI CRATES" objects\gear\human\industrial\box_wooden_large_b\box_wooden_large_b.crate
+AddForgeItem "Wooden Shipping Crate Tall" "VOI CRATES" objects\gear\human\industrial\box_wooden_large_c\box_wooden_large_c.crate
+AddForgeItem "Dining Table" "VOI CRATES" objects\gear\human\residential\h_table_dining\h_table_dining.crate
+AddForgeItem "Corner Desk" "VOI CRATES" objects\gear\human\residential\h_desk_corner\h_desk_corner.crate
+AddForgeItem "Hard Hat" "VOI CRATES" objects\levels\solo\040_voi\hardhat\hardhat.crate
+AddForgeItem "Desk Telephone" "VOI CRATES" objects\gear\human\residential\desk_telephone\desk_telephone.crate
+AddForgeItem "Desk Telephone Handset" "VOI CRATES" objects\gear\human\residential\desk_telelphone_handset\desk_telephone_handset.crate
+AddForgeItem "Cardboard Box Small" "VOI CRATES" objects\gear\human\industrial\box_cardboard_small\box_cardboard_small.crate
+AddForgeItem "Tire Small" "VOI CRATES" objects\gear\human\industrial\tire_small\tire_small.crate
+AddForgeItem "Cinderblock" "VOI CRATES" objects\gear\human\industrial\cinderblock\cinderblock.crate
+AddForgeItem "Explosive Barrel" "VOI CRATES" objects\gear\human\industrial\h_barrel_rusty\h_barrel_explosive.crate

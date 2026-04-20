@@ -1,0 +1,1876 @@
+## Non-standard values from ODST generic in perception, engage, weapons, firing pattern
+CreateTag char ai\generic_mp
+EditTag ai\generic_mp.character
+
+SetField Style ai\normal.style
+
+AddBlockElements GeneralProperties
+SetField GeneralProperties[0].ActorType Player
+
+AddBlockElements VitalityProperties
+SetField VitalityProperties[0].NormalBodyVitality 50
+SetField VitalityProperties[0].LegendaryBodyVitality 75
+SetField VitalityProperties[0].SoftPingShieldedThreshold 1
+SetField VitalityProperties[0].SoftPingUnshieldedThreshold 1
+SetField VitalityProperties[0].SoftPingMinInterruptTime 0.15
+SetField VitalityProperties[0].HardPingShieldedThreshold 1
+SetField VitalityProperties[0].HardPingUnshieldedThreshold 1
+SetField VitalityProperties[0].HardPingMinInterruptTime 0.75
+SetField VitalityProperties[0].CurrentDamageDecayDelay 0.2
+SetField VitalityProperties[0].CurrentDamageDecayTime 0.2
+SetField VitalityProperties[0].RecentDamageDecayDelay 2
+SetField VitalityProperties[0].RecentDamageDecayTime 2
+SetField VitalityProperties[0].ExtendedShieldDamageThreshold 0.4
+SetField VitalityProperties[0].ExtendedBodyDamageThreshold 0.4
+SetField VitalityProperties[0].RuntimeShieldRechargeVelocity 1000
+
+AddBlockElements PlacementProperties
+SetField PlacementProperties[0].FewUpgradeChanceNormal 0.1
+SetField PlacementProperties[0].FewUpgradeChanceHeroic 0.3
+SetField PlacementProperties[0].FewUpgradeChanceLegendary 0.5
+SetField PlacementProperties[0].NormalUpgradeChanceEasy 0.1
+SetField PlacementProperties[0].NormalUpgradeChanceNormal 0.3
+SetField PlacementProperties[0].NormalUpgradeChanceHeroic 0.5
+SetField PlacementProperties[0].NormalUpgradeChanceLegendary 0.7
+SetField PlacementProperties[0].ManyUpgradeChanceEasy 0.3
+SetField PlacementProperties[0].ManyUpgradeChanceNormal 0.5
+SetField PlacementProperties[0].ManyUpgradeChanceHeroic 0.7
+SetField PlacementProperties[0].ManyUpgradeChanceLegendary 0.9
+
+AddBlockElements PerceptionProperties
+SetField PerceptionProperties[0].MaxVisionDistance 150
+SetField PerceptionProperties[0].CentralVisionAngle 10
+SetField PerceptionProperties[0].MaxVisionAngle 40
+SetField PerceptionProperties[0].PeripheralVisionAngle 105
+SetField PerceptionProperties[0].PeripheralDistance 150
+SetField PerceptionProperties[0].HearingDistance 150
+SetField PerceptionProperties[0].NoticeProjectileChance 1
+SetField PerceptionProperties[0].NoticeVehicleChance 1
+SetField PerceptionProperties[0].PerceptionTime 1
+
+AddBlockElements LookProperties
+SetField LookProperties[0].MaximumAimingDeviation 60.000004 60.000004
+SetField LookProperties[0].MaximumLookingDeviation 60.000004 60.000004
+SetField LookProperties[0].RuntimeAimingDeviationCosines 28.647888 28.647888
+SetField LookProperties[0].RuntimeLookingDeviationCosines 28.647888 28.647888
+SetField LookProperties[0].NoncombatLookDeltaL 60.000004
+SetField LookProperties[0].NoncombatLookDeltaR 60.000004
+SetField LookProperties[0].CombatLookDeltaL 30.000002
+SetField LookProperties[0].CombatLookDeltaR 30.000002
+SetField LookProperties[0].NoncombatIdleLooking 1 2
+SetField LookProperties[0].NoncombatIdleAiming 2 4
+SetField LookProperties[0].CombatIdleLooking 0.5 1.75
+SetField LookProperties[0].CombatIdleAiming 2 4
+
+AddBlockElements MovementProperties
+SetField MovementProperties[0].PathfindingRadius 0.2
+SetField MovementProperties[0].DestinationRadius 0.2
+SetField MovementProperties[0].DiveGrenadeChance 0.5
+SetField MovementProperties[0].ObstacleIgnoreSize Tiny
+SetField MovementProperties[0].JumpHeight Down
+SetField MovementProperties[0].WalkDistance 2
+
+AddBlockElements FlockingProperties
+SetField FlockingProperties[0].DecelerationDistance 1.5
+SetField FlockingProperties[0].NormalizedSpeed 1
+SetField FlockingProperties[0].BufferDistance 0.7
+SetField FlockingProperties[0].ThrottleThresholdBounds 0.2 0.5
+SetField FlockingProperties[0].DecelerationStopTime 0.5
+
+AddBlockElements ReadyProperties
+SetField ReadyProperties[0].ReadyTimeBounds 0 1
+
+AddBlockElements EngageProperties 3
+SetField EngageProperties[0].RepositionBounds 1 4
+SetField EngageProperties[0].CrouchDangerThreshold 10
+SetField EngageProperties[0].StandDangerThreshold 10
+SetField EngageProperties[1].CrouchDangerThreshold 10
+SetField EngageProperties[1].StandDangerThreshold 10
+SetField EngageProperties[2].CrouchDangerThreshold 10
+SetField EngageProperties[2].StandDangerThreshold 10
+
+AddBlockElements ChargeProperties 3
+SetField ChargeProperties[0].MeleeConsiderRange 1.5
+SetField ChargeProperties[0].MeleeChance 1
+SetField ChargeProperties[0].MeleeAttackRange 1.5
+SetField ChargeProperties[0].MeleeAbortRange 2.5
+SetField ChargeProperties[0].MeleeAttackTimeout 2.5
+SetField ChargeProperties[0].MeleeAttackDelayTimer 4
+SetField ChargeProperties[0].IdealLeapVelocity 0.1
+SetField ChargeProperties[0].MaxLeapVelocity 0.1
+SetField ChargeProperties[0].MeleeDelayTimer 4
+SetField ChargeProperties[1].MeleeConsiderRange 0.5
+SetField ChargeProperties[1].MeleeChance 1
+SetField ChargeProperties[1].MeleeAttackRange 0.5
+SetField ChargeProperties[1].MeleeAbortRange 1
+SetField ChargeProperties[1].MeleeAttackTimeout 2.5
+SetField ChargeProperties[1].MeleeAttackDelayTimer 4
+SetField ChargeProperties[1].IdealLeapVelocity 0.1
+SetField ChargeProperties[1].MaxLeapVelocity 0.1
+SetField ChargeProperties[1].MeleeDelayTimer 4
+SetField ChargeProperties[2].MeleeConsiderRange 3
+SetField ChargeProperties[2].MeleeChance 1
+SetField ChargeProperties[2].MeleeAttackRange 3
+SetField ChargeProperties[2].MeleeAbortRange 4
+SetField ChargeProperties[2].MeleeAttackTimeout 4
+SetField ChargeProperties[2].MeleeAttackDelayTimer 4
+SetField ChargeProperties[2].IdealLeapVelocity 0.1
+SetField ChargeProperties[2].MaxLeapVelocity 0.1
+SetField ChargeProperties[2].MeleeDelayTimer 4
+
+AddBlockElements EvasionProperties 3
+SetField EvasionProperties[0].EvasionDangerThreshold 4
+SetField EvasionProperties[0].EvasionDelayTimer 4
+SetField EvasionProperties[0].EvasionChance 0.5
+SetField EvasionProperties[0].DiveRetreatChance 0.25
+SetField EvasionProperties[1].EvasionDangerThreshold 2
+SetField EvasionProperties[1].EvasionDelayTimer 2
+SetField EvasionProperties[1].EvasionChance 0.5
+SetField EvasionProperties[1].DiveRetreatChance 0.5
+SetField EvasionProperties[2].EvasionDangerThreshold 8
+SetField EvasionProperties[2].EvasionDelayTimer 8
+SetField EvasionProperties[2].EvasionChance 0.5
+
+AddBlockElements CoverProperties
+SetField CoverProperties[0].HideBehindCoverTime 3 5
+SetField CoverProperties[0].CoverVitalityThreshold 1
+SetField CoverProperties[0].CoverDangerThreshold 5
+SetField CoverProperties[0].DangerUpperThreshold 9
+SetField CoverProperties[0].CoverChanceBounds 0.2 0.7
+SetField CoverProperties[0].UnreachableEnemyDangerThreshold 5.5
+SetField CoverProperties[0].ScaryTargetThreshold 6
+
+AddBlockElements RetreatProperties 2
+SetField RetreatProperties[0].ShieldThreshold 0.1
+SetField RetreatProperties[0].ScaryTargetThreshold 18
+SetField RetreatProperties[0].DangerThreshold 9.5
+SetField RetreatProperties[0].ProximityThreshold 1.5
+SetField RetreatProperties[0].ForcedCowerTimeBounds 3 5
+SetField RetreatProperties[0].CowerTimeBounds 6 8
+SetField RetreatProperties[0].ProximityAmbushThreshold 4
+SetField RetreatProperties[1].ShieldThreshold 0.6
+SetField RetreatProperties[1].ScaryTargetThreshold 12
+SetField RetreatProperties[1].DangerThreshold 6
+SetField RetreatProperties[1].ProximityThreshold 1.5
+SetField RetreatProperties[1].ForcedCowerTimeBounds 8 16
+SetField RetreatProperties[1].CowerTimeBounds 24 30
+SetField RetreatProperties[1].ProximityAmbushThreshold 4
+
+AddBlockElements SearchProperties
+SetField SearchProperties[0].SearchTime 15 30
+SetField SearchProperties[0].UncoverDistanceBounds 2 7
+
+AddBlockElements PreSearchProperties
+SetField PreSearchProperties[0].MinimumPreSearchTime 6 6
+SetField PreSearchProperties[0].MaximumPreSearchTime 9 9
+SetField PreSearchProperties[0].MinimumCertaintyRadius 3
+SetField PreSearchProperties[0].DEPRECATED 4
+SetField PreSearchProperties[0].MinimumSuppressingTime 2 3
+
+AddBlockElements IdleProperties
+SetField IdleProperties[0].IdlePoseDelayTime 10 20
+SetField IdleProperties[0].WanderDelayTime 3 7
+
+AddBlockElements VocalizationProperties
+SetField VocalizationProperties[0].LookCommentTime 4
+SetField VocalizationProperties[0].LookLongCommentTime 14
+
+AddBlockElements BoardingProperties
+
+AddBlockElements KungfuProperties
+SetField KungfuProperties[0].KungfuOverrideDistance 3.5
+
+AddBlockElements InspectProperties
+SetField InspectProperties[0].StopDistance 1.5
+SetField InspectProperties[0].InspectTime 3 7
+SetField InspectProperties[0].SearchRange 5 10
+
+AddBlockElements WeaponsProperties 44
+SetField WeaponsProperties[0].Weapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField WeaponsProperties[0].MaximumFiringRange 14
+SetField WeaponsProperties[0].MinimumFiringRange 0.5
+SetField WeaponsProperties[0].NormalCombatRange 2.5 7
+SetField WeaponsProperties[0].MaxSpecialTargetDistance 7
+SetField WeaponsProperties[0].TimidCombatRange 4 9
+SetField WeaponsProperties[0].AggressiveCombatRange 2 5
+SetField WeaponsProperties[0].FirstBurstDelayTimeBounds 0.2 1.2
+SetField WeaponsProperties[0].SurpriseDelayTime 1
+SetField WeaponsProperties[0].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[0].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[0].DeathFireWildlyTime 0.8
+SetField WeaponsProperties[0].SpecialFireMode Overcharge
+SetField WeaponsProperties[0].SpecialFireSituation EnemyOutOfSight
+SetField WeaponsProperties[0].SpecialFireDelay 10
+SetField WeaponsProperties[0].DropWeaponLoadedBounds 0.6 0.9
+SetField WeaponsProperties[0].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[0].NormalAccuracyTime 9
+SetField WeaponsProperties[0].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[0].HeroicAccuracyTime 6
+SetField WeaponsProperties[0].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[0].LegendaryAccuracyTime 3
+SetField WeaponsProperties[1].Weapon objects\weapons\pistol\needler\needler.weapon
+SetField WeaponsProperties[1].MaximumFiringRange 20
+SetField WeaponsProperties[1].MinimumFiringRange 0.5
+SetField WeaponsProperties[1].NormalCombatRange 2.5 6
+SetField WeaponsProperties[1].MaxSpecialTargetDistance 20
+SetField WeaponsProperties[1].TimidCombatRange 4 8
+SetField WeaponsProperties[1].AggressiveCombatRange 2 4
+SetField WeaponsProperties[1].SurpriseDelayTime 1
+SetField WeaponsProperties[1].DeathFireWildlyChance 1
+SetField WeaponsProperties[1].DeathFireWildlyTime 0.8
+SetField WeaponsProperties[1].DropWeaponLoadedBounds 0.6 0.9
+SetField WeaponsProperties[1].DropWeaponAmmoBounds 30 50
+SetField WeaponsProperties[1].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[1].NormalAccuracyTime 9
+SetField WeaponsProperties[1].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[1].HeroicAccuracyTime 6
+SetField WeaponsProperties[1].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[1].LegendaryAccuracyTime 3
+SetField WeaponsProperties[2].Weapon objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+SetField WeaponsProperties[2].MaximumFiringRange 14
+SetField WeaponsProperties[2].MinimumFiringRange 0.5
+SetField WeaponsProperties[2].NormalCombatRange 2.5 7
+SetField WeaponsProperties[2].MaxSpecialTargetDistance 7
+SetField WeaponsProperties[2].TimidCombatRange 4 9
+SetField WeaponsProperties[2].AggressiveCombatRange 2 5
+SetField WeaponsProperties[2].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[2].SurpriseDelayTime 1
+SetField WeaponsProperties[2].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[2].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[2].DeathFireWildlyTime 0.8
+SetField WeaponsProperties[2].DropWeaponLoadedBounds 0.4 0.8
+SetField WeaponsProperties[2].DropWeaponAmmoBounds 60 100
+SetField WeaponsProperties[2].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[2].NormalAccuracyTime 9
+SetField WeaponsProperties[2].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[2].HeroicAccuracyTime 6
+SetField WeaponsProperties[2].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[2].LegendaryAccuracyTime 3
+SetField WeaponsProperties[3].Weapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField WeaponsProperties[3].MaximumFiringRange 30
+SetField WeaponsProperties[3].MinimumFiringRange 0.5
+SetField WeaponsProperties[3].NormalCombatRange 2.5 30
+SetField WeaponsProperties[3].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[3].TimidCombatRange 4 30
+SetField WeaponsProperties[3].AggressiveCombatRange 2 5
+SetField WeaponsProperties[3].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[3].SurpriseDelayTime 1
+SetField WeaponsProperties[3].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[3].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[3].DeathFireWildlyTime 0.8
+SetField WeaponsProperties[3].DropWeaponLoadedBounds 0.4 0.8
+SetField WeaponsProperties[3].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[3].NormalAccuracyTime 9
+SetField WeaponsProperties[3].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[3].HeroicAccuracyTime 6
+SetField WeaponsProperties[3].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[3].LegendaryAccuracyTime 3
+SetField WeaponsProperties[4].Weapon objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+SetField WeaponsProperties[4].MaximumFiringRange 23
+SetField WeaponsProperties[4].MinimumFiringRange 0.5
+SetField WeaponsProperties[4].NormalCombatRange 4 9
+SetField WeaponsProperties[4].MaxSpecialTargetDistance 23
+SetField WeaponsProperties[4].TimidCombatRange 6 10
+SetField WeaponsProperties[4].AggressiveCombatRange 3 7
+SetField WeaponsProperties[4].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[4].SurpriseDelayTime 1
+SetField WeaponsProperties[4].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[4].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[4].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[4].DropWeaponLoadedBounds 0.4 0.8
+SetField WeaponsProperties[4].DropWeaponAmmoBounds 44 62
+SetField WeaponsProperties[4].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[4].NormalAccuracyTime 9
+SetField WeaponsProperties[4].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[4].HeroicAccuracyTime 6
+SetField WeaponsProperties[4].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[4].LegendaryAccuracyTime 3
+SetField WeaponsProperties[5].Flags AimAtFeet
+SetField WeaponsProperties[5].Weapon objects\weapons\support_low\brute_shot\brute_shot.weapon
+SetField WeaponsProperties[5].MaximumFiringRange 15
+SetField WeaponsProperties[5].MinimumFiringRange 2
+SetField WeaponsProperties[5].NormalCombatRange 4 10
+SetField WeaponsProperties[5].BombardmentRange 1
+SetField WeaponsProperties[5].MaxSpecialTargetDistance 15
+SetField WeaponsProperties[5].TimidCombatRange 6 14
+SetField WeaponsProperties[5].AggressiveCombatRange 2 7
+SetField WeaponsProperties[5].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[5].SurpriseDelayTime 1
+SetField WeaponsProperties[5].DeathFireWildlyChance 0.1
+SetField WeaponsProperties[5].DeathFireWildlyTime 0.1
+SetField WeaponsProperties[5].DropWeaponLoadedBounds 0.3 0.7
+SetField WeaponsProperties[5].DropWeaponAmmoBounds 5 7
+SetField WeaponsProperties[5].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[5].NormalAccuracyTime 9
+SetField WeaponsProperties[5].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[5].HeroicAccuracyTime 6
+SetField WeaponsProperties[5].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[5].LegendaryAccuracyTime 3
+SetField WeaponsProperties[6].Flags UseExtendedSafeToSaveRange
+SetField WeaponsProperties[6].Weapon objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+SetField WeaponsProperties[6].MaximumFiringRange 100
+SetField WeaponsProperties[6].MinimumFiringRange 2
+SetField WeaponsProperties[6].NormalCombatRange 15 100
+SetField WeaponsProperties[6].MaxSpecialTargetDistance 50
+SetField WeaponsProperties[6].TimidCombatRange 30 100
+SetField WeaponsProperties[6].AggressiveCombatRange 10 25
+SetField WeaponsProperties[6].FirstBurstDelayTimeBounds 0.5 2
+SetField WeaponsProperties[6].DropWeaponLoadedBounds 0.6 0.9
+SetField WeaponsProperties[6].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[6].NormalAccuracyTime 9
+SetField WeaponsProperties[6].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[6].HeroicAccuracyTime 6
+SetField WeaponsProperties[6].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[6].LegendaryAccuracyTime 3
+SetField WeaponsProperties[7].Weapon objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+SetField WeaponsProperties[7].MaximumFiringRange 150
+SetField WeaponsProperties[7].MinimumFiringRange 2
+SetField WeaponsProperties[7].NormalCombatRange 20 150
+SetField WeaponsProperties[7].MaxSpecialTargetDistance 150
+SetField WeaponsProperties[7].TimidCombatRange 30 150
+SetField WeaponsProperties[7].AggressiveCombatRange 10 25
+SetField WeaponsProperties[7].DropWeaponLoadedBounds 0.2 0.3
+SetField WeaponsProperties[7].DropWeaponAmmoBounds 6 10
+SetField WeaponsProperties[7].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[7].NormalAccuracyTime 1
+SetField WeaponsProperties[7].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[7].HeroicAccuracyTime 1
+SetField WeaponsProperties[7].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[7].LegendaryAccuracyTime 1
+SetField WeaponsProperties[8].Weapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField WeaponsProperties[8].MaximumFiringRange 14
+SetField WeaponsProperties[8].MinimumFiringRange 0.5
+SetField WeaponsProperties[8].NormalCombatRange 2.5 7
+SetField WeaponsProperties[8].MaxSpecialTargetDistance 7
+SetField WeaponsProperties[8].TimidCombatRange 4 9
+SetField WeaponsProperties[8].AggressiveCombatRange 2 5
+SetField WeaponsProperties[8].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[8].SurpriseDelayTime 1
+SetField WeaponsProperties[8].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[8].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[8].DropWeaponLoadedBounds 0.5 0.9
+SetField WeaponsProperties[8].DropWeaponAmmoBounds 128 192
+SetField WeaponsProperties[8].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[8].NormalAccuracyTime 6
+SetField WeaponsProperties[8].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[8].HeroicAccuracyTime 3
+SetField WeaponsProperties[8].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[8].LegendaryAccuracyTime 3
+SetField WeaponsProperties[9].Weapon objects\weapons\rifle\battle_rifle\battle_rifle.weapon
+SetField WeaponsProperties[9].MaximumFiringRange 23
+SetField WeaponsProperties[9].MinimumFiringRange 0.5
+SetField WeaponsProperties[9].NormalCombatRange 4 9
+SetField WeaponsProperties[9].MaxSpecialTargetDistance 23
+SetField WeaponsProperties[9].TimidCombatRange 6 10
+SetField WeaponsProperties[9].AggressiveCombatRange 3 7
+SetField WeaponsProperties[9].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[9].SurpriseDelayTime 1
+SetField WeaponsProperties[9].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[9].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[9].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[9].DropWeaponLoadedBounds 0.2 0.6
+SetField WeaponsProperties[9].DropWeaponAmmoBounds 90 126
+SetField WeaponsProperties[9].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[9].NormalAccuracyTime 9
+SetField WeaponsProperties[9].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[9].HeroicAccuracyTime 6
+SetField WeaponsProperties[9].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[9].LegendaryAccuracyTime 3
+SetField WeaponsProperties[10].Weapon objects\weapons\rifle\smg\smg.weapon
+SetField WeaponsProperties[10].MaximumFiringRange 14
+SetField WeaponsProperties[10].MinimumFiringRange 0.5
+SetField WeaponsProperties[10].NormalCombatRange 2.5 7
+SetField WeaponsProperties[10].MaxSpecialTargetDistance 7
+SetField WeaponsProperties[10].TimidCombatRange 4 9
+SetField WeaponsProperties[10].AggressiveCombatRange 2 5
+SetField WeaponsProperties[10].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[10].SurpriseDelayTime 1
+SetField WeaponsProperties[10].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[10].DeathFireWildlyTime 0.8
+SetField WeaponsProperties[10].DropWeaponLoadedBounds 0.5 0.9
+SetField WeaponsProperties[10].DropWeaponAmmoBounds 150 210
+SetField WeaponsProperties[10].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[10].NormalAccuracyTime 6
+SetField WeaponsProperties[10].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[10].HeroicAccuracyTime 3
+SetField WeaponsProperties[10].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[10].LegendaryAccuracyTime 3
+SetField WeaponsProperties[11].Weapon objects\weapons\rifle\shotgun\shotgun.weapon
+SetField WeaponsProperties[11].MaximumFiringRange 6
+SetField WeaponsProperties[11].NormalCombatRange 1 3
+SetField WeaponsProperties[11].MaxSpecialTargetDistance 6
+SetField WeaponsProperties[11].TimidCombatRange 2 4
+SetField WeaponsProperties[11].AggressiveCombatRange 0.25 2
+SetField WeaponsProperties[11].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[11].SurpriseDelayTime 0.4
+SetField WeaponsProperties[11].DeathFireWildlyChance 0.1
+SetField WeaponsProperties[11].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[11].DropWeaponLoadedBounds 0.3 0.9
+SetField WeaponsProperties[11].DropWeaponAmmoBounds 8 12
+SetField WeaponsProperties[11].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[11].NormalAccuracyTime 6
+SetField WeaponsProperties[11].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[11].HeroicAccuracyTime 3
+SetField WeaponsProperties[11].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[11].LegendaryAccuracyTime 3
+SetField WeaponsProperties[12].Weapon objects\weapons\turret\plasma_cannon\plasma_cannon.weapon
+SetField WeaponsProperties[12].MaximumFiringRange 16
+SetField WeaponsProperties[12].NormalCombatRange 4 12
+SetField WeaponsProperties[12].MaxSpecialTargetDistance 16
+SetField WeaponsProperties[12].TimidCombatRange 8 16
+SetField WeaponsProperties[12].AggressiveCombatRange 2 8
+SetField WeaponsProperties[12].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[12].DropWeaponLoadedBounds 0.2 0.4
+SetField WeaponsProperties[12].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[12].NormalAccuracyTime 9
+SetField WeaponsProperties[12].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[12].HeroicAccuracyTime 6
+SetField WeaponsProperties[12].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[12].LegendaryAccuracyTime 3
+SetField WeaponsProperties[13].Weapon objects\weapons\turret\plasma_cannon\plasma_cannon_integrated.weapon
+SetField WeaponsProperties[13].MaximumFiringRange 16
+SetField WeaponsProperties[13].NormalCombatRange 4 12
+SetField WeaponsProperties[13].MaxSpecialTargetDistance 16
+SetField WeaponsProperties[13].TimidCombatRange 8 16
+SetField WeaponsProperties[13].AggressiveCombatRange 2 8
+SetField WeaponsProperties[13].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[13].DropWeaponLoadedBounds 0.5 0.8
+SetField WeaponsProperties[13].NormalAccuracyBounds 0 0.25
+SetField WeaponsProperties[13].NormalAccuracyTime 9
+SetField WeaponsProperties[13].HeroicAccuracyBounds 0.15 0.35
+SetField WeaponsProperties[13].HeroicAccuracyTime 6
+SetField WeaponsProperties[13].LegendaryAccuracyBounds 0.25 0.5
+SetField WeaponsProperties[13].LegendaryAccuracyTime 3
+SetField WeaponsProperties[14].Flags BurstingInhibitsMovement
+SetField WeaponsProperties[14].Weapon objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+SetField WeaponsProperties[14].MaximumFiringRange 50
+SetField WeaponsProperties[14].MinimumFiringRange 2
+SetField WeaponsProperties[14].NormalCombatRange 10 30
+SetField WeaponsProperties[14].MaxSpecialTargetDistance 50
+SetField WeaponsProperties[14].TimidCombatRange 10 30
+SetField WeaponsProperties[14].AggressiveCombatRange 5 15
+SetField WeaponsProperties[14].FirstBurstDelayTimeBounds 0.2 0.4
+SetField WeaponsProperties[14].SurpriseDelayTime 1
+SetField WeaponsProperties[14].DropWeaponLoadedBounds 0.6 0.9
+SetField WeaponsProperties[14].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[14].NormalAccuracyTime 6
+SetField WeaponsProperties[14].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[14].HeroicAccuracyTime 6
+SetField WeaponsProperties[14].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[14].LegendaryAccuracyTime 3
+SetField WeaponsProperties[15].Flags BurstingInhibitsMovement
+SetField WeaponsProperties[15].Weapon objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+SetField WeaponsProperties[15].MaximumFiringRange 30
+SetField WeaponsProperties[15].MinimumFiringRange 2.5
+SetField WeaponsProperties[15].NormalCombatRange 8 16
+SetField WeaponsProperties[15].BombardmentRange 1
+SetField WeaponsProperties[15].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[15].TimidCombatRange 12 24
+SetField WeaponsProperties[15].AggressiveCombatRange 4 12
+SetField WeaponsProperties[15].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[15].SurpriseDelayTime 1
+SetField WeaponsProperties[15].DeathFireWildlyChance 0.1
+SetField WeaponsProperties[15].DeathFireWildlyTime 0.1
+SetField WeaponsProperties[15].DropWeaponLoadedBounds 0.25 1
+SetField WeaponsProperties[15].DropWeaponAmmoBounds 7 9
+SetField WeaponsProperties[15].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[15].NormalAccuracyTime 9
+SetField WeaponsProperties[15].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[15].HeroicAccuracyTime 6
+SetField WeaponsProperties[15].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[15].LegendaryAccuracyTime 3
+SetField WeaponsProperties[16].Flags BurstingInhibitsMovement,AimAtFeet
+SetField WeaponsProperties[16].Weapon objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+SetField WeaponsProperties[16].MaximumFiringRange 30
+SetField WeaponsProperties[16].MinimumFiringRange 2.5
+SetField WeaponsProperties[16].NormalCombatRange 8 16
+SetField WeaponsProperties[16].BombardmentRange 1
+SetField WeaponsProperties[16].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[16].TimidCombatRange 12 24
+SetField WeaponsProperties[16].AggressiveCombatRange 4 12
+SetField WeaponsProperties[16].FirstBurstDelayTimeBounds 0 0.2
+SetField WeaponsProperties[16].DropWeaponLoadedBounds 0.5 1
+SetField WeaponsProperties[16].DropWeaponAmmoBounds 3 4
+SetField WeaponsProperties[16].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[16].NormalAccuracyTime 9
+SetField WeaponsProperties[16].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[16].HeroicAccuracyTime 6
+SetField WeaponsProperties[16].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[16].LegendaryAccuracyTime 3
+SetField WeaponsProperties[17].Weapon objects\weapons\pistol\excavator\excavator.weapon
+SetField WeaponsProperties[17].MaximumFiringRange 6
+SetField WeaponsProperties[17].NormalCombatRange 1 3
+SetField WeaponsProperties[17].MaxSpecialTargetDistance 6
+SetField WeaponsProperties[17].TimidCombatRange 2 4
+SetField WeaponsProperties[17].AggressiveCombatRange 0.25 2
+SetField WeaponsProperties[17].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[17].SurpriseDelayTime 0.4
+SetField WeaponsProperties[17].DeathFireWildlyChance 0.1
+SetField WeaponsProperties[17].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[17].DropWeaponLoadedBounds 0.3 0.9
+SetField WeaponsProperties[17].DropWeaponAmmoBounds 10 18
+SetField WeaponsProperties[17].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[17].NormalAccuracyTime 6
+SetField WeaponsProperties[17].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[17].HeroicAccuracyTime 3
+SetField WeaponsProperties[17].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[17].LegendaryAccuracyTime 3
+SetField WeaponsProperties[18].Weapon objects\weapons\melee\energy_blade\energy_blade.weapon
+SetField WeaponsProperties[18].MaximumFiringRange 2
+SetField WeaponsProperties[18].NormalCombatRange 0.5 2
+SetField WeaponsProperties[18].MaxSpecialTargetDistance 2
+SetField WeaponsProperties[18].TimidCombatRange 0.5 2
+SetField WeaponsProperties[18].AggressiveCombatRange 0.5 2
+SetField WeaponsProperties[18].SurpriseDelayTime 0.4
+SetField WeaponsProperties[18].DropWeaponLoadedBounds 0.5 0.9
+SetField WeaponsProperties[18].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[18].NormalAccuracyTime 9
+SetField WeaponsProperties[18].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[18].HeroicAccuracyTime 6
+SetField WeaponsProperties[18].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[18].LegendaryAccuracyTime 3
+SetField WeaponsProperties[18].WeaponMeleeDamage objects\weapons\damage_effects\ai_dash_melee.damage_effect
+SetField WeaponsProperties[19].Weapon objects\weapons\melee\gravity_hammer\gravity_hammer.weapon
+SetField WeaponsProperties[19].MaximumFiringRange 2
+SetField WeaponsProperties[19].NormalCombatRange 0.5 2
+SetField WeaponsProperties[19].MaxSpecialTargetDistance 2
+SetField WeaponsProperties[19].TimidCombatRange 0.5 2
+SetField WeaponsProperties[19].AggressiveCombatRange 0.5 2
+SetField WeaponsProperties[19].SurpriseDelayTime 0.4
+SetField WeaponsProperties[19].DropWeaponLoadedBounds 0.5 0.9
+SetField WeaponsProperties[19].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[19].NormalAccuracyTime 9
+SetField WeaponsProperties[19].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[19].HeroicAccuracyTime 6
+SetField WeaponsProperties[19].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[19].LegendaryAccuracyTime 3
+SetField WeaponsProperties[19].WeaponMeleeDamage objects\weapons\damage_effects\ai_dash_melee.damage_effect
+SetField WeaponsProperties[20].Weapon objects\weapons\pistol\magnum\magnum.weapon
+SetField WeaponsProperties[20].MaximumFiringRange 14
+SetField WeaponsProperties[20].MinimumFiringRange 0.5
+SetField WeaponsProperties[20].NormalCombatRange 2.5 7
+SetField WeaponsProperties[20].MaxSpecialTargetDistance 7
+SetField WeaponsProperties[20].TimidCombatRange 4 9
+SetField WeaponsProperties[20].AggressiveCombatRange 2 5
+SetField WeaponsProperties[20].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[20].SurpriseDelayTime 1
+SetField WeaponsProperties[20].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[20].DeathFireWildlyTime 0.8
+SetField WeaponsProperties[20].DropWeaponLoadedBounds 0.6 0.8
+SetField WeaponsProperties[20].DropWeaponAmmoBounds 24 32
+SetField WeaponsProperties[20].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[20].NormalAccuracyTime 6
+SetField WeaponsProperties[20].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[20].HeroicAccuracyTime 3
+SetField WeaponsProperties[20].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[20].LegendaryAccuracyTime 3
+SetField WeaponsProperties[21].Weapon objects\vehicles\pelican\pelican_rocket_pod\weapon\pelican_rocket_pod.weapon
+SetField WeaponsProperties[21].MaximumFiringRange 75
+SetField WeaponsProperties[21].MinimumFiringRange 10
+SetField WeaponsProperties[21].NormalCombatRange 20 50
+SetField WeaponsProperties[21].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[21].TimidCombatRange 20 50
+SetField WeaponsProperties[21].AggressiveCombatRange 20 50
+SetField WeaponsProperties[21].FirstBurstDelayTimeBounds 0.2 0.5
+SetField WeaponsProperties[21].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[21].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[21].NormalAccuracyBounds 0 0.4
+SetField WeaponsProperties[21].NormalAccuracyTime 10
+SetField WeaponsProperties[21].HeroicAccuracyBounds 0.2 0.6
+SetField WeaponsProperties[21].HeroicAccuracyTime 7
+SetField WeaponsProperties[21].LegendaryAccuracyBounds 0.4 1
+SetField WeaponsProperties[21].LegendaryAccuracyTime 4
+SetField WeaponsProperties[22].Weapon objects\vehicles\warthog\turrets\chaingun\weapon\chaingun_turret.weapon
+SetField WeaponsProperties[22].MaximumFiringRange 30
+SetField WeaponsProperties[22].NormalCombatRange 5 15
+SetField WeaponsProperties[22].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[22].TimidCombatRange 10 20
+SetField WeaponsProperties[22].AggressiveCombatRange 2 10
+SetField WeaponsProperties[22].FirstBurstDelayTimeBounds 0 0.2
+SetField WeaponsProperties[22].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[22].NormalAccuracyTime 6
+SetField WeaponsProperties[22].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[22].HeroicAccuracyTime 3
+SetField WeaponsProperties[22].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[22].LegendaryAccuracyTime 3
+SetField WeaponsProperties[23].Weapon objects\weapons\turret\machinegun_turret\machinegun_turret.weapon
+SetField WeaponsProperties[23].MaximumFiringRange 16
+SetField WeaponsProperties[23].NormalCombatRange 4 12
+SetField WeaponsProperties[23].MaxSpecialTargetDistance 16
+SetField WeaponsProperties[23].TimidCombatRange 8 16
+SetField WeaponsProperties[23].AggressiveCombatRange 2 8
+SetField WeaponsProperties[23].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[23].DropWeaponLoadedBounds 0.5 0.8
+SetField WeaponsProperties[23].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[23].NormalAccuracyTime 6
+SetField WeaponsProperties[23].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[23].HeroicAccuracyTime 3
+SetField WeaponsProperties[23].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[23].LegendaryAccuracyTime 3
+SetField WeaponsProperties[24].Weapon objects\weapons\turret\machinegun_turret\machinegun_turret_integrated.weapon
+SetField WeaponsProperties[24].MaximumFiringRange 50
+SetField WeaponsProperties[24].NormalCombatRange 4 50
+SetField WeaponsProperties[24].MaxSpecialTargetDistance 50
+SetField WeaponsProperties[24].TimidCombatRange 8 50
+SetField WeaponsProperties[24].AggressiveCombatRange 2 8
+SetField WeaponsProperties[24].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[24].DropWeaponLoadedBounds 0.5 0.8
+SetField WeaponsProperties[24].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[24].NormalAccuracyTime 6
+SetField WeaponsProperties[24].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[24].HeroicAccuracyTime 3
+SetField WeaponsProperties[24].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[24].LegendaryAccuracyTime 3
+SetField WeaponsProperties[25].Weapon objects\vehicles\scorpion\turrets\anti_infantry\weapon\anti_infantry_turret.weapon
+SetField WeaponsProperties[25].MaximumFiringRange 30
+SetField WeaponsProperties[25].NormalCombatRange 4 30
+SetField WeaponsProperties[25].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[25].TimidCombatRange 8 30
+SetField WeaponsProperties[25].AggressiveCombatRange 2 8
+SetField WeaponsProperties[25].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[25].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[25].NormalAccuracyTime 9
+SetField WeaponsProperties[25].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[25].HeroicAccuracyTime 6
+SetField WeaponsProperties[25].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[25].LegendaryAccuracyTime 3
+SetField WeaponsProperties[26].Weapon objects\vehicles\wraith\turrets\anti_infantry\weapon\wraith_anti_infantry_turret.weapon
+SetField WeaponsProperties[26].MaximumFiringRange 16
+SetField WeaponsProperties[26].NormalCombatRange 4 12
+SetField WeaponsProperties[26].MaxSpecialTargetDistance 16
+SetField WeaponsProperties[26].TimidCombatRange 8 16
+SetField WeaponsProperties[26].AggressiveCombatRange 2 8
+SetField WeaponsProperties[26].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[26].NormalAccuracyBounds 0 0.25
+SetField WeaponsProperties[26].NormalAccuracyTime 9
+SetField WeaponsProperties[26].HeroicAccuracyBounds 0.15 0.35
+SetField WeaponsProperties[26].HeroicAccuracyTime 6
+SetField WeaponsProperties[26].LegendaryAccuracyBounds 0.25 0.5
+SetField WeaponsProperties[26].LegendaryAccuracyTime 3
+SetField WeaponsProperties[27].Weapon objects\vehicles\shade\weapon\shade_turret.weapon
+SetField WeaponsProperties[27].MaximumFiringRange 30
+SetField WeaponsProperties[27].MinimumFiringRange 2
+SetField WeaponsProperties[27].NormalCombatRange 10 30
+SetField WeaponsProperties[27].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[27].TimidCombatRange 10 20
+SetField WeaponsProperties[27].AggressiveCombatRange 20 40
+SetField WeaponsProperties[27].FirstBurstDelayTimeBounds 0.5 1.5
+SetField WeaponsProperties[27].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[27].NormalAccuracyTime 9
+SetField WeaponsProperties[27].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[27].HeroicAccuracyTime 6
+SetField WeaponsProperties[27].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[27].LegendaryAccuracyTime 3
+SetField WeaponsProperties[28].Weapon objects\vehicles\mauler\anti_infantry\weapon\anti_infantry.weapon
+SetField WeaponsProperties[28].MaximumFiringRange 24
+SetField WeaponsProperties[28].NormalCombatRange 5 15
+SetField WeaponsProperties[28].MaxSpecialTargetDistance 24
+SetField WeaponsProperties[28].TimidCombatRange 8 20
+SetField WeaponsProperties[28].AggressiveCombatRange 2 10
+SetField WeaponsProperties[28].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[28].NormalAccuracyBounds 0 0.25
+SetField WeaponsProperties[28].NormalAccuracyTime 9
+SetField WeaponsProperties[28].HeroicAccuracyBounds 0.15 0.35
+SetField WeaponsProperties[28].HeroicAccuracyTime 6
+SetField WeaponsProperties[28].LegendaryAccuracyBounds 0.25 0.5
+SetField WeaponsProperties[28].LegendaryAccuracyTime 3
+SetField WeaponsProperties[29].Weapon objects\vehicles\warthog\turrets\gauss\weapon\gauss_turret.weapon
+SetField WeaponsProperties[29].MaximumFiringRange 80
+SetField WeaponsProperties[29].NormalCombatRange 5 80
+SetField WeaponsProperties[29].MaxSpecialTargetDistance 80
+SetField WeaponsProperties[29].TimidCombatRange 10 80
+SetField WeaponsProperties[29].AggressiveCombatRange 2 80
+SetField WeaponsProperties[29].FirstBurstDelayTimeBounds 0 0.2
+SetField WeaponsProperties[29].NormalAccuracyBounds 0.6 1
+SetField WeaponsProperties[29].NormalAccuracyTime 1
+SetField WeaponsProperties[29].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[29].HeroicAccuracyTime 3
+SetField WeaponsProperties[29].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[29].LegendaryAccuracyTime 3
+SetField WeaponsProperties[30].Weapon objects\vehicles\ghost\weapon\ghost_gun.weapon
+SetField WeaponsProperties[30].MaximumFiringRange 24
+SetField WeaponsProperties[30].NormalCombatRange 5 15
+SetField WeaponsProperties[30].MaxSpecialTargetDistance 24
+SetField WeaponsProperties[30].TimidCombatRange 8 20
+SetField WeaponsProperties[30].AggressiveCombatRange 2 8
+SetField WeaponsProperties[30].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[30].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[30].NormalAccuracyTime 9
+SetField WeaponsProperties[30].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[30].HeroicAccuracyTime 6
+SetField WeaponsProperties[30].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[30].LegendaryAccuracyTime 3
+SetField WeaponsProperties[31].Flags AimAtFeet
+SetField WeaponsProperties[31].Weapon objects\vehicles\banshee\weapon\banshee_gun.weapon
+SetField WeaponsProperties[31].MaximumFiringRange 30
+SetField WeaponsProperties[31].MinimumFiringRange 2
+SetField WeaponsProperties[31].NormalCombatRange 15 40
+SetField WeaponsProperties[31].MaxSpecialTargetDistance 30
+SetField WeaponsProperties[31].TimidCombatRange 20 30
+SetField WeaponsProperties[31].AggressiveCombatRange 5 30
+SetField WeaponsProperties[31].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[31].SpecialFireMode SecondaryTrigger
+SetField WeaponsProperties[31].SpecialFireSituation Strafing
+SetField WeaponsProperties[31].SpecialFireChance 0.25
+SetField WeaponsProperties[31].SpecialFireDelay 10
+SetField WeaponsProperties[31].SpecialProjectileError 2
+SetField WeaponsProperties[31].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[31].NormalAccuracyTime 9
+SetField WeaponsProperties[31].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[31].HeroicAccuracyTime 6
+SetField WeaponsProperties[31].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[31].LegendaryAccuracyTime 3
+SetField WeaponsProperties[32].Flags AimAtFeet
+SetField WeaponsProperties[32].Weapon objects\vehicles\wraith\turrets\mortar\mortar_turret.weapon
+SetField WeaponsProperties[32].MaximumFiringRange 80
+SetField WeaponsProperties[32].MinimumFiringRange 4
+SetField WeaponsProperties[32].NormalCombatRange 8 16
+SetField WeaponsProperties[32].BombardmentRange 1.5
+SetField WeaponsProperties[32].MaxSpecialTargetDistance 80
+SetField WeaponsProperties[32].TimidCombatRange 14 30
+SetField WeaponsProperties[32].AggressiveCombatRange 6 10
+SetField WeaponsProperties[32].SuperBallisticRange 10
+SetField WeaponsProperties[32].BallisticFiringBounds 10 30
+SetField WeaponsProperties[32].BallisticFractionBounds 0.7 0.3
+SetField WeaponsProperties[32].FirstBurstDelayTimeBounds 0.5 1
+SetField WeaponsProperties[32].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[32].NormalAccuracyTime 9
+SetField WeaponsProperties[32].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[32].HeroicAccuracyTime 6
+SetField WeaponsProperties[32].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[32].LegendaryAccuracyTime 3
+SetField WeaponsProperties[33].Weapon objects\vehicles\wraith\turrets\anti_air\anti_air_turret.weapon
+SetField WeaponsProperties[33].MaximumFiringRange 60
+SetField WeaponsProperties[33].MinimumFiringRange 4
+SetField WeaponsProperties[33].NormalCombatRange 12 18
+SetField WeaponsProperties[33].MaxSpecialTargetDistance 60
+SetField WeaponsProperties[33].TimidCombatRange 18 30
+SetField WeaponsProperties[33].AggressiveCombatRange 10 14
+SetField WeaponsProperties[33].FirstBurstDelayTimeBounds 0.5 1
+SetField WeaponsProperties[33].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[33].NormalAccuracyTime 9
+SetField WeaponsProperties[33].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[33].HeroicAccuracyTime 6
+SetField WeaponsProperties[33].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[33].LegendaryAccuracyTime 3
+SetField WeaponsProperties[34].Weapon objects\vehicles\scorpion\turrets\cannon\weapon\cannon_turret.weapon
+SetField WeaponsProperties[34].MaximumFiringRange 120
+SetField WeaponsProperties[34].MinimumFiringRange 1
+SetField WeaponsProperties[34].NormalCombatRange 1 120
+SetField WeaponsProperties[34].BombardmentRange 7
+SetField WeaponsProperties[34].MaxSpecialTargetDistance 120
+SetField WeaponsProperties[34].TimidCombatRange 25 120
+SetField WeaponsProperties[34].AggressiveCombatRange 5 120
+SetField WeaponsProperties[34].FirstBurstDelayTimeBounds 4 6
+SetField WeaponsProperties[34].SurpriseDelayTime 2
+SetField WeaponsProperties[34].NormalAccuracyBounds 0.7 1
+SetField WeaponsProperties[34].NormalAccuracyTime 1
+SetField WeaponsProperties[34].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[34].HeroicAccuracyTime 3
+SetField WeaponsProperties[34].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[34].LegendaryAccuracyTime 1
+SetField WeaponsProperties[35].Flags MustCrouchToShoot
+## SetField WeaponsProperties[35].Weapon objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+SetField WeaponsProperties[35].MaximumFiringRange 20
+SetField WeaponsProperties[35].NormalCombatRange 4 8
+SetField WeaponsProperties[35].TimidCombatRange 4 8
+SetField WeaponsProperties[35].AggressiveCombatRange 4 8
+SetField WeaponsProperties[35].FirstBurstDelayTimeBounds 0.75 1.25
+SetField WeaponsProperties[35].SurpriseDelayTime 2
+SetField WeaponsProperties[35].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[35].DeathFireWildlyChance 0.25
+SetField WeaponsProperties[35].DeathFireWildlyTime 1
+SetField WeaponsProperties[35].DropWeaponLoadedBounds 0.7 0.9
+SetField WeaponsProperties[35].NormalAccuracyBounds 0.35 0.55
+SetField WeaponsProperties[35].NormalAccuracyTime 5
+SetField WeaponsProperties[35].HeroicAccuracyBounds 0.4 0.75
+SetField WeaponsProperties[35].HeroicAccuracyTime 3
+SetField WeaponsProperties[35].LegendaryAccuracyBounds 0.65 0.9
+SetField WeaponsProperties[35].LegendaryAccuracyTime 1.5
+SetField WeaponsProperties[36].MaximumFiringRange 8
+SetField WeaponsProperties[36].NormalCombatRange 3 5
+SetField WeaponsProperties[36].TimidCombatRange 3 5
+SetField WeaponsProperties[36].AggressiveCombatRange 3 5
+SetField WeaponsProperties[36].FirstBurstDelayTimeBounds 0.2 0.5
+SetField WeaponsProperties[36].SurpriseDelayTime 2
+SetField WeaponsProperties[36].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[36].NormalAccuracyBounds 0 0.4
+SetField WeaponsProperties[36].NormalAccuracyTime 10
+SetField WeaponsProperties[36].HeroicAccuracyBounds 0.2 0.6
+SetField WeaponsProperties[36].HeroicAccuracyTime 7
+SetField WeaponsProperties[36].LegendaryAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[36].LegendaryAccuracyTime 4
+SetField WeaponsProperties[37].Weapon objects\vehicles\brute_chopper\weapon\chopper_gun.weapon
+SetField WeaponsProperties[37].MaximumFiringRange 8
+SetField WeaponsProperties[37].MinimumFiringRange 2
+SetField WeaponsProperties[37].NormalCombatRange 4 8
+SetField WeaponsProperties[37].TimidCombatRange 4 8
+SetField WeaponsProperties[37].AggressiveCombatRange 4 8
+SetField WeaponsProperties[37].FirstBurstDelayTimeBounds 0.2 0.5
+SetField WeaponsProperties[37].SurpriseDelayTime 2
+SetField WeaponsProperties[37].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[37].DropWeaponLoadedBounds 0.7 0.9
+SetField WeaponsProperties[37].NormalAccuracyBounds 0 0.6
+SetField WeaponsProperties[37].NormalAccuracyTime 5
+SetField WeaponsProperties[37].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[37].HeroicAccuracyTime 3
+SetField WeaponsProperties[37].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[37].LegendaryAccuracyTime 1
+SetField WeaponsProperties[38].MaximumFiringRange 24
+SetField WeaponsProperties[38].NormalCombatRange 2 7
+SetField WeaponsProperties[38].MaxSpecialTargetDistance 10
+SetField WeaponsProperties[38].TimidCombatRange 6 11
+SetField WeaponsProperties[38].AggressiveCombatRange 1 5
+SetField WeaponsProperties[38].FirstBurstDelayTimeBounds 0 0.1
+SetField WeaponsProperties[38].NormalAccuracyBounds 0 0.6
+SetField WeaponsProperties[38].NormalAccuracyTime 8
+SetField WeaponsProperties[38].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[38].HeroicAccuracyTime 6
+SetField WeaponsProperties[38].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[38].LegendaryAccuracyTime 5
+SetField WeaponsProperties[39].Weapon objects\weapons\turret\missile_pod\missile_pod.weapon
+SetField WeaponsProperties[39].MaximumFiringRange 80
+SetField WeaponsProperties[39].MinimumFiringRange 6
+SetField WeaponsProperties[39].NormalCombatRange 8 20
+SetField WeaponsProperties[39].MaxSpecialTargetDistance 100
+SetField WeaponsProperties[39].TimidCombatRange 8 15
+SetField WeaponsProperties[39].AggressiveCombatRange 8 15
+SetField WeaponsProperties[39].FirstBurstDelayTimeBounds 0.5 1
+SetField WeaponsProperties[39].SurpriseDelayTime 1.5
+SetField WeaponsProperties[39].DropWeaponLoadedBounds 0.5 0.9
+SetField WeaponsProperties[39].NormalAccuracyBounds 0 0.6
+SetField WeaponsProperties[39].NormalAccuracyTime 5
+SetField WeaponsProperties[39].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[39].HeroicAccuracyTime 3
+SetField WeaponsProperties[39].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[39].LegendaryAccuracyTime 1
+SetField WeaponsProperties[40].Weapon objects\weapons\turret\flamethrower\flamethrower.weapon
+SetField WeaponsProperties[40].MaximumFiringRange 7
+SetField WeaponsProperties[40].MinimumFiringRange 0.5
+SetField WeaponsProperties[40].NormalCombatRange 3 7
+SetField WeaponsProperties[40].MaxSpecialTargetDistance 7
+SetField WeaponsProperties[40].TimidCombatRange 4 9
+SetField WeaponsProperties[40].AggressiveCombatRange 2 6
+SetField WeaponsProperties[40].FirstBurstDelayTimeBounds 0.2 0.5
+SetField WeaponsProperties[40].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[40].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[40].DropWeaponLoadedBounds 0.5 0.9
+SetField WeaponsProperties[40].DropWeaponAmmoBounds 100 150
+SetField WeaponsProperties[40].NormalAccuracyBounds 0 0.6
+SetField WeaponsProperties[40].NormalAccuracyTime 5
+SetField WeaponsProperties[40].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[40].HeroicAccuracyTime 3
+SetField WeaponsProperties[40].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[40].LegendaryAccuracyTime 1
+SetField WeaponsProperties[41].Weapon objects\weapons\support_low\sentinel_gun\sentinel_gun.weapon
+SetField WeaponsProperties[41].MaximumFiringRange 8
+SetField WeaponsProperties[41].MinimumFiringRange 2
+SetField WeaponsProperties[41].NormalCombatRange 4 8
+SetField WeaponsProperties[41].TimidCombatRange 4 8
+SetField WeaponsProperties[41].AggressiveCombatRange 4 8
+SetField WeaponsProperties[41].FirstBurstDelayTimeBounds 0.75 1.25
+SetField WeaponsProperties[41].SurpriseDelayTime 2
+SetField WeaponsProperties[41].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[41].DeathFireWildlyChance 0.25
+SetField WeaponsProperties[41].DeathFireWildlyTime 1
+SetField WeaponsProperties[41].DropWeaponLoadedBounds 0.6 0.9
+SetField WeaponsProperties[41].NormalAccuracyBounds 0.35 0.55
+SetField WeaponsProperties[41].NormalAccuracyTime 5
+SetField WeaponsProperties[41].HeroicAccuracyBounds 0.4 0.75
+SetField WeaponsProperties[41].HeroicAccuracyTime 3
+SetField WeaponsProperties[41].LegendaryAccuracyBounds 0.65 0.9
+SetField WeaponsProperties[41].LegendaryAccuracyTime 1.5
+SetField WeaponsProperties[42].Flags FixedAimingVector
+SetField WeaponsProperties[42].MaximumFiringRange 80
+SetField WeaponsProperties[42].MinimumFiringRange 6
+SetField WeaponsProperties[42].NormalCombatRange 8 20
+SetField WeaponsProperties[42].MaxSpecialTargetDistance 100
+SetField WeaponsProperties[42].TimidCombatRange 8 15
+SetField WeaponsProperties[42].AggressiveCombatRange 8 15
+SetField WeaponsProperties[42].FirstBurstDelayTimeBounds 0.5 1
+SetField WeaponsProperties[42].SurpriseDelayTime 1.5
+SetField WeaponsProperties[42].DropWeaponLoadedBounds 0.5 1
+SetField WeaponsProperties[42].DropWeaponAmmoBounds 3 4
+SetField WeaponsProperties[42].NormalAccuracyBounds 0 0.6
+SetField WeaponsProperties[42].NormalAccuracyTime 5
+SetField WeaponsProperties[42].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[42].HeroicAccuracyTime 3
+SetField WeaponsProperties[42].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[42].LegendaryAccuracyTime 1
+SetField WeaponsProperties[43].Flags AimAtFeet
+SetField WeaponsProperties[43].Weapon objects\vehicles\hornet\weapon\hornet_missile.weapon
+SetField WeaponsProperties[43].MaximumFiringRange 100
+SetField WeaponsProperties[43].MinimumFiringRange 2
+SetField WeaponsProperties[43].NormalCombatRange 15 100
+SetField WeaponsProperties[43].MaxSpecialTargetDistance 100
+SetField WeaponsProperties[43].TimidCombatRange 20 100
+SetField WeaponsProperties[43].AggressiveCombatRange 5 100
+SetField WeaponsProperties[43].SpecialFireMode SecondaryTrigger
+SetField WeaponsProperties[43].SpecialFireSituation Strafing
+SetField WeaponsProperties[43].SpecialFireChance 1
+SetField WeaponsProperties[43].SpecialFireDelay 5
+SetField WeaponsProperties[43].SpecialProjectileError 2
+SetField WeaponsProperties[43].NormalAccuracyBounds 0 0.5
+SetField WeaponsProperties[43].NormalAccuracyTime 9
+SetField WeaponsProperties[43].HeroicAccuracyBounds 0.25 0.75
+SetField WeaponsProperties[43].HeroicAccuracyTime 6
+SetField WeaponsProperties[43].LegendaryAccuracyBounds 0.5 1
+SetField WeaponsProperties[43].LegendaryAccuracyTime 3
+
+AddBlockElements FiringPatternProperties 43
+SetField FiringPatternProperties[0].Weapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+AddBlockElements FiringPatternProperties[0].FiringPatterns 1
+SetField FiringPatternProperties[0].FiringPatterns[0].RateOfFire 9
+SetField FiringPatternProperties[0].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[0].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[0].FiringPatterns[0].BurstOriginRadius 0.25
+SetField FiringPatternProperties[0].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[0].FiringPatterns[0].BurstReturnLengthBounds 0.3 0.5
+SetField FiringPatternProperties[0].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[0].FiringPatterns[0].BurstDurationBounds 0.8 1.6
+SetField FiringPatternProperties[0].FiringPatterns[0].BurstSeparationBounds 1.6 3.2
+SetField FiringPatternProperties[0].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[1].Weapon objects\weapons\pistol\needler\needler.weapon
+AddBlockElements FiringPatternProperties[1].FiringPatterns 1
+SetField FiringPatternProperties[1].FiringPatterns[0].RateOfFire 10
+SetField FiringPatternProperties[1].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[1].FiringPatterns[0].TargetLeading 0.5
+SetField FiringPatternProperties[1].FiringPatterns[0].BurstDurationBounds 0.4 1.1
+SetField FiringPatternProperties[1].FiringPatterns[0].BurstSeparationBounds 2 3.6
+SetField FiringPatternProperties[2].Weapon objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+AddBlockElements FiringPatternProperties[2].FiringPatterns 1
+SetField FiringPatternProperties[2].FiringPatterns[0].RateOfFire 10
+SetField FiringPatternProperties[2].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[2].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[2].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[2].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[2].FiringPatterns[0].BurstReturnLengthBounds 0.2 0.3
+SetField FiringPatternProperties[2].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[2].FiringPatterns[0].BurstDurationBounds 0.6 1.6
+SetField FiringPatternProperties[2].FiringPatterns[0].BurstSeparationBounds 1.4 2.8
+SetField FiringPatternProperties[2].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[3].Weapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+AddBlockElements FiringPatternProperties[3].FiringPatterns 1
+SetField FiringPatternProperties[3].FiringPatterns[0].RateOfFire 9
+SetField FiringPatternProperties[3].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[3].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[3].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[3].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[3].FiringPatterns[0].BurstReturnLengthBounds 0.2 0.3
+SetField FiringPatternProperties[3].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[3].FiringPatterns[0].BurstDurationBounds 0.6 1.6
+SetField FiringPatternProperties[3].FiringPatterns[0].BurstSeparationBounds 1.4 2.8
+SetField FiringPatternProperties[3].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[4].Weapon objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+AddBlockElements FiringPatternProperties[4].FiringPatterns 1
+SetField FiringPatternProperties[4].FiringPatterns[0].RateOfFire 5.5
+SetField FiringPatternProperties[4].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[4].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[4].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[4].FiringPatterns[0].BurstOriginAngle 3
+SetField FiringPatternProperties[4].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.01
+SetField FiringPatternProperties[4].FiringPatterns[0].BurstReturnAngle 3
+SetField FiringPatternProperties[4].FiringPatterns[0].BurstDurationBounds 0.4 0.6
+SetField FiringPatternProperties[4].FiringPatterns[0].BurstSeparationBounds 0.9 1.2
+SetField FiringPatternProperties[4].FiringPatterns[0].ProjectileError 0.2
+SetField FiringPatternProperties[4].FiringPatterns[0].MaximumErrorAngle 0.4
+SetField FiringPatternProperties[5].Weapon objects\weapons\support_low\brute_shot\brute_shot.weapon
+AddBlockElements FiringPatternProperties[5].FiringPatterns 1
+SetField FiringPatternProperties[5].FiringPatterns[0].RateOfFire 3
+SetField FiringPatternProperties[5].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[5].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[5].FiringPatterns[0].BurstDurationBounds 0.9 2
+SetField FiringPatternProperties[5].FiringPatterns[0].BurstSeparationBounds 2 3
+SetField FiringPatternProperties[5].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[6].Weapon objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+AddBlockElements FiringPatternProperties[6].FiringPatterns 1
+SetField FiringPatternProperties[6].FiringPatterns[0].RateOfFire 2
+SetField FiringPatternProperties[6].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[6].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[6].FiringPatterns[0].BurstOriginRadius 0.12
+SetField FiringPatternProperties[6].FiringPatterns[0].BurstReturnLengthBounds 0.09 0.11
+SetField FiringPatternProperties[6].FiringPatterns[0].BurstDurationBounds 1.5 1.5
+SetField FiringPatternProperties[6].FiringPatterns[0].BurstSeparationBounds 3 4.5
+SetField FiringPatternProperties[6].FiringPatterns[0].MaximumErrorAngle 0.5
+SetField FiringPatternProperties[7].Weapon objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+AddBlockElements FiringPatternProperties[7].FiringPatterns 1
+SetField FiringPatternProperties[7].FiringPatterns[0].RateOfFire 2
+SetField FiringPatternProperties[7].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[7].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[7].FiringPatterns[0].BurstOriginRadius 0.1
+SetField FiringPatternProperties[7].FiringPatterns[0].BurstReturnLengthBounds 0.09 0.11
+SetField FiringPatternProperties[7].FiringPatterns[0].BurstDurationBounds 1.5 1.5
+SetField FiringPatternProperties[7].FiringPatterns[0].BurstSeparationBounds 4 6
+SetField FiringPatternProperties[7].FiringPatterns[0].MaximumErrorAngle 0.5
+SetField FiringPatternProperties[8].Weapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+AddBlockElements FiringPatternProperties[8].FiringPatterns 1
+SetField FiringPatternProperties[8].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[8].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[8].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[8].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[8].FiringPatterns[0].BurstReturnLengthBounds 0.2 0.3
+SetField FiringPatternProperties[8].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[8].FiringPatterns[0].BurstDurationBounds 0.5 0.7
+SetField FiringPatternProperties[8].FiringPatterns[0].BurstSeparationBounds 0.3 0.6
+SetField FiringPatternProperties[8].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[9].Weapon objects\weapons\rifle\battle_rifle\battle_rifle.weapon
+AddBlockElements FiringPatternProperties[9].FiringPatterns 1
+SetField FiringPatternProperties[9].FiringPatterns[0].RateOfFire 5.5
+SetField FiringPatternProperties[9].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[9].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[9].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[9].FiringPatterns[0].BurstOriginAngle 3
+SetField FiringPatternProperties[9].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.01
+SetField FiringPatternProperties[9].FiringPatterns[0].BurstReturnAngle 3
+SetField FiringPatternProperties[9].FiringPatterns[0].BurstDurationBounds 0.4 0.6
+SetField FiringPatternProperties[9].FiringPatterns[0].BurstSeparationBounds 0.9 1.2
+SetField FiringPatternProperties[9].FiringPatterns[0].ProjectileError 0.2
+SetField FiringPatternProperties[9].FiringPatterns[0].MaximumErrorAngle 0.4
+SetField FiringPatternProperties[10].Weapon objects\weapons\rifle\smg\smg.weapon
+AddBlockElements FiringPatternProperties[10].FiringPatterns 1
+SetField FiringPatternProperties[10].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[10].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[10].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[10].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[10].FiringPatterns[0].BurstReturnLengthBounds 0.2 0.3
+SetField FiringPatternProperties[10].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[10].FiringPatterns[0].BurstDurationBounds 0.6 1.6
+SetField FiringPatternProperties[10].FiringPatterns[0].BurstSeparationBounds 1.4 2.8
+SetField FiringPatternProperties[10].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[11].Weapon objects\weapons\rifle\shotgun\shotgun.weapon
+AddBlockElements FiringPatternProperties[11].FiringPatterns 1
+SetField FiringPatternProperties[11].FiringPatterns[0].BurstSeparationBounds 1.25 1.75
+SetField FiringPatternProperties[12].Weapon objects\weapons\pistol\excavator\excavator.weapon
+AddBlockElements FiringPatternProperties[12].FiringPatterns 1
+SetField FiringPatternProperties[12].FiringPatterns[0].BurstSeparationBounds 1.25 1.75
+SetField FiringPatternProperties[13].Weapon objects\weapons\turret\plasma_cannon\plasma_cannon_integrated.weapon
+AddBlockElements FiringPatternProperties[13].FiringPatterns 1
+SetField FiringPatternProperties[13].FiringPatterns[0].RateOfFire 9
+SetField FiringPatternProperties[13].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[13].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[13].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[13].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[13].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[13].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[13].FiringPatterns[0].BurstDurationBounds 2 2.5
+SetField FiringPatternProperties[13].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[13].FiringPatterns[0].WeaponDamageModifier 0.75
+SetField FiringPatternProperties[13].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[14].Weapon objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+AddBlockElements FiringPatternProperties[14].FiringPatterns 1
+SetField FiringPatternProperties[14].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[14].FiringPatterns[0].BurstOriginRadius 0.4
+SetField FiringPatternProperties[14].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[14].FiringPatterns[0].BurstReturnLengthBounds 0.4 0.4
+SetField FiringPatternProperties[14].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[14].FiringPatterns[0].BurstDurationBounds 2.6 2.6
+SetField FiringPatternProperties[14].FiringPatterns[0].BurstSeparationBounds 2 4
+SetField FiringPatternProperties[14].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[15].Weapon objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+AddBlockElements FiringPatternProperties[15].FiringPatterns 1
+SetField FiringPatternProperties[15].FiringPatterns[0].RateOfFire 2.5
+SetField FiringPatternProperties[15].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[15].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[15].FiringPatterns[0].BurstDurationBounds 0.75 1.25
+SetField FiringPatternProperties[15].FiringPatterns[0].BurstSeparationBounds 2 3
+SetField FiringPatternProperties[15].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[16].Weapon objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+AddBlockElements FiringPatternProperties[16].FiringPatterns 1
+SetField FiringPatternProperties[16].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[16].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[16].FiringPatterns[0].BurstSeparationBounds 1.5 2.5
+SetField FiringPatternProperties[17].Weapon objects\weapons\melee\energy_blade\energy_blade.weapon
+AddBlockElements FiringPatternProperties[17].FiringPatterns 1
+SetField FiringPatternProperties[17].FiringPatterns[0].BurstSeparationBounds 0.5 0.5
+SetField FiringPatternProperties[18].Weapon objects\weapons\melee\gravity_hammer\gravity_hammer.weapon
+AddBlockElements FiringPatternProperties[18].FiringPatterns 1
+SetField FiringPatternProperties[18].FiringPatterns[0].BurstSeparationBounds 0.5 0.5
+SetField FiringPatternProperties[19].Weapon objects\weapons\pistol\magnum\magnum.weapon
+AddBlockElements FiringPatternProperties[19].FiringPatterns 1
+SetField FiringPatternProperties[19].FiringPatterns[0].RateOfFire 2.5
+SetField FiringPatternProperties[19].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[19].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[19].FiringPatterns[0].BurstOriginRadius 0.01
+SetField FiringPatternProperties[19].FiringPatterns[0].BurstReturnLengthBounds 0.01 0.015
+SetField FiringPatternProperties[19].FiringPatterns[0].BurstDurationBounds 0.4 0.6
+SetField FiringPatternProperties[19].FiringPatterns[0].BurstSeparationBounds 0.9 1.2
+SetField FiringPatternProperties[19].FiringPatterns[0].ProjectileError 2
+SetField FiringPatternProperties[19].FiringPatterns[0].MaximumErrorAngle 0.4
+SetField FiringPatternProperties[20].Weapon objects\vehicles\pelican\pelican_rocket_pod\weapon\pelican_rocket_pod.weapon
+AddBlockElements FiringPatternProperties[20].FiringPatterns 1
+SetField FiringPatternProperties[20].FiringPatterns[0].TargetTracking 0.9
+SetField FiringPatternProperties[20].FiringPatterns[0].TargetLeading 0.5
+SetField FiringPatternProperties[20].FiringPatterns[0].BurstOriginRadius 0.1
+SetField FiringPatternProperties[20].FiringPatterns[0].BurstOriginAngle 5
+SetField FiringPatternProperties[20].FiringPatterns[0].BurstReturnLengthBounds 0.18 0.22
+SetField FiringPatternProperties[20].FiringPatterns[0].BurstReturnAngle 15.000001
+SetField FiringPatternProperties[20].FiringPatterns[0].BurstDurationBounds 0.2 0.25
+SetField FiringPatternProperties[20].FiringPatterns[0].BurstSeparationBounds 0.66 1
+SetField FiringPatternProperties[20].FiringPatterns[0].MaximumErrorAngle 2.5
+SetField FiringPatternProperties[21].Weapon objects\vehicles\warthog\turrets\chaingun\weapon\chaingun_turret.weapon
+AddBlockElements FiringPatternProperties[21].FiringPatterns 1
+SetField FiringPatternProperties[21].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[21].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[21].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[21].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[21].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[21].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[21].FiringPatterns[0].BurstDurationBounds 2.5 3
+SetField FiringPatternProperties[21].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[21].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[22].Weapon objects\weapons\turret\machinegun_turret\machinegun_turret_integrated.weapon
+AddBlockElements FiringPatternProperties[22].FiringPatterns 1
+SetField FiringPatternProperties[22].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[22].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[22].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[22].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[22].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[22].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[22].FiringPatterns[0].BurstDurationBounds 2.5 3
+SetField FiringPatternProperties[22].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[22].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[23].Weapon objects\weapons\turret\machinegun_turret\machinegun_turret.weapon
+AddBlockElements FiringPatternProperties[23].FiringPatterns 1
+SetField FiringPatternProperties[23].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[23].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[23].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[23].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[23].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[23].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[23].FiringPatterns[0].BurstDurationBounds 2.5 3
+SetField FiringPatternProperties[23].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[23].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[24].Weapon objects\weapons\turret\plasma_cannon\plasma_cannon.weapon
+AddBlockElements FiringPatternProperties[24].FiringPatterns 1
+SetField FiringPatternProperties[24].FiringPatterns[0].RateOfFire 9
+SetField FiringPatternProperties[24].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[24].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[24].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[24].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[24].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[24].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[24].FiringPatterns[0].BurstDurationBounds 2 2.5
+SetField FiringPatternProperties[24].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[24].FiringPatterns[0].WeaponDamageModifier 0.75
+SetField FiringPatternProperties[24].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[25].Weapon objects\vehicles\scorpion\turrets\anti_infantry\weapon\anti_infantry_turret.weapon
+AddBlockElements FiringPatternProperties[25].FiringPatterns 1
+SetField FiringPatternProperties[25].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[25].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[25].FiringPatterns[0].BurstOriginRadius 0.1
+SetField FiringPatternProperties[25].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[25].FiringPatterns[0].BurstReturnLengthBounds 0.1 0.15
+SetField FiringPatternProperties[25].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[25].FiringPatterns[0].BurstDurationBounds 2 2.5
+SetField FiringPatternProperties[25].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[25].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[26].Weapon objects\vehicles\wraith\turrets\anti_infantry\weapon\wraith_anti_infantry_turret.weapon
+AddBlockElements FiringPatternProperties[26].FiringPatterns 1
+SetField FiringPatternProperties[26].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[26].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstOriginRadius 0.1
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstReturnLengthBounds 0.1 0.15
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstDurationBounds 2 2.5
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[26].FiringPatterns[0].WeaponDamageModifier 0.75
+SetField FiringPatternProperties[26].FiringPatterns[0].BurstAngularVelocity 30.000002
+SetField FiringPatternProperties[26].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[27].Weapon objects\vehicles\shade\weapon\shade_turret.weapon
+AddBlockElements FiringPatternProperties[27].FiringPatterns 1
+SetField FiringPatternProperties[27].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[27].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[27].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[27].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[27].FiringPatterns[0].BurstReturnLengthBounds 0.2 0.3
+SetField FiringPatternProperties[27].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[27].FiringPatterns[0].BurstDurationBounds 0.5 0.7
+SetField FiringPatternProperties[27].FiringPatterns[0].BurstSeparationBounds 0.3 0.6
+SetField FiringPatternProperties[27].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[28].Weapon objects\vehicles\mauler\anti_infantry\weapon\anti_infantry.weapon
+AddBlockElements FiringPatternProperties[28].FiringPatterns 1
+SetField FiringPatternProperties[28].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[28].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstOriginRadius 0.1
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstReturnLengthBounds 0.1 0.15
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstDurationBounds 2 2.5
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[28].FiringPatterns[0].WeaponDamageModifier 0.75
+SetField FiringPatternProperties[28].FiringPatterns[0].BurstAngularVelocity 30.000002
+SetField FiringPatternProperties[28].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[29].Weapon objects\vehicles\warthog\turrets\gauss\weapon\gauss_turret.weapon
+AddBlockElements FiringPatternProperties[29].FiringPatterns 1
+SetField FiringPatternProperties[29].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[29].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[29].FiringPatterns[0].BurstSeparationBounds 0.8 1
+SetField FiringPatternProperties[30].Weapon objects\vehicles\ghost\weapon\ghost_gun.weapon
+AddBlockElements FiringPatternProperties[30].FiringPatterns 1
+SetField FiringPatternProperties[30].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[30].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[30].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[30].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[30].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[30].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[30].FiringPatterns[0].BurstDurationBounds 2 2.5
+SetField FiringPatternProperties[30].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[30].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[31].Weapon objects\vehicles\banshee\weapon\banshee_gun.weapon
+AddBlockElements FiringPatternProperties[31].FiringPatterns 1
+SetField FiringPatternProperties[31].FiringPatterns[0].TargetTracking 0.95
+SetField FiringPatternProperties[31].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[31].FiringPatterns[0].BurstOriginRadius 0.05
+SetField FiringPatternProperties[31].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[31].FiringPatterns[0].BurstReturnLengthBounds 0.05 0.075
+SetField FiringPatternProperties[31].FiringPatterns[0].BurstReturnAngle 10
+SetField FiringPatternProperties[31].FiringPatterns[0].BurstDurationBounds 1.25 1.75
+SetField FiringPatternProperties[31].FiringPatterns[0].BurstSeparationBounds 0.75 1.5
+SetField FiringPatternProperties[31].FiringPatterns[0].MaximumErrorAngle 1
+SetField FiringPatternProperties[32].Weapon objects\vehicles\wraith\turrets\mortar\mortar_turret.weapon
+AddBlockElements FiringPatternProperties[32].FiringPatterns 1
+SetField FiringPatternProperties[32].FiringPatterns[0].BurstSeparationBounds 2 3
+SetField FiringPatternProperties[33].Weapon objects\vehicles\wraith\turrets\anti_air\anti_air_turret.weapon
+AddBlockElements FiringPatternProperties[33].FiringPatterns 1
+SetField FiringPatternProperties[33].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[33].FiringPatterns[0].BurstDurationBounds 3 4
+SetField FiringPatternProperties[33].FiringPatterns[0].BurstSeparationBounds 3 4
+SetField FiringPatternProperties[34].Weapon objects\vehicles\scorpion\turrets\cannon\weapon\cannon_turret.weapon
+AddBlockElements FiringPatternProperties[34].FiringPatterns 1
+SetField FiringPatternProperties[34].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[34].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[34].FiringPatterns[0].BurstDurationBounds 0.1 0.1
+SetField FiringPatternProperties[34].FiringPatterns[0].BurstSeparationBounds 2 3
+SetField FiringPatternProperties[34].FiringPatterns[0].MaximumErrorAngle 5
+## SetField FiringPatternProperties[35].Weapon objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+AddBlockElements FiringPatternProperties[35].FiringPatterns 1
+SetField FiringPatternProperties[35].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[35].FiringPatterns[0].TargetLeading 0.75
+SetField FiringPatternProperties[35].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[35].FiringPatterns[0].BurstOriginAngle 20
+SetField FiringPatternProperties[35].FiringPatterns[0].BurstReturnLengthBounds 0.2 0.3
+SetField FiringPatternProperties[35].FiringPatterns[0].BurstReturnAngle 20
+SetField FiringPatternProperties[35].FiringPatterns[0].BurstDurationBounds 0.6 1.6
+SetField FiringPatternProperties[35].FiringPatterns[0].BurstSeparationBounds 1.4 2.8
+SetField FiringPatternProperties[35].FiringPatterns[0].MaximumErrorAngle 1
+AddBlockElements FiringPatternProperties[36].FiringPatterns 1
+SetField FiringPatternProperties[36].FiringPatterns[0].BurstOriginRadius 0.3
+SetField FiringPatternProperties[36].FiringPatterns[0].BurstOriginAngle 15.000001
+SetField FiringPatternProperties[36].FiringPatterns[0].BurstReturnLengthBounds 0.35 0.5
+SetField FiringPatternProperties[36].FiringPatterns[0].BurstReturnAngle 25
+SetField FiringPatternProperties[36].FiringPatterns[0].BurstDurationBounds 0.75 1.25
+SetField FiringPatternProperties[36].FiringPatterns[0].BurstSeparationBounds 1.5 2
+SetField FiringPatternProperties[37].Weapon objects\vehicles\brute_chopper\weapon\chopper_gun.weapon
+AddBlockElements FiringPatternProperties[37].FiringPatterns 1
+SetField FiringPatternProperties[37].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[37].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[37].FiringPatterns[0].BurstOriginRadius 0.5
+SetField FiringPatternProperties[37].FiringPatterns[0].BurstOriginAngle 10
+SetField FiringPatternProperties[37].FiringPatterns[0].BurstReturnLengthBounds 0.6 0.6
+SetField FiringPatternProperties[37].FiringPatterns[0].BurstReturnAngle 5
+SetField FiringPatternProperties[37].FiringPatterns[0].BurstDurationBounds 1.5 2
+SetField FiringPatternProperties[37].FiringPatterns[0].BurstSeparationBounds 1 1.5
+SetField FiringPatternProperties[37].FiringPatterns[0].WeaponDamageModifier 0.75
+SetField FiringPatternProperties[37].FiringPatterns[0].ProjectileError 1
+SetField FiringPatternProperties[37].FiringPatterns[0].MaximumErrorAngle 5
+SetField FiringPatternProperties[38].Weapon objects\weapons\turret\missile_pod\missile_pod.weapon
+AddBlockElements FiringPatternProperties[38].FiringPatterns 1
+SetField FiringPatternProperties[38].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[38].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[38].FiringPatterns[0].BurstDurationBounds 1 1
+SetField FiringPatternProperties[38].FiringPatterns[0].BurstSeparationBounds 1.5 2.5
+SetField FiringPatternProperties[38].FiringPatterns[0].MaximumErrorAngle 5
+SetField FiringPatternProperties[39].Weapon objects\weapons\turret\flamethrower\flamethrower.weapon
+AddBlockElements FiringPatternProperties[39].FiringPatterns 1
+SetField FiringPatternProperties[39].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[39].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[39].FiringPatterns[0].BurstOriginRadius 0.01
+SetField FiringPatternProperties[39].FiringPatterns[0].BurstReturnLengthBounds 0.01 0.015
+SetField FiringPatternProperties[39].FiringPatterns[0].BurstDurationBounds 0.5 0.7
+SetField FiringPatternProperties[39].FiringPatterns[0].BurstSeparationBounds 0.3 0.6
+SetField FiringPatternProperties[39].FiringPatterns[0].MaximumErrorAngle 2.5
+SetField FiringPatternProperties[40].Weapon objects\weapons\support_low\sentinel_gun\sentinel_gun.weapon
+AddBlockElements FiringPatternProperties[40].FiringPatterns 2
+SetField FiringPatternProperties[40].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[40].FiringPatterns[0].BurstOriginRadius 0.15
+SetField FiringPatternProperties[40].FiringPatterns[0].BurstOriginAngle 5
+SetField FiringPatternProperties[40].FiringPatterns[0].BurstReturnLengthBounds 0.15 0.2
+SetField FiringPatternProperties[40].FiringPatterns[0].BurstDurationBounds 0.5 0.75
+SetField FiringPatternProperties[40].FiringPatterns[0].BurstSeparationBounds 0.1 0.1
+SetField FiringPatternProperties[40].FiringPatterns[0].WeaponDamageModifier 0.57
+SetField FiringPatternProperties[40].FiringPatterns[0].BurstAngularVelocity 35
+SetField FiringPatternProperties[40].FiringPatterns[1].BurstOriginRadius 0.3
+SetField FiringPatternProperties[40].FiringPatterns[1].BurstOriginAngle 15.000001
+SetField FiringPatternProperties[40].FiringPatterns[1].BurstReturnLengthBounds 0.35 0.5
+SetField FiringPatternProperties[40].FiringPatterns[1].BurstReturnAngle 25
+SetField FiringPatternProperties[40].FiringPatterns[1].BurstDurationBounds 0.75 1.25
+SetField FiringPatternProperties[40].FiringPatterns[1].BurstSeparationBounds 1.5 2
+AddBlockElements FiringPatternProperties[41].FiringPatterns 2
+SetField FiringPatternProperties[41].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[41].FiringPatterns[0].TargetLeading 0.5
+SetField FiringPatternProperties[41].FiringPatterns[0].BurstDurationBounds 1 1
+SetField FiringPatternProperties[41].FiringPatterns[0].BurstSeparationBounds 4 6
+SetField FiringPatternProperties[41].FiringPatterns[0].MaximumErrorAngle 15.000001
+SetField FiringPatternProperties[41].FiringPatterns[1].TargetTracking 1
+SetField FiringPatternProperties[41].FiringPatterns[1].TargetLeading 1
+SetField FiringPatternProperties[41].FiringPatterns[1].BurstDurationBounds 1 1
+SetField FiringPatternProperties[41].FiringPatterns[1].BurstSeparationBounds 1.5 2.5
+SetField FiringPatternProperties[41].FiringPatterns[1].MaximumErrorAngle 5
+SetField FiringPatternProperties[42].Weapon objects\vehicles\hornet\weapon\hornet_missile.weapon
+AddBlockElements FiringPatternProperties[42].FiringPatterns 1
+SetField FiringPatternProperties[42].FiringPatterns[0].TargetTracking 1
+SetField FiringPatternProperties[42].FiringPatterns[0].TargetLeading 1
+SetField FiringPatternProperties[42].FiringPatterns[0].BurstDurationBounds 1 1
+SetField FiringPatternProperties[42].FiringPatterns[0].BurstSeparationBounds 1.5 2.5
+SetField FiringPatternProperties[42].FiringPatterns[0].MaximumErrorAngle 5
+
+AddBlockElements GrenadesProperties 4
+SetField GrenadesProperties[0].MinimumEnemyCount 1
+SetField GrenadesProperties[0].EnemyRadius 4
+SetField GrenadesProperties[0].GrenadeIdealVelocity 3
+SetField GrenadesProperties[0].GrenadeVelocity 5.5
+SetField GrenadesProperties[0].GrenadeRange 3 12
+SetField GrenadesProperties[0].CollateralDamageRadius 2
+SetField GrenadesProperties[0].GrenadeChance 0.25
+SetField GrenadesProperties[0].GrenadeThrowCooldown 6
+SetField GrenadesProperties[0].GrenadeUncoverChance 0.5
+SetField GrenadesProperties[0].AntiVehicleGrenadeChance 0.5
+SetField GrenadesProperties[0].GrenadeCount 1 2
+SetField GrenadesProperties[0].NoGrenadesDroppedChance 0.5
+SetField GrenadesProperties[1].GrenadeType BruteClaymore
+SetField GrenadesProperties[1].MinimumEnemyCount 1
+SetField GrenadesProperties[1].EnemyRadius 4
+SetField GrenadesProperties[1].GrenadeIdealVelocity 5
+SetField GrenadesProperties[1].GrenadeVelocity 5.5
+SetField GrenadesProperties[1].GrenadeRange 3 8
+SetField GrenadesProperties[1].CollateralDamageRadius 2
+SetField GrenadesProperties[1].GrenadeChance 0.25
+SetField GrenadesProperties[1].GrenadeThrowCooldown 12
+SetField GrenadesProperties[1].GrenadeUncoverChance 0.5
+SetField GrenadesProperties[1].AntiVehicleGrenadeChance 0.5
+SetField GrenadesProperties[1].GrenadeCount 1 2
+SetField GrenadesProperties[1].NoGrenadesDroppedChance 0.75
+SetField GrenadesProperties[2].GrenadeType Firebomb
+SetField GrenadesProperties[2].MinimumEnemyCount 1
+SetField GrenadesProperties[2].EnemyRadius 4
+SetField GrenadesProperties[2].GrenadeIdealVelocity 3
+SetField GrenadesProperties[2].GrenadeVelocity 4.5
+SetField GrenadesProperties[2].GrenadeRange 3 8
+SetField GrenadesProperties[2].CollateralDamageRadius 2
+SetField GrenadesProperties[2].GrenadeChance 0.25
+SetField GrenadesProperties[2].GrenadeThrowCooldown 9
+SetField GrenadesProperties[2].GrenadeUncoverChance 0.5
+SetField GrenadesProperties[2].AntiVehicleGrenadeChance 0.5
+SetField GrenadesProperties[2].GrenadeCount 1 2
+SetField GrenadesProperties[2].NoGrenadesDroppedChance 0.25
+SetField GrenadesProperties[3].GrenadeType CovenantPlasma
+SetField GrenadesProperties[3].MinimumEnemyCount 1
+SetField GrenadesProperties[3].EnemyRadius 4
+SetField GrenadesProperties[3].GrenadeIdealVelocity 3
+SetField GrenadesProperties[3].GrenadeVelocity 5.5
+SetField GrenadesProperties[3].GrenadeRange 3 12
+SetField GrenadesProperties[3].CollateralDamageRadius 2
+SetField GrenadesProperties[3].GrenadeChance 0.25
+SetField GrenadesProperties[3].GrenadeThrowCooldown 6
+SetField GrenadesProperties[3].GrenadeUncoverChance 0.5
+SetField GrenadesProperties[3].AntiVehicleGrenadeChance 0.5
+SetField GrenadesProperties[3].GrenadeCount 1 2
+SetField GrenadesProperties[3].NoGrenadesDroppedChance 0.5
+
+AddBlockElements VehicleProperties 17
+SetField VehicleProperties[0].Unit objects\vehicles\banshee\banshee.vehicle
+SetField VehicleProperties[0].Style objects\vehicles\banshee\ai\banshee.style
+SetField VehicleProperties[0].AiPathfindingRadius 1
+SetField VehicleProperties[0].AiDestinationRadius 1
+SetField VehicleProperties[0].AiDecelerationDistance 10
+SetField VehicleProperties[0].AiTurningRadius 5
+SetField VehicleProperties[0].AiBansheeSteeringMaxAngle 2
+SetField VehicleProperties[0].AiMaxSteeringAngle 65
+SetField VehicleProperties[0].AiMaxSteeringDelta 2
+SetField VehicleProperties[0].AiOversteeringScale 1.5
+SetField VehicleProperties[0].AiOversteeringBounds 180 180
+SetField VehicleProperties[0].AiAvoidanceDistance 8
+SetField VehicleProperties[0].AiMinimumUrgency 0.5
+SetField VehicleProperties[0].DestinationBehindAngle 90
+SetField VehicleProperties[0].AiThrottleMaximum 0.95
+SetField VehicleProperties[0].AiGoalMinThrottleScale 1
+SetField VehicleProperties[0].AiTurnMinThrottleScale 1
+SetField VehicleProperties[0].AiDirectionMinimumThrottleScale 1
+SetField VehicleProperties[0].AiAccelerationScale 1
+SetField VehicleProperties[0].AiAllowableAimDeviationAngle 20
+SetField VehicleProperties[0].AiChargeTightAngleDistance 5
+SetField VehicleProperties[0].AiChargeTightAngle 0.2
+SetField VehicleProperties[0].AiChargeRepeatTimeout 0.5
+SetField VehicleProperties[0].AiChargeLookAheadTime 1.5
+SetField VehicleProperties[0].AiConsiderDistance 45
+SetField VehicleProperties[0].AiChargeAbortDistance 55
+SetField VehicleProperties[0].AiCoverDamageThreshold 0.5
+SetField VehicleProperties[0].AiCoverMinimumDistance 9
+SetField VehicleProperties[0].AiCoverTime 3
+SetField VehicleProperties[0].AiCoverMinimumBoostDistance 5
+SetField VehicleProperties[0].MaxVehicleCharge 1
+SetField VehicleProperties[1].Unit objects\vehicles\ghost\ghost.vehicle
+SetField VehicleProperties[1].Style objects\vehicles\ghost\ai\ghost.style
+SetField VehicleProperties[1].Flags SnapFacingToForward
+SetField VehicleProperties[1].AiPathfindingRadius 0.9
+SetField VehicleProperties[1].AiDestinationRadius 2
+SetField VehicleProperties[1].AiDecelerationDistance 6
+SetField VehicleProperties[1].AiTurningRadius 3
+SetField VehicleProperties[1].AiIdealTurningRadius 4.5
+SetField VehicleProperties[1].AiMaxSteeringAngle 30
+SetField VehicleProperties[1].AiOversteeringScale 2
+SetField VehicleProperties[1].AiSideSlipDistance 1.5
+SetField VehicleProperties[1].AiThrottleMaximum 0.9
+SetField VehicleProperties[1].AiGoalMinThrottleScale 0.7
+SetField VehicleProperties[1].AiTurnMinThrottleScale 0.7
+SetField VehicleProperties[1].AiDirectionMinimumThrottleScale 0.7
+SetField VehicleProperties[1].AiAccelerationScale 0.9
+SetField VehicleProperties[1].TheoreticalMaxSpeed 6
+SetField VehicleProperties[1].AiAllowableAimDeviationAngle 35
+SetField VehicleProperties[1].AiChargeLookAheadTime 1
+SetField VehicleProperties[1].VehicleRamTimeout 3
+SetField VehicleProperties[1].AiCoverDamageThreshold 0.2
+SetField VehicleProperties[1].AiCoverMinimumDistance 9
+SetField VehicleProperties[1].AiCoverTime 4
+SetField VehicleProperties[1].ObstacleIgnoreSize Small
+## SetField VehicleProperties[2].Unit objects\vehicles\pelican\pelican.vehicle
+SetField VehicleProperties[2].Style objects\vehicles\pelican\ai\pelican.style
+SetField VehicleProperties[2].Flags PassengersAdoptOriginalSquad
+SetField VehicleProperties[2].AiPathfindingRadius 4
+SetField VehicleProperties[2].AiDestinationRadius 4
+SetField VehicleProperties[2].AiDecelerationDistance 10
+SetField VehicleProperties[2].AiTurningRadius 10
+SetField VehicleProperties[2].AiIdealTurningRadius 5
+SetField VehicleProperties[2].AiMaxSteeringAngle 35
+SetField VehicleProperties[2].AiMaxSteeringDelta 10
+SetField VehicleProperties[2].AiOversteeringScale 1
+SetField VehicleProperties[2].AiOversteeringBounds 30.000002 45
+SetField VehicleProperties[2].AiSideSlipDistance 15
+SetField VehicleProperties[2].AiAvoidanceDistance 10
+SetField VehicleProperties[2].AiMinimumUrgency 0.6
+SetField VehicleProperties[2].DestinationBehindAngle 120.00001
+SetField VehicleProperties[2].AiThrottleMaximum 1
+SetField VehicleProperties[2].AiGoalMinThrottleScale 0.1
+SetField VehicleProperties[2].AiTurnMinThrottleScale 0.8
+SetField VehicleProperties[2].AiDirectionMinimumThrottleScale 0.8
+SetField VehicleProperties[2].AiAccelerationScale 0.9
+SetField VehicleProperties[2].AiThrottleBlend 0.7
+SetField VehicleProperties[2].TheoreticalMaxSpeed 8
+SetField VehicleProperties[2].ErrorScale 2
+SetField VehicleProperties[2].AiAllowableAimDeviationAngle 45
+SetField VehicleProperties[3].Unit objects\vehicles\scorpion\scorpion.vehicle
+SetField VehicleProperties[3].Style objects\vehicles\scorpion\ai\scorpion.style
+SetField VehicleProperties[3].Flags StationaryFight
+SetField VehicleProperties[3].AiPathfindingRadius 1.8
+SetField VehicleProperties[3].AiDestinationRadius 1.5
+SetField VehicleProperties[3].AiDecelerationDistance 3
+SetField VehicleProperties[3].AiTurningRadius 2
+SetField VehicleProperties[3].AiInnerTurningRadius 1.5
+SetField VehicleProperties[3].AiIdealTurningRadius 3
+SetField VehicleProperties[3].AiMaxSteeringAngle 90
+SetField VehicleProperties[3].AiMaxSteeringDelta 20
+SetField VehicleProperties[3].AiOversteeringScale 1
+SetField VehicleProperties[3].AiMinimumUrgency 1
+SetField VehicleProperties[3].AiThrottleMaximum 1
+SetField VehicleProperties[3].AiGoalMinThrottleScale 0.6
+SetField VehicleProperties[3].AiTurnMinThrottleScale 0.6
+SetField VehicleProperties[3].AiDirectionMinimumThrottleScale 0.6
+SetField VehicleProperties[3].ErrorScale 3
+SetField VehicleProperties[3].AiAllowableAimDeviationAngle 180
+SetField VehicleProperties[3].ObstacleIgnoreSize Large
+SetField VehicleProperties[4].Unit objects\vehicles\warthog\warthog.vehicle
+SetField VehicleProperties[4].Style objects\vehicles\warthog\ai\warthog.style
+SetField VehicleProperties[4].AiPathfindingRadius 1
+SetField VehicleProperties[4].AiDestinationRadius 2
+SetField VehicleProperties[4].AiDecelerationDistance 5
+SetField VehicleProperties[4].AiTurningRadius 1.5
+SetField VehicleProperties[4].AiInnerTurningRadius 1
+SetField VehicleProperties[4].AiIdealTurningRadius 6
+SetField VehicleProperties[4].AiMaxSteeringAngle 60
+SetField VehicleProperties[4].AiMaxSteeringDelta 30
+SetField VehicleProperties[4].AiOversteeringScale 1
+SetField VehicleProperties[4].AiMinimumUrgency 0.1
+SetField VehicleProperties[4].SkidScale 0.2
+SetField VehicleProperties[4].AiThrottleMaximum 1
+SetField VehicleProperties[4].AiGoalMinThrottleScale 0.7
+SetField VehicleProperties[4].AiTurnMinThrottleScale 0.5
+SetField VehicleProperties[4].AiDirectionMinimumThrottleScale 0.4
+SetField VehicleProperties[4].AiAccelerationScale 0.1
+SetField VehicleProperties[4].TheoreticalMaxSpeed 6
+SetField VehicleProperties[4].ErrorScale 1.5
+SetField VehicleProperties[4].AiAllowableAimDeviationAngle 20
+SetField VehicleProperties[4].AiChargeLookAheadTime 2
+SetField VehicleProperties[4].AiCoverDamageThreshold 0.05
+SetField VehicleProperties[4].AiCoverMinimumDistance 150
+SetField VehicleProperties[4].AiCoverTime 25
+SetField VehicleProperties[4].ObstacleIgnoreSize Medium
+SetField VehicleProperties[5].Unit objects\vehicles\wraith\wraith.vehicle
+SetField VehicleProperties[5].Style objects\vehicles\wraith\ai\wraith.style
+SetField VehicleProperties[5].Flags StationaryFight
+SetField VehicleProperties[5].AiPathfindingRadius 1.68
+SetField VehicleProperties[5].AiDestinationRadius 0.5
+SetField VehicleProperties[5].AiDecelerationDistance 3
+SetField VehicleProperties[5].AiTurningRadius 1
+SetField VehicleProperties[5].AiIdealTurningRadius 3
+SetField VehicleProperties[5].AiMaxSteeringAngle 9
+SetField VehicleProperties[5].AiMaxSteeringDelta 1.8
+SetField VehicleProperties[5].AiOversteeringScale 1
+SetField VehicleProperties[5].AiSideSlipDistance 1.5
+SetField VehicleProperties[5].AiThrottleMaximum 1
+SetField VehicleProperties[5].AiGoalMinThrottleScale 0.2
+SetField VehicleProperties[5].AiTurnMinThrottleScale 0.3
+SetField VehicleProperties[5].AiDirectionMinimumThrottleScale 0.3
+SetField VehicleProperties[5].AiAccelerationScale 0.75
+SetField VehicleProperties[5].AiAllowableAimDeviationAngle 30.000002
+SetField VehicleProperties[5].AiChargeTightAngleDistance 3
+SetField VehicleProperties[5].AiChargeTightAngle 0.25
+SetField VehicleProperties[5].AiChargeRepeatTimeout 10
+SetField VehicleProperties[5].AiChargeLookAheadTime 1.25
+SetField VehicleProperties[5].AiConsiderDistance 4
+SetField VehicleProperties[5].AiChargeAbortDistance 5
+SetField VehicleProperties[5].VehicleRamTimeout 0.9
+SetField VehicleProperties[5].RamParalysisTime 4
+SetField VehicleProperties[5].AiCoverDamageThreshold 0.3
+SetField VehicleProperties[5].AiCoverMinimumDistance 8
+SetField VehicleProperties[5].AiCoverTime 1
+SetField VehicleProperties[5].TurtlingRecentDamageThreshold 0.2
+SetField VehicleProperties[5].TurtlingMinimumTime 5
+SetField VehicleProperties[5].TurtlingTimeout 10
+SetField VehicleProperties[5].ObstacleIgnoreSize Large
+## SetField VehicleProperties[6].Unit objects\characters\sentinel_aggressor\sentinel_aggressor.biped
+SetField VehicleProperties[6].AiPathfindingRadius 0.3
+SetField VehicleProperties[6].AiDestinationRadius 0.25
+SetField VehicleProperties[6].AiDecelerationDistance 2
+SetField VehicleProperties[6].AiTurningRadius 1.5
+SetField VehicleProperties[6].AiMaxSteeringDelta 5
+SetField VehicleProperties[6].AiSideSlipDistance 1
+SetField VehicleProperties[6].AiAvoidanceDistance 1.5
+SetField VehicleProperties[6].DestinationBehindAngle 90
+SetField VehicleProperties[6].AiThrottleMaximum 1
+SetField VehicleProperties[6].AiGoalMinThrottleScale 1
+SetField VehicleProperties[6].AiTurnMinThrottleScale 1
+SetField VehicleProperties[6].AiDirectionMinimumThrottleScale 1
+SetField VehicleProperties[6].AiThrottleBlend 0.95
+SetField VehicleProperties[6].AiAllowableAimDeviationAngle 10
+SetField VehicleProperties[7].Unit objects\vehicles\brute_chopper\brute_chopper.vehicle
+SetField VehicleProperties[7].Style objects\vehicles\brute_chopper\ai\chopper.style
+SetField VehicleProperties[7].Flags KeepMoving
+SetField VehicleProperties[7].AiPathfindingRadius 0.8
+SetField VehicleProperties[7].AiDestinationRadius 1.5
+SetField VehicleProperties[7].AiDecelerationDistance 5
+SetField VehicleProperties[7].AiTurningRadius 1.5
+SetField VehicleProperties[7].AiInnerTurningRadius 1
+SetField VehicleProperties[7].AiIdealTurningRadius 3
+SetField VehicleProperties[7].AiMaxSteeringAngle 90
+SetField VehicleProperties[7].AiOversteeringScale 1
+SetField VehicleProperties[7].AiThrottleMaximum 0.905
+SetField VehicleProperties[7].AiGoalMinThrottleScale 0.4
+SetField VehicleProperties[7].AiTurnMinThrottleScale 0.6
+SetField VehicleProperties[7].AiDirectionMinimumThrottleScale 0.6
+SetField VehicleProperties[7].AiAccelerationScale 0.4
+SetField VehicleProperties[7].TheoreticalMaxSpeed 8
+SetField VehicleProperties[7].ErrorScale 4
+SetField VehicleProperties[7].AiAllowableAimDeviationAngle 20
+SetField VehicleProperties[7].AiChargeLookAheadTime 2
+SetField VehicleProperties[7].AiCoverMinimumDistance 20
+SetField VehicleProperties[7].AiCoverTime 5
+SetField VehicleProperties[7].ObstacleIgnoreSize Medium
+SetField VehicleProperties[8].Unit objects\vehicles\mongoose\mongoose.vehicle
+SetField VehicleProperties[8].Style objects\vehicles\warthog\ai\warthog.style
+SetField VehicleProperties[8].AiPathfindingRadius 0.8
+SetField VehicleProperties[8].AiDestinationRadius 2
+SetField VehicleProperties[8].AiDecelerationDistance 5
+SetField VehicleProperties[8].AiTurningRadius 1.5
+SetField VehicleProperties[8].AiInnerTurningRadius 1
+SetField VehicleProperties[8].AiIdealTurningRadius 6
+SetField VehicleProperties[8].AiMaxSteeringAngle 135
+SetField VehicleProperties[8].AiMaxSteeringDelta 15
+SetField VehicleProperties[8].AiOversteeringScale 1
+SetField VehicleProperties[8].AiMinimumUrgency 0.4
+SetField VehicleProperties[8].AiThrottleMaximum 0.905
+SetField VehicleProperties[8].AiGoalMinThrottleScale 0.4
+SetField VehicleProperties[8].AiTurnMinThrottleScale 0.7
+SetField VehicleProperties[8].AiDirectionMinimumThrottleScale 0.7
+SetField VehicleProperties[8].AiAccelerationScale 0.4
+SetField VehicleProperties[8].TheoreticalMaxSpeed 6
+SetField VehicleProperties[8].ErrorScale 2
+SetField VehicleProperties[8].AiAllowableAimDeviationAngle 20
+SetField VehicleProperties[8].AiChargeLookAheadTime 2
+SetField VehicleProperties[8].AiCoverMinimumDistance 120
+SetField VehicleProperties[8].AiCoverTime 25
+SetField VehicleProperties[8].ObstacleIgnoreSize Small
+SetField VehicleProperties[9].Unit objects\vehicles\hornet\hornet.vehicle
+SetField VehicleProperties[9].Style objects\vehicles\hornet\ai\hornet.style
+SetField VehicleProperties[9].Flags PassengersAdoptOriginalSquad,ThrottleToTarget
+SetField VehicleProperties[9].AiPathfindingRadius 1
+SetField VehicleProperties[9].AiDestinationRadius 2
+SetField VehicleProperties[9].AiDecelerationDistance 5
+SetField VehicleProperties[9].AiTurningRadius 4
+SetField VehicleProperties[9].AiInnerTurningRadius 4
+SetField VehicleProperties[9].AiIdealTurningRadius 4
+SetField VehicleProperties[9].AiBansheeSteeringMaxAngle 7.5000005
+SetField VehicleProperties[9].AiMaxSteeringAngle 15
+SetField VehicleProperties[9].AiMaxSteeringDelta 5
+SetField VehicleProperties[9].AiSideSlipDistance 6
+SetField VehicleProperties[9].AiAvoidanceDistance 5
+SetField VehicleProperties[9].AiMinimumUrgency 1
+SetField VehicleProperties[9].DestinationBehindAngle 180
+SetField VehicleProperties[9].AiThrottleMaximum 1
+SetField VehicleProperties[9].AiGoalMinThrottleScale 1
+SetField VehicleProperties[9].AiTurnMinThrottleScale 0.9
+SetField VehicleProperties[9].AiDirectionMinimumThrottleScale 0.4
+SetField VehicleProperties[9].AiThrottleBlend 0.5
+SetField VehicleProperties[9].TheoreticalMaxSpeed 3
+SetField VehicleProperties[9].AiAllowableAimDeviationAngle 180
+SetField VehicleProperties[9].AiChargeTightAngleDistance 5
+SetField VehicleProperties[9].AiChargeTightAngle 0.2
+SetField VehicleProperties[9].AiChargeRepeatTimeout 0.5
+SetField VehicleProperties[9].AiChargeLookAheadTime 1.5
+SetField VehicleProperties[9].AiConsiderDistance 45
+SetField VehicleProperties[9].AiChargeAbortDistance 55
+SetField VehicleProperties[9].AiCoverDamageThreshold 0.5
+SetField VehicleProperties[9].AiCoverMinimumDistance 9
+SetField VehicleProperties[9].AiCoverTime 3
+SetField VehicleProperties[9].AiCoverMinimumBoostDistance 20
+SetField VehicleProperties[9].MaxVehicleCharge 1
+SetField VehicleProperties[10].Unit objects\vehicles\mauler\mauler.vehicle
+SetField VehicleProperties[10].Style objects\vehicles\mauler\ai\mauler.style
+SetField VehicleProperties[10].AiPathfindingRadius 1.2
+SetField VehicleProperties[10].AiDestinationRadius 2
+SetField VehicleProperties[10].AiDecelerationDistance 3
+SetField VehicleProperties[10].AiTurningRadius 1
+SetField VehicleProperties[10].AiInnerTurningRadius 0.5
+SetField VehicleProperties[10].AiIdealTurningRadius 1.5
+SetField VehicleProperties[10].AiMaxSteeringAngle 90
+SetField VehicleProperties[10].AiMaxSteeringDelta 30
+SetField VehicleProperties[10].AiOversteeringScale 2
+SetField VehicleProperties[10].AiMinimumUrgency 0.1
+SetField VehicleProperties[10].SkidScale 0.75
+SetField VehicleProperties[10].AiThrottleMaximum 1
+SetField VehicleProperties[10].AiGoalMinThrottleScale 0.5
+SetField VehicleProperties[10].AiTurnMinThrottleScale 0.3
+SetField VehicleProperties[10].AiDirectionMinimumThrottleScale 0.3
+SetField VehicleProperties[10].AiAccelerationScale 1
+SetField VehicleProperties[10].TheoreticalMaxSpeed 7
+SetField VehicleProperties[10].ErrorScale 1
+SetField VehicleProperties[10].AiAllowableAimDeviationAngle 20
+SetField VehicleProperties[10].AiChargeRepeatTimeout 10
+SetField VehicleProperties[10].AiChargeLookAheadTime 2
+SetField VehicleProperties[10].AiCoverMinimumDistance 5
+SetField VehicleProperties[10].AiCoverTime 2
+SetField VehicleProperties[10].ObstacleIgnoreSize Medium
+## SetField VehicleProperties[11].Unit objects\vehicles\phantom\phantom.vehicle
+SetField VehicleProperties[11].Style objects\vehicles\phantom\ai\phantom.style
+SetField VehicleProperties[11].Flags PassengersAdoptOriginalSquad
+SetField VehicleProperties[11].AiPathfindingRadius 4
+SetField VehicleProperties[11].AiDestinationRadius 4
+SetField VehicleProperties[11].AiDecelerationDistance 10
+SetField VehicleProperties[11].AiTurningRadius 2.5
+SetField VehicleProperties[11].AiIdealTurningRadius 5
+SetField VehicleProperties[11].AiMaxSteeringAngle 35
+SetField VehicleProperties[11].AiMaxSteeringDelta 10
+SetField VehicleProperties[11].AiOversteeringScale 0.8
+SetField VehicleProperties[11].AiOversteeringBounds 30.000002 45
+SetField VehicleProperties[11].AiSideSlipDistance 10
+SetField VehicleProperties[11].AiAvoidanceDistance 10
+SetField VehicleProperties[11].AiMinimumUrgency 0.6
+SetField VehicleProperties[11].DestinationBehindAngle 180
+SetField VehicleProperties[11].AiThrottleMaximum 1
+SetField VehicleProperties[11].AiGoalMinThrottleScale 0.4
+SetField VehicleProperties[11].AiTurnMinThrottleScale 0.6
+SetField VehicleProperties[11].AiDirectionMinimumThrottleScale 0.6
+SetField VehicleProperties[11].AiAccelerationScale 0.7
+SetField VehicleProperties[11].AiThrottleBlend 0.8
+SetField VehicleProperties[11].TheoreticalMaxSpeed 8
+SetField VehicleProperties[11].ErrorScale 2
+SetField VehicleProperties[11].AiAllowableAimDeviationAngle 45
+## SetField VehicleProperties[12].Style objects\vehicles\banshee\banshee_ambient.vehicle
+SetField VehicleProperties[12].Style objects\vehicles\banshee\ai\banshee.style
+SetField VehicleProperties[12].AiPathfindingRadius 1
+SetField VehicleProperties[12].AiDestinationRadius 1
+SetField VehicleProperties[12].AiDecelerationDistance 10
+SetField VehicleProperties[12].AiTurningRadius 5
+SetField VehicleProperties[12].AiBansheeSteeringMaxAngle 2
+SetField VehicleProperties[12].AiMaxSteeringAngle 65
+SetField VehicleProperties[12].AiMaxSteeringDelta 2
+SetField VehicleProperties[12].AiOversteeringScale 1.5
+SetField VehicleProperties[12].AiOversteeringBounds 180 180
+SetField VehicleProperties[12].AiAvoidanceDistance 8
+SetField VehicleProperties[12].AiMinimumUrgency 0.5
+SetField VehicleProperties[12].DestinationBehindAngle 90
+SetField VehicleProperties[12].AiThrottleMaximum 0.95
+SetField VehicleProperties[12].AiGoalMinThrottleScale 1
+SetField VehicleProperties[12].AiTurnMinThrottleScale 1
+SetField VehicleProperties[12].AiDirectionMinimumThrottleScale 1
+SetField VehicleProperties[12].AiAccelerationScale 1
+SetField VehicleProperties[12].AiAllowableAimDeviationAngle 20
+SetField VehicleProperties[12].AiChargeTightAngleDistance 5
+SetField VehicleProperties[12].AiChargeTightAngle 0.2
+SetField VehicleProperties[12].AiChargeRepeatTimeout 0.5
+SetField VehicleProperties[12].AiChargeLookAheadTime 1.5
+SetField VehicleProperties[12].AiConsiderDistance 45
+SetField VehicleProperties[12].AiChargeAbortDistance 55
+SetField VehicleProperties[12].AiCoverDamageThreshold 0.5
+SetField VehicleProperties[12].AiCoverMinimumDistance 9
+SetField VehicleProperties[12].AiCoverTime 3
+SetField VehicleProperties[12].AiCoverMinimumBoostDistance 5
+SetField VehicleProperties[12].MaxVehicleCharge 1
+## SetField VehicleProperties[13].Unit objects\vehicles\olifaunt\olifaunt.vehicle
+SetField VehicleProperties[13].Flags StationaryFight
+SetField VehicleProperties[13].AiPathfindingRadius 1.8
+SetField VehicleProperties[13].AiDestinationRadius 1
+SetField VehicleProperties[13].AiDecelerationDistance 2
+SetField VehicleProperties[13].AiTurningRadius 1.5
+SetField VehicleProperties[13].AiInnerTurningRadius 1
+SetField VehicleProperties[13].AiIdealTurningRadius 2
+SetField VehicleProperties[13].AiMaxSteeringAngle 180
+SetField VehicleProperties[13].AiMaxSteeringDelta 20
+SetField VehicleProperties[13].AiOversteeringScale 1
+SetField VehicleProperties[13].AiMinimumUrgency 1
+SetField VehicleProperties[13].AiThrottleMaximum 1
+SetField VehicleProperties[13].AiGoalMinThrottleScale 0.6
+SetField VehicleProperties[13].AiTurnMinThrottleScale 0.6
+SetField VehicleProperties[13].AiDirectionMinimumThrottleScale 0.6
+SetField VehicleProperties[13].ErrorScale 3
+SetField VehicleProperties[13].AiAllowableAimDeviationAngle 180
+SetField VehicleProperties[13].ObstacleIgnoreSize Huge
+## SetField VehicleProperties[14].Unit objects\vehicles\pelican\pelican_police\pelican_police.vehicle
+SetField VehicleProperties[14].Style objects\vehicles\pelican\ai\pelican.style
+SetField VehicleProperties[14].Flags PassengersAdoptOriginalSquad
+SetField VehicleProperties[14].AiPathfindingRadius 4
+SetField VehicleProperties[14].AiDestinationRadius 4
+SetField VehicleProperties[14].AiDecelerationDistance 10
+SetField VehicleProperties[14].AiTurningRadius 10
+SetField VehicleProperties[14].AiIdealTurningRadius 5
+SetField VehicleProperties[14].AiMaxSteeringAngle 35
+SetField VehicleProperties[14].AiMaxSteeringDelta 10
+SetField VehicleProperties[14].AiOversteeringScale 1
+SetField VehicleProperties[14].AiOversteeringBounds 30.000002 45
+SetField VehicleProperties[14].AiSideSlipDistance 15
+SetField VehicleProperties[14].AiAvoidanceDistance 10
+SetField VehicleProperties[14].AiMinimumUrgency 0.6
+SetField VehicleProperties[14].DestinationBehindAngle 120.00001
+SetField VehicleProperties[14].AiThrottleMaximum 1
+SetField VehicleProperties[14].AiGoalMinThrottleScale 0.1
+SetField VehicleProperties[14].AiTurnMinThrottleScale 0.8
+SetField VehicleProperties[14].AiDirectionMinimumThrottleScale 0.8
+SetField VehicleProperties[14].AiAccelerationScale 0.9
+SetField VehicleProperties[14].AiThrottleBlend 0.7
+SetField VehicleProperties[14].TheoreticalMaxSpeed 8
+SetField VehicleProperties[14].ErrorScale 2
+SetField VehicleProperties[14].AiAllowableAimDeviationAngle 45
+## SetField VehicleProperties[15].Unit objects\vehicles\phantom\phantom_dropship\phantom_dropship.vehicle
+SetField VehicleProperties[15].Style objects\vehicles\phantom\ai\phantom.style
+SetField VehicleProperties[15].Flags PassengersAdoptOriginalSquad
+SetField VehicleProperties[15].AiPathfindingRadius 4
+SetField VehicleProperties[15].AiDestinationRadius 4
+SetField VehicleProperties[15].AiDecelerationDistance 10
+SetField VehicleProperties[15].AiTurningRadius 2.5
+SetField VehicleProperties[15].AiIdealTurningRadius 5
+SetField VehicleProperties[15].AiMaxSteeringAngle 35
+SetField VehicleProperties[15].AiMaxSteeringDelta 10
+SetField VehicleProperties[15].AiOversteeringScale 0.8
+SetField VehicleProperties[15].AiOversteeringBounds 30.000002 45
+SetField VehicleProperties[15].AiSideSlipDistance 10
+SetField VehicleProperties[15].AiAvoidanceDistance 10
+SetField VehicleProperties[15].AiMinimumUrgency 0.6
+SetField VehicleProperties[15].DestinationBehindAngle 180
+SetField VehicleProperties[15].AiThrottleMaximum 1
+SetField VehicleProperties[15].AiGoalMinThrottleScale 0.4
+SetField VehicleProperties[15].AiTurnMinThrottleScale 0.6
+SetField VehicleProperties[15].AiDirectionMinimumThrottleScale 0.6
+SetField VehicleProperties[15].AiAccelerationScale 0.7
+SetField VehicleProperties[15].AiThrottleBlend 0.8
+SetField VehicleProperties[15].TheoreticalMaxSpeed 8
+SetField VehicleProperties[15].ErrorScale 2
+SetField VehicleProperties[15].AiAllowableAimDeviationAngle 45
+SetField VehicleProperties[16].Unit objects\vehicles\wraith\wraith_anti_air.vehicle
+SetField VehicleProperties[16].Style objects\vehicles\wraith\ai\wraith.style
+SetField VehicleProperties[16].Flags StationaryFight
+SetField VehicleProperties[16].AiPathfindingRadius 1.68
+SetField VehicleProperties[16].AiDestinationRadius 0.5
+SetField VehicleProperties[16].AiDecelerationDistance 3
+SetField VehicleProperties[16].AiTurningRadius 1
+SetField VehicleProperties[16].AiIdealTurningRadius 3
+SetField VehicleProperties[16].AiMaxSteeringAngle 9
+SetField VehicleProperties[16].AiMaxSteeringDelta 1.8
+SetField VehicleProperties[16].AiOversteeringScale 1
+SetField VehicleProperties[16].AiSideSlipDistance 1.5
+SetField VehicleProperties[16].AiThrottleMaximum 1
+SetField VehicleProperties[16].AiGoalMinThrottleScale 0.2
+SetField VehicleProperties[16].AiTurnMinThrottleScale 0.3
+SetField VehicleProperties[16].AiDirectionMinimumThrottleScale 0.3
+SetField VehicleProperties[16].AiAccelerationScale 0.75
+SetField VehicleProperties[16].AiAllowableAimDeviationAngle 30.000002
+SetField VehicleProperties[16].AiChargeTightAngleDistance 3
+SetField VehicleProperties[16].AiChargeTightAngle 0.25
+SetField VehicleProperties[16].AiChargeRepeatTimeout 10
+SetField VehicleProperties[16].AiChargeLookAheadTime 1.25
+SetField VehicleProperties[16].AiConsiderDistance 4
+SetField VehicleProperties[16].AiChargeAbortDistance 5
+SetField VehicleProperties[16].VehicleRamTimeout 0.9
+SetField VehicleProperties[16].RamParalysisTime 4
+SetField VehicleProperties[16].AiCoverDamageThreshold 0.3
+SetField VehicleProperties[16].AiCoverMinimumDistance 8
+SetField VehicleProperties[16].AiCoverTime 1
+SetField VehicleProperties[16].TurtlingRecentDamageThreshold 0.2
+SetField VehicleProperties[16].TurtlingMinimumTime 5
+SetField VehicleProperties[16].TurtlingTimeout 10
+SetField VehicleProperties[16].ObstacleIgnoreSize Large
+
+AddBlockElements EquipmentProperties 8
+SetField EquipmentProperties[0].RelativeDropChance 2
+SetField EquipmentProperties[1].Equipment objects\equipment\bubbleshield_equipment\bubbleshield_equipment.equipment
+AddBlockElements EquipmentProperties[1].UseConditions 3
+SetField EquipmentProperties[1].UseConditions[0].UseWhen Cover
+SetField EquipmentProperties[1].UseConditions[0].UseHow ThrowAtFeet
+SetField EquipmentProperties[1].UseConditions[1].UseWhen Shield
+SetField EquipmentProperties[1].UseConditions[1].UseHow ThrowAtFeet
+SetField EquipmentProperties[1].UseConditions[2].UseWhen Health
+SetField EquipmentProperties[1].UseConditions[2].UseHow ThrowAtFeet
+SetField EquipmentProperties[2].Equipment objects\equipment\regenerator_equipment\regenerator_equipment.equipment
+AddBlockElements EquipmentProperties[2].UseConditions 3
+SetField EquipmentProperties[2].UseConditions[0].UseWhen Cover
+SetField EquipmentProperties[2].UseConditions[0].UseHow ThrowAtFeet
+SetField EquipmentProperties[2].UseConditions[1].UseWhen Shield
+SetField EquipmentProperties[2].UseConditions[1].UseHow ThrowAtFeet
+SetField EquipmentProperties[2].UseConditions[2].UseWhen Health
+SetField EquipmentProperties[2].UseConditions[2].UseHow ThrowAtFeet
+SetField EquipmentProperties[3].Equipment objects\equipment\instantcover_equipment\instantcover_equipment_mp.equipment
+AddBlockElements EquipmentProperties[3].UseConditions 3
+SetField EquipmentProperties[3].UseConditions[0].UseWhen Cover
+SetField EquipmentProperties[3].UseConditions[0].UseHow ThrowAtFeet
+SetField EquipmentProperties[3].UseConditions[1].UseWhen Shield
+SetField EquipmentProperties[3].UseConditions[1].UseHow ThrowAtFeet
+SetField EquipmentProperties[3].UseConditions[2].UseWhen Health
+SetField EquipmentProperties[3].UseConditions[2].UseHow ThrowAtFeet
+SetField EquipmentProperties[4].Equipment objects\equipment\invincibility_equipment\invincibility_equipment.equipment
+AddBlockElements EquipmentProperties[4].UseConditions 2
+SetField EquipmentProperties[4].UseConditions[0].UseWhen Health
+SetField EquipmentProperties[4].UseConditions[0].UseHow UseOnSelf
+SetField EquipmentProperties[4].UseConditions[1].UseWhen Berserk
+SetField EquipmentProperties[4].UseConditions[1].UseHow UseOnSelf
+SetField EquipmentProperties[5].Equipment objects\equipment\jammer_equipment\jammer_equipment.equipment
+AddBlockElements EquipmentProperties[5].UseConditions 2
+SetField EquipmentProperties[5].UseConditions[0].UseWhen Uncover
+SetField EquipmentProperties[5].UseConditions[0].UseHow ThrowAtEnemy
+SetField EquipmentProperties[5].UseConditions[1].UseWhen Investigate
+SetField EquipmentProperties[5].UseConditions[1].UseHow ThrowAtEnemy
+SetField EquipmentProperties[6].Equipment objects\equipment\powerdrain_equipment\powerdrain_equipment.equipment
+AddBlockElements EquipmentProperties[6].UseConditions 2
+SetField EquipmentProperties[6].UseConditions[0].UseWhen Uncover
+SetField EquipmentProperties[6].UseConditions[0].UseHow ThrowAtEnemy
+SetField EquipmentProperties[6].UseConditions[1].UseWhen AntiVehicle
+SetField EquipmentProperties[6].UseConditions[1].UseHow ThrowAtEnemy
+SetField EquipmentProperties[7].Equipment objects\equipment\superflare_equipment\superflare_equipment.equipment
+AddBlockElements EquipmentProperties[7].UseConditions 3
+SetField EquipmentProperties[7].UseConditions[0].UseWhen Berserk
+SetField EquipmentProperties[7].UseConditions[0].UseHow ThrowAtEnemy
+SetField EquipmentProperties[7].UseConditions[1].UseWhen Investigate
+SetField EquipmentProperties[7].UseConditions[1].UseHow ThrowAtEnemy
+SetField EquipmentProperties[7].UseConditions[2].UseWhen Cover
+SetField EquipmentProperties[7].UseConditions[2].UseHow ThrowAtEnemy
+
+SaveTagChanges
+Exit

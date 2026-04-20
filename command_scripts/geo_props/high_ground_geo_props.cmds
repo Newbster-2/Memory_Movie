@@ -1,0 +1,87 @@
+## HIGH GROUND
+EditTag levels\multi\deadlock\deadlock.scenario
+
+## MISSILE  
+ConvertInstancedGeometry 0 110 objects\movie\forge\deadlock\missile_1  
+ConvertInstancedGeometry 0 111 objects\movie\forge\deadlock\missile_2  
+ConvertInstancedGeometry 0 112 objects\movie\forge\deadlock\missile_3  
+ConvertInstancedGeometry 0 493 objects\movie\forge\deadlock\missile_4  
+ConvertInstancedGeometry 0 495 objects\movie\forge\deadlock\missile_5  
+ConvertInstancedGeometry 0 496 objects\movie\forge\deadlock\missile_6  
+ConvertInstancedGeometry 0 502 objects\movie\forge\deadlock\missile_7  
+ConvertInstancedGeometry 0 503 objects\movie\forge\deadlock\missile_8  
+
+## STRUCTURE  
+ConvertInstancedGeometry 0 61 objects\movie\forge\deadlock\structure_1  
+ConvertInstancedGeometry 0 365 objects\movie\forge\deadlock\structure_2  
+ConvertInstancedGeometry 0 376 objects\movie\forge\deadlock\structure_3  
+ConvertInstancedGeometry 0 387 objects\movie\forge\deadlock\structure_4  
+ConvertInstancedGeometry 0 403 objects\movie\forge\deadlock\structure_5  
+ConvertInstancedGeometry 0 842 objects\movie\forge\deadlock\structure_6  
+ConvertInstancedGeometry 0 236 objects\movie\forge\deadlock\structure_7  
+
+## SUPPORT  
+ConvertInstancedGeometry 0 359 objects\movie\forge\deadlock\support_1  
+ConvertInstancedGeometry 0 162 objects\movie\forge\deadlock\support_2  
+ConvertInstancedGeometry 0 121 objects\movie\forge\deadlock\support_3  
+ConvertInstancedGeometry 0 395 objects\movie\forge\deadlock\support_4
+
+## CAMO  
+ConvertInstancedGeometry 0 825 objects\movie\forge\deadlock\camo_1  
+ConvertInstancedGeometry 0 826 objects\movie\forge\deadlock\camo_2  
+ConvertInstancedGeometry 0 827 objects\movie\forge\deadlock\camo_3  
+ConvertInstancedGeometry 0 828 objects\movie\forge\deadlock\camo_4  
+ConvertInstancedGeometry 0 829 objects\movie\forge\deadlock\camo_5  
+
+## MISC  
+ConvertInstancedGeometry 0 713 objects\movie\forge\deadlock\misc_1  
+ConvertInstancedGeometry 0 719 objects\movie\forge\deadlock\misc_2  
+ConvertInstancedGeometry 0 804 objects\movie\forge\deadlock\misc_3  
+
+Exit
+
+AddForgeCategory "HIGH GROUND GEO" "MAP GEO"
+
+AddForgeCategory "MISSILE HIGH GROUND" "HIGH GROUND GEO"
+AddForgeCategory "STRUCTURE HIGH GROUND" "HIGH GROUND GEO"
+AddForgeCategory "SUPPORT HIGH GROUND" "HIGH GROUND GEO"
+AddForgeCategory "CAMO HIGH GROUND" "HIGH GROUND GEO"
+AddForgeCategory "MISC HIGH GROUND" "HIGH GROUND GEO"
+
+AddForgeItem "Missile Stand" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_1.scenery  
+AddForgeItem "Missile Pods" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_2.scenery  
+AddForgeItem "Missile Pod" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_3.scenery  
+AddForgeItem "Missile Control" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_4.scenery  
+AddForgeItem "Missile Catwalk" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_5.scenery  
+AddForgeItem "Catwalk Support" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_6.scenery  
+AddForgeItem "Missile Support Arm" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_7.scenery  
+AddForgeItem "Missile Cover Panel" "MISSILE HIGH GROUND" objects\movie\forge\deadlock\missile_8.scenery  
+
+AddForgeItem "Cargo Wall" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_1.scenery  
+AddForgeItem "Door" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_2.scenery  
+AddForgeItem "Door Frame" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_3.scenery  
+AddForgeItem "Grate Segment" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_4.scenery  
+AddForgeItem "Manhole Grate" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_5.scenery  
+AddForgeItem "Pipe Cover" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_6.scenery  
+AddForgeItem "Single Railing" "STRUCTURE HIGH GROUND" objects\movie\forge\deadlock\structure_7.scenery
+
+AddForgeItem "Support Brace" "SUPPORT HIGH GROUND" objects\movie\forge\deadlock\support_1.scenery  
+AddForgeItem "Covered Wiring" "SUPPORT HIGH GROUND" objects\movie\forge\deadlock\support_2.scenery  
+AddForgeItem "Power Boxes" "SUPPORT HIGH GROUND" objects\movie\forge\deadlock\support_3.scenery  
+AddForgeItem "Cross Brace Frame" "SUPPORT HIGH GROUND" objects\movie\forge\deadlock\support_4.scenery  
+
+AddForgeItem "Camo Netting" "CAMO HIGH GROUND" objects\movie\forge\deadlock\camo_1.scenery  
+AddForgeItem "Camo Netting 2" "CAMO HIGH GROUND" objects\movie\forge\deadlock\camo_2.scenery  
+AddForgeItem "Camo Netting 3" "CAMO HIGH GROUND" objects\movie\forge\deadlock\camo_3.scenery  
+AddForgeItem "Camo Netting 4" "CAMO HIGH GROUND" objects\movie\forge\deadlock\camo_4.scenery  
+AddForgeItem "Camo Netting 5" "CAMO HIGH GROUND" objects\movie\forge\deadlock\camo_5.scenery  
+
+AddForgeItem "Hanging Light" "MISC HIGH GROUND" objects\movie\forge\deadlock\misc_1.scenery  
+AddForgeItem "Work Light" "MISC HIGH GROUND" objects\movie\forge\deadlock\misc_2.scenery  
+AddForgeItem "Hanging Light 2" "MISC HIGH GROUND" objects\movie\forge\deadlock\misc_3.scenery  
+
+ForEach hlmt contains: objects\movie\forge\deadlock\camo SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+ForEach hlmt contains: objects\movie\forge\deadlock\camo AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\deadlock\camo SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\deadlock\camo SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\deadlock\camo SetField Materials[0].GlobalMaterialIndex 54

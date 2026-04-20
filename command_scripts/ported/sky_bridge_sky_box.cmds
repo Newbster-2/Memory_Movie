@@ -1,0 +1,57 @@
+PortTag levels\multi\s3d_sky_bridgenew\sky\sky.scenery
+PortTag levels\multi\s3d_sky_bridgenew\s3d_sky_bridgenew_outdoor.cfxs
+PortTag levels\multi\s3d_sky_bridgenew\sky\s3d_sky_bridgenew.skya
+PortTag levels\multi\s3d_sky_bridgenew\s3d_sky_bridgenew.chmt
+
+DuplicateTag levels\multi\s3d_sky_bridgenew\sky\sky.model objects\eldewrito\movie\props\sky_s3d_sky_bridgenew
+EditTag objects\eldewrito\movie\props\sky_s3d_sky_bridgenew.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_sky_bridgenew\sky\sky.scenery objects\eldewrito\movie\props\sky_s3d_sky_bridgenew
+EditTag objects\eldewrito\movie\props\sky_s3d_sky_bridgenew.scenery
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 10000
+SetField BoundingOffset 0 0 0
+SetField Model objects\eldewrito\movie\props\sky_s3d_sky_bridgenew.model
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+SaveTagChanges
+Exit
+
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\s3d_sky_bridgenew\sky\sky.render_model
+
+AddForgeItem "SKY BRIDGE" "SKY DOMES" objects\eldewrito\movie\props\sky_s3d_sky_bridgenew.scenery
+
+EditTag multiplayer\forge_globals.forge_globals_definition
+
+AddBlockElements WeatherEffects
+SetField WeatherEffects[*].Name "Sky Bridge Rain"
+SetField WeatherEffects[*].Effect fx\scenery_fx\weather\rain\rain_angle\rain_angle_01.effect
+
+AddBlockElements Skies
+SetField Skies[*].Name "Sky Bridge"
+SetField Skies[*].Object levels\multi\s3d_sky_bridgenew\sky\sky.scenery
+SetField Skies[*].Parameters levels\multi\s3d_sky_bridgenew\sky\s3d_sky_bridgenew.skya
+SetField Skies[*].CameraFX levels\multi\s3d_sky_bridgenew\s3d_sky_bridgenew_outdoor.cfxs
+SetField Skies[*].GlobalLighting levels\multi\s3d_sky_bridgenew\s3d_sky_bridgenew.chmt
+
+AddBlockElements Skies
+SetField Skies[*].Name "Sky Bridge Clear"
+SetField Skies[*].Object levels\multi\s3d_sky_bridgenew\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+
+AddBlockElements Skies
+SetField Skies[*].Name "Sky Bridge Lite"
+SetField Skies[*].Parameters levels\multi\s3d_sky_bridgenew\sky\s3d_sky_bridgenew.skya
+SetField Skies[*].CameraFX levels\multi\s3d_sky_bridgenew\s3d_sky_bridgenew_outdoor.cfxs
+SetField Skies[*].GlobalLighting levels\multi\s3d_sky_bridgenew\s3d_sky_bridgenew.chmt
+
+SaveTagChanges
+Exit

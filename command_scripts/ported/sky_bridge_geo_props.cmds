@@ -1,0 +1,526 @@
+## SKY BRIDGE
+
+## RAMPS
+PortInstancedGeometryObject 0 1 objects\movie\forge\sky_bridge\ramp_1
+PortInstancedGeometryObject 0 424 objects\movie\forge\sky_bridge\ramp_2
+PortInstancedGeometryObject 0 449 objects\movie\forge\sky_bridge\ramp_3
+PortInstancedGeometryObject 0 459 objects\movie\forge\sky_bridge\ramp_4
+PortInstancedGeometryObject 0 689 objects\movie\forge\sky_bridge\ramp_5
+PortInstancedGeometryObject 0 700 objects\movie\forge\sky_bridge\ramp_6
+PortInstancedGeometryObject 0 705 objects\movie\forge\sky_bridge\ramp_7
+PortInstancedGeometryObject 0 711 objects\movie\forge\sky_bridge\ramp_8
+PortInstancedGeometryObject 0 726 objects\movie\forge\sky_bridge\ramp_9
+PortInstancedGeometryObject 0 727 objects\movie\forge\sky_bridge\ramp_10
+PortInstancedGeometryObject 0 869 objects\movie\forge\sky_bridge\ramp_11
+
+## BALCONIES
+PortInstancedGeometryObject 0 9 objects\movie\forge\sky_bridge\balcony_1
+PortInstancedGeometryObject 0 681 objects\movie\forge\sky_bridge\balcony_2
+PortInstancedGeometryObject 0 695 objects\movie\forge\sky_bridge\balcony_3
+PortInstancedGeometryObject 0 696 objects\movie\forge\sky_bridge\balcony_4
+PortInstancedGeometryObject 0 698 objects\movie\forge\sky_bridge\balcony_5
+PortInstancedGeometryObject 0 699 objects\movie\forge\sky_bridge\balcony_6
+PortInstancedGeometryObject 0 5 objects\movie\forge\sky_bridge\balcony_7
+PortInstancedGeometryObject 0 7 objects\movie\forge\sky_bridge\balcony_8
+PortInstancedGeometryObject 0 48 objects\movie\forge\sky_bridge\balcony_9
+PortInstancedGeometryObject 0 50 objects\movie\forge\sky_bridge\balcony_10
+
+## BRIDGES
+PortInstancedGeometryObject 0 11 objects\movie\forge\sky_bridge\bridge_1
+PortInstancedGeometryObject 0 45 objects\movie\forge\sky_bridge\bridge_2
+
+## PANELS
+PortInstancedGeometryObject 0 13 objects\movie\forge\sky_bridge\panel_1
+PortInstancedGeometryObject 0 28 objects\movie\forge\sky_bridge\panel_2
+PortInstancedGeometryObject 0 476 objects\movie\forge\sky_bridge\panel_3
+PortInstancedGeometryObject 0 494 objects\movie\forge\sky_bridge\panel_4
+PortInstancedGeometryObject 0 523 objects\movie\forge\sky_bridge\panel_5
+PortInstancedGeometryObject 0 551 objects\movie\forge\sky_bridge\panel_6
+PortInstancedGeometryObject 0 559 objects\movie\forge\sky_bridge\panel_7
+PortInstancedGeometryObject 0 566 objects\movie\forge\sky_bridge\panel_8
+PortInstancedGeometryObject 0 646 objects\movie\forge\sky_bridge\panel_9
+PortInstancedGeometryObject 0 654 objects\movie\forge\sky_bridge\panel_10
+PortInstancedGeometryObject 0 660 objects\movie\forge\sky_bridge\panel_11
+PortInstancedGeometryObject 0 767 objects\movie\forge\sky_bridge\panel_12
+PortInstancedGeometryObject 0 773 objects\movie\forge\sky_bridge\panel_13
+PortInstancedGeometryObject 0 777 objects\movie\forge\sky_bridge\panel_14
+PortInstancedGeometryObject 0 786 objects\movie\forge\sky_bridge\panel_15
+
+## TECH
+PortInstancedGeometryObject 0 43 objects\movie\forge\sky_bridge\tech_1
+PortInstancedGeometryObject 0 54 objects\movie\forge\sky_bridge\tech_2
+PortInstancedGeometryObject 0 514 objects\movie\forge\sky_bridge\tech_3
+PortInstancedGeometryObject 0 517 objects\movie\forge\sky_bridge\tech_4
+PortInstancedGeometryObject 0 529 objects\movie\forge\sky_bridge\tech_5
+PortInstancedGeometryObject 0 677 objects\movie\forge\sky_bridge\tech_6
+PortInstancedGeometryObject 0 678 objects\movie\forge\sky_bridge\tech_7
+PortInstancedGeometryObject 0 692 objects\movie\forge\sky_bridge\tech_8
+PortInstancedGeometryObject 0 701 objects\movie\forge\sky_bridge\tech_9
+PortInstancedGeometryObject 0 737 objects\movie\forge\sky_bridge\tech_10
+PortInstancedGeometryObject 0 960 objects\movie\forge\sky_bridge\tech_11
+PortInstancedGeometryObject 0 892 objects\movie\forge\sky_bridge\tech_12
+
+## LIGHTS
+PortInstancedGeometryObject 0 57 objects\movie\forge\sky_bridge\light_1
+PortInstancedGeometryObject 0 75 objects\movie\forge\sky_bridge\light_2
+PortInstancedGeometryObject 0 86 objects\movie\forge\sky_bridge\light_3
+PortInstancedGeometryObject 0 94 objects\movie\forge\sky_bridge\light_4
+PortInstancedGeometryObject 0 96 objects\movie\forge\sky_bridge\light_5
+PortInstancedGeometryObject 0 171 objects\movie\forge\sky_bridge\light_6
+PortInstancedGeometryObject 0 203 objects\movie\forge\sky_bridge\light_7
+PortInstancedGeometryObject 0 217 objects\movie\forge\sky_bridge\light_8
+PortInstancedGeometryObject 0 223 objects\movie\forge\sky_bridge\light_9
+PortInstancedGeometryObject 0 230 objects\movie\forge\sky_bridge\light_10
+PortInstancedGeometryObject 0 232 objects\movie\forge\sky_bridge\light_11
+PortInstancedGeometryObject 0 233 objects\movie\forge\sky_bridge\light_12
+PortInstancedGeometryObject 0 234 objects\movie\forge\sky_bridge\light_13
+PortInstancedGeometryObject 0 242 objects\movie\forge\sky_bridge\light_14
+PortInstancedGeometryObject 0 364 objects\movie\forge\sky_bridge\light_15
+PortInstancedGeometryObject 0 370 objects\movie\forge\sky_bridge\light_16
+PortInstancedGeometryObject 0 383 objects\movie\forge\sky_bridge\light_17
+PortInstancedGeometryObject 0 391 objects\movie\forge\sky_bridge\light_18
+PortInstancedGeometryObject 0 400 objects\movie\forge\sky_bridge\light_19
+PortInstancedGeometryObject 0 408 objects\movie\forge\sky_bridge\light_20
+PortInstancedGeometryObject 0 410 objects\movie\forge\sky_bridge\light_21
+PortInstancedGeometryObject 0 412 objects\movie\forge\sky_bridge\light_22
+PortInstancedGeometryObject 0 415 objects\movie\forge\sky_bridge\light_23
+PortInstancedGeometryObject 0 418 objects\movie\forge\sky_bridge\light_24
+PortInstancedGeometryObject 0 421 objects\movie\forge\sky_bridge\light_25
+PortInstancedGeometryObject 0 422 objects\movie\forge\sky_bridge\light_26
+PortInstancedGeometryObject 0 805 objects\movie\forge\sky_bridge\light_27
+
+## STRUCTURE
+PortInstancedGeometryObject 0 423 objects\movie\forge\sky_bridge\structure_1
+PortInstancedGeometryObject 0 442 objects\movie\forge\sky_bridge\structure_2
+PortInstancedGeometryObject 0 443 objects\movie\forge\sky_bridge\structure_3
+PortInstancedGeometryObject 0 445 objects\movie\forge\sky_bridge\structure_4
+PortInstancedGeometryObject 0 451 objects\movie\forge\sky_bridge\structure_5
+PortInstancedGeometryObject 0 452 objects\movie\forge\sky_bridge\structure_6
+PortInstancedGeometryObject 0 457 objects\movie\forge\sky_bridge\structure_7
+PortInstancedGeometryObject 0 460 objects\movie\forge\sky_bridge\structure_8
+PortInstancedGeometryObject 0 462 objects\movie\forge\sky_bridge\structure_9
+PortInstancedGeometryObject 0 464 objects\movie\forge\sky_bridge\structure_10
+PortInstancedGeometryObject 0 465 objects\movie\forge\sky_bridge\structure_11
+PortInstancedGeometryObject 0 467 objects\movie\forge\sky_bridge\structure_12
+PortInstancedGeometryObject 0 471 objects\movie\forge\sky_bridge\structure_13
+PortInstancedGeometryObject 0 501 objects\movie\forge\sky_bridge\structure_14
+PortInstancedGeometryObject 0 502 objects\movie\forge\sky_bridge\structure_15
+PortInstancedGeometryObject 0 503 objects\movie\forge\sky_bridge\structure_16
+PortInstancedGeometryObject 0 507 objects\movie\forge\sky_bridge\structure_17
+PortInstancedGeometryObject 0 522 objects\movie\forge\sky_bridge\structure_18
+PortInstancedGeometryObject 0 533 objects\movie\forge\sky_bridge\structure_19
+PortInstancedGeometryObject 0 535 objects\movie\forge\sky_bridge\structure_20
+PortInstancedGeometryObject 0 537 objects\movie\forge\sky_bridge\structure_21
+PortInstancedGeometryObject 0 542 objects\movie\forge\sky_bridge\structure_22
+PortInstancedGeometryObject 0 570 objects\movie\forge\sky_bridge\structure_23
+PortInstancedGeometryObject 0 571 objects\movie\forge\sky_bridge\structure_24
+PortInstancedGeometryObject 0 572 objects\movie\forge\sky_bridge\structure_25
+PortInstancedGeometryObject 0 573 objects\movie\forge\sky_bridge\structure_26
+PortInstancedGeometryObject 0 576 objects\movie\forge\sky_bridge\structure_27
+PortInstancedGeometryObject 0 579 objects\movie\forge\sky_bridge\structure_28
+PortInstancedGeometryObject 0 618 objects\movie\forge\sky_bridge\structure_29
+PortInstancedGeometryObject 0 619 objects\movie\forge\sky_bridge\structure_30
+PortInstancedGeometryObject 0 635 objects\movie\forge\sky_bridge\structure_31
+PortInstancedGeometryObject 0 637 objects\movie\forge\sky_bridge\structure_32
+PortInstancedGeometryObject 0 644 objects\movie\forge\sky_bridge\structure_33
+PortInstancedGeometryObject 0 645 objects\movie\forge\sky_bridge\structure_34
+PortInstancedGeometryObject 0 659 objects\movie\forge\sky_bridge\structure_35
+PortInstancedGeometryObject 0 668 objects\movie\forge\sky_bridge\structure_36
+PortInstancedGeometryObject 0 679 objects\movie\forge\sky_bridge\structure_37
+PortInstancedGeometryObject 0 687 objects\movie\forge\sky_bridge\structure_38
+PortInstancedGeometryObject 0 693 objects\movie\forge\sky_bridge\structure_39
+PortInstancedGeometryObject 0 702 objects\movie\forge\sky_bridge\structure_40
+PortInstancedGeometryObject 0 713 objects\movie\forge\sky_bridge\structure_41
+PortInstancedGeometryObject 0 716 objects\movie\forge\sky_bridge\structure_42
+PortInstancedGeometryObject 0 722 objects\movie\forge\sky_bridge\structure_43
+PortInstancedGeometryObject 0 728 objects\movie\forge\sky_bridge\structure_44
+PortInstancedGeometryObject 0 730 objects\movie\forge\sky_bridge\structure_45
+PortInstancedGeometryObject 0 731 objects\movie\forge\sky_bridge\structure_46
+PortInstancedGeometryObject 0 732 objects\movie\forge\sky_bridge\structure_47
+PortInstancedGeometryObject 0 733 objects\movie\forge\sky_bridge\structure_48
+PortInstancedGeometryObject 0 734 objects\movie\forge\sky_bridge\structure_49
+PortInstancedGeometryObject 0 740 objects\movie\forge\sky_bridge\structure_50
+PortInstancedGeometryObject 0 748 objects\movie\forge\sky_bridge\structure_51
+PortInstancedGeometryObject 0 800 objects\movie\forge\sky_bridge\structure_52
+PortInstancedGeometryObject 0 814 objects\movie\forge\sky_bridge\structure_53
+PortInstancedGeometryObject 0 818 objects\movie\forge\sky_bridge\structure_54
+PortInstancedGeometryObject 0 819 objects\movie\forge\sky_bridge\structure_55
+PortInstancedGeometryObject 0 833 objects\movie\forge\sky_bridge\structure_56
+PortInstancedGeometryObject 0 874 objects\movie\forge\sky_bridge\structure_57
+PortInstancedGeometryObject 0 875 objects\movie\forge\sky_bridge\structure_58
+PortInstancedGeometryObject 0 958 objects\movie\forge\sky_bridge\structure_59
+PortInstancedGeometryObject 0 864 objects\movie\forge\sky_bridge\structure_60
+PortInstancedGeometryObject 0 881 objects\movie\forge\sky_bridge\structure_61
+
+## MISC
+PortInstancedGeometryObject 0 508 objects\movie\forge\sky_bridge\misc_1
+PortInstancedGeometryObject 0 738 objects\movie\forge\sky_bridge\misc_2
+PortInstancedGeometryObject 0 909 objects\movie\forge\sky_bridge\misc_3
+PortInstancedGeometryObject 0 939 objects\movie\forge\sky_bridge\misc_4
+
+## MYLAR
+PortInstancedGeometryObject 0 550 objects\movie\forge\sky_bridge\mylar_1
+PortInstancedGeometryObject 0 764 objects\movie\forge\sky_bridge\mylar_2
+PortInstancedGeometryObject 0 765 objects\movie\forge\sky_bridge\mylar_3
+PortInstancedGeometryObject 0 766 objects\movie\forge\sky_bridge\mylar_4
+PortInstancedGeometryObject 0 850 objects\movie\forge\sky_bridge\mylar_5
+
+## Buildings 
+PortInstancedGeometryObject 0 715 objects\movie\forge\sky_bridge\building_1
+PortInstancedGeometryObject 0 739 objects\movie\forge\sky_bridge\building_2
+PortInstancedGeometryObject 0 812 objects\movie\forge\sky_bridge\building_3
+PortInstancedGeometryObject 0 813 objects\movie\forge\sky_bridge\building_4
+PortInstancedGeometryObject 0 834 objects\movie\forge\sky_bridge\building_5
+PortInstancedGeometryObject 0 835 objects\movie\forge\sky_bridge\building_6
+PortInstancedGeometryObject 0 847 objects\movie\forge\sky_bridge\building_7
+PortInstancedGeometryObject 0 848 objects\movie\forge\sky_bridge\building_8
+PortInstancedGeometryObject 0 851 objects\movie\forge\sky_bridge\building_9
+PortInstancedGeometryObject 0 855 objects\movie\forge\sky_bridge\building_10
+PortInstancedGeometryObject 0 857 objects\movie\forge\sky_bridge\building_11
+PortInstancedGeometryObject 0 858 objects\movie\forge\sky_bridge\building_12
+PortInstancedGeometryObject 0 859 objects\movie\forge\sky_bridge\building_13
+
+AddForgeCategory "SKY BRIDGE GEO" "SKY BRIDGE"
+
+AddForgeCategory "RAMPS SKY" "SKY BRIDGE GEO"
+AddForgeCategory "BALCONIES SKY" "SKY BRIDGE GEO"
+AddForgeCategory "BRIDGES SKY" "SKY BRIDGE GEO"
+AddForgeCategory "PANELS SKY" "SKY BRIDGE GEO"
+AddForgeCategory "TECH SKY" "SKY BRIDGE GEO"
+AddForgeCategory "LIGHTS SKY" "SKY BRIDGE GEO"
+AddForgeCategory "STRUCTURE SKY" "SKY BRIDGE GEO"
+AddForgeCategory "MISC SKY" "SKY BRIDGE GEO"
+AddForgeCategory "MYLAR SKY" "SKY BRIDGE GEO"
+AddForgeCategory "BUILDINGS SKY" "SKY BRIDGE GEO"
+
+AddForgeItem "Wide Short" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_1.scenery
+AddForgeItem "Short" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_2.scenery
+AddForgeItem "Dual Sided Long" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_3.scenery
+AddForgeItem "Wide Underpass" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_4.scenery
+AddForgeItem "Shallow Long" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_5.scenery
+AddForgeItem "Tall Long" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_6.scenery
+AddForgeItem "Shallow Short" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_7.scenery
+AddForgeItem "Tall Wide Long" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_8.scenery
+AddForgeItem "Shallow Wide Short" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_9.scenery
+AddForgeItem "Long Split Converge" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_10.scenery
+AddForgeItem "Wide Underpass Red" "RAMPS SKY" objects\movie\forge\sky_bridge\ramp_11.scenery
+
+AddForgeItem "Small" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_1.scenery
+AddForgeItem "Tiny" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_2.scenery
+AddForgeItem "Huge Landing Platform" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_3.scenery
+AddForgeItem "Tiny No Rails" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_4.scenery
+AddForgeItem "Medium Right" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_5.scenery
+AddForgeItem "Medium Left" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_6.scenery
+AddForgeItem "Large Part 1" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_7.scenery
+AddForgeItem "Large Part 2" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_8.scenery
+AddForgeItem "Large Part 3" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_9.scenery
+AddForgeItem "Large Part 4" "BALCONIES SKY" objects\movie\forge\sky_bridge\balcony_10.scenery
+
+AddForgeItem "Long Railing" "BRIDGES SKY" objects\movie\forge\sky_bridge\bridge_1.scenery
+AddForgeItem "Medium Railing" "BRIDGES SKY" objects\movie\forge\sky_bridge\bridge_2.scenery
+
+AddForgeItem "Narrow Glass Floor" "PANELS SKY" objects\movie\forge\sky_bridge\panel_1.scenery
+AddForgeItem "Wide Glass Floor" "PANELS SKY" objects\movie\forge\sky_bridge\panel_2.scenery
+AddForgeItem "Narrow Rounded Smooth" "PANELS SKY" objects\movie\forge\sky_bridge\panel_3.scenery
+AddForgeItem "Wide Rounded Smooth" "PANELS SKY" objects\movie\forge\sky_bridge\panel_4.scenery
+AddForgeItem "Winged Glass FLoor" "PANELS SKY" objects\movie\forge\sky_bridge\panel_5.scenery
+AddForgeItem "Steel Plate" "PANELS SKY" objects\movie\forge\sky_bridge\panel_6.scenery
+AddForgeItem "Der Blinking Lights" "PANELS SKY" objects\movie\forge\sky_bridge\panel_7.scenery
+AddForgeItem "Winged Narrow" "PANELS SKY" objects\movie\forge\sky_bridge\panel_8.scenery
+AddForgeItem "Protruding" "PANELS SKY" objects\movie\forge\sky_bridge\panel_9.scenery
+AddForgeItem "Protruding Narrow" "PANELS SKY" objects\movie\forge\sky_bridge\panel_10.scenery
+AddForgeItem "Rounded Caution Color" "PANELS SKY" objects\movie\forge\sky_bridge\panel_11.scenery
+AddForgeItem "Arch" "PANELS SKY" objects\movie\forge\sky_bridge\panel_12.scenery
+AddForgeItem "Exposed" "PANELS SKY" objects\movie\forge\sky_bridge\panel_13.scenery
+AddForgeItem "Vented" "PANELS SKY" objects\movie\forge\sky_bridge\panel_14.scenery
+AddForgeItem "Narrow Vented" "PANELS SKY" objects\movie\forge\sky_bridge\panel_15.scenery
+
+AddForgeItem "Nav Map Terminal" "TECH SKY" objects\movie\forge\sky_bridge\tech_1.scenery
+AddForgeItem "Error Terminal" "TECH SKY" objects\movie\forge\sky_bridge\tech_2.scenery
+AddForgeItem "Mylar Covered Terminal" "TECH SKY" objects\movie\forge\sky_bridge\tech_3.scenery
+AddForgeItem "Mylar Covered Terminal 2" "TECH SKY" objects\movie\forge\sky_bridge\tech_4.scenery
+AddForgeItem "Elevator Monitor" "TECH SKY" objects\movie\forge\sky_bridge\tech_5.scenery
+AddForgeItem "Neo Seoul Banner" "TECH SKY" objects\movie\forge\sky_bridge\tech_6.scenery
+AddForgeItem "Hospital Banner" "TECH SKY" objects\movie\forge\sky_bridge\tech_7.scenery
+AddForgeItem "Technology Banner" "TECH SKY" objects\movie\forge\sky_bridge\tech_8.scenery
+AddForgeItem "Building Plan Monitor" "TECH SKY" objects\movie\forge\sky_bridge\tech_9.scenery
+AddForgeItem "Neo Seoul Banner 2" "TECH SKY" objects\movie\forge\sky_bridge\tech_10.scenery
+AddForgeItem "Dual Checkout Terminals" "TECH SKY" objects\movie\forge\sky_bridge\tech_11.scenery
+AddForgeItem "Department Map Terminal" "TECH SKY" objects\movie\forge\sky_bridge\tech_12.scenery
+
+AddForgeItem "Round Blue" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_1.scenery
+AddForgeItem "Razor Accent Blue" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_2.scenery
+AddForgeItem "Square Accent Blue" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_3.scenery
+AddForgeItem "Portable Work Light Blue Forward" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_4.scenery
+AddForgeItem "Small Square Accent Red" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_5.scenery
+AddForgeItem "Round Orange" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_6.scenery
+AddForgeItem "Bright Bar" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_7.scenery
+AddForgeItem "Small Square Accent Red No Border" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_8.scenery
+AddForgeItem "Corridor Lamps" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_9.scenery
+AddForgeItem "Lamp Volumes" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_10.scenery
+AddForgeItem "Square Volume" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_11.scenery
+AddForgeItem "Square Roof Bar Set" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_12.scenery
+AddForgeItem "Corridor Bar Set Volume" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_13.scenery
+AddForgeItem "Corridor Bar Set Orange" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_14.scenery
+AddForgeItem "Razor Accent Light Yellow Flickering" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_15.scenery
+AddForgeItem "Razor Accent Orange" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_16.scenery
+AddForgeItem "Razor Accent Light Yellow" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_17.scenery
+AddForgeItem "Razor Accent Burnt Out" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_18.scenery
+AddForgeItem "Square Accent Light Yellow" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_19.scenery
+AddForgeItem "Round Blue Dim" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_20.scenery
+AddForgeItem "Round Orange Dim" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_21.scenery
+AddForgeItem "Round Yellow Dim" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_22.scenery
+AddForgeItem "Dim Bar Orange" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_23.scenery
+AddForgeItem "Dim Bar Blue" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_24.scenery
+AddForgeItem "Portable Work Light Orange Up" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_25.scenery
+AddForgeItem "Portable Work Light Blue Up" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_26.scenery
+AddForgeItem "Razor Accent Dual Orange" "LIGHTS SKY" objects\movie\forge\sky_bridge\light_27.scenery
+
+AddForgeItem "Octagon Window Set" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_1.scenery
+AddForgeItem "Frame And Wiring Partial Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_2.scenery
+AddForgeItem "Frame And Wiring Short" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_3.scenery
+AddForgeItem "Frame And Wiring Medium" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_4.scenery
+AddForgeItem "End Cap Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_5.scenery
+AddForgeItem "End Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_6.scenery
+AddForgeItem "Tall Pillar Decor" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_7.scenery
+AddForgeItem "Tall Pillar Decor 2" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_8.scenery
+AddForgeItem "Tall Pillar Decor 3" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_9.scenery
+AddForgeItem "Terminal Pillar Blue Partial Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_10.scenery
+AddForgeItem "Large Arch Partial Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_11.scenery
+AddForgeItem "60 Degree Brace" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_12.scenery
+AddForgeItem "Narrow Terminal Pillar Blue" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_13.scenery
+AddForgeItem "Long Multi Framing and Wires" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_14.scenery
+AddForgeItem "Long Multi Framing and Wires Covered" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_15.scenery
+AddForgeItem "Medium Door Frame" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_16.scenery
+AddForgeItem "Long Multi Framing and Wires Covered 2" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_17.scenery
+AddForgeItem "Multi Medium Pipe Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_18.scenery
+AddForgeItem "60 Degree Window Set" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_19.scenery
+AddForgeItem "Pillar Collar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_20.scenery
+AddForgeItem "Big Pillar Partial Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_21.scenery
+AddForgeItem "Medium Door" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_22.scenery
+AddForgeItem "Frame Pillar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_23.scenery
+AddForgeItem "Light Pillar Partial Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_24.scenery
+AddForgeItem "Light Pillar Covered Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_25.scenery
+AddForgeItem "Exposed Wiring Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_26.scenery
+AddForgeItem "Slopped Building Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_27.scenery
+AddForgeItem "Window Building Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_28.scenery
+AddForgeItem "Wide Arch Doorway" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_29.scenery
+AddForgeItem "Wide Arch Doorway Partial Exposed" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_30.scenery
+AddForgeItem "Slopped Building Segment Medium" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_31.scenery
+AddForgeItem "Slopped End Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_32.scenery
+AddForgeItem "Steel Lattice Left" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_33.scenery
+AddForgeItem "Steel Lattice Right" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_34.scenery
+AddForgeItem "Power Line Building Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_35.scenery
+AddForgeItem "External Elevator Lift Shaft" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_36.scenery
+AddForgeItem "Stubby Column" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_37.scenery
+AddForgeItem "Peak Building Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_38.scenery
+AddForgeItem "Pipe End Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_39.scenery
+AddForgeItem "Coffee Machine End Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_40.scenery
+AddForgeItem "Railing Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_41.scenery
+AddForgeItem "Stubby Pillar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_42.scenery
+AddForgeItem "Stubby Pillar Wide" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_43.scenery
+AddForgeItem "Generator Bank" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_44.scenery
+AddForgeItem "Partial Framing Partial Mylar" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_45.scenery
+AddForgeItem "Partial Framing Partial Mylar 2" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_46.scenery
+AddForgeItem "Single Framing Segment Medium" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_47.scenery
+AddForgeItem "Square Framing" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_48.scenery
+AddForgeItem "Single Framing Segment Short" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_49.scenery
+AddForgeItem "Tall Pillar Decor 4" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_50.scenery
+AddForgeItem "Rounded End Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_51.scenery
+AddForgeItem "Huge End Cap" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_52.scenery
+AddForgeItem "Mega Tall Column" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_53.scenery
+AddForgeItem "Rounded Window Building Segment" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_54.scenery
+AddForgeItem "Mega Tall Column 2" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_55.scenery
+AddForgeItem "Rounded Window Building Segment 2" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_56.scenery
+AddForgeItem "Terminal Pillar Red" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_57.scenery
+AddForgeItem "Big Pillar Red" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_58.scenery
+AddForgeItem "Terminal Pillar Core" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_59.scenery
+AddForgeItem "Octagon Window Set Red" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_60.scenery
+AddForgeItem "Narrow Terminal Pillar Red Keypad" "STRUCTURE SKY" objects\movie\forge\sky_bridge\structure_61.scenery
+
+AddForgeItem "Bollard" "MISC SKY" objects\movie\forge\sky_bridge\misc_1.scenery
+AddForgeItem "Turbo Fan" "MISC SKY" objects\movie\forge\sky_bridge\misc_2.scenery
+AddForgeItem "Rubble" "MISC SKY" objects\movie\forge\sky_bridge\misc_3.scenery
+AddForgeItem "Rubble 2" "MISC SKY" objects\movie\forge\sky_bridge\misc_4.scenery
+
+AddForgeItem "Arch Covering" "MYLAR SKY" objects\movie\forge\sky_bridge\mylar_1.scenery
+AddForgeItem "Multi Covering Set" "MYLAR SKY" objects\movie\forge\sky_bridge\mylar_2.scenery
+AddForgeItem "Multi Covering Set 2" "MYLAR SKY" objects\movie\forge\sky_bridge\mylar_3.scenery
+AddForgeItem "Multi Covering Set 3" "MYLAR SKY" objects\movie\forge\sky_bridge\mylar_4.scenery
+AddForgeItem "Large Wall" "MYLAR SKY" objects\movie\forge\sky_bridge\mylar_5.scenery
+
+AddForgeItem "Crane Base" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_1.scenery
+AddForgeItem "Mega SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_2.scenery
+AddForgeItem "Square SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_3.scenery
+AddForgeItem "Hospital Wing Sign Tower" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_4.scenery
+AddForgeItem "Hospital Wing Tower" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_5.scenery
+AddForgeItem "Skyscraper Office Wing" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_6.scenery
+AddForgeItem "Hospital Wing Skeleton" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_7.scenery
+AddForgeItem "Square SkyScraper 2" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_8.scenery
+AddForgeItem "Helipad SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_9.scenery
+AddForgeItem "Rounded SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_10.scenery
+AddForgeItem "Needle Point SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_11.scenery
+AddForgeItem "Tube SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_12.scenery
+AddForgeItem "Wedge SkyScraper" "BUILDINGS SKY" objects\movie\forge\sky_bridge\building_13.scenery
+
+EditTag objects\movie\forge\sky_bridge\light_5.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_tiny.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_7.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_8.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_tiny.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_9.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_10.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_11.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_12.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_13.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\light_14.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\panel_7.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\building_2.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\mylar_5.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\building_10.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\building_11.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\building_12.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\building_13.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\misc_3.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_tiny.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\sky_bridge\misc_4.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_tiny.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

@@ -1,0 +1,8 @@
+OpenCacheFile "h3_directory\040_voi.map"
+
+AddForgeCategory "VOI" "PORTED PROPS"
+
+RunCommands "working_directory\command_scripts\ported\voi_crates.cmds"
+RunCommands "working_directory\command_scripts\ported\voi_machines.cmds"
+
+Exit

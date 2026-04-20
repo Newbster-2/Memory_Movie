@@ -1,0 +1,12 @@
+OpenCacheFile "odst_directory\l300.map"
+
+AddForgeCategory "COASTAL HIGHWAY" "PORTED PROPS"
+
+RunCommands "working_directory\command_scripts\ported\coastal_highway_scenery.cmds"
+RunCommands "working_directory\command_scripts\ported\coastal_highway_crates.cmds"
+RunCommands "working_directory\command_scripts\ported\coastal_highway_machines.cmds"
+RunCommands "working_directory\command_scripts\ported\coastal_highway_controls.cmds"
+RunCommands "working_directory\command_scripts\ported\coastal_highway_vehicles.cmds"
+RunCommands "working_directory\command_scripts\ported\coastal_highway_geo_props.cmds"
+
+Exit

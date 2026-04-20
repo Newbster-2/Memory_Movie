@@ -1,0 +1,122 @@
+## THE PIT
+EditTag levels\multi\cyberdyne\cyberdyne.scenario
+
+## PANELS  
+ConvertInstancedGeometry 0 1 objects\movie\forge\cyberdyne\panel_1  
+ConvertInstancedGeometry 0 4 objects\movie\forge\cyberdyne\panel_2  
+ConvertInstancedGeometry 0 6 objects\movie\forge\cyberdyne\panel_3  
+ConvertInstancedGeometry 0 9 objects\movie\forge\cyberdyne\panel_4  
+ConvertInstancedGeometry 0 14 objects\movie\forge\cyberdyne\panel_5  
+ConvertInstancedGeometry 0 20 objects\movie\forge\cyberdyne\panel_6  
+ConvertInstancedGeometry 0 27 objects\movie\forge\cyberdyne\panel_7  
+ConvertInstancedGeometry 0 46 objects\movie\forge\cyberdyne\panel_8  
+ConvertInstancedGeometry 0 49 objects\movie\forge\cyberdyne\panel_9  
+ConvertInstancedGeometry 0 52 objects\movie\forge\cyberdyne\panel_10  
+ConvertInstancedGeometry 0 235 objects\movie\forge\cyberdyne\panel_11  
+ConvertInstancedGeometry 0 246 objects\movie\forge\cyberdyne\panel_12  
+ConvertInstancedGeometry 0 271 objects\movie\forge\cyberdyne\panel_13  
+ConvertInstancedGeometry 0 363 objects\movie\forge\cyberdyne\panel_14  
+ConvertInstancedGeometry 0 371 objects\movie\forge\cyberdyne\panel_15  
+ConvertInstancedGeometry 0 388 objects\movie\forge\cyberdyne\panel_16  
+ConvertInstancedGeometry 0 389 objects\movie\forge\cyberdyne\panel_17  
+ConvertInstancedGeometry 0 409 objects\movie\forge\cyberdyne\panel_18  
+ConvertInstancedGeometry 0 411 objects\movie\forge\cyberdyne\panel_19  
+ConvertInstancedGeometry 0 413 objects\movie\forge\cyberdyne\panel_20  
+ConvertInstancedGeometry 0 428 objects\movie\forge\cyberdyne\panel_21  
+ConvertInstancedGeometry 0 445 objects\movie\forge\cyberdyne\panel_22  
+ConvertInstancedGeometry 0 180 objects\movie\forge\cyberdyne\panel_23  
+ConvertInstancedGeometry 0 218 objects\movie\forge\cyberdyne\panel_24  
+
+## STRUCTURE  
+ConvertInstancedGeometry 0 17 objects\movie\forge\cyberdyne\structure_1  
+ConvertInstancedGeometry 0 198 objects\movie\forge\cyberdyne\structure_2  
+ConvertInstancedGeometry 0 199 objects\movie\forge\cyberdyne\structure_3  
+ConvertInstancedGeometry 0 234 objects\movie\forge\cyberdyne\structure_4  
+ConvertInstancedGeometry 0 192 objects\movie\forge\cyberdyne\structure_5  
+ConvertInstancedGeometry 0 188 objects\movie\forge\cyberdyne\structure_6  
+ConvertInstancedGeometry 0 189 objects\movie\forge\cyberdyne\structure_7  
+ConvertInstancedGeometry 0 119 objects\movie\forge\cyberdyne\structure_8  
+ConvertInstancedGeometry 0 130 objects\movie\forge\cyberdyne\structure_9  
+ConvertInstancedGeometry 0 138 objects\movie\forge\cyberdyne\structure_10  
+ConvertInstancedGeometry 0 118 objects\movie\forge\cyberdyne\structure_11  
+ConvertInstancedGeometry 0 187 objects\movie\forge\cyberdyne\structure_12  
+
+## SUPPORT  
+ConvertInstancedGeometry 0 0 objects\movie\forge\cyberdyne\support_1  
+ConvertInstancedGeometry 0 115 objects\movie\forge\cyberdyne\support_2  
+
+Exit
+
+AddForgeCategory "THE PIT GEO" "MAP GEO"
+
+AddForgeCategory "PANELS THE PIT" "THE PIT GEO"
+AddForgeCategory "STRUCTURE THE PIT" "THE PIT GEO"
+AddForgeCategory "SUPPORT THE PIT" "THE PIT GEO"
+
+AddForgeItem "Block Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_1.scenery  
+AddForgeItem "90 Block Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_2.scenery  
+AddForgeItem "Straight Block Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_3.scenery  
+AddForgeItem "90 No Brace Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_4.scenery  
+AddForgeItem "Wide Block Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_5.scenery  
+AddForgeItem "Cross Brace Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_6.scenery  
+AddForgeItem "Double Cross Brace" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_7.scenery  
+AddForgeItem "Yellow Rubber Pad" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_8.scenery  
+AddForgeItem "8x Yellow Pad" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_9.scenery  
+AddForgeItem "4x Yellow Pad" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_10.scenery  
+AddForgeItem "Round Rubber Pad" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_11.scenery  
+AddForgeItem "Steel Panel" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_12.scenery  
+AddForgeItem "Steel Corner" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_13.scenery  
+AddForgeItem "Steel Cover" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_14.scenery  
+AddForgeItem "Double Steel Cover" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_15.scenery  
+AddForgeItem "Double Overhang Light" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_16.scenery  
+AddForgeItem "Single Overhang Light" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_17.scenery  
+AddForgeItem "Steel Bracket" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_18.scenery  
+AddForgeItem "Short Steel Bracket" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_19.scenery  
+AddForgeItem "Steel Corner Bracket" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_20.scenery  
+AddForgeItem "Short Corner Bracket" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_21.scenery  
+AddForgeItem "Half Round Rubber" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_22.scenery  
+AddForgeItem "Hallway Light" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_23.scenery  
+AddForgeItem "Street Light" "PANELS THE PIT" objects\movie\forge\cyberdyne\panel_24.scenery  
+
+AddForgeItem "Block Doorway" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_1.scenery  
+AddForgeItem "Large Ramp" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_2.scenery  
+AddForgeItem "Watch Tower" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_3.scenery  
+AddForgeItem "Narrow Ramp" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_4.scenery  
+AddForgeItem "Fence Holder" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_5.scenery  
+AddForgeItem "Canister Holder" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_6.scenery  
+AddForgeItem "Canister" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_7.scenery  
+AddForgeItem "Roof Interior" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_8.scenery  
+AddForgeItem "Roof Beams" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_9.scenery  
+AddForgeItem "Roof Catwalks" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_10.scenery  
+AddForgeItem "Roof Glass" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_11.scenery  
+AddForgeItem "Radio Tower" "STRUCTURE THE PIT" objects\movie\forge\cyberdyne\structure_12.scenery  
+
+AddForgeItem "Block Framing" "SUPPORT THE PIT" objects\movie\forge\cyberdyne\support_1.scenery  
+AddForgeItem "Braced Pipes" "SUPPORT THE PIT" objects\movie\forge\cyberdyne\support_2.scenery  
+
+EditTag objects\movie\forge\cyberdyne\structure_12.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\cyberdyne\panel_23.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\cyberdyne\panel_24.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

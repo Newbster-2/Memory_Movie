@@ -1,0 +1,188 @@
+## SANDTRAP
+EditTag levels\multi\shrine\shrine.scenario
+
+## STRUCTURE  
+ConvertInstancedGeometry 0 197 objects\movie\forge\shrine\structure_1  
+ConvertInstancedGeometry 0 193 objects\movie\forge\shrine\structure_2  
+ConvertInstancedGeometry 0 41 objects\movie\forge\shrine\structure_3  
+ConvertInstancedGeometry 0 17 objects\movie\forge\shrine\structure_4  
+ConvertInstancedGeometry 0 0 objects\movie\forge\shrine\structure_5  
+ConvertInstancedGeometry 0 70 objects\movie\forge\shrine\structure_6  
+ConvertInstancedGeometry 0 253 objects\movie\forge\shrine\structure_7  
+ConvertInstancedGeometry 0 175 objects\movie\forge\shrine\structure_8  
+ConvertInstancedGeometry 0 174 objects\movie\forge\shrine\structure_9  
+ConvertInstancedGeometry 0 283 objects\movie\forge\shrine\structure_10  
+ConvertInstancedGeometry 0 287 objects\movie\forge\shrine\structure_11  
+ConvertInstancedGeometry 0 284 objects\movie\forge\shrine\structure_12  
+ConvertInstancedGeometry 0 26 objects\movie\forge\shrine\structure_13  
+ConvertInstancedGeometry 0 222 objects\movie\forge\shrine\structure_14  
+ConvertInstancedGeometry 0 257 objects\movie\forge\shrine\structure_15  
+ConvertInstancedGeometry 0 299 objects\movie\forge\shrine\structure_16  
+ConvertInstancedGeometry 0 295 objects\movie\forge\shrine\structure_17  
+ConvertInstancedGeometry 0 313 objects\movie\forge\shrine\structure_18  
+ConvertInstancedGeometry 0 82 objects\movie\forge\shrine\structure_19  
+ConvertInstancedGeometry 0 78 objects\movie\forge\shrine\structure_20  
+ConvertInstancedGeometry 0 296 objects\movie\forge\shrine\structure_21  
+ConvertInstancedGeometry 0 60 objects\movie\forge\shrine\structure_22  
+ConvertInstancedGeometry 0 308 objects\movie\forge\shrine\structure_23  
+ConvertInstancedGeometry 0 291 objects\movie\forge\shrine\structure_24  
+ConvertInstancedGeometry 0 320 objects\movie\forge\shrine\structure_25  
+ConvertInstancedGeometry 0 302 objects\movie\forge\shrine\structure_26  
+ConvertInstancedGeometry 0 305 objects\movie\forge\shrine\structure_27  
+ConvertInstancedGeometry 0 319 objects\movie\forge\shrine\structure_28  
+ConvertInstancedGeometry 0 92 objects\movie\forge\shrine\structure_29  
+ConvertInstancedGeometry 0 76 objects\movie\forge\shrine\structure_30  
+ConvertInstancedGeometry 0 71 objects\movie\forge\shrine\structure_31  
+ConvertInstancedGeometry 0 73 objects\movie\forge\shrine\structure_32  
+ConvertInstancedGeometry 0 86 objects\movie\forge\shrine\structure_33  
+ConvertInstancedGeometry 0 219 objects\movie\forge\shrine\structure_34  
+ConvertInstancedGeometry 0 307 objects\movie\forge\shrine\structure_35  
+ConvertInstancedGeometry 0 89 objects\movie\forge\shrine\structure_36  
+ConvertInstancedGeometry 0 168 objects\movie\forge\shrine\structure_37  
+ConvertInstancedGeometry 0 58 objects\movie\forge\shrine\structure_38  
+ConvertInstancedGeometry 0 172 objects\movie\forge\shrine\structure_39  
+ConvertInstancedGeometry 0 173 objects\movie\forge\shrine\structure_40  
+ConvertInstancedGeometry 0 96 objects\movie\forge\shrine\structure_41  
+ConvertInstancedGeometry 0 97 objects\movie\forge\shrine\structure_42  
+ 
+## DECOR  
+ConvertInstancedGeometry 0 270 objects\movie\forge\shrine\decor_1  
+ConvertInstancedGeometry 0 268 objects\movie\forge\shrine\decor_2  
+ConvertInstancedGeometry 0 258 objects\movie\forge\shrine\decor_3  
+ConvertInstancedGeometry 0 282 objects\movie\forge\shrine\decor_4  
+ConvertInstancedGeometry 0 271 objects\movie\forge\shrine\decor_5  
+ConvertInstancedGeometry 0 280 objects\movie\forge\shrine\decor_6  
+ConvertInstancedGeometry 0 227 objects\movie\forge\shrine\decor_7  
+ConvertInstancedGeometry 0 294 objects\movie\forge\shrine\decor_8  
+ConvertInstancedGeometry 0 274 objects\movie\forge\shrine\decor_9  
+ConvertInstancedGeometry 0 275 objects\movie\forge\shrine\decor_10  
+ConvertInstancedGeometry 0 136 objects\movie\forge\shrine\decor_11  
+ConvertInstancedGeometry 0 327 objects\movie\forge\shrine\decor_12  
+
+## COPPER  
+ConvertInstancedGeometry 0 177 objects\movie\forge\shrine\copper_1  
+ConvertInstancedGeometry 0 179 objects\movie\forge\shrine\copper_2  
+ConvertInstancedGeometry 0 182 objects\movie\forge\shrine\copper_3  
+ConvertInstancedGeometry 0 199 objects\movie\forge\shrine\copper_4  
+ConvertInstancedGeometry 0 321 objects\movie\forge\shrine\copper_5  
+ConvertInstancedGeometry 0 94 objects\movie\forge\shrine\copper_6  
+ConvertInstancedGeometry 0 69 objects\movie\forge\shrine\copper_7  
+ConvertInstancedGeometry 0 44 objects\movie\forge\shrine\copper_8  
+ConvertInstancedGeometry 0 211 objects\movie\forge\shrine\copper_9  
+ConvertInstancedGeometry 0 218 objects\movie\forge\shrine\copper_10  
+ConvertInstancedGeometry 0 315 objects\movie\forge\shrine\copper_11  
+ConvertInstancedGeometry 0 227 objects\movie\forge\shrine\copper_12  
+ConvertInstancedGeometry 0 166 objects\movie\forge\shrine\copper_13  
+ConvertInstancedGeometry 0 32 objects\movie\forge\shrine\copper_14  
+ConvertInstancedGeometry 0 241 objects\movie\forge\shrine\copper_15  
+
+## MISC  
+ConvertInstancedGeometry 0 1 objects\movie\forge\shrine\misc_1  
+ConvertInstancedGeometry 0 7 objects\movie\forge\shrine\misc_2  
+ConvertInstancedGeometry 0 11 objects\movie\forge\shrine\misc_3  
+ConvertInstancedGeometry 0 64 objects\movie\forge\shrine\misc_4  
+ConvertInstancedGeometry 0 91 objects\movie\forge\shrine\misc_5  
+ConvertInstancedGeometry 0 103 objects\movie\forge\shrine\misc_6  
+ConvertInstancedGeometry 0 101 objects\movie\forge\shrine\misc_7  
+ConvertInstancedGeometry 0 170 objects\movie\forge\shrine\misc_8  
+ConvertInstancedGeometry 0 169 objects\movie\forge\shrine\misc_9  
+
+Exit
+
+AddForgeCategory "SANDTRAP GEO" "MAP GEO"
+
+AddForgeCategory "STRUCTURE SANDTRAP" "SANDTRAP GEO"
+AddForgeCategory "DECOR SANDTRAP" "SANDTRAP GEO"
+AddForgeCategory "COPPER SANDTRAP" "SANDTRAP GEO"
+AddForgeCategory "MISC SANDTRAP" "SANDTRAP GEO"
+
+AddForgeItem "Support Block Entry Left" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_1.scenery  
+AddForgeItem "Support Block Entry Right" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_2.scenery  
+AddForgeItem "Support Block Corner Tall" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_3.scenery  
+AddForgeItem "Support Block Corner Short" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_4.scenery  
+AddForgeItem "Octagon Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_5.scenery  
+AddForgeItem "Octagon Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_6.scenery  
+AddForgeItem "Shrine Half Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_7.scenery  
+AddForgeItem "Shrine Half Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_8.scenery  
+AddForgeItem "Shrine Half Block V3" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_9.scenery  
+AddForgeItem "Shrine Corner Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_10.scenery  
+AddForgeItem "Shrine Corner Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_11.scenery  
+AddForgeItem "Shrine Ramp Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_12.scenery  
+AddForgeItem "Pyramid Top Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_13.scenery  
+AddForgeItem "Entry Archway" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_14.scenery  
+AddForgeItem "Entry Archway Tiny" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_15.scenery  
+AddForgeItem "Shrine Obelisk Front" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_16.scenery  
+AddForgeItem "Shrine Obelisk Back" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_17.scenery  
+AddForgeItem "Entry Obelisk" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_18.scenery  
+AddForgeItem "Ramp Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_19.scenery  
+AddForgeItem "Ramp Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_20.scenery  
+AddForgeItem "Ramp Block Narrow" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_21.scenery  
+AddForgeItem "Ramp Block Narrow V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_22.scenery  
+AddForgeItem "Cap Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_23.scenery  
+AddForgeItem "Cap Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_24.scenery  
+AddForgeItem "Cap Block V3" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_25.scenery  
+AddForgeItem "Stump Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_26.scenery  
+AddForgeItem "Stump Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_27.scenery  
+AddForgeItem "Entry Slot Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_28.scenery  
+AddForgeItem "Shrine Top Block Small" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_29.scenery  
+AddForgeItem "Platform Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_30.scenery  
+AddForgeItem "Platform Block Longer" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_31.scenery  
+AddForgeItem "Broken Platform Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_32.scenery  
+AddForgeItem "Platform Block Lip" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_33.scenery  
+AddForgeItem "Hole Blocker Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_34.scenery  
+AddForgeItem "Hole Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_35.scenery  
+AddForgeItem "Sand Lift Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_36.scenery  
+AddForgeItem "Shaft Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_37.scenery  
+AddForgeItem "Damaged Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_38.scenery  
+AddForgeItem "Stone Key Block" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_39.scenery  
+AddForgeItem "Stone Key Block V2" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_40.scenery  
+AddForgeItem "Shrine Interior Walls" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_41.scenery  
+AddForgeItem "Shrine Entry Halls" "STRUCTURE SANDTRAP" objects\movie\forge\shrine\structure_42.scenery  
+
+AddForgeItem "Decor Obelisk Tall" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_1.scenery  
+AddForgeItem "Decor Obelisk Tall V2" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_2.scenery  
+AddForgeItem "Decor Obelisk Tall V3" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_3.scenery  
+AddForgeItem "Decor Obelisk Medium" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_4.scenery  
+AddForgeItem "Decor Obelisk Medium V2" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_5.scenery  
+AddForgeItem "Decor Obelisk Short" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_6.scenery  
+AddForgeItem "Decor Obelisk Short V2" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_7.scenery  
+AddForgeItem "Decor Obelisk Short V3" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_8.scenery  
+AddForgeItem "Decor Obelisk Tiny" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_9.scenery  
+AddForgeItem "Decor Obelisk Tiny V2" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_10.scenery  
+AddForgeItem "Rubble Block" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_11.scenery  
+AddForgeItem "Trim Block" "DECOR SANDTRAP" objects\movie\forge\shrine\decor_12.scenery  
+
+AddForgeItem "Copper Wall Cap" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_1.scenery  
+AddForgeItem "Copper Wall Cap V2" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_2.scenery  
+AddForgeItem "Copper Wall Cap V3" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_3.scenery  
+AddForgeItem "Copper Wall Cap Segment" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_4.scenery  
+AddForgeItem "Copper Wall Cap Obelisk" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_5.scenery  
+AddForgeItem "Copper Wall" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_6.scenery  
+AddForgeItem "Copper Pillar" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_7.scenery  
+AddForgeItem "Copper Fins" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_8.scenery  
+AddForgeItem "Copper Fin" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_9.scenery  
+AddForgeItem "Copper Fin Shorter" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_10.scenery  
+AddForgeItem "Copper Braces" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_11.scenery  
+AddForgeItem "Obelisk Copper Cap" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_12.scenery  
+AddForgeItem "Copper Hologram Plate" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_13.scenery  
+AddForgeItem "Copper Insets" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_14.scenery  
+AddForgeItem "Copper Insets V2" "COPPER SANDTRAP" objects\movie\forge\shrine\copper_15.scenery  
+
+AddForgeItem "Obelisk" "MISC SANDTRAP" objects\movie\forge\shrine\misc_1.scenery  
+AddForgeItem "Obelisk Brace" "MISC SANDTRAP" objects\movie\forge\shrine\misc_2.scenery  
+AddForgeItem "Obelisk Eye Light" "MISC SANDTRAP" objects\movie\forge\shrine\misc_3.scenery  
+AddForgeItem "Outer Ring Segment" "MISC SANDTRAP" objects\movie\forge\shrine\misc_4.scenery  
+AddForgeItem "Steel Panel" "MISC SANDTRAP" objects\movie\forge\shrine\misc_5.scenery  
+AddForgeItem "Albatross" "MISC SANDTRAP" objects\movie\forge\shrine\misc_6.scenery  
+AddForgeItem "Albatross Hydraulics" "MISC SANDTRAP" objects\movie\forge\shrine\misc_7.scenery  
+AddForgeItem "Phantom" "MISC SANDTRAP" objects\movie\forge\shrine\misc_8.scenery  
+AddForgeItem "Phantom Bits" "MISC SANDTRAP" objects\movie\forge\shrine\misc_9.scenery  
+
+EditTag objects\movie\forge\shrine\misc_3.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

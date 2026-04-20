@@ -1,0 +1,410 @@
+## ICEBOX
+EditTag levels\multi\s3d_turf\s3d_turf.scenario
+
+## SKYSCRAPERS
+ConvertInstancedGeometry 0 865 objects\movie\forge\turf\skyscraper_1
+ConvertInstancedGeometry 0 873 objects\movie\forge\turf\skyscraper_2
+ConvertInstancedGeometry 0 874 objects\movie\forge\turf\skyscraper_3
+ConvertInstancedGeometry 0 876 objects\movie\forge\turf\skyscraper_4
+ConvertInstancedGeometry 0 882 objects\movie\forge\turf\skyscraper_5
+ConvertInstancedGeometry 0 888 objects\movie\forge\turf\skyscraper_6
+ConvertInstancedGeometry 0 894 objects\movie\forge\turf\skyscraper_7
+ConvertInstancedGeometry 0 900 objects\movie\forge\turf\skyscraper_8
+ConvertInstancedGeometry 0 907 objects\movie\forge\turf\skyscraper_9
+ConvertInstancedGeometry 0 912 objects\movie\forge\turf\skyscraper_10
+ConvertInstancedGeometry 0 1192 objects\movie\forge\turf\skyscraper_group_1
+ConvertInstancedGeometry 0 1193 objects\movie\forge\turf\skyscraper_group_2
+ConvertInstancedGeometry 0 1261 objects\movie\forge\turf\skyscraper_group_3
+ConvertInstancedGeometry 0 1262 objects\movie\forge\turf\skyscraper_group_4
+ConvertInstancedGeometry 0 1263 objects\movie\forge\turf\skyscraper_group_5
+ConvertInstancedGeometry 0 1264 objects\movie\forge\turf\skyscraper_group_6
+
+## LAMPS
+ConvertInstancedGeometry 0 201 objects\movie\forge\turf\lamp_1
+ConvertInstancedGeometry 0 500 objects\movie\forge\turf\lamp_2
+ConvertInstancedGeometry 0 708 objects\movie\forge\turf\lamp_3
+ConvertInstancedGeometry 0 925 objects\movie\forge\turf\lamp_4
+ConvertInstancedGeometry 0 928 objects\movie\forge\turf\lamp_5
+ConvertInstancedGeometry 0 936 objects\movie\forge\turf\lamp_6
+ConvertInstancedGeometry 0 947 objects\movie\forge\turf\lamp_7
+ConvertInstancedGeometry 0 957 objects\movie\forge\turf\lamp_8
+ConvertInstancedGeometry 0 1169 objects\movie\forge\turf\lamp_group_1
+ConvertInstancedGeometry 0 1288 objects\movie\forge\turf\lamp_group_2
+ConvertInstancedGeometry 0 1313 objects\movie\forge\turf\lamp_group_3
+
+## BANNERS
+ConvertInstancedGeometry 0 761 objects\movie\forge\turf\banner_1
+ConvertInstancedGeometry 0 763 objects\movie\forge\turf\banner_2
+ConvertInstancedGeometry 0 764 objects\movie\forge\turf\banner_3
+ConvertInstancedGeometry 0 765 objects\movie\forge\turf\banner_4
+ConvertInstancedGeometry 0 766 objects\movie\forge\turf\banner_5
+ConvertInstancedGeometry 0 767 objects\movie\forge\turf\banner_6
+ConvertInstancedGeometry 0 768 objects\movie\forge\turf\banner_7
+ConvertInstancedGeometry 0 769 objects\movie\forge\turf\banner_8
+ConvertInstancedGeometry 0 770 objects\movie\forge\turf\banner_9
+ConvertInstancedGeometry 0 771 objects\movie\forge\turf\banner_10
+ConvertInstancedGeometry 0 772 objects\movie\forge\turf\banner_11
+ConvertInstancedGeometry 0 773 objects\movie\forge\turf\banner_12
+ConvertInstancedGeometry 0 774 objects\movie\forge\turf\banner_13
+ConvertInstancedGeometry 0 775 objects\movie\forge\turf\banner_entry_1
+ConvertInstancedGeometry 0 779 objects\movie\forge\turf\banner_entry_2
+
+## FABRIC
+ConvertInstancedGeometry 0 780 objects\movie\forge\turf\fabric_1
+ConvertInstancedGeometry 0 781 objects\movie\forge\turf\fabric_2
+ConvertInstancedGeometry 0 785 objects\movie\forge\turf\fabric_3
+ConvertInstancedGeometry 0 788 objects\movie\forge\turf\fabric_4
+ConvertInstancedGeometry 0 789 objects\movie\forge\turf\fabric_5
+ConvertInstancedGeometry 0 790 objects\movie\forge\turf\fabric_6
+ConvertInstancedGeometry 0 791 objects\movie\forge\turf\fabric_7
+ConvertInstancedGeometry 0 792 objects\movie\forge\turf\fabric_8
+ConvertInstancedGeometry 0 793 objects\movie\forge\turf\fabric_9
+ConvertInstancedGeometry 0 794 objects\movie\forge\turf\fabric_10
+ConvertInstancedGeometry 0 795 objects\movie\forge\turf\fabric_11
+ConvertInstancedGeometry 0 796 objects\movie\forge\turf\fabric_12
+
+## CANOPIES
+ConvertInstancedGeometry 0 663 objects\movie\forge\turf\canopy_1
+ConvertInstancedGeometry 0 702 objects\movie\forge\turf\canopy_2
+ConvertInstancedGeometry 0 797 objects\movie\forge\turf\canopy_3
+
+## DOOR FRAMES
+ConvertInstancedGeometry 0 273 objects\movie\forge\turf\door_frame_1
+ConvertInstancedGeometry 0 492 objects\movie\forge\turf\door_frame_2
+
+## PANELS
+ConvertInstancedGeometry 0 3 objects\movie\forge\turf\panel_1
+ConvertInstancedGeometry 0 40 objects\movie\forge\turf\panel_2
+ConvertInstancedGeometry 0 68 objects\movie\forge\turf\panel_3
+ConvertInstancedGeometry 0 150 objects\movie\forge\turf\panel_4
+ConvertInstancedGeometry 0 175 objects\movie\forge\turf\panel_5
+ConvertInstancedGeometry 0 405 objects\movie\forge\turf\panel_6
+ConvertInstancedGeometry 0 409 objects\movie\forge\turf\panel_7
+ConvertInstancedGeometry 0 441 objects\movie\forge\turf\panel_8
+ConvertInstancedGeometry 0 451 objects\movie\forge\turf\panel_9
+ConvertInstancedGeometry 0 457 objects\movie\forge\turf\panel_10
+ConvertInstancedGeometry 0 480 objects\movie\forge\turf\panel_11
+ConvertInstancedGeometry 0 490 objects\movie\forge\turf\panel_12
+ConvertInstancedGeometry 0 581 objects\movie\forge\turf\panel_13
+ConvertInstancedGeometry 0 605 objects\movie\forge\turf\panel_14
+ConvertInstancedGeometry 0 621 objects\movie\forge\turf\panel_15
+ConvertInstancedGeometry 0 676 objects\movie\forge\turf\panel_16
+ConvertInstancedGeometry 0 680 objects\movie\forge\turf\panel_17
+
+## BRACES
+ConvertInstancedGeometry 0 16 objects\movie\forge\turf\brace_1
+ConvertInstancedGeometry 0 54 objects\movie\forge\turf\brace_2
+ConvertInstancedGeometry 0 162 objects\movie\forge\turf\brace_3
+ConvertInstancedGeometry 0 470 objects\movie\forge\turf\brace_4
+ConvertInstancedGeometry 0 486 objects\movie\forge\turf\brace_5
+ConvertInstancedGeometry 0 333 objects\movie\forge\turf\brace_6
+ConvertInstancedGeometry 0 458 objects\movie\forge\turf\brace_7
+ConvertInstancedGeometry 0 496 objects\movie\forge\turf\brace_8
+
+## BLOCKS
+ConvertInstancedGeometry 0 415 objects\movie\forge\turf\block_1
+ConvertInstancedGeometry 0 469 objects\movie\forge\turf\block_2
+ConvertInstancedGeometry 0 659 objects\movie\forge\turf\block_3
+ConvertInstancedGeometry 0 82 objects\movie\forge\turf\block_4
+ConvertInstancedGeometry 0 627 objects\movie\forge\turf\block_5
+ConvertInstancedGeometry 0 630 objects\movie\forge\turf\block_6
+ConvertInstancedGeometry 0 756 objects\movie\forge\turf\block_7
+ConvertInstancedGeometry 0 758 objects\movie\forge\turf\block_8
+
+## PIPES
+ConvertInstancedGeometry 0 25 objects\movie\forge\turf\pipe_1
+ConvertInstancedGeometry 0 279 objects\movie\forge\turf\pipe_2
+ConvertInstancedGeometry 0 280 objects\movie\forge\turf\pipe_3
+ConvertInstancedGeometry 0 424 objects\movie\forge\turf\pipe_4
+ConvertInstancedGeometry 0 439 objects\movie\forge\turf\pipe_5
+ConvertInstancedGeometry 0 479 objects\movie\forge\turf\pipe_6
+ConvertInstancedGeometry 0 568 objects\movie\forge\turf\pipe_7
+ConvertInstancedGeometry 0 614 objects\movie\forge\turf\pipe_8
+ConvertInstancedGeometry 0 634 objects\movie\forge\turf\pipe_9
+ConvertInstancedGeometry 0 635 objects\movie\forge\turf\pipe_10
+ConvertInstancedGeometry 0 643 objects\movie\forge\turf\pipe_11
+ConvertInstancedGeometry 0 645 objects\movie\forge\turf\pipe_12
+ConvertInstancedGeometry 0 666 objects\movie\forge\turf\pipe_13
+ConvertInstancedGeometry 0 725 objects\movie\forge\turf\pipe_14
+ConvertInstancedGeometry 0 717 objects\movie\forge\turf\pipe_15
+
+## CANISTERS
+ConvertInstancedGeometry 0 62 objects\movie\forge\turf\canister_1
+ConvertInstancedGeometry 0 85 objects\movie\forge\turf\canister_2
+ConvertInstancedGeometry 0 274 objects\movie\forge\turf\canister_3
+ConvertInstancedGeometry 0 287 objects\movie\forge\turf\canister_4
+ConvertInstancedGeometry 0 341 objects\movie\forge\turf\canister_5
+ConvertInstancedGeometry 0 447 objects\movie\forge\turf\canister_6
+ConvertInstancedGeometry 0 653 objects\movie\forge\turf\canister_7
+ConvertInstancedGeometry 0 657 objects\movie\forge\turf\canister_8
+
+## MISC
+ConvertInstancedGeometry 0 122 objects\movie\forge\turf\misc_1
+ConvertInstancedGeometry 0 133 objects\movie\forge\turf\misc_2
+ConvertInstancedGeometry 0 149 objects\movie\forge\turf\misc_3
+ConvertInstancedGeometry 0 239 objects\movie\forge\turf\misc_4
+ConvertInstancedGeometry 0 354 objects\movie\forge\turf\misc_5
+ConvertInstancedGeometry 0 364 objects\movie\forge\turf\misc_6
+ConvertInstancedGeometry 0 487 objects\movie\forge\turf\misc_7
+ConvertInstancedGeometry 0 511 objects\movie\forge\turf\misc_8
+ConvertInstancedGeometry 0 557 objects\movie\forge\turf\misc_9
+ConvertInstancedGeometry 0 574 objects\movie\forge\turf\misc_10
+ConvertInstancedGeometry 0 578 objects\movie\forge\turf\misc_11
+ConvertInstancedGeometry 0 682 objects\movie\forge\turf\misc_12
+ConvertInstancedGeometry 0 688 objects\movie\forge\turf\misc_13
+ConvertInstancedGeometry 0 692 objects\movie\forge\turf\misc_14
+ConvertInstancedGeometry 0 958 objects\movie\forge\turf\misc_15
+ConvertInstancedGeometry 0 962 objects\movie\forge\turf\misc_16
+
+## BUILDINGS
+ConvertInstancedGeometry 0 913 objects\movie\forge\turf\building_1
+ConvertInstancedGeometry 0 914 objects\movie\forge\turf\building_2
+ConvertInstancedGeometry 0 915 objects\movie\forge\turf\building_3
+
+## Windows
+ConvertInstancedGeometry 0 67 objects\movie\forge\turf\window_1
+ConvertInstancedGeometry 0 404 objects\movie\forge\turf\window_2
+
+Exit
+
+AddForgeCategory "ICEBOX GEO" "MAP GEO"
+
+AddForgeCategory "SKYSCRAPERS ICE" "ICEBOX GEO"
+AddForgeCategory "LAMPS ICE" "ICEBOX GEO"
+AddForgeCategory "BANNERS ICE" "ICEBOX GEO"
+AddForgeCategory "FABRIC ICE" "ICEBOX GEO"
+AddForgeCategory "CANOPIES ICE" "ICEBOX GEO"
+AddForgeCategory "DOOR FRAMES ICE" "ICEBOX GEO"
+AddForgeCategory "PANELS ICE" "ICEBOX GEO"
+AddForgeCategory "BRACES ICE" "ICEBOX GEO"
+AddForgeCategory "BLOCKS ICE" "ICEBOX GEO"
+AddForgeCategory "PIPES ICE" "ICEBOX GEO"
+AddForgeCategory "CANISTERS ICE" "ICEBOX GEO"
+AddForgeCategory "MISC ICE" "ICEBOX GEO"
+AddForgeCategory "BUILDINGS ICE" "ICEBOX GEO"
+AddForgeCategory "WINDOWS ICE" "ICEBOX GEO"
+
+AddForgeItem "Basic" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_1.scenery
+AddForgeItem "Pointed" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_2.scenery
+AddForgeItem "AV Lights" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_3.scenery
+AddForgeItem "Blade" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_4.scenery
+AddForgeItem "Rounded" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_5.scenery
+AddForgeItem "Sloped" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_6.scenery
+AddForgeItem "Helipad" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_7.scenery
+AddForgeItem "Wedge" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_8.scenery
+AddForgeItem "Teardrop" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_9.scenery
+AddForgeItem "Complex" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_10.scenery
+AddForgeItem "Helipad Set" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_group_1.scenery
+AddForgeItem "Teardrop Set" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_group_2.scenery
+AddForgeItem "Basic Set" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_group_3.scenery
+AddForgeItem "Blade Set" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_group_4.scenery
+AddForgeItem "Rounded Set" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_group_5.scenery
+AddForgeItem "Wedge Set" "SKYSCRAPERS ICE" objects\movie\forge\turf\skyscraper_group_6.scenery
+
+AddForgeItem "Blue Bar" "LAMPS ICE" objects\movie\forge\turf\lamp_1.scenery
+AddForgeItem "Orange Bar" "LAMPS ICE" objects\movie\forge\turf\lamp_2.scenery
+AddForgeItem "Blue Strip" "LAMPS ICE" objects\movie\forge\turf\lamp_3.scenery
+AddForgeItem "Dome" "LAMPS ICE" objects\movie\forge\turf\lamp_4.scenery
+AddForgeItem "Blue Detail" "LAMPS ICE" objects\movie\forge\turf\lamp_5.scenery
+AddForgeItem "Orange Strip" "LAMPS ICE" objects\movie\forge\turf\lamp_6.scenery
+AddForgeItem "Small Blue Bar" "LAMPS ICE" objects\movie\forge\turf\lamp_7.scenery
+AddForgeItem "Small Orange Bar" "LAMPS ICE" objects\movie\forge\turf\lamp_8.scenery
+AddForgeItem "Blue Bar Set" "LAMPS ICE" objects\movie\forge\turf\lamp_group_1.scenery
+AddForgeItem "Dome Set" "LAMPS ICE" objects\movie\forge\turf\lamp_group_2.scenery
+AddForgeItem "Blue Strip Set" "LAMPS ICE" objects\movie\forge\turf\lamp_group_3.scenery
+
+AddForgeItem "Hotel" "BANNERS ICE" objects\movie\forge\turf\banner_1.scenery
+AddForgeItem "Casino" "BANNERS ICE" objects\movie\forge\turf\banner_2.scenery
+AddForgeItem "Food" "BANNERS ICE" objects\movie\forge\turf\banner_3.scenery
+AddForgeItem "Bar" "BANNERS ICE" objects\movie\forge\turf\banner_4.scenery
+AddForgeItem "Store" "BANNERS ICE" objects\movie\forge\turf\banner_5.scenery
+AddForgeItem "Message Blue" "BANNERS ICE" objects\movie\forge\turf\banner_6.scenery
+AddForgeItem "Supplies" "BANNERS ICE" objects\movie\forge\turf\banner_7.scenery
+AddForgeItem "Message Red" "BANNERS ICE" objects\movie\forge\turf\banner_8.scenery
+AddForgeItem "Market" "BANNERS ICE" objects\movie\forge\turf\banner_9.scenery
+AddForgeItem "Electronics" "BANNERS ICE" objects\movie\forge\turf\banner_10.scenery
+AddForgeItem "Cosmic" "BANNERS ICE" objects\movie\forge\turf\banner_11.scenery
+AddForgeItem "Hospital" "BANNERS ICE" objects\movie\forge\turf\banner_12.scenery
+AddForgeItem "Office" "BANNERS ICE" objects\movie\forge\turf\banner_13.scenery
+AddForgeItem "Enter" "BANNERS ICE" objects\movie\forge\turf\banner_entry_1.scenery
+AddForgeItem "Exit" "BANNERS ICE" objects\movie\forge\turf\banner_entry_2.scenery
+
+AddForgeItem "Large Corner" "FABRIC ICE" objects\movie\forge\turf\fabric_1.scenery
+AddForgeItem "Wall Dark" "FABRIC ICE" objects\movie\forge\turf\fabric_2.scenery
+AddForgeItem "Wall Light" "FABRIC ICE" objects\movie\forge\turf\fabric_3.scenery
+AddForgeItem "Draped Wall Dark" "FABRIC ICE" objects\movie\forge\turf\fabric_4.scenery
+AddForgeItem "Tight Corner" "FABRIC ICE" objects\movie\forge\turf\fabric_5.scenery
+AddForgeItem "45 Corner" "FABRIC ICE" objects\movie\forge\turf\fabric_6.scenery
+AddForgeItem "Wall Long" "FABRIC ICE" objects\movie\forge\turf\fabric_7.scenery
+AddForgeItem "Tucked Corner" "FABRIC ICE" objects\movie\forge\turf\fabric_8.scenery
+AddForgeItem "Wall Short" "FABRIC ICE" objects\movie\forge\turf\fabric_9.scenery
+AddForgeItem "Draped Wall Light" "FABRIC ICE" objects\movie\forge\turf\fabric_10.scenery
+AddForgeItem "Sloped Corner" "FABRIC ICE" objects\movie\forge\turf\fabric_11.scenery
+AddForgeItem "Large Sloped Corner" "FABRIC ICE" objects\movie\forge\turf\fabric_12.scenery
+
+AddForgeItem "Tin" "CANOPIES ICE" objects\movie\forge\turf\canopy_1.scenery
+AddForgeItem "Mangled Long" "CANOPIES ICE" objects\movie\forge\turf\canopy_2.scenery
+AddForgeItem "Mangled" "CANOPIES ICE" objects\movie\forge\turf\canopy_3.scenery
+
+AddForgeItem "Wide Rounded" "DOOR FRAMES ICE" objects\movie\forge\turf\door_frame_1.scenery
+AddForgeItem "Simple" "DOOR FRAMES ICE" objects\movie\forge\turf\door_frame_2.scenery
+
+AddForgeItem "Long Vent" "PANELS ICE" objects\movie\forge\turf\panel_1.scenery
+AddForgeItem "Octagon Vent" "PANELS ICE" objects\movie\forge\turf\panel_2.scenery
+AddForgeItem "Solid Vertical" "PANELS ICE" objects\movie\forge\turf\panel_3.scenery
+AddForgeItem "Large X" "PANELS ICE" objects\movie\forge\turf\panel_4.scenery
+AddForgeItem "Solid Vertical V2" "PANELS ICE" objects\movie\forge\turf\panel_5.scenery
+AddForgeItem "Long Pointed" "PANELS ICE" objects\movie\forge\turf\panel_6.scenery
+AddForgeItem "Long 4 Corner" "PANELS ICE" objects\movie\forge\turf\panel_7.scenery
+AddForgeItem "Rounded" "PANELS ICE" objects\movie\forge\turf\panel_8.scenery
+AddForgeItem "Long Extrude Vent" "PANELS ICE" objects\movie\forge\turf\panel_9.scenery
+AddForgeItem "Long Extrude Vent Damaged" "PANELS ICE" objects\movie\forge\turf\panel_10.scenery
+AddForgeItem "Angled Vent" "PANELS ICE" objects\movie\forge\turf\panel_11.scenery
+AddForgeItem "Broken" "PANELS ICE" objects\movie\forge\turf\panel_12.scenery
+AddForgeItem "Skinny Vent" "PANELS ICE" objects\movie\forge\turf\panel_13.scenery
+AddForgeItem "Oval Vent" "PANELS ICE" objects\movie\forge\turf\panel_14.scenery
+AddForgeItem "Winged Vent" "PANELS ICE" objects\movie\forge\turf\panel_15.scenery
+AddForgeItem "Stripe" "PANELS ICE" objects\movie\forge\turf\panel_16.scenery
+AddForgeItem "Piped Vent" "PANELS ICE" objects\movie\forge\turf\panel_17.scenery
+
+AddForgeItem "Corner" "BRACES ICE" objects\movie\forge\turf\brace_1.scenery
+AddForgeItem "Cover" "BRACES ICE" objects\movie\forge\turf\brace_2.scenery
+AddForgeItem "Small Corner" "BRACES ICE" objects\movie\forge\turf\brace_3.scenery
+AddForgeItem "Tiny Corner" "BRACES ICE" objects\movie\forge\turf\brace_4.scenery
+AddForgeItem "Vented Corner" "BRACES ICE" objects\movie\forge\turf\brace_5.scenery
+AddForgeItem "Small Horizontal" "BRACES ICE" objects\movie\forge\turf\brace_6.scenery
+AddForgeItem "Long Grid" "BRACES ICE" objects\movie\forge\turf\brace_7.scenery
+AddForgeItem "Angled" "BRACES ICE" objects\movie\forge\turf\brace_8.scenery
+
+AddForgeItem "Ramp" "BLOCKS ICE" objects\movie\forge\turf\block_1.scenery
+AddForgeItem "Ramp Wide" "BLOCKS ICE" objects\movie\forge\turf\block_2.scenery
+AddForgeItem "UNSC" "BLOCKS ICE" objects\movie\forge\turf\block_3.scenery
+AddForgeItem "Glass Railing Siding" "BLOCKS ICE" objects\movie\forge\turf\block_4.scenery
+AddForgeItem "Glass Railing Siding Left" "BLOCKS ICE" objects\movie\forge\turf\block_5.scenery
+AddForgeItem "Glass Railing Siding Right" "BLOCKS ICE" objects\movie\forge\turf\block_6.scenery
+AddForgeItem "Glass Siding" "BLOCKS ICE" objects\movie\forge\turf\block_7.scenery
+AddForgeItem "Glass Siding Dim" "BLOCKS ICE" objects\movie\forge\turf\block_8.scenery
+
+AddForgeItem "90 Bend" "PIPES ICE" objects\movie\forge\turf\pipe_1.scenery
+AddForgeItem "Dual Vent" "PIPES ICE" objects\movie\forge\turf\pipe_2.scenery
+AddForgeItem "Skinny Insulated" "PIPES ICE" objects\movie\forge\turf\pipe_3.scenery
+AddForgeItem "90 Bend Vent" "PIPES ICE" objects\movie\forge\turf\pipe_4.scenery
+AddForgeItem "Long Insulated" "PIPES ICE" objects\movie\forge\turf\pipe_5.scenery
+AddForgeItem "Rusty Broken Concrete" "PIPES ICE" objects\movie\forge\turf\pipe_6.scenery
+AddForgeItem "Multi 90 Bend" "PIPES ICE" objects\movie\forge\turf\pipe_7.scenery
+AddForgeItem "Multi Direction Group" "PIPES ICE" objects\movie\forge\turf\pipe_8.scenery
+AddForgeItem "Multi Slopped Vent" "PIPES ICE" objects\movie\forge\turf\pipe_9.scenery
+AddForgeItem "Multi Small Vent" "PIPES ICE" objects\movie\forge\turf\pipe_10.scenery
+AddForgeItem "Multi Large Curving" "PIPES ICE" objects\movie\forge\turf\pipe_11.scenery
+AddForgeItem "Long 180" "PIPES ICE" objects\movie\forge\turf\pipe_12.scenery
+AddForgeItem "45 Bend" "PIPES ICE" objects\movie\forge\turf\pipe_13.scenery
+AddForgeItem "Straight Insulated" "PIPES ICE" objects\movie\forge\turf\pipe_14.scenery
+AddForgeItem "Straight Standard" "PIPES ICE" objects\movie\forge\turf\pipe_15.scenery
+
+AddForgeItem "Side Mount" "CANISTERS ICE" objects\movie\forge\turf\canister_1.scenery
+AddForgeItem "End Cap" "CANISTERS ICE" objects\movie\forge\turf\canister_2.scenery
+AddForgeItem "Roof Cap" "CANISTERS ICE" objects\movie\forge\turf\canister_3.scenery
+AddForgeItem "Yellow Set" "CANISTERS ICE" objects\movie\forge\turf\canister_4.scenery
+AddForgeItem "Yellow Set Pillar" "CANISTERS ICE" objects\movie\forge\turf\canister_5.scenery
+AddForgeItem "End Cap Set" "CANISTERS ICE" objects\movie\forge\turf\canister_6.scenery
+AddForgeItem "Top Set Panel" "CANISTERS ICE" objects\movie\forge\turf\canister_7.scenery
+AddForgeItem "Top Set Panel Short" "CANISTERS ICE" objects\movie\forge\turf\canister_8.scenery
+
+AddForgeItem "Wall AC Unit" "MISC ICE" objects\movie\forge\turf\misc_1.scenery
+AddForgeItem "Handle Strap" "MISC ICE" objects\movie\forge\turf\misc_2.scenery
+AddForgeItem "Fence" "MISC ICE" objects\movie\forge\turf\misc_3.scenery
+AddForgeItem "Guard Rail" "MISC ICE" objects\movie\forge\turf\misc_4.scenery
+AddForgeItem "90 Bend Square Tube" "MISC ICE" objects\movie\forge\turf\misc_5.scenery
+AddForgeItem "Air Filter" "MISC ICE" objects\movie\forge\turf\misc_6.scenery
+AddForgeItem "Framing" "MISC ICE" objects\movie\forge\turf\misc_7.scenery
+AddForgeItem "Rebar Framing" "MISC ICE" objects\movie\forge\turf\misc_8.scenery
+AddForgeItem "Scaffolding" "MISC ICE" objects\movie\forge\turf\misc_9.scenery
+AddForgeItem "Walkway Light" "MISC ICE" objects\movie\forge\turf\misc_10.scenery
+AddForgeItem "Cable" "MISC ICE" objects\movie\forge\turf\misc_11.scenery
+AddForgeItem "Bent I-Beams" "MISC ICE" objects\movie\forge\turf\misc_12.scenery
+AddForgeItem "Concrete Rebar" "MISC ICE" objects\movie\forge\turf\misc_13.scenery
+AddForgeItem "Concrete Rebar V2" "MISC ICE" objects\movie\forge\turf\misc_14.scenery
+AddForgeItem "Man Hole" "MISC ICE" objects\movie\forge\turf\misc_15.scenery
+AddForgeItem "Small Snow Patch" "MISC ICE" objects\movie\forge\turf\misc_16.scenery
+
+AddForgeItem "Simple Section" "BUILDINGS ICE" objects\movie\forge\turf\building_1.scenery
+AddForgeItem "Complex Section" "BUILDINGS ICE" objects\movie\forge\turf\building_2.scenery
+AddForgeItem "Monorail" "BUILDINGS ICE" objects\movie\forge\turf\building_3.scenery
+
+AddForgeItem "Window Blind" "WINDOWS ICE" objects\movie\forge\turf\window_1.scenery
+AddForgeItem "Segmented Red" "WINDOWS ICE" objects\movie\forge\turf\window_2.scenery
+
+ForEach hlmt contains: objects\movie\forge\turf\skyscraper SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\skyscraper AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\skyscraper SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\skyscraper SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\skyscraper SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\lamp SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\lamp AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\lamp SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\lamp SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\lamp SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\banner SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\banner AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\banner SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\banner SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\banner SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\fabric SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\fabric AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\fabric SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\fabric SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\fabric SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\canopy SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\canopy AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\canopy SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\canopy SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\canopy SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\door_frame SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\door_frame AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\door_frame SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\door_frame SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\door_frame SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\building SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\building AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\building SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\building SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\building SetField Materials[0].GlobalMaterialIndex 54
+
+ForEach hlmt contains: objects\movie\forge\turf\window SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: objects\movie\forge\turf\window AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\turf\window SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\window SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\turf\window SetField Materials[0].GlobalMaterialIndex 54
+
+EditTag objects\movie\forge\turf\pipe_4.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\turf\misc_11.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\turf\misc_12.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

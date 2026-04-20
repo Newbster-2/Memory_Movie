@@ -1,0 +1,114 @@
+IgnoreBlamTag objects\levels\atlas\l300\highway_barrier\highway_barrier.physics_model
+IgnoreBlamTag objects\levels\atlas\h100\hub_bench_crate\hub_bench_crate.physics_model
+IgnoreBlamTag objects\levels\atlas\h100\hub_bench_crate\fx\spawn_crate_bench.effect
+IgnoreBlamTag objects\levels\atlas\shared\trash_bag_d\trash_bag_d.physics_model
+IgnoreBlamTag objects\levels\atlas\shared\trash_bag_i\trash_bag_i.physics_model
+IgnoreBlamTag objects\levels\atlas\shared\trash_bag_i01\trash_bag_i01.physics_model
+IgnoreBlamTag objects\levels\atlas\l300\hvac_grate\hvac_grate.physics_model
+IgnoreBlamTag objects\cinematics\elevator_cable\elevator_cable.physics_model
+IgnoreBlamTag objects\cinematics\elevator_cable\cinematics\sc140_int_hb\sc140_int_hb.model_animation_graph
+
+PortTag MPobject objects\vehicles\olifaunt\olifaunt.scenery
+PortTag MPobject objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed.scenery
+PortTag MPobject objects\levels\atlas\sc130\oni_building\oni_building.scenery
+PortTag MPobject objects\levels\atlas\l300\highway_barrier\highway_barrier.scenery
+PortTag MPobject objects\levels\atlas\h100\hub_bench_crate\hub_bench.scenery
+PortTag MPobject objects\levels\atlas\shared\trash_bag_d\trash_bag_d.scenery
+PortTag MPobject objects\levels\atlas\shared\trash_bag_i\trash_bag_i.scenery
+PortTag MPobject objects\levels\atlas\shared\trash_bag_i01\trash_bag_i01.scenery
+PortTag MPobject objects\levels\atlas\l300\hvac_grate\hvac_grate.scenery
+PortTag MPobject objects\cinematics\elevator_cable\elevator_cable.scenery
+
+## Scenery olifaunt
+DuplicateTag objects\vehicles\olifaunt\olifaunt.collision_model objects\vehicles\olifaunt\olifaunt_forge
+EditTag objects\vehicles\olifaunt\olifaunt_forge.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\vehicles\olifaunt\olifaunt_disabled.model
+SaveTagChanges
+Exit
+
+EditTag objects\vehicles\olifaunt\olifaunt_disabled.model
+SetField CollisionModel objects\vehicles\olifaunt\olifaunt_forge.collision_model
+SetField PhysicsModel null
+SetField Animation null
+SaveTagChanges
+Exit
+
+## Destroyed oni building
+EditTag objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+## Highway barrier
+EditTag objects\levels\atlas\l300\highway_barrier\highway_barrier.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\levels\atlas\l300\highway_barrier\highway_barrier.model
+SaveTagChanges
+Exit
+
+## Bench
+EditTag objects\levels\atlas\h100\hub_bench_crate\hub_bench_crate.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\levels\atlas\h100\hub_bench_crate\hub_bench_crate.model
+SaveTagChanges
+Exit
+
+EditTag objects\levels\atlas\h100\hub_bench_crate\hub_bench_crate.model
+RemoveBlockElements NewDamageInfo 0 *
+SaveTagChanges
+Exit
+
+## Trash bag 1
+EditTag objects\levels\atlas\shared\trash_bag_d\trash_bag_d.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\levels\atlas\shared\trash_bag_d\trash_bag_d.model
+SaveTagChanges
+Exit
+
+## Trash bag 2
+EditTag objects\levels\atlas\shared\trash_bag_i\trash_bag_i.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\levels\atlas\shared\trash_bag_i\trash_bag_i.model
+SaveTagChanges
+Exit
+
+## Trash bags
+EditTag objects\levels\atlas\shared\trash_bag_i01\trash_bag_i01.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\levels\atlas\shared\trash_bag_i01\trash_bag_i01.model
+SaveTagChanges
+Exit
+
+## Grate
+EditTag objects\levels\atlas\l300\hvac_grate\hvac_grate.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\levels\atlas\l300\hvac_grate\hvac_grate.model
+SaveTagChanges
+Exit
+
+## Cable
+EditTag objects\cinematics\elevator_cable\elevator_cable.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\cinematics\elevator_cable\elevator_cable.model
+SaveTagChanges
+Exit
+
+AddForgeCategory "COASTAL HIGHWAY SCENERY" "COASTAL HIGHWAY"
+
+AddForgeItem "Olifaunt" "COASTAL HIGHWAY SCENERY" objects\vehicles\olifaunt\olifaunt.scenery
+AddForgeItem "Destroyed Oni Building" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed.scenery
+AddForgeItem "Oni Building" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\sc130\oni_building\oni_building.scenery
+AddForgeItem "Highway Closure Barrier" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\l300\highway_barrier\highway_barrier.scenery
+AddForgeItem "Bench" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\h100\hub_bench_crate\hub_bench.scenery
+AddForgeItem "Trash Bag" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\shared\trash_bag_d\trash_bag_d.scenery
+AddForgeItem "Trash Bag 2" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\shared\trash_bag_i\trash_bag_i.scenery
+AddForgeItem "Trash Bags" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\shared\trash_bag_i01\trash_bag_i01.scenery
+AddForgeItem "Large Vent" "COASTAL HIGHWAY SCENERY" objects\levels\atlas\l300\hvac_grate\hvac_grate.scenery
+AddForgeItem "Steel Cable" "COASTAL HIGHWAY SCENERY" objects\cinematics\elevator_cable\elevator_cable.scenery

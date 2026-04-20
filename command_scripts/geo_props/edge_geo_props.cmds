@@ -1,0 +1,273 @@
+## EDGE
+EditTag levels\multi\s3d_edge\s3d_edge.scenario
+
+## DOORWAYS  
+ConvertInstancedGeometry 0 30 objects\movie\forge\s3d_edge\doorway_1  
+ConvertInstancedGeometry 0 80 objects\movie\forge\s3d_edge\doorway_2  
+ConvertInstancedGeometry 0 102 objects\movie\forge\s3d_edge\doorway_3  
+ConvertInstancedGeometry 0 266 objects\movie\forge\s3d_edge\doorway_4  
+ConvertInstancedGeometry 0 294 objects\movie\forge\s3d_edge\doorway_5  
+
+## WALLS  
+ConvertInstancedGeometry 0 56 objects\movie\forge\s3d_edge\wall_1  
+ConvertInstancedGeometry 0 82 objects\movie\forge\s3d_edge\wall_2  
+ConvertInstancedGeometry 0 92 objects\movie\forge\s3d_edge\wall_3  
+ConvertInstancedGeometry 0 271 objects\movie\forge\s3d_edge\wall_4  
+ConvertInstancedGeometry 0 274 objects\movie\forge\s3d_edge\wall_5  
+ConvertInstancedGeometry 0 299 objects\movie\forge\s3d_edge\wall_6  
+ConvertInstancedGeometry 0 301 objects\movie\forge\s3d_edge\wall_7  
+ConvertInstancedGeometry 0 303 objects\movie\forge\s3d_edge\wall_8  
+ConvertInstancedGeometry 0 307 objects\movie\forge\s3d_edge\wall_9  
+ConvertInstancedGeometry 0 309 objects\movie\forge\s3d_edge\wall_10  
+ConvertInstancedGeometry 0 331 objects\movie\forge\s3d_edge\wall_11  
+ConvertInstancedGeometry 0 344 objects\movie\forge\s3d_edge\wall_12  
+ConvertInstancedGeometry 0 348 objects\movie\forge\s3d_edge\wall_13  
+ConvertInstancedGeometry 0 350 objects\movie\forge\s3d_edge\wall_14  
+
+## SUPPORT  
+ConvertInstancedGeometry 0 13 objects\movie\forge\s3d_edge\support_1  
+ConvertInstancedGeometry 0 26 objects\movie\forge\s3d_edge\support_2  
+ConvertInstancedGeometry 0 32 objects\movie\forge\s3d_edge\support_3  
+ConvertInstancedGeometry 0 48 objects\movie\forge\s3d_edge\support_4  
+ConvertInstancedGeometry 0 58 objects\movie\forge\s3d_edge\support_5  
+ConvertInstancedGeometry 0 106 objects\movie\forge\s3d_edge\support_6  
+ConvertInstancedGeometry 0 162 objects\movie\forge\s3d_edge\support_7  
+ConvertInstancedGeometry 0 184 objects\movie\forge\s3d_edge\support_8  
+ConvertInstancedGeometry 0 209 objects\movie\forge\s3d_edge\support_9  
+ConvertInstancedGeometry 0 219 objects\movie\forge\s3d_edge\support_10  
+ConvertInstancedGeometry 0 243 objects\movie\forge\s3d_edge\support_11  
+ConvertInstancedGeometry 0 253 objects\movie\forge\s3d_edge\support_12  
+ConvertInstancedGeometry 0 287 objects\movie\forge\s3d_edge\support_13  
+ConvertInstancedGeometry 0 323 objects\movie\forge\s3d_edge\support_14  
+ConvertInstancedGeometry 0 333 objects\movie\forge\s3d_edge\support_15  
+ConvertInstancedGeometry 0 64 objects\movie\forge\s3d_edge\support_16  
+ConvertInstancedGeometry 0 319 objects\movie\forge\s3d_edge\support_17  
+
+## BUILDINGS  
+ConvertInstancedGeometry 0 54 objects\movie\forge\s3d_edge\building_1  
+ConvertInstancedGeometry 0 62 objects\movie\forge\s3d_edge\building_2  
+ConvertInstancedGeometry 0 78 objects\movie\forge\s3d_edge\building_3  
+ConvertInstancedGeometry 0 156 objects\movie\forge\s3d_edge\building_4  
+ConvertInstancedGeometry 0 160 objects\movie\forge\s3d_edge\building_5  
+ConvertInstancedGeometry 0 257 objects\movie\forge\s3d_edge\building_6  
+ConvertInstancedGeometry 0 270 objects\movie\forge\s3d_edge\building_7  
+ConvertInstancedGeometry 0 277 objects\movie\forge\s3d_edge\building_8  
+ConvertInstancedGeometry 0 279 objects\movie\forge\s3d_edge\building_9  
+ConvertInstancedGeometry 0 281 objects\movie\forge\s3d_edge\building_10  
+ConvertInstancedGeometry 0 285 objects\movie\forge\s3d_edge\building_11  
+ConvertInstancedGeometry 0 286 objects\movie\forge\s3d_edge\building_12  
+ConvertInstancedGeometry 0 289 objects\movie\forge\s3d_edge\building_13  
+ConvertInstancedGeometry 0 290 objects\movie\forge\s3d_edge\building_14  
+ConvertInstancedGeometry 0 292 objects\movie\forge\s3d_edge\building_15  
+ConvertInstancedGeometry 0 298 objects\movie\forge\s3d_edge\building_16  
+ConvertInstancedGeometry 0 317 objects\movie\forge\s3d_edge\building_17  
+ConvertInstancedGeometry 0 104 objects\movie\forge\s3d_edge\building_18  
+ConvertInstancedGeometry 0 311 objects\movie\forge\s3d_edge\building_19  
+ConvertInstancedGeometry 0 313 objects\movie\forge\s3d_edge\building_20  
+ConvertInstancedGeometry 0 315 objects\movie\forge\s3d_edge\building_21  
+
+## TERRAIN  
+ConvertInstancedGeometry 0 478 objects\movie\forge\s3d_edge\terrain_1  
+ConvertInstancedGeometry 0 479 objects\movie\forge\s3d_edge\terrain_2  
+ConvertInstancedGeometry 0 480 objects\movie\forge\s3d_edge\terrain_3  
+ConvertInstancedGeometry 0 481 objects\movie\forge\s3d_edge\terrain_4  
+ConvertInstancedGeometry 0 482 objects\movie\forge\s3d_edge\terrain_5  
+ConvertInstancedGeometry 0 483 objects\movie\forge\s3d_edge\terrain_6  
+ConvertInstancedGeometry 0 484 objects\movie\forge\s3d_edge\terrain_7  
+ConvertInstancedGeometry 0 485 objects\movie\forge\s3d_edge\terrain_8  
+ConvertInstancedGeometry 0 486 objects\movie\forge\s3d_edge\terrain_9  
+ConvertInstancedGeometry 0 487 objects\movie\forge\s3d_edge\terrain_10  
+ConvertInstancedGeometry 0 488 objects\movie\forge\s3d_edge\terrain_11  
+ConvertInstancedGeometry 0 489 objects\movie\forge\s3d_edge\terrain_12  
+ConvertInstancedGeometry 0 418 objects\movie\forge\s3d_edge\terrain_13  
+ConvertInstancedGeometry 0 433 objects\movie\forge\s3d_edge\terrain_14  
+ConvertInstancedGeometry 0 477 objects\movie\forge\s3d_edge\terrain_15  
+ConvertInstancedGeometry 0 402 objects\movie\forge\s3d_edge\terrain_16  
+
+## MISC  
+ConvertInstancedGeometry 0 76 objects\movie\forge\s3d_edge\misc_1  
+ConvertInstancedGeometry 0 86 objects\movie\forge\s3d_edge\misc_2  
+ConvertInstancedGeometry 0 122 objects\movie\forge\s3d_edge\misc_3  
+ConvertInstancedGeometry 0 154 objects\movie\forge\s3d_edge\misc_4  
+ConvertInstancedGeometry 0 273 objects\movie\forge\s3d_edge\misc_5  
+ConvertInstancedGeometry 0 275 objects\movie\forge\s3d_edge\misc_6  
+ConvertInstancedGeometry 0 343 objects\movie\forge\s3d_edge\misc_7  
+ConvertInstancedGeometry 0 356 objects\movie\forge\s3d_edge\misc_8  
+ConvertInstancedGeometry 0 159 objects\movie\forge\s3d_edge\misc_9  
+ConvertInstancedGeometry 0 161 objects\movie\forge\s3d_edge\misc_10  
+ConvertInstancedGeometry 0 358 objects\movie\forge\s3d_edge\misc_11  
+ConvertInstancedGeometry 0 96 objects\movie\forge\s3d_edge\misc_12  
+
+Exit
+
+AddForgeCategory "EDGE GEO" "MAP GEO"
+
+AddForgeCategory "DOORWAYS EDGE" "EDGE GEO"
+AddForgeCategory "WALLS EDGE" "EDGE GEO"
+AddForgeCategory "SUPPORT EDGE" "EDGE GEO"
+AddForgeCategory "BUILDINGS EDGE" "EDGE GEO"
+AddForgeCategory "TERRAIN EDGE" "EDGE GEO"
+AddForgeCategory "MISC EDGE" "EDGE GEO"
+
+AddForgeItem "Doorway" "DOORWAYS EDGE" objects\movie\forge\s3d_edge\doorway_1.scenery  
+AddForgeItem "Wide Door" "DOORWAYS EDGE" objects\movie\forge\s3d_edge\doorway_2.scenery  
+AddForgeItem "Very Tall Doorway" "DOORWAYS EDGE" objects\movie\forge\s3d_edge\doorway_3.scenery  
+AddForgeItem "Huge Archway" "DOORWAYS EDGE" objects\movie\forge\s3d_edge\doorway_4.scenery  
+AddForgeItem "Open Doorway" "DOORWAYS EDGE" objects\movie\forge\s3d_edge\doorway_5.scenery  
+
+AddForgeItem "Decor Wall Pillar" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_1.scenery  
+AddForgeItem "Massive Wall Decor" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_2.scenery  
+AddForgeItem "Decor Wall Piece" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_3.scenery  
+AddForgeItem "Huge Wall Panel" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_4.scenery  
+AddForgeItem "Circular Wall Decor" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_5.scenery  
+AddForgeItem "Hex Wall" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_6.scenery  
+AddForgeItem "Huge Decor Wall 2" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_7.scenery  
+AddForgeItem "Large Decor Wall" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_8.scenery  
+AddForgeItem "Curved Decor Wall" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_9.scenery  
+AddForgeItem "Curved Decor Wall 2" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_10.scenery  
+AddForgeItem "Square Wall" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_11.scenery  
+AddForgeItem "Straight Wall" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_12.scenery  
+AddForgeItem "Straight Wall 2" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_13.scenery  
+AddForgeItem "Square Wall Piece" "WALLS EDGE" objects\movie\forge\s3d_edge\wall_14.scenery  
+
+AddForgeItem "Decorative Brace" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_1.scenery  
+AddForgeItem "Doorway Support" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_2.scenery  
+AddForgeItem "Small Door Support" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_3.scenery  
+AddForgeItem "Decor Brace 2" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_4.scenery  
+AddForgeItem "Decor Buttress" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_5.scenery  
+AddForgeItem "Decor Buttress 2" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_6.scenery  
+AddForgeItem "Server Support Short" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_7.scenery  
+AddForgeItem "Server Support Long" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_8.scenery  
+AddForgeItem "Server Braces" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_9.scenery  
+AddForgeItem "Server Brace 2" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_10.scenery  
+AddForgeItem "Huge Pillar" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_11.scenery  
+AddForgeItem "Huge Decor Pillar" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_12.scenery  
+AddForgeItem "Decor Brace 3" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_13.scenery  
+AddForgeItem "Decor Brace" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_14.scenery  
+AddForgeItem "Large Support Beam" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_15.scenery  
+AddForgeItem "Big Pillar" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_16.scenery  
+AddForgeItem "Decor Pillar" "SUPPORT EDGE" objects\movie\forge\s3d_edge\support_17.scenery  
+
+AddForgeItem "Decor Platform" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_1.scenery  
+AddForgeItem "Decor Ramp" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_2.scenery  
+AddForgeItem "Ramp and Platform" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_3.scenery  
+AddForgeItem "Lift Bridge Right" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_4.scenery  
+AddForgeItem "Lift Bridge Left" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_5.scenery  
+AddForgeItem "Outhang Decor" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_6.scenery  
+AddForgeItem "Dual Ring Segment" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_7.scenery  
+AddForgeItem "Thin Outreach" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_8.scenery  
+AddForgeItem "Medium Outreach" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_9.scenery  
+AddForgeItem "Medium Outreach 2" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_10.scenery  
+AddForgeItem "Center Bridge" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_11.scenery  
+AddForgeItem "Center Platform" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_12.scenery  
+AddForgeItem "Decor Outreach" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_13.scenery  
+AddForgeItem "Left Ramp" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_14.scenery  
+AddForgeItem "Right Ramp" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_15.scenery  
+AddForgeItem "Decor Outreach 2" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_16.scenery  
+AddForgeItem "Large Platform" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_17.scenery  
+AddForgeItem "Lift Shaft" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_18.scenery  
+AddForgeItem "Base Convergence" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_19.scenery  
+AddForgeItem "Central Spire" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_20.scenery  
+AddForgeItem "Base Side Platform" "BUILDINGS EDGE" objects\movie\forge\s3d_edge\building_21.scenery  
+
+AddForgeItem "Canyon Part 1" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_1.scenery  
+AddForgeItem "Canyon Part 2" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_2.scenery  
+AddForgeItem "Canyon Part 3" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_3.scenery  
+AddForgeItem "Canyon Part 4" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_4.scenery  
+AddForgeItem "Canyon Part 5" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_5.scenery  
+AddForgeItem "Canyon Part 6" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_6.scenery  
+AddForgeItem "Canyon Part 7" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_7.scenery  
+AddForgeItem "Canyon Part 8" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_8.scenery  
+AddForgeItem "Canyon Part 9" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_9.scenery  
+AddForgeItem "Canyon Part 10" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_10.scenery  
+AddForgeItem "Canyon Part 11" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_11.scenery  
+AddForgeItem "Canyon Part 12" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_12.scenery  
+AddForgeItem "Large Liana" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_13.scenery  
+AddForgeItem "Large Liana 2" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_14.scenery  
+AddForgeItem "River and Waterfalls" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_15.scenery  
+AddForgeItem "Huge Grassy Rock" "TERRAIN EDGE" objects\movie\forge\s3d_edge\terrain_16.scenery  
+
+AddForgeItem "Hologram Holder" "MISC EDGE" objects\movie\forge\s3d_edge\misc_1.scenery  
+AddForgeItem "Hologram Holder 2" "MISC EDGE" objects\movie\forge\s3d_edge\misc_2.scenery  
+AddForgeItem "Ring Holder" "MISC EDGE" objects\movie\forge\s3d_edge\misc_3.scenery  
+AddForgeItem "Glass Inset" "MISC EDGE" objects\movie\forge\s3d_edge\misc_4.scenery  
+AddForgeItem "Circular Floor" "MISC EDGE" objects\movie\forge\s3d_edge\misc_5.scenery  
+AddForgeItem "Circular Floor 2" "MISC EDGE" objects\movie\forge\s3d_edge\misc_6.scenery  
+AddForgeItem "Ceiling Decor" "MISC EDGE" objects\movie\forge\s3d_edge\misc_7.scenery  
+AddForgeItem "Ceiling Decor 2" "MISC EDGE" objects\movie\forge\s3d_edge\misc_8.scenery  
+AddForgeItem "Central Blue Light" "MISC EDGE" objects\movie\forge\s3d_edge\misc_9.scenery  
+AddForgeItem "Central Red Light" "MISC EDGE" objects\movie\forge\s3d_edge\misc_10.scenery  
+AddForgeItem "Server Lights" "MISC EDGE" objects\movie\forge\s3d_edge\misc_11.scenery  
+AddForgeItem "Ledge Piece" "MISC EDGE" objects\movie\forge\s3d_edge\misc_12.scenery
+
+EditTag objects\movie\forge\s3d_edge\terrain_11.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\terrain_12.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\terrain_13.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\terrain_14.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\terrain_15.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\misc_9.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\misc_10.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_edge\misc_11.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

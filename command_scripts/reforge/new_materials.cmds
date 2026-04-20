@@ -1,0 +1,251 @@
+## HALOGRAM CATEGORIES: albedo self_illumination blend_mode misc warp overlay edge_fade distortion soft_fade
+
+## Opaque texture camera shader with self illumination plus function color change
+## 0 4 0 0 0 0 0 0 0
+GenerateShader halogram default from_diffuse opaque first_person_never none none none off off
+
+CreateTag rmhg objects\eldewrito\reforge\shaders\opaque_texture_camera
+EditTag objects\eldewrito\reforge\shaders\opaque_texture_camera.shader_halogram
+
+SetField BaseRenderMethod shaders\halogram.render_method_definition
+
+AddBlockElements Options 9
+SetField Options[1].OptionIndex 4
+
+AddBlockElements ShaderProperties
+SetField ShaderProperties[0].Template shaders\halogram_templates\_0_4_0_0_0_0_0_0_0.render_method_template
+
+AddBlockElements ShaderProperties[0].RealConstants 5
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_color 1 1 1 1
+SetArgument self_illum_intensity 3 0 0 0
+
+AddBlockElements ShaderProperties[0].TextureConstants 2
+SetBitmap base_map shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetBitmap detail_map shaders\default_bitmaps\bitmaps\default_detail.bitmap
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode TextureCamera
+SetField ShaderProperties[0].TextureConstants[1].TextureTransformConstantIndex 1
+
+AddBlockElements ShaderProperties[0].Functions
+SetField ShaderProperties[0].Functions[*].Type ChangeColorPrimary
+SetField ShaderProperties[0].Functions[*].Function.Data 01340100FFFFFF000000000000000000FFFFFFFF000000000000000000000000
+
+AddFunction self_illum_color Real 0
+
+SetField RenderFlags IgnoreFog
+SetField SortLayer Normal
+SetField PredictionAtomIndex -1
+
+SaveTagChanges
+Exit
+
+## Ditto for scope camera
+DuplicateTag objects\eldewrito\reforge\shaders\opaque_texture_camera.shader_halogram objects\eldewrito\reforge\shaders\opaque_scope_camera
+EditTag objects\eldewrito\reforge\shaders\opaque_scope_camera.shader_halogram
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode Scope
+SaveTagChanges
+Exit
+
+## Ditto for z camera
+DuplicateTag objects\eldewrito\reforge\shaders\opaque_texture_camera.shader_halogram objects\eldewrito\reforge\shaders\opaque_z_camera
+EditTag objects\eldewrito\reforge\shaders\opaque_z_camera.shader_halogram
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode ZCamera
+SetField RenderFlags IgnoreFog,UsesDepthCamera
+SaveTagChanges
+Exit
+
+## Additive z camera shader with self illumination plus function color change
+## 0 4 1 0 0 0 0 0 0
+GenerateShader halogram default from_diffuse additive first_person_never none none none off off
+
+CreateTag rmhg objects\eldewrito\reforge\shaders\additive_z_camera
+EditTag objects\eldewrito\reforge\shaders\additive_z_camera.shader_halogram
+
+SetField BaseRenderMethod shaders\halogram.render_method_definition
+
+AddBlockElements Options 9
+SetField Options[1].OptionIndex 4
+SetField Options[2].OptionIndex 1
+
+AddBlockElements ShaderProperties
+SetField ShaderProperties[0].Template shaders\halogram_templates\_0_4_1_0_0_0_0_0_0.render_method_template
+
+AddBlockElements ShaderProperties[0].RealConstants 5
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_color 1 1 1 1
+SetArgument self_illum_intensity 3 0 0 0
+
+AddBlockElements ShaderProperties[0].TextureConstants 2
+SetBitmap base_map shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetBitmap detail_map shaders\default_bitmaps\bitmaps\default_detail.bitmap
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode ZCamera
+SetField ShaderProperties[0].TextureConstants[1].TextureTransformConstantIndex 1
+
+AddBlockElements ShaderProperties[0].Functions
+SetField ShaderProperties[0].Functions[*].Type ChangeColorPrimary
+SetField ShaderProperties[0].Functions[*].Function.Data 01340100FFFFFF000000000000000000FFFFFFFF000000000000000000000000
+
+AddFunction self_illum_color Real 0
+
+SetField ShaderProperties[0].BlendMode Additive
+
+SetField RenderFlags IgnoreFog,UsesDepthCamera
+SetField SortLayer Normal
+SetField PredictionAtomIndex -1
+
+SaveTagChanges
+Exit
+
+## Alpha blend scope camera shader with self illumination plus function color change
+## 0 4 3 0 0 0 0 0 0
+GenerateShader halogram default from_diffuse alpha_blend first_person_never none none none off off
+
+CreateTag rmhg objects\eldewrito\reforge\shaders\alpha_blend_scope_camera
+EditTag objects\eldewrito\reforge\shaders\alpha_blend_scope_camera.shader_halogram
+
+SetField BaseRenderMethod shaders\halogram.render_method_definition
+
+AddBlockElements Options 9
+SetField Options[1].OptionIndex 4
+SetField Options[2].OptionIndex 3
+
+AddBlockElements ShaderProperties
+SetField ShaderProperties[0].Template shaders\halogram_templates\_0_4_3_0_0_0_0_0_0.render_method_template
+
+AddBlockElements ShaderProperties[0].RealConstants 5
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 1 1 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_color 1 1 1 1
+SetArgument self_illum_intensity 3 0 0 0
+
+AddBlockElements ShaderProperties[0].TextureConstants 2
+SetBitmap base_map shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetBitmap detail_map shaders\default_bitmaps\bitmaps\default_detail.bitmap
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode Scope
+SetField ShaderProperties[0].TextureConstants[1].TextureTransformConstantIndex 1
+
+AddBlockElements ShaderProperties[0].Functions
+SetField ShaderProperties[0].Functions[*].Type ChangeColorPrimary
+SetField ShaderProperties[0].Functions[*].Function.Data 01340100FFFFFF000000000000000000FFFFFFFF000000000000000000000000
+
+AddFunction self_illum_color Real 0
+
+SetField ShaderProperties[0].BlendMode AlphaBlend
+
+SetField RenderFlags IgnoreFog
+SetField SortLayer Normal
+SetField PredictionAtomIndex -1
+
+SaveTagChanges
+Exit
+
+## Opaque constant color shader with self illumination plus function color change
+## 2 4 0 0 0 0 0 0 0
+GenerateShader halogram constant_color from_diffuse opaque first_person_never none none none off off
+
+CreateTag rmhg objects\eldewrito\reforge\shaders\glow_paint
+EditTag objects\eldewrito\reforge\shaders\glow_paint.shader_halogram
+
+SetField BaseRenderMethod shaders\halogram.render_method_definition
+
+AddBlockElements Options 9
+SetField Options[0].OptionIndex 2
+SetField Options[1].OptionIndex 4
+
+AddBlockElements ShaderProperties
+SetField ShaderProperties[0].Template shaders\halogram_templates\_2_4_0_0_0_0_0_0_0.render_method_template
+
+AddBlockElements ShaderProperties[0].RealConstants 3
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_color 1 1 1 1
+SetArgument self_illum_intensity 3 0 0 0
+
+AddBlockElements ShaderProperties[0].Functions
+SetField ShaderProperties[0].Functions[*].Type ChangeColorPrimary
+SetField ShaderProperties[0].Functions[*].Function.Data 01340100FFFFFF000000000000000000FFFFFFFF000000000000000000000000
+
+AddFunction self_illum_color Real 0
+
+SetField SortLayer Normal
+SetField PredictionAtomIndex -1
+
+SaveTagChanges
+Exit
+
+## Ditto for no fog
+DuplicateTag objects\eldewrito\reforge\shaders\glow_paint.shader_halogram objects\eldewrito\reforge\shaders\glow_paint_no_fog
+EditTag objects\eldewrito\reforge\shaders\glow_paint_no_fog.shader_halogram
+SetField RenderFlags IgnoreFog
+SaveTagChanges
+Exit
+
+## Additive constant color shader with self illumination and soft fade plus function color change
+## 2 4 1 0 0 0 0 0 1
+GenerateShader halogram constant_color from_diffuse additive first_person_never none none none off on
+
+CreateTag rmhg objects\eldewrito\reforge\shaders\ghost_paint
+EditTag objects\eldewrito\reforge\shaders\ghost_paint.shader_halogram
+
+SetField BaseRenderMethod shaders\halogram.render_method_definition
+
+AddBlockElements Options 9
+SetField Options[0].OptionIndex 2
+SetField Options[1].OptionIndex 4
+SetField Options[2].OptionIndex 1
+SetField Options[8].OptionIndex 1
+
+AddBlockElements ShaderProperties
+SetField ShaderProperties[0].Template shaders\halogram_templates\_2_4_1_0_0_0_0_0_1.render_method_template
+
+AddBlockElements ShaderProperties[0].RealConstants 7
+SetArgument albedo_color 1 1 1 1
+SetArgument self_illum_color 1 1 1 1
+SetArgument self_illum_intensity 3 0 0 0
+SetArgument use_soft_fresnel 0 0 0 0
+SetArgument soft_fresnel_power 0 0 0 0
+SetArgument use_soft_z 1 0 0 0
+SetArgument soft_z_range 0.1 0 0 0
+SetArgument Booleans use_soft_z
+
+AddBlockElements ShaderProperties[0].Functions
+SetField ShaderProperties[0].Functions[*].Type ChangeColorPrimary
+SetField ShaderProperties[0].Functions[*].Function.Data 01340100FFFFFF000000000000000000FFFFFFFF000000000000000000000000
+
+AddFunction self_illum_color Real 0
+
+SetField ShaderProperties[0].BlendMode Additive
+
+SetField SortLayer Normal
+SetField PredictionAtomIndex -1
+
+SaveTagChanges
+Exit
+
+## Ditto for no fog
+DuplicateTag objects\eldewrito\reforge\shaders\ghost_paint.shader_halogram objects\eldewrito\reforge\shaders\ghost_paint_no_fog
+EditTag objects\eldewrito\reforge\shaders\ghost_paint_no_fog.shader_halogram
+SetField RenderFlags IgnoreFog
+SaveTagChanges
+Exit
+
+## Ditto for more soft fade
+DuplicateTag objects\eldewrito\reforge\shaders\ghost_paint.shader_halogram objects\eldewrito\reforge\shaders\backdrop_paint
+EditTag objects\eldewrito\reforge\shaders\backdrop_paint.shader_halogram
+SetArgument soft_z_range 0.01 0 0 0
+SaveTagChanges
+Exit
+
+## Ditto for no fog
+DuplicateTag objects\eldewrito\reforge\shaders\backdrop_paint.shader_halogram objects\eldewrito\reforge\shaders\backdrop_paint_no_fog
+EditTag objects\eldewrito\reforge\shaders\backdrop_paint_no_fog.shader_halogram
+SetField RenderFlags IgnoreFog
+SaveTagChanges
+Exit
+
+## Apply to all reforge blocks
+Foreach mode startingwith: objects\eldewrito\reforge\ RunCommands "working_directory\command_scripts\reforge\add_materials.cmds"

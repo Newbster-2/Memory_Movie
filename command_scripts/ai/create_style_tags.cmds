@@ -1,0 +1,208 @@
+CreateTag styl objects\vehicles\banshee\ai\banshee
+EditTag objects\vehicles\banshee\ai\banshee.style
+SetField Name "banshee"
+SetField CombatStatusDecayOptions LatchAtCombat
+SetField Behaviors1 83927166 
+SetField Behaviors2 1606419984 
+SetField Behaviors3 32784 
+SetField Behaviors4 -884086272 
+SetField Behaviors5 8403584 
+SetField Behaviors6 262176 
+SetField Behaviors7 34752
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\brute_chopper\ai\chopper
+EditTag objects\vehicles\brute_chopper\ai\chopper.style
+SetField Name "chopper"
+SetField Behaviors1 67150462 
+SetField Behaviors2 1572864000 
+SetField Behaviors3 32786 
+SetField Behaviors4 -808489472 
+SetField Behaviors5 8399488 
+SetField Behaviors6 262176 
+SetField Behaviors7 34752
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\wraith\ai\wraith
+EditTag objects\vehicles\wraith\ai\wraith.style
+SetField Name "wraith"
+SetField CombatStatusDecayOptions LatchAtCombat
+SetField Behaviors1 67150462 
+SetField Behaviors2 1573717520
+SetField Behaviors3 32770
+SetField Behaviors4 731344384
+SetField Behaviors5 8399488
+SetField Behaviors6 262176
+SetField Behaviors7 34752
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\warthog\ai\warthog
+EditTag objects\vehicles\warthog\ai\warthog.style
+SetField Name "warthog"
+SetField Behaviors1 67150462
+SetField Behaviors2 1572865552
+SetField Behaviors3 32786
+SetField Behaviors4 -806588928
+SetField Behaviors5 8399488
+SetField Behaviors6 262176
+SetField Behaviors7 34752 
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\scorpion\ai\scorpion
+EditTag objects\vehicles\scorpion\ai\scorpion.style
+SetField Name "scorpion"
+SetField Behaviors1 67150462
+SetField Behaviors2 1572865552
+SetField Behaviors3 32768
+SetField Behaviors4 192966144
+SetField Behaviors5 8399488
+SetField Behaviors6 262176
+SetField Behaviors7 34752
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\phantom\ai\phantom
+EditTag objects\vehicles\phantom\ai\phantom.style
+SetField Name "pelican"
+SetField CombatStatusDecayOptions LatchAtCombat
+SetField Behaviors1 67150462
+SetField Behaviors2 1308624384
+SetField Behaviors3 0
+SetField Behaviors4 19968
+SetField Behaviors5 14976
+SetField Behaviors6 0
+SetField Behaviors7 34752 
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\pelican\ai\pelican
+EditTag objects\vehicles\pelican\ai\pelican.style
+SetField Name "pelican"
+SetField CombatStatusDecayOptions LatchAtCombat
+SetField Behaviors1 67150462
+SetField Behaviors2 1308624384
+SetField Behaviors3 0
+SetField Behaviors4 19968
+SetField Behaviors5 14976
+SetField Behaviors6 0
+SetField Behaviors7 34752 
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\mauler\ai\mauler
+EditTag objects\vehicles\mauler\ai\mauler.style
+SetField Name "warthog"
+SetField Behaviors1 67150462
+SetField Behaviors2 1572865552
+SetField Behaviors3 32786
+SetField Behaviors4 -806523392
+SetField Behaviors5 10880
+SetField Behaviors6 0
+SetField Behaviors7 34752 
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\hornet\ai\hornet
+EditTag objects\vehicles\hornet\ai\hornet.style
+SetField Name "banshee"
+SetField CombatStatusDecayOptions LatchAtCombat
+SetField Behaviors1 83927166
+SetField Behaviors2 1606419984
+SetField Behaviors3 32784
+SetField Behaviors4 -884086272
+SetField Behaviors5 8403584
+SetField Behaviors6 262176
+SetField Behaviors7 34752 
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\vehicles\ghost\ai\ghost
+EditTag objects\vehicles\ghost\ai\ghost.style
+SetField Name "ghost"
+SetField CombatStatusDecayOptions LatchAtCombat
+SetField Behaviors1 67150462
+SetField Behaviors2 1572865552
+SetField Behaviors3 32786
+SetField Behaviors4 -807440896
+SetField Behaviors5 8399488
+SetField Behaviors6 262176
+SetField Behaviors7 34752 
+AddBlockElements SpecialMovement
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\characters\monitor\ai\monitor
+EditTag objects\characters\monitor\ai\monitor.style
+SetField Name "All"
+SetField Behaviors1 127
+SetField Behaviors2 16
+SetField Behaviors3 0
+SetField Behaviors4 32768
+SetField Behaviors5 27584
+SetField Behaviors6 0
+SetField Behaviors7 53216 
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\characters\marine\ai\marine
+EditTag objects\characters\marine\ai\marine.style
+SetField Name "marine"
+SetField Behaviors1 -1358447617
+SetField Behaviors2 2145353731
+SetField Behaviors3 524286
+SetField Behaviors4 -40964
+SetField Behaviors5 11263
+SetField Behaviors6 0
+SetField Behaviors7 106464 
+AddBlockElements SpecialMovement
+SetField SpecialMovement[0].SpecialMovement1 Jump,Vault,Mount,Hoist
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\characters\brute\ai\brute
+EditTag objects\characters\brute\ai\brute.style
+SetField Name "brute"
+SetField Behaviors1 -276698113
+SetField Behaviors2 2143277079
+SetField Behaviors3 1038334
+SetField Behaviors4 -2097156
+SetField Behaviors5 -1610601473
+SetField Behaviors6 3
+SetField Behaviors7 34752
+AddBlockElements SpecialMovement
+SetField SpecialMovement[0].SpecialMovement1 Jump,Vault,Mount,Hoist
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit
+
+CreateTag styl objects\characters\dervish\ai\dervish
+EditTag objects\characters\dervish\ai\dervish.style
+SetField Name "dervish"
+SetField Behaviors1 -1358943233
+SetField Behaviors2 2147455107
+SetField Behaviors3 522238
+SetField Behaviors4 1071611900
+SetField Behaviors5 3015
+SetField Behaviors6 0
+SetField Behaviors7 40928 
+AddBlockElements SpecialMovement
+SetField SpecialMovement[0].SpecialMovement1 Jump,Vault,Mount,Hoist
+RunCommands "working_directory\command_scripts\ai\style_behavior_list.cmds"
+SaveTagChanges
+Exit

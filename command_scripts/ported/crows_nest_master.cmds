@@ -1,0 +1,5 @@
+OpenCacheFile "h3_directory\020_base.map"
+
+RunCommands "working_directory\command_scripts\ported\crows_nest_ms30_shader_fixes.cmds"
+
+Exit

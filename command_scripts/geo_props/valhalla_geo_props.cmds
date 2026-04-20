@@ -1,0 +1,57 @@
+## VALHALLA
+EditTag levels\multi\riverworld\riverworld.scenario
+
+## STRUCTURE  
+ConvertInstancedGeometry 0 0 objects\movie\forge\riverworld\structure_1  
+ConvertInstancedGeometry 0 1 objects\movie\forge\riverworld\structure_2  
+ConvertInstancedGeometry 0 7 objects\movie\forge\riverworld\structure_3  
+ConvertInstancedGeometry 0 18 objects\movie\forge\riverworld\structure_4  
+ConvertInstancedGeometry 0 39 objects\movie\forge\riverworld\structure_5  
+ConvertInstancedGeometry 0 88 objects\movie\forge\riverworld\structure_6  
+ConvertInstancedGeometry 0 92 objects\movie\forge\riverworld\structure_7  
+ConvertInstancedGeometry 0 105 objects\movie\forge\riverworld\structure_8  
+ConvertInstancedGeometry 0 110 objects\movie\forge\riverworld\structure_9  
+ConvertInstancedGeometry 0 87 objects\movie\forge\riverworld\structure_10
+
+## TERRAIN  
+ConvertInstancedGeometry 0 68 objects\movie\forge\riverworld\terrain_1
+ConvertInstancedGeometry 0 69 objects\movie\forge\riverworld\terrain_2  
+ConvertInstancedGeometry 0 70 objects\movie\forge\riverworld\terrain_3  
+
+## MISC  
+ConvertInstancedGeometry 0 40 objects\movie\forge\riverworld\misc_1  
+ConvertInstancedGeometry 0 46 objects\movie\forge\riverworld\misc_2  
+ConvertInstancedGeometry 0 48 objects\movie\forge\riverworld\misc_3  
+
+Exit
+
+AddForgeCategory "VALHALLA GEO" "MAP GEO"
+
+AddForgeCategory "STRUCTURE VALHALLA" "VALHALLA GEO"
+AddForgeCategory "TERRAIN VALHALLA" "VALHALLA GEO"
+AddForgeCategory "MISC VALHALLA" "VALHALLA GEO"
+
+AddForgeItem "Huge Pillar" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_1.scenery  
+AddForgeItem "Huge Pillar 2" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_2.scenery  
+AddForgeItem "Wall Decor" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_3.scenery  
+AddForgeItem "Power Panel" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_4.scenery  
+AddForgeItem "Pillar Cap" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_5.scenery  
+AddForgeItem "Wall Piece" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_6.scenery  
+AddForgeItem "Wall Piece 2" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_7.scenery  
+AddForgeItem "Bracket" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_8.scenery  
+AddForgeItem "Bracket 2" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_9.scenery 
+AddForgeItem "Massive Ravine Structure" "STRUCTURE VALHALLA" objects\movie\forge\riverworld\structure_10.scenery   
+ 
+AddForgeItem "Waterfall" "TERRAIN VALHALLA" objects\movie\forge\riverworld\terrain_1.scenery  
+AddForgeItem "Mountain Stream" "TERRAIN VALHALLA" objects\movie\forge\riverworld\terrain_2.scenery  
+AddForgeItem "Waterfall 2" "TERRAIN VALHALLA" objects\movie\forge\riverworld\terrain_3.scenery  
+
+AddForgeItem "Work Light" "MISC VALHALLA" objects\movie\forge\riverworld\misc_1.scenery  
+AddForgeItem "Handles" "MISC VALHALLA" objects\movie\forge\riverworld\misc_2.scenery  
+AddForgeItem "Work Lights" "MISC VALHALLA" objects\movie\forge\riverworld\misc_3.scenery  
+
+ForEach hlmt contains: objects\movie\forge\riverworld\terrain SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+ForEach hlmt contains: objects\movie\forge\riverworld\terrain AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\riverworld\terrain SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\riverworld\terrain SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\riverworld\terrain SetField Materials[0].GlobalMaterialIndex 54

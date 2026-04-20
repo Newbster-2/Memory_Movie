@@ -1,0 +1,22 @@
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\glow_paint.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\glow_paint_no_fog.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\ghost_paint.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\ghost_paint_no_fog.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\backdrop_paint.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\backdrop_paint_no_fog.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\opaque_texture_camera.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\opaque_scope_camera.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\alpha_blend_scope_camera.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\opaque_z_camera.shader_halogram
+AddBlockElements Materials
+SetField Materials[*].RenderMethod objects\eldewrito\reforge\shaders\additive_z_camera.shader_halogram

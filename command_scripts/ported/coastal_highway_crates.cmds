@@ -1,0 +1,35 @@
+PortTag MPobject objects\characters\marine\helmet_standard\helmet_standard.crate
+PortTag MPobject objects\characters\marine\hat\hat.crate
+PortTag MPobject objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.crate
+PortTag MPobject objects\gear\atlas\civilian\hu_space_crate\hu_space_crate.crate
+PortTag MPobject objects\vehicles\civilian\cargo_truck\cargo_truck.crate
+PortTag MPobject objects\vehicles\civilian\truck_cab_large\bed_long\bed_long.crate
+PortTag MPobject objects\vehicles\civilian\truck_cab_large\tanker_long\tanker_long.crate
+PortTag MPobject objects\vehicles\civilian\truck_cab_large\truck_cab_large.crate
+PortTag MPobject objects\gear\human\military\crate_h_gun_rack_1\crate_h_gun_rack_1.crate
+PortTag MPobject objects\gear\human\military\h_grenade_crate\h_grenade_crate.crate
+PortTag MPobject objects\vehicles\civilian\bus_new\bus_new.crate
+PortTag MPobject objects\gear\atlas\civilian\hu_civ_car_lite\hu_civ_car_lite.crate
+PortTag MPobject objects\gear\human\military\crate_packing_giant_skinny\crate_packing_giant_skinny.crate
+PortTag MPobject objects\levels\atlas\shared\hub_furniture\chair_a\chair_a.crate
+PortTag MPobject objects\gear\atlas\civilian\dumpster_tall\dumpster_tall.crate
+PortTag MPobject objects\gear\atlas\civilian\hu_space_trashcan\hu_space_trashcan.crate
+
+AddForgeCategory "COASTAL HIGHWAY CRATES" "COASTAL HIGHWAY"
+
+AddForgeItem "Marine Helmet" "COASTAL HIGHWAY CRATES" objects\characters\marine\helmet_standard\helmet_standard.crate
+AddForgeItem "Marine Hat" "COASTAL HIGHWAY CRATES" objects\characters\marine\hat\hat.crate
+AddForgeItem "Cov Shield Barrier" "COASTAL HIGHWAY CRATES" objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.crate
+AddForgeItem "Heavy Duty Packing Crate" "COASTAL HIGHWAY CRATES" objects\gear\atlas\civilian\hu_space_crate\hu_space_crate.crate
+AddForgeItem "Cargo Truck" "COASTAL HIGHWAY CRATES" objects\vehicles\civilian\cargo_truck\cargo_truck.crate
+AddForgeItem "Semi Trailer Long" "COASTAL HIGHWAY CRATES" objects\vehicles\civilian\truck_cab_large\bed_long\bed_long.crate
+AddForgeItem "Semi Tanker Long" "COASTAL HIGHWAY CRATES" objects\vehicles\civilian\truck_cab_large\tanker_long\tanker_long.crate
+AddForgeItem "Semi Truck" "COASTAL HIGHWAY CRATES" objects\vehicles\civilian\truck_cab_large\truck_cab_large.crate
+AddForgeItem "Gun Rack" "COASTAL HIGHWAY CRATES" objects\gear\human\military\crate_h_gun_rack_1\crate_h_gun_rack_1.crate
+AddForgeItem "Grenade Case" "COASTAL HIGHWAY CRATES" objects\gear\human\military\h_grenade_crate\h_grenade_crate.crate
+AddForgeItem "Bus" "COASTAL HIGHWAY CRATES" objects\vehicles\civilian\bus_new\bus_new.crate
+AddForgeItem "Car" "COASTAL HIGHWAY CRATES" objects\gear\atlas\civilian\hu_civ_car_lite\hu_civ_car_lite.crate
+AddForgeItem "Giant Packing Crate Open" "COASTAL HIGHWAY CRATES" objects\gear\human\military\crate_packing_giant_skinny\crate_packing_giant_skinny.crate
+AddForgeItem "Modern Chair" "COASTAL HIGHWAY CRATES" objects\levels\atlas\shared\hub_furniture\chair_a\chair_a.crate
+AddForgeItem "Tall Dumpster" "COASTAL HIGHWAY CRATES" objects\gear\atlas\civilian\dumpster_tall\dumpster_tall.crate
+AddForgeItem "Modern Trash Can" "COASTAL HIGHWAY CRATES" objects\gear\atlas\civilian\hu_space_trashcan\hu_space_trashcan.crate

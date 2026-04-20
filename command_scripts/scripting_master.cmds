@@ -1,0 +1,39 @@
+## Cutscene title strings
+RunCommands "working_directory\command_scripts\film_memory\memory_movie_messages.cmds"
+
+## Setup our scenario (Order: Scenario Tag, Crates, Scenery, Vehicles, Bipeds, Characters/Spawnpoints)
+CS < "working_directory\command_scripts\scripting\create_script_objects.cs" levels\eldewrito\movie_set\movie_set.scenario 30 50 10 10 4
+
+EditTag levels\eldewrito\movie_set\movie_set.scenario
+
+## Lighting
+RunCommands "working_directory\command_scripts\scripting\scenario_lighting.cmds"
+
+## Palettes
+RunCommands "working_directory\command_scripts\scripting\object_palettes.cmds"
+
+## Flags
+RunCommands "working_directory\command_scripts\scripting\script_cutscene_flags.cmds"
+
+## Cameras
+RunCommands "working_directory\command_scripts\scripting\script_cutscene_cameras.cmds"
+
+## Titles
+RunCommands "working_directory\command_scripts\film_memory\memory_cutscene_titles.cmds"
+
+## Seat mappings
+AddBlockElements UnitSeatsMapping
+SetField UnitSeatsMapping[*].Unit objects\eldewrito\movie\scripting\script_bipd.biped
+SetField UnitSeatsMapping[*].Seats1 Seat0
+## AddBlockElements UnitSeatsMapping
+## SetField UnitSeatsMapping[*].Unit objects\eldewrito\movie\scripting\script_vehi.vehicle
+## SetField UnitSeatsMapping[*].Seats1 Seat0
+
+## Compile halo script
+CompileScripts "working_directory\movie_halo_script.hsc"
+
+SaveTagChanges
+Exit
+
+## Platform that ai can pathfind on
+RunCommands "working_directory\command_scripts\ai\pathfinding_platform.cmds"

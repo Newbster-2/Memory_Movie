@@ -1,0 +1,77 @@
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\search_light_1\search_light_1.device_machine
+PortTag MPobject objects\gear\human\industrial\krane_01\krane_01.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_04_anim_01\sbr_envelope_04_anim_01.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_04_anim_02\sbr_envelope_04_anim_02.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_06_anim_01\sbr_envelope_06_anim_01.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_06_anim_02\sbr_envelope_06_anim_02.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_01_anim_01\sbr_panel_fabric_01_anim_01.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_01_anim_02\sbr_panel_fabric_01_anim_02.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_01_anim_03\sbr_panel_fabric_01_anim_03.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_b_anim_01\sbr_panel_fabric_b_anim_01.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_b_anim_02\sbr_panel_fabric_b_anim_02.device_machine
+PortTag MPobject objects\levels\multi\s3d_sky_bridgenew\sbr_lift_cabin_01\sbr_lift_cabin_01.device_machine
+
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric AddBlockElements Materials
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric SetField Materials[0].GlobalMaterialIndex 54
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_panel_fabric ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+ForEach mach contains: s3d_sky_bridgenew\sbr_panel_fabric SetField BoundingRadius 10
+
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope AddBlockElements Materials
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope SetField Materials[0].GlobalMaterialIndex 54
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach hlmt contains: s3d_sky_bridgenew\sbr_envelope ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+ForEach mach contains: s3d_sky_bridgenew\sbr_envelope SetField BoundingRadius 10
+
+## Elevator
+EditTag objects\levels\multi\s3d_sky_bridgenew\sbr_lift_cabin_01\sbr_lift_cabin_01.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\levels\multi\s3d_sky_bridgenew\sbr_lift_cabin_01\sbr_lift_cabin_01.device_machine
+SetField BoundingRadius 10
+SaveTagChanges
+Exit
+
+## Search light
+EditTag objects\levels\multi\s3d_sky_bridgenew\search_light_1\search_light_1.model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SetField ModelObjectData[0].Offset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag objects\levels\multi\s3d_sky_bridgenew\search_light_1\search_light_1.device_machine
+SetField BoundingOffset 0 0 0
+SaveTagChanges
+Exit
+
+AddForgeCategory "SKY BRIDGE MACHINES" "SKY BRIDGE"
+
+AddForgeItem "Search Light" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\search_light_1\search_light_1.device_machine
+AddForgeItem "Construction Crane" "SKY BRIDGE MACHINES" objects\gear\human\industrial\krane_01\krane_01.device_machine
+AddForgeItem "Mylar Tarp Large" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_04_anim_01\sbr_envelope_04_anim_01.device_machine
+AddForgeItem "Mylar Tarp Large 2" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_04_anim_02\sbr_envelope_04_anim_02.device_machine
+AddForgeItem "Mylar Tarp Wall Set" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_06_anim_01\sbr_envelope_06_anim_01.device_machine
+AddForgeItem "Mylar Tarp Wall Set 2" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_envelope_06_anim_02\sbr_envelope_06_anim_02.device_machine
+AddForgeItem "Mylar Tarp Wall Set 3" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_01_anim_01\sbr_panel_fabric_01_anim_01.device_machine
+AddForgeItem "Mylar Tarp Wall Set 4" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_01_anim_02\sbr_panel_fabric_01_anim_02.device_machine
+AddForgeItem "Mylar Tarp Wall Set 5" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_01_anim_03\sbr_panel_fabric_01_anim_03.device_machine
+AddForgeItem "Mylar Tarp Wall Set 6" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_b_anim_01\sbr_panel_fabric_b_anim_01.device_machine
+AddForgeItem "Mylar Tarp Wall Set 7" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_panel_fabric_b_anim_02\sbr_panel_fabric_b_anim_02.device_machine
+AddForgeItem "Decor Elevator" "SKY BRIDGE MACHINES" objects\levels\multi\s3d_sky_bridgenew\sbr_lift_cabin_01\sbr_lift_cabin_01.device_machine

@@ -1,0 +1,15 @@
+PortTag MPobject objects\levels\solo\040_voi\voi_door_arched_new\voi_door_arched_new.device_machine
+PortTag MPobject objects\levels\solo\040_voi\voi_door_arms_new\voi_door_arms_new.device_machine
+PortTag MPobject objects\levels\solo\040_voi\voi_door_small_new\voi_door_small_new.device_machine
+PortTag MPobject objects\levels\solo\040_voi\voi_door_warehouse_door_a\voi_door_warehouse_door_a.device_machine
+PortTag MPobject objects\levels\solo\040_voi\voi_door_warehouse_door_b\voi_door_warehouse_door_b.device_machine
+PortTag MPobject objects\levels\solo\040_voi\voi_elev_crane\voi_elev_crane.device_machine
+
+AddForgeCategory "VOI MACHINES" "VOI"
+
+AddForgeItem "Large Tunnel Door" "VOI MACHINES" objects\levels\solo\040_voi\voi_door_arched_new\voi_door_arched_new.device_machine
+AddForgeItem "Large Sliding Doors" "VOI MACHINES" objects\levels\solo\040_voi\voi_door_arms_new\voi_door_arms_new.device_machine
+AddForgeItem "Sliding Door" "VOI MACHINES" objects\levels\solo\040_voi\voi_door_small_new\voi_door_small_new.device_machine
+AddForgeItem "Warehouse Door" "VOI MACHINES" objects\levels\solo\040_voi\voi_door_warehouse_door_a\voi_door_warehouse_door_a.device_machine
+AddForgeItem "Sectioning Door" "VOI MACHINES" objects\levels\solo\040_voi\voi_door_warehouse_door_b\voi_door_warehouse_door_b.device_machine
+AddForgeItem "Crane Elevator" "VOI MACHINES" objects\levels\solo\040_voi\voi_elev_crane\voi_elev_crane.device_machine

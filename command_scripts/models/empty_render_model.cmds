@@ -1,0 +1,49 @@
+CreateTag mode objects\eldewrito\forge\misc\empty_render_model
+EditTag objects\eldewrito\forge\misc\empty_render_model.render_model
+
+AddBlockElements Regions
+SetField Regions[0].Name default
+AddBlockElements Regions[0].Permutations
+SetField Regions[0].Permutations[0].Name default
+
+SetField InstanceStartingMeshIndex -1
+
+AddBlockElements Nodes
+SetField Nodes[0].Name root
+SetField Nodes[0].ParentNode -1
+SetField Nodes[0].FirstChildNode -1
+SetField Nodes[0].NextSiblingNode -1
+SetField Nodes[0].DefaultRotation 0 0 0 -1
+SetField Nodes[0].DefaultScale 1
+SetField Nodes[0].Inverse 1 0 0 0 1 0 0 0 1 0 0 0
+
+AddBlockElements RuntimeNodeOrientations
+SetField RuntimeNodeOrientations[0].Rotation 0 0 0 -1
+SetField RuntimeNodeOrientations[0].Scale 1
+
+SaveTagChanges
+Exit
+
+CreateTag hlmt objects\eldewrito\forge\misc\empty_model
+EditTag objects\eldewrito\forge\misc\empty_model.model
+
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+
+AddBlockElements CollisionRegions
+SetField CollisionRegions[0].Name default
+AddBlockElements CollisionRegions[0].Permutations
+SetField CollisionRegions[0].Permutations[0].Name default
+
+AddBlockElements Nodes
+SetField Nodes[0].Name root
+SetField Nodes[0].ParentNode -1
+SetField Nodes[0].FirstChildNode -1
+SetField Nodes[0].NextSiblingNode -1
+SetField Nodes[0].DefaultRotation 0 0 0 -1
+SetField Nodes[0].DefaultScale 1
+SetField Nodes[0].Inverse 1 0 0 0 1 0 0 0 1 0 0 0
+
+SaveTagChanges
+Exit

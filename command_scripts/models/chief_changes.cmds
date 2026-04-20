@@ -1,0 +1,16 @@
+EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief.render_model
+
+## Fix orientation for chief visor texture camera marker
+SetField MarkerGroups[23].Markers[0].Rotation 0.5493465 0.4452173 0.4452173 0.5493465
+
+SaveTagChanges
+Exit
+
+EditTag objects\characters\masterchief\masterchief.model_animation_graph
+
+StringId Add wave_flag
+
+AddAnimation "working_directory\animations\chief\any wave_flag.JMM"
+
+SaveTagChanges
+Exit

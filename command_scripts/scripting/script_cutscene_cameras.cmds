@@ -1,0 +1,14 @@
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[*].Type IgnoreTargetOrientation
+SetField CutsceneCameraPoints[*].Name "scene0_starting_cam"
+SetField CutsceneCameraPoints[*].Position 0.25 1 0
+SetField CutsceneCameraPoints[*].Orientation -90 -90 0
+
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[*].Type IgnoreTargetOrientation
+SetField CutsceneCameraPoints[*].Name "origin_cam"
+
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[*].Type Dolly
+SetField CutsceneCameraPoints[*].Name "forward_cam"
+SetField CutsceneCameraPoints[*].Position 1 0 0

@@ -1,0 +1,134 @@
+## NARROWS
+EditTag levels\multi\chill\chill.scenario
+
+## STRUCTURE  
+ConvertInstancedGeometry 0 8 objects\movie\forge\chill\structure_1  
+ConvertInstancedGeometry 0 20 objects\movie\forge\chill\structure_2  
+ConvertInstancedGeometry 0 25 objects\movie\forge\chill\structure_3  
+ConvertInstancedGeometry 0 27 objects\movie\forge\chill\structure_4  
+ConvertInstancedGeometry 0 33 objects\movie\forge\chill\structure_5  
+ConvertInstancedGeometry 0 34 objects\movie\forge\chill\structure_6  
+ConvertInstancedGeometry 0 35 objects\movie\forge\chill\structure_7  
+ConvertInstancedGeometry 0 36 objects\movie\forge\chill\structure_8  
+ConvertInstancedGeometry 0 37 objects\movie\forge\chill\structure_9  
+ConvertInstancedGeometry 0 39 objects\movie\forge\chill\structure_10  
+ConvertInstancedGeometry 0 46 objects\movie\forge\chill\structure_11  
+ConvertInstancedGeometry 0 50 objects\movie\forge\chill\structure_12  
+ConvertInstancedGeometry 0 63 objects\movie\forge\chill\structure_13  
+ConvertInstancedGeometry 0 65 objects\movie\forge\chill\structure_14  
+ConvertInstancedGeometry 0 66 objects\movie\forge\chill\structure_15  
+ConvertInstancedGeometry 0 75 objects\movie\forge\chill\structure_16  
+ConvertInstancedGeometry 0 76 objects\movie\forge\chill\structure_17  
+ConvertInstancedGeometry 0 40 objects\movie\forge\chill\structure_18  
+ConvertInstancedGeometry 0 190 objects\movie\forge\chill\structure_19
+
+## SUPPORT  
+ConvertInstancedGeometry 0 0 objects\movie\forge\chill\support_1  
+ConvertInstancedGeometry 0 3 objects\movie\forge\chill\support_2  
+ConvertInstancedGeometry 0 6 objects\movie\forge\chill\support_3  
+ConvertInstancedGeometry 0 11 objects\movie\forge\chill\support_4  
+ConvertInstancedGeometry 0 14 objects\movie\forge\chill\support_5  
+ConvertInstancedGeometry 0 31 objects\movie\forge\chill\support_6  
+ConvertInstancedGeometry 0 47 objects\movie\forge\chill\support_7  
+ConvertInstancedGeometry 0 18 objects\movie\forge\chill\support_8  
+
+## ENERGY  
+ConvertInstancedGeometry 0 5 objects\movie\forge\chill\energy_1  
+ConvertInstancedGeometry 0 85 objects\movie\forge\chill\energy_2  
+ConvertInstancedGeometry 0 94 objects\movie\forge\chill\energy_3  
+ConvertInstancedGeometry 0 103 objects\movie\forge\chill\energy_4  
+ConvertInstancedGeometry 0 196 objects\movie\forge\chill\energy_5  
+ConvertInstancedGeometry 0 197 objects\movie\forge\chill\energy_6  
+ConvertInstancedGeometry 0 198 objects\movie\forge\chill\energy_7  
+ConvertInstancedGeometry 0 90 objects\movie\forge\chill\energy_8  
+ConvertInstancedGeometry 0 93 objects\movie\forge\chill\energy_9  
+ConvertInstancedGeometry 0 156 objects\movie\forge\chill\energy_10  
+
+## MISC  
+ConvertInstancedGeometry 0 68 objects\movie\forge\chill\misc_1  
+ConvertInstancedGeometry 0 200 objects\movie\forge\chill\misc_2  
+
+Exit
+
+AddForgeCategory "NARROWS GEO" "MAP GEO"
+
+AddForgeCategory "STRUCTURE NARROWS" "NARROWS GEO"
+AddForgeCategory "SUPPORT NARROWS" "NARROWS GEO"
+AddForgeCategory "ENERGY NARROWS" "NARROWS GEO"
+AddForgeCategory "MISC NARROWS" "NARROWS GEO"
+
+AddForgeItem "Huge Column" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_1.scenery  
+AddForgeItem "Grills" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_2.scenery  
+AddForgeItem "Main Column Orange" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_3.scenery  
+AddForgeItem "Main Column Blue" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_4.scenery  
+AddForgeItem "Orange Arch" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_5.scenery  
+AddForgeItem "Left Huge Arch" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_6.scenery  
+AddForgeItem "Central Arch" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_7.scenery  
+AddForgeItem "Under Arch Left" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_8.scenery  
+AddForgeItem "Central Pillar" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_9.scenery  
+AddForgeItem "Right Huge Arch" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_10.scenery  
+AddForgeItem "Blue Pillar" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_11.scenery  
+AddForgeItem "Center Wall" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_12.scenery  
+AddForgeItem "Blue Huge Column" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_13.scenery  
+AddForgeItem "Blue Half Wall" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_14.scenery  
+AddForgeItem "Orange Half Wall" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_15.scenery  
+AddForgeItem "Blue Block" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_16.scenery  
+AddForgeItem "Orange Block" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_17.scenery  
+AddForgeItem "Under Arch Right" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_18.scenery  
+AddForgeItem "Blue Arch" "STRUCTURE NARROWS" objects\movie\forge\chill\structure_19.scenery  
+
+AddForgeItem "Arched Truss" "SUPPORT NARROWS" objects\movie\forge\chill\support_1.scenery  
+AddForgeItem "Support Brackets" "SUPPORT NARROWS" objects\movie\forge\chill\support_2.scenery  
+AddForgeItem "Huge Truss" "SUPPORT NARROWS" objects\movie\forge\chill\support_3.scenery  
+AddForgeItem "Blue Arched Truss" "SUPPORT NARROWS" objects\movie\forge\chill\support_4.scenery  
+AddForgeItem "Huge Truss Left" "SUPPORT NARROWS" objects\movie\forge\chill\support_5.scenery  
+AddForgeItem "Orange Buttress" "SUPPORT NARROWS" objects\movie\forge\chill\support_6.scenery  
+AddForgeItem "Blue Buttress" "SUPPORT NARROWS" objects\movie\forge\chill\support_7.scenery  
+AddForgeItem "Huge Truss Right" "SUPPORT NARROWS" objects\movie\forge\chill\support_8.scenery  
+
+AddForgeItem "Energy Bridge" "ENERGY NARROWS" objects\movie\forge\chill\energy_1.scenery  
+AddForgeItem "Energy Transmitter" "ENERGY NARROWS" objects\movie\forge\chill\energy_2.scenery  
+AddForgeItem "Energy Wheel" "ENERGY NARROWS" objects\movie\forge\chill\energy_3.scenery  
+AddForgeItem "Non-Energized Ring" "ENERGY NARROWS" objects\movie\forge\chill\energy_4.scenery  
+AddForgeItem "Orange Launcher" "ENERGY NARROWS" objects\movie\forge\chill\energy_5.scenery  
+AddForgeItem "Launcher Grate" "ENERGY NARROWS" objects\movie\forge\chill\energy_6.scenery  
+AddForgeItem "Blue Launcher" "ENERGY NARROWS" objects\movie\forge\chill\energy_7.scenery  
+AddForgeItem "Energy Coupler" "ENERGY NARROWS" objects\movie\forge\chill\energy_8.scenery  
+AddForgeItem "Blue Energy Beams" "ENERGY NARROWS" objects\movie\forge\chill\energy_9.scenery  
+AddForgeItem "Orange Energy Beams" "ENERGY NARROWS" objects\movie\forge\chill\energy_10.scenery  
+
+AddForgeItem "Waterfall" "MISC NARROWS" objects\movie\forge\chill\misc_1.scenery  
+AddForgeItem "Mist" "MISC NARROWS" objects\movie\forge\chill\misc_2.scenery  
+
+ForEach hlmt contains: objects\movie\forge\chill\misc SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+ForEach hlmt contains: objects\movie\forge\chill\misc AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\chill\misc SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\chill\misc SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\chill\misc SetField Materials[0].GlobalMaterialIndex 54
+
+EditTag objects\movie\forge\chill\energy_8.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\chill\energy_9.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\chill\energy_10.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

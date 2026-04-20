@@ -1,0 +1,13 @@
+PortTag objects\levels\solo\020_base\shaders\bathroom_items.shader
+PortTag objects\gear\human\residential\shaders\office_wood.shader
+
+EditTag objects\eldewrito\movie\props\monitor_texcam.render_model
+SetField Materials[2].RenderMethod objects\gear\human\residential\shaders\office_metal.shader
+SetField Materials[3].RenderMethod objects\gear\human\residential\shaders\office_wood.shader
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sink_texcam.render_model
+SetField Materials[0].RenderMethod objects\levels\solo\020_base\shaders\bathroom_items.shader
+SaveTagChanges
+Exit

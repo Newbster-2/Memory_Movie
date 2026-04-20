@@ -1,0 +1,56 @@
+CreateTag jpt! objects\weapons\damage_effects\ai_dash_melee
+EditTag objects\weapons\damage_effects\ai_dash_melee.damage_effect
+
+SetField Radius 1 1.3
+SetField SideEffect LethalToTheUnsuspecting
+SetField Category Melee
+SetField Flags DoesNotHurtOwner,PingsResistantUnits,DoesNotHurtFriends,CausesFlamingDeath,ForcesHardPing
+SetField DamageLowerBound 75
+SetField DamageUpperBound 150 150
+SetField DamageInnerConeAngle 40
+SetField DamageOuterConeAngle 60
+SetField ActiveCamoflageDamage 0.9
+SetField InstantaneousAcceleration 1.5
+SetField GeneralDamage cutting
+SetField SpecificDamage anti_flood
+
+AddBlockElements PlayerResponses 2
+SetField PlayerResponses[0].ScreenFlash.Type Lighten
+SetField PlayerResponses[0].ScreenFlash.Priority Medium
+SetField PlayerResponses[0].ScreenFlash.Duration 1.25
+SetField PlayerResponses[0].ScreenFlash.FadeFunction Late
+SetField PlayerResponses[0].ScreenFlash.MaximumIntensity 0.5
+SetField PlayerResponses[0].ScreenFlash.Color 0.75 0 0.5 0.75
+SetField PlayerResponses[0].Rumble.LowFrequencyRumbleDuration 0.24
+SetField PlayerResponses[0].Rumble.LowFrequencyRumbleFunction.Data 023400003F4CCCCD3F4CCCCD00000000000000003EFAE1483F0000000000000C01CDCDCD3F8000003F19999A
+SetField PlayerResponses[0].Rumble.HighFrequencyRumbleDuration 0.18
+SetField PlayerResponses[0].Rumble.HighFrequencyRumbleFunction.Data 023400003F4CCCCD3F4CCCCD00000000000000003EFAE1483F0000000000000C01CDCDCD3F8000003F4CCCCD
+SetField PlayerResponses[0].SoundEffect.EffectScaleFunction.Data 08340000000000000000000000000000000000003EFAE1483F0000000000001400000001040000CD7F7FFFFF3F80000000000000
+SetField PlayerResponses[1].ResponseType Unshielded
+SetField PlayerResponses[1].ScreenFlash.Type Lighten
+SetField PlayerResponses[1].ScreenFlash.Priority High
+SetField PlayerResponses[1].ScreenFlash.Duration 1.5
+SetField PlayerResponses[1].ScreenFlash.FadeFunction Late
+SetField PlayerResponses[1].ScreenFlash.MaximumIntensity 0.5
+SetField PlayerResponses[1].ScreenFlash.Color 0.75 0.25 0 0
+SetField PlayerResponses[1].Rumble.LowFrequencyRumbleDuration 0.24
+SetField PlayerResponses[1].Rumble.LowFrequencyRumbleFunction.Data 023400003F4CCCCD3F4CCCCD00000000000000003EFAE1483F0000000000000C01CDCDCD3F8000003F19999A
+SetField PlayerResponses[1].Rumble.HighFrequencyRumbleDuration 0.18
+SetField PlayerResponses[1].Rumble.HighFrequencyRumbleFunction.Data 023400003F4CCCCD3F4CCCCD00000000000000003EFAE1483F0000000000000C01CDCDCD3F8000003F4CCCCD
+SetField PlayerResponses[1].SoundEffect.EffectScaleFunction.Data 08340000000000000000000000000000000000003EFAE1483F0000000000001400000001040000CD7F7FFFFF3F80000000000000
+
+SetField DamageResponse globals\damage_responses\collision_melee.damage_response_definition
+
+SetField CameraImpulse.Duration 0.4
+SetField CameraImpulse.FadeFunction Late
+SetField CameraImpulse.Rotation 1.6
+SetField CameraImpulse.Pushback 0.3
+
+SetField CameraShake.WobbleFunctionPeriod 1
+
+SetField BreakingEffect.ForwardVelocity 15
+SetField BreakingEffect.ForwardRadius 0.2
+SetField BreakingEffect.ForwardExponent 1
+
+SaveTagChanges
+Exit

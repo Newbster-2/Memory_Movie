@@ -1,0 +1,25 @@
+## Update grenade physics models to use spheres/pills, not polyhedrons
+RunCommands "working_directory\command_scripts\grenade_physics.cmds"
+
+## Fix behemoth stain decal rendering on top of particles
+GenerateShader decal diffuse_only multiply pre_lighting leave standard none off off
+
+EditTag objects\levels\multi\shrine\shaders\beh_stains.shader_decal
+SetField Options[2].OptionIndex 0
+SetField ShaderProperties[0].Template shaders\decal_templates\_0_2_0_1_0_0_0_0.render_method_template
+SaveTagChanges
+Exit
+
+## Fix transparent skybox shaders rendering on top of any other shader type that also has transparency
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\dlc\bunkerworld\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\chill\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\cyberdyne\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\deadlock\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\guardian\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\riverworld\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\s3d_avalanche\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\s3d_edge\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\s3d_reactor\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\s3d_turf\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\shrine\sky\sky.render_model
+CS < "working_directory\command_scripts\update_material_sorting.cs" levels\multi\zanzibar\sky\sky.render_model

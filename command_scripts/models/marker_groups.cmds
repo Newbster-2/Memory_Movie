@@ -1,0 +1,86 @@
+StringId Add origin
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+
+StringId Add origin_back
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_back
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 0 1 6.123032E-17
+
+StringId Add origin_down
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_down
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 0.7071068 0 0.7071068
+
+StringId Add origin_qtr_down
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_qtr_down
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 0.1950903 0 0.9807853
+
+StringId Add origin_half_down
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_half_down
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 0.3826834 0 0.9238795
+
+StringId Add origin_up
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_up
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 -0.7071068 0 0.7071068
+
+StringId Add origin_left
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_left
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 0 0.7071068 0.7071068
+
+StringId Add origin_right
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_right
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Rotation 0 0 -0.7071068 0.7071068
+
+StringId Add origin_c
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name origin_c
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].NodeIndex 1
+
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name primary_trigger
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].NodeIndex 1
+
+## Again, no idea why the script point doesn't work if it's not at least offset by 0.1 on all axis
+StringId Add script_point
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name script_point
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Translation 0.1 0.1 0.1

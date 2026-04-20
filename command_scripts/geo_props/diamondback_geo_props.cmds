@@ -1,0 +1,173 @@
+## DIAMONDBACK
+EditTag levels\multi\s3d_avalanche\s3d_avalanche.scenario
+
+## PANELS
+ConvertInstancedGeometry 0 307 objects\movie\forge\s3d_avalanche\panel_1
+ConvertInstancedGeometry 0 663 objects\movie\forge\s3d_avalanche\panel_2
+ConvertInstancedGeometry 0 695 objects\movie\forge\s3d_avalanche\panel_3
+ConvertInstancedGeometry 0 697 objects\movie\forge\s3d_avalanche\panel_4
+
+## BUTTRESSES
+ConvertInstancedGeometry 0 31 objects\movie\forge\s3d_avalanche\buttress_1
+ConvertInstancedGeometry 0 33 objects\movie\forge\s3d_avalanche\buttress_2
+ConvertInstancedGeometry 0 86 objects\movie\forge\s3d_avalanche\buttress_3
+ConvertInstancedGeometry 0 380 objects\movie\forge\s3d_avalanche\buttress_4
+ConvertInstancedGeometry 0 431 objects\movie\forge\s3d_avalanche\buttress_5
+
+## PIPES
+ConvertInstancedGeometry 0 368 objects\movie\forge\s3d_avalanche\pipe_1
+ConvertInstancedGeometry 0 374 objects\movie\forge\s3d_avalanche\pipe_2
+ConvertInstancedGeometry 0 424 objects\movie\forge\s3d_avalanche\pipe_3
+ConvertInstancedGeometry 0 293 objects\movie\forge\s3d_avalanche\pipe_4
+
+## BRACKETS  
+ConvertInstancedGeometry 0 337 objects\movie\forge\s3d_avalanche\bracket_1
+ConvertInstancedGeometry 0 349 objects\movie\forge\s3d_avalanche\bracket_2
+ConvertInstancedGeometry 0 570 objects\movie\forge\s3d_avalanche\bracket_3
+ConvertInstancedGeometry 0 559 objects\movie\forge\s3d_avalanche\bracket_4
+ConvertInstancedGeometry 0 628 objects\movie\forge\s3d_avalanche\bracket_5
+
+## LAUNCHER SHELLS
+ConvertInstancedGeometry 0 3 objects\movie\forge\s3d_avalanche\launcher_shell_1
+ConvertInstancedGeometry 0 88 objects\movie\forge\s3d_avalanche\launcher_shell_2
+ConvertInstancedGeometry 0 90 objects\movie\forge\s3d_avalanche\launcher_shell_3
+
+## DOORS
+ConvertInstancedGeometry 0 5 objects\movie\forge\s3d_avalanche\door_1
+ConvertInstancedGeometry 0 35 objects\movie\forge\s3d_avalanche\door_2
+ConvertInstancedGeometry 0 420 objects\movie\forge\s3d_avalanche\door_3
+ConvertInstancedGeometry 0 613 objects\movie\forge\s3d_avalanche\door_4
+
+## MISC
+ConvertInstancedGeometry 0 9 objects\movie\forge\s3d_avalanche\misc_1
+ConvertInstancedGeometry 0 20 objects\movie\forge\s3d_avalanche\misc_2
+ConvertInstancedGeometry 0 29 objects\movie\forge\s3d_avalanche\misc_3
+ConvertInstancedGeometry 0 43 objects\movie\forge\s3d_avalanche\misc_4
+ConvertInstancedGeometry 0 75 objects\movie\forge\s3d_avalanche\misc_5
+ConvertInstancedGeometry 0 82 objects\movie\forge\s3d_avalanche\misc_6
+ConvertInstancedGeometry 0 92 objects\movie\forge\s3d_avalanche\misc_7
+ConvertInstancedGeometry 0 281 objects\movie\forge\s3d_avalanche\misc_8
+ConvertInstancedGeometry 0 353 objects\movie\forge\s3d_avalanche\misc_9
+ConvertInstancedGeometry 0 494 objects\movie\forge\s3d_avalanche\misc_10
+ConvertInstancedGeometry 0 540 objects\movie\forge\s3d_avalanche\misc_11
+ConvertInstancedGeometry 0 581 objects\movie\forge\s3d_avalanche\misc_12
+
+## BUILDINGS
+ConvertInstancedGeometry 0 74 objects\movie\forge\s3d_avalanche\building_1
+ConvertInstancedGeometry 0 313 objects\movie\forge\s3d_avalanche\building_2
+ConvertInstancedGeometry 0 426 objects\movie\forge\s3d_avalanche\building_3
+ConvertInstancedGeometry 0 437 objects\movie\forge\s3d_avalanche\building_4
+ConvertInstancedGeometry 0 438 objects\movie\forge\s3d_avalanche\building_5
+ConvertInstancedGeometry 0 439 objects\movie\forge\s3d_avalanche\building_6
+ConvertInstancedGeometry 0 465 objects\movie\forge\s3d_avalanche\building_7
+ConvertInstancedGeometry 0 561 objects\movie\forge\s3d_avalanche\building_8
+ConvertInstancedGeometry 0 569 objects\movie\forge\s3d_avalanche\building_9
+ConvertInstancedGeometry 0 580 objects\movie\forge\s3d_avalanche\building_10
+ConvertInstancedGeometry 0 583 objects\movie\forge\s3d_avalanche\building_11
+ConvertInstancedGeometry 0 584 objects\movie\forge\s3d_avalanche\building_12
+ConvertInstancedGeometry 0 680 objects\movie\forge\s3d_avalanche\building_13
+ConvertInstancedGeometry 0 681 objects\movie\forge\s3d_avalanche\building_14
+ConvertInstancedGeometry 0 682 objects\movie\forge\s3d_avalanche\building_15
+ConvertInstancedGeometry 0 696 objects\movie\forge\s3d_avalanche\building_16
+ConvertInstancedGeometry 0 710 objects\movie\forge\s3d_avalanche\building_17
+
+## TERRAIN
+ConvertInstancedGeometry 0 2 objects\movie\forge\s3d_avalanche\terrain_1
+ConvertInstancedGeometry 0 11 objects\movie\forge\s3d_avalanche\terrain_2
+
+Exit
+
+AddForgeCategory "DIAMONDBACK GEO" "MAP GEO"
+
+AddForgeCategory "PANELS DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "BUTTRESSES DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "PIPES DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "BRACKETS DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "LAUNCHER SHELLS DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "DOORS DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "MISC DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "BUILDINGS DIAMOND" "DIAMONDBACK GEO"
+AddForgeCategory "TERRAIN DIAMOND" "DIAMONDBACK GEO"
+
+AddForgeItem "Rock Cliffs" "TERRAIN DIAMOND" objects\movie\forge\s3d_avalanche\terrain_1.scenery
+AddForgeItem "Valley Floor & Mountains" "TERRAIN DIAMOND" objects\movie\forge\s3d_avalanche\terrain_2.scenery
+
+AddForgeItem "Central Exterior Walls" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_1.scenery
+AddForgeItem "UNSC Pillar Pipe" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_2.scenery
+AddForgeItem "Base Glass" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_3.scenery
+AddForgeItem "Base Interior" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_4.scenery
+AddForgeItem "Glass Panels" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_5.scenery
+AddForgeItem "Tall Antenna" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_6.scenery
+AddForgeItem "Angled Hallway Base" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_7.scenery
+AddForgeItem "Central Building" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_8.scenery
+AddForgeItem "Rear Buildings" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_9.scenery
+AddForgeItem "Red Base Glass" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_10.scenery
+AddForgeItem "Red Base Interior" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_11.scenery
+AddForgeItem "Red Base Glass Panels" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_12.scenery
+AddForgeItem "Door Way Block" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_13.scenery
+AddForgeItem "Base Front" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_14.scenery
+AddForgeItem "Base Front 2" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_15.scenery
+AddForgeItem "Base Front Red" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_16.scenery
+AddForgeItem "Base Front Red 2" "BUILDINGS DIAMOND" objects\movie\forge\s3d_avalanche\building_17.scenery
+
+AddForgeItem "TP Tunnel Frame" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_1.scenery
+AddForgeItem "Bridge" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_2.scenery
+AddForgeItem "Wall Vent Unit" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_3.scenery
+AddForgeItem "Platform" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_4.scenery
+AddForgeItem "Rounded Air Vent" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_5.scenery
+AddForgeItem "Floor Lamp" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_6.scenery
+AddForgeItem "Platform V2" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_7.scenery
+AddForgeItem "Exit Sign English" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_8.scenery
+AddForgeItem "Dual Condensers Blue" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_9.scenery
+AddForgeItem "Angled Scaffolding" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_10.scenery
+AddForgeItem "Cap" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_11.scenery
+AddForgeItem "Dual Condensers Red" "MISC DIAMOND" objects\movie\forge\s3d_avalanche\misc_12.scenery
+
+AddForgeItem "TP Tunnel" "DOORS DIAMOND" objects\movie\forge\s3d_avalanche\door_1.scenery
+AddForgeItem "Frame" "DOORS DIAMOND" objects\movie\forge\s3d_avalanche\door_2.scenery
+AddForgeItem "Small" "DOORS DIAMOND" objects\movie\forge\s3d_avalanche\door_3.scenery
+AddForgeItem "Canisters" "DOORS DIAMOND" objects\movie\forge\s3d_avalanche\door_4.scenery
+
+AddForgeItem "Standard" "LAUNCHER SHELLS DIAMOND" objects\movie\forge\s3d_avalanche\launcher_shell_1.scenery
+AddForgeItem "V2" "LAUNCHER SHELLS DIAMOND" objects\movie\forge\s3d_avalanche\launcher_shell_2.scenery
+AddForgeItem "V3" "LAUNCHER SHELLS DIAMOND" objects\movie\forge\s3d_avalanche\launcher_shell_3.scenery
+
+AddForgeItem "Lit Angle Blue" "BRACKETS DIAMOND" objects\movie\forge\s3d_avalanche\bracket_1.scenery 
+AddForgeItem "Square" "BRACKETS DIAMOND" objects\movie\forge\s3d_avalanche\bracket_2.scenery
+AddForgeItem "Lit Angle Red" "BRACKETS DIAMOND" objects\movie\forge\s3d_avalanche\bracket_3.scenery
+AddForgeItem "Spaced Bracing" "BRACKETS DIAMOND" objects\movie\forge\s3d_avalanche\bracket_4.scenery
+AddForgeItem "Door Brace" "BRACKETS DIAMOND" objects\movie\forge\s3d_avalanche\bracket_5.scenery
+
+AddForgeItem "Slotted 90 Bend Right" "PIPES DIAMOND" objects\movie\forge\s3d_avalanche\pipe_1.scenery
+AddForgeItem "Slotted 90 Bend Left" "PIPES DIAMOND" objects\movie\forge\s3d_avalanche\pipe_2.scenery
+AddForgeItem "70 Bend" "PIPES DIAMOND" objects\movie\forge\s3d_avalanche\pipe_3.scenery
+AddForgeItem "Multi 90 Bend Insulated" "PIPES DIAMOND" objects\movie\forge\s3d_avalanche\pipe_4.scenery
+
+AddForgeItem "Standard" "BUTTRESSES DIAMOND" objects\movie\forge\s3d_avalanche\buttress_1.scenery
+AddForgeItem "Wide" "BUTTRESSES DIAMOND" objects\movie\forge\s3d_avalanche\buttress_2.scenery
+AddForgeItem "Yellow Canister Aura" "BUTTRESSES DIAMOND" objects\movie\forge\s3d_avalanche\buttress_3.scenery
+AddForgeItem "Small" "BUTTRESSES DIAMOND" objects\movie\forge\s3d_avalanche\buttress_4.scenery
+AddForgeItem "Sloped" "BUTTRESSES DIAMOND" objects\movie\forge\s3d_avalanche\buttress_5.scenery
+ 
+AddForgeItem "Bolted" "PANELS DIAMOND" objects\movie\forge\s3d_avalanche\panel_1.scenery
+AddForgeItem "Wide Angled" "PANELS DIAMOND" objects\movie\forge\s3d_avalanche\panel_2.scenery
+AddForgeItem "Shielding" "PANELS DIAMOND" objects\movie\forge\s3d_avalanche\panel_3.scenery
+AddForgeItem "Shielding V2" "PANELS DIAMOND" objects\movie\forge\s3d_avalanche\panel_4.scenery
+
+EditTag objects\movie\forge\s3d_avalanche\terrain_2.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_avalanche\misc_8.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

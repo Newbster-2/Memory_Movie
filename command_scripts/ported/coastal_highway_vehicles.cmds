@@ -1,0 +1,10 @@
+Porttag MPobject objects\vehicles\olifaunt\olifaunt.vehicle
+
+AddForgeCategory "COASTAL HIGHWAY VEHICLES" "COASTAL HIGHWAY"
+
+AddForgeItem "Olifaunt" "COASTAL HIGHWAY VEHICLES" objects\vehicles\olifaunt\olifaunt.vehicle
+
+EditTag ai\generic_mp.character
+SetField VehicleProperties[13].Unit objects\vehicles\olifaunt\olifaunt.vehicle
+SaveTagChanges
+Exit

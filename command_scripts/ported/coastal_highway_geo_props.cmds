@@ -1,0 +1,90 @@
+## Coastal Highway
+
+## ROADS
+PortInstancedGeometryObject 0 246 objects\movie\forge\coastal_highway\road_1
+PortInstancedGeometryObject 0 1 objects\movie\forge\coastal_highway\road_2
+PortInstancedGeometryObject 0 0 objects\movie\forge\coastal_highway\road_3
+PortInstancedGeometryObject 0 248 objects\movie\forge\coastal_highway\road_4
+PortInstancedGeometryObject 0 247 objects\movie\forge\coastal_highway\road_5
+PortInstancedGeometryObject 0 807 objects\movie\forge\coastal_highway\road_6
+PortInstancedGeometryObject 0 767 objects\movie\forge\coastal_highway\road_7
+PortInstancedGeometryObject 0 769 objects\movie\forge\coastal_highway\road_8
+PortInstancedGeometryObject 0 771 objects\movie\forge\coastal_highway\road_9
+PortInstancedGeometryObject 0 368 objects\movie\forge\coastal_highway\road_10
+PortInstancedGeometryObject 0 379 objects\movie\forge\coastal_highway\road_11
+PortInstancedGeometryObject 0 386 objects\movie\forge\coastal_highway\road_12
+PortInstancedGeometryObject 0 393 objects\movie\forge\coastal_highway\road_13
+PortInstancedGeometryObject 0 388 objects\movie\forge\coastal_highway\road_14
+PortInstancedGeometryObject 3 0 objects\movie\forge\coastal_highway\road_15
+PortInstancedGeometryObject 3 1 objects\movie\forge\coastal_highway\road_16
+PortInstancedGeometryObject 4 5 objects\movie\forge\coastal_highway\road_17
+PortInstancedGeometryObject 4 0 objects\movie\forge\coastal_highway\road_18
+PortInstancedGeometryObject 4 344 objects\movie\forge\coastal_highway\road_19
+PortInstancedGeometryObject 4 455 objects\movie\forge\coastal_highway\road_20
+PortInstancedGeometryObject 6 389 objects\movie\forge\coastal_highway\road_21
+PortInstancedGeometryObject 6 365 objects\movie\forge\coastal_highway\road_22
+PortInstancedGeometryObject 6 364 objects\movie\forge\coastal_highway\road_23
+PortInstancedGeometryObject 6 194 objects\movie\forge\coastal_highway\road_24
+
+## STRUCTURE
+PortInstancedGeometryObject 0 729 objects\movie\forge\coastal_highway\structure_1
+PortInstancedGeometryObject 0 740 objects\movie\forge\coastal_highway\structure_2
+PortInstancedGeometryObject 0 734 objects\movie\forge\coastal_highway\structure_3
+PortInstancedGeometryObject 0 737 objects\movie\forge\coastal_highway\structure_4
+PortInstancedGeometryObject 0 738 objects\movie\forge\coastal_highway\structure_5
+PortInstancedGeometryObject 0 2 objects\movie\forge\coastal_highway\structure_6
+PortInstancedGeometryObject 0 164 objects\movie\forge\coastal_highway\structure_7
+PortInstancedGeometryObject 0 490 objects\movie\forge\coastal_highway\structure_8
+PortInstancedGeometryObject 0 779 objects\movie\forge\coastal_highway\structure_9
+PortInstancedGeometryObject 4 447 objects\movie\forge\coastal_highway\structure_10
+PortInstancedGeometryObject 6 297 objects\movie\forge\coastal_highway\structure_11
+PortInstancedGeometryObject 6 47 objects\movie\forge\coastal_highway\structure_12
+PortInstancedGeometryObject 6 58 objects\movie\forge\coastal_highway\structure_13
+PortInstancedGeometryObject 6 125 objects\movie\forge\coastal_highway\structure_14
+PortInstancedGeometryObject 6 152 objects\movie\forge\coastal_highway\structure_15
+
+AddForgeCategory "COASTAL HIGHWAY GEO" "COASTAL HIGHWAY"
+
+AddForgeCategory "ROADS COASTAL" "COASTAL HIGHWAY GEO"
+AddForgeCategory "STRUCTURE COASTAL" "COASTAL HIGHWAY GEO"
+
+AddForgeItem "Straight" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_1.scenery
+AddForgeItem "Left Dip" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_2.scenery
+AddForgeItem "Right Dip" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_3.scenery
+AddForgeItem "Left Offramp" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_4.scenery
+AddForgeItem "Right Offramp" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_5.scenery
+AddForgeItem "Offramp Entrances" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_6.scenery
+AddForgeItem "Offramp Bunker" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_7.scenery
+AddForgeItem "Offramp Tunnel End" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_8.scenery
+AddForgeItem "Small Ramp" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_9.scenery
+AddForgeItem "Median Ramp" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_10.scenery
+AddForgeItem "Support" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_11.scenery
+AddForgeItem "Support Tall" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_12.scenery
+AddForgeItem "Lane Sign" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_13.scenery
+AddForgeItem "Lane Sign Alternate" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_14.scenery
+AddForgeItem "Right Dip V2" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_15.scenery
+AddForgeItem "Left Quarter Circle" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_16.scenery
+AddForgeItem "Right Quarter Circle" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_17.scenery
+AddForgeItem "Straight V2" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_18.scenery
+AddForgeItem "Doorframe Part 1" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_19.scenery
+AddForgeItem "Doorframe Part 2" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_20.scenery
+AddForgeItem "Straight Offramp" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_21.scenery
+AddForgeItem "Tiny Left" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_22.scenery
+AddForgeItem "Tiny Right" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_23.scenery
+AddForgeItem "Offramp Exit" "ROADS COASTAL" objects\movie\forge\coastal_highway\road_24.scenery
+
+AddForgeItem "Tower" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_1.scenery
+AddForgeItem "Tower Destroyed" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_2.scenery
+AddForgeItem "Tower Thin" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_3.scenery
+AddForgeItem "Awning" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_4.scenery
+AddForgeItem "Awning Pillars" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_5.scenery
+AddForgeItem "Glass Brace" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_6.scenery
+AddForgeItem "Glass Brace Wide" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_7.scenery
+AddForgeItem "Small Stairs" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_8.scenery
+AddForgeItem "Arch Light" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_9.scenery
+AddForgeItem "Strut" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_10.scenery
+AddForgeItem "V Support" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_11.scenery
+AddForgeItem "Street Light Single" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_12.scenery
+AddForgeItem "Street Light Double" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_13.scenery
+AddForgeItem "Big Bollard" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_14.scenery
+AddForgeItem "Red Flat Light" "STRUCTURE COASTAL" objects\movie\forge\coastal_highway\structure_15.scenery

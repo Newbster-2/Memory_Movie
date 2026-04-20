@@ -1,0 +1,21 @@
+CreateTag effe objects\eldewrito\movie\ai\melee_acceleration
+EditTag objects\eldewrito\movie\ai\melee_acceleration.effect
+
+## What is flag doing exactly in the engine
+SetField Flags Deterministic
+
+SetField LoopStartEvent -1
+
+AddBlockElements Locations
+SetField Locations[0].MarkerName head
+
+AddBlockElements Events
+SetField Events[0].DurationBounds 0.03333334 0.03333334
+
+AddBlockElements Events[0].Accelerations
+SetField Events[0].Accelerations[0].AccelerationAmount 3.3
+
+SetField BindScaleToEvent -1
+
+SaveTagChanges
+Exit

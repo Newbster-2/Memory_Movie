@@ -1,0 +1,229 @@
+## Turf Reefer
+EditTag levels\multi\s3d_turf\turf_wagon.scenery
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Knife
+DuplicateTag objects\props\human\unsc\spartan_knife\spartan_knife.model objects\props\human\unsc\spartan_knife\spartan_knife_forge
+EditTag objects\props\human\unsc\spartan_knife\spartan_knife_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_tiny.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\props\human\unsc\spartan_knife\spartan_knife.scenery objects\props\human\unsc\spartan_knife\spartan_knife_forge
+EditTag objects\props\human\unsc\spartan_knife\spartan_knife_forge.scenery
+SetField Model objects\props\human\unsc\spartan_knife\spartan_knife_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Automag
+DuplicateTag objects\weapons\pistol\automag\automag.collision_model objects\weapons\pistol\automag\automag_forge
+EditTag objects\weapons\pistol\automag\automag_forge.collision_model
+GenerateBspPhysics
+MoppData import "working_directory\models\null_mopp_data.txt"
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\pistol\automag\automag.model objects\weapons\pistol\automag\automag_forge
+EditTag objects\weapons\pistol\automag\automag_forge.model
+SetField CollisionModel objects\weapons\pistol\automag\automag_forge.collision_model
+SetField PhysicsModel null
+SetField ShadowFadeDistance 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\pistol\automag\automag.scenery objects\weapons\pistol\automag\automag_forge
+EditTag objects\weapons\pistol\automag\automag_forge.scenery
+SetField Model objects\weapons\pistol\automag\automag_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Silenced SMG
+DuplicateTag objects\weapons\rifle\smg_silenced\smg_silenced.collision_model objects\weapons\rifle\smg_silenced\smg_silenced_forge
+EditTag objects\weapons\rifle\smg_silenced\smg_silenced_forge.collision_model
+GenerateBspPhysics
+MoppData import "working_directory\models\null_mopp_data.txt"
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\rifle\smg_silenced\smg_silenced.model objects\weapons\rifle\smg_silenced\smg_silenced_forge
+EditTag objects\weapons\rifle\smg_silenced\smg_silenced_forge.model
+SetField CollisionModel objects\weapons\rifle\smg_silenced\smg_silenced_forge.collision_model
+SetField PhysicsModel null
+SetField ShadowFadeDistance 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\rifle\smg_silenced\smg_silenced.scenery objects\weapons\rifle\smg_silenced\smg_silenced_forge
+EditTag objects\weapons\rifle\smg_silenced\smg_silenced_forge.scenery
+SetField Model objects\weapons\rifle\smg_silenced\smg_silenced_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Server Earth
+DuplicateTag levels\ui\mainmenu\objects\matchmaking_earth\matchmaking_earth.model levels\ui\mainmenu\objects\matchmaking_earth\matchmaking_earth_forge
+EditTag levels\ui\mainmenu\objects\matchmaking_earth\matchmaking_earth_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SetField ModelObjectData[0].Offset 0 0 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\ui\mainmenu\objects\server_browser_earth\server_browser_earth.scenery levels\ui\mainmenu\objects\server_browser_earth\server_browser_earth_forge
+EditTag levels\ui\mainmenu\objects\server_browser_earth\server_browser_earth_forge.scenery
+SetField BoundingOffset 0 0 0
+SetField Model levels\ui\mainmenu\objects\matchmaking_earth\matchmaking_earth_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Frigate
+DuplicateTag objects\cinematics\human\frigate\frigate\frigate_shrine.model objects\cinematics\human\frigate\frigate\frigate_shrine_forge
+EditTag objects\cinematics\human\frigate\frigate\frigate_shrine_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\cinematics\human\frigate\frigate\frigate_shrine.scenery objects\cinematics\human\frigate\frigate\frigate_shrine_forge
+EditTag objects\cinematics\human\frigate\frigate\frigate_shrine_forge.scenery
+SetField Model objects\cinematics\human\frigate\frigate\frigate_shrine_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Dome Light
+EditTag objects\levels\multi\zanzibar\dome_light\dome_light.scenery
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Tarp Box
+EditTag objects\gear\human\industrial\tarp_box_stack\tarp_box_stack.scenery
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Tarp Crate
+EditTag objects\gear\human\industrial\tarp_crate_large_a\tarp_crate_large_a.scenery
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Red Flare
+DuplicateTag levels\multi\s3d_reactor\reactor_flare.model levels\multi\s3d_reactor\reactor_flare_forge
+EditTag levels\multi\s3d_reactor\reactor_flare_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_reactor\reactor_flare.scenery levels\multi\s3d_reactor\reactor_flare_forge
+EditTag levels\multi\s3d_reactor\reactor_flare_forge.scenery
+SetField Model levels\multi\s3d_reactor\reactor_flare_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Yellow Flare
+DuplicateTag levels\multi\s3d_reactor\reactor_flare_yellow.model levels\multi\s3d_reactor\reactor_flare_yellow_forge
+EditTag levels\multi\s3d_reactor\reactor_flare_yellow_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_reactor\reactor_flare_yellow.scenery levels\multi\s3d_reactor\reactor_flare_yellow_forge
+EditTag levels\multi\s3d_reactor\reactor_flare_yellow_forge.scenery
+SetField Model levels\multi\s3d_reactor\reactor_flare_yellow_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Blue Flare
+DuplicateTag levels\multi\s3d_reactor\reactor_flare_blue.model levels\multi\s3d_reactor\reactor_flare_blue_forge
+EditTag levels\multi\s3d_reactor\reactor_flare_blue_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_reactor\reactor_flare_blue.scenery levels\multi\s3d_reactor\reactor_flare_blue_forge
+EditTag levels\multi\s3d_reactor\reactor_flare_blue_forge.scenery
+SetField Model levels\multi\s3d_reactor\reactor_flare_blue_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Guardian Earth
+DuplicateTag objects\halograms\130lb_earth\earth_halogram\guardian_halogram.model objects\halograms\130lb_earth\earth_halogram\guardian_halogram_forge
+EditTag objects\halograms\130lb_earth\earth_halogram\guardian_halogram_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\halograms\130lb_earth\earth_halogram\guardian_halogram.scenery objects\halograms\130lb_earth\earth_halogram\guardian_halogram_forge
+EditTag objects\halograms\130lb_earth\earth_halogram\guardian_halogram_forge.scenery
+SetField Model objects\halograms\130lb_earth\earth_halogram\guardian_halogram_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+AddForgeCategory "EXTRA SCENERY" "EXTRA BASE PROPS"
+
+AddForgeItem "Giant AC Unit" "EXTRA SCENERY" levels\multi\s3d_turf\turf_wagon.scenery
+AddForgeItem "Knife" "EXTRA SCENERY" objects\props\human\unsc\spartan_knife\spartan_knife_forge.scenery
+AddForgeItem "Automag" "EXTRA SCENERY" objects\weapons\pistol\automag\automag_forge.scenery
+AddForgeItem "Silenced SMG" "EXTRA SCENERY" objects\weapons\rifle\smg_silenced\smg_silenced_forge.scenery
+AddForgeItem "Hologram Earth" "EXTRA SCENERY" levels\ui\mainmenu\objects\server_browser_earth\server_browser_earth_forge.scenery
+AddForgeItem "Frigate" "EXTRA SCENERY" objects\cinematics\human\frigate\frigate\frigate_shrine_forge.scenery
+AddForgeItem "Dome Light" "EXTRA SCENERY" objects\levels\multi\zanzibar\dome_light\dome_light.scenery
+AddForgeItem "Tarped Boxes" "EXTRA SCENERY" objects\gear\human\industrial\tarp_box_stack\tarp_box_stack.scenery
+AddForgeItem "Tarped Crate" "EXTRA SCENERY" objects\gear\human\industrial\tarp_crate_large_a\tarp_crate_large_a.scenery
+AddForgeItem "Red Flare" "EXTRA SCENERY" levels\multi\s3d_reactor\reactor_flare_forge.scenery
+AddForgeItem "Yellow Flare" "EXTRA SCENERY" levels\multi\s3d_reactor\reactor_flare_yellow_forge.scenery
+AddForgeItem "Blue Flare" "EXTRA SCENERY" levels\multi\s3d_reactor\reactor_flare_blue_forge.scenery
+AddForgeItem "Guardian Earth" "EXTRA SCENERY" objects\halograms\130lb_earth\earth_halogram\guardian_halogram_forge.scenery

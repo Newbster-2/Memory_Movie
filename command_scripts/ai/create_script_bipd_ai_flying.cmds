@@ -1,0 +1,37 @@
+CreateTag char objects\eldewrito\movie\scripting\script_bipd_ai_flying
+EditTag objects\eldewrito\movie\scripting\script_bipd_ai_flying.character
+
+SetField ParentCharacter ai\generic_mp.character
+SetField Unit objects\eldewrito\movie\scripting\script_bipd.biped
+SetField Style objects\characters\monitor\ai\monitor.style
+
+AddBlockElements GeneralProperties
+SetField GeneralProperties[0].Flags Flying
+SetField GeneralProperties[0].ActorType Monitor
+SetField GeneralProperties[0].BehaviorTreeRoot Flying
+
+AddBlockElements MovementProperties
+SetField MovementProperties[0].Flags KeepMoving
+SetField MovementProperties[0].PathfindingRadius 0.3
+SetField MovementProperties[0].DestinationRadius 0.3
+
+AddBlockElements VehicleProperties
+SetField VehicleProperties[0].Unit objects\eldewrito\movie\scripting\script_bipd.biped
+SetField VehicleProperties[0].AiPathfindingRadius 0.3
+SetField VehicleProperties[0].AiDestinationRadius 0.4
+SetField VehicleProperties[0].AiTurningRadius 0.2
+SetField VehicleProperties[0].AiMaxSteeringAngle 25
+SetField VehicleProperties[0].AiMaxSteeringDelta 25
+SetField VehicleProperties[0].AiSideSlipDistance 4
+SetField VehicleProperties[0].AiAvoidanceDistance 1.5
+SetField VehicleProperties[0].AiThrottleMaximum 1
+SetField VehicleProperties[0].AiGoalMinThrottleScale 1
+SetField VehicleProperties[0].AiTurnMinThrottleScale 1
+SetField VehicleProperties[0].AiDirectionMinimumThrottleScale 1
+SetField VehicleProperties[0].AiAccelerationScale 0.25
+SetField VehicleProperties[0].AiThrottleBlend 0.95
+SetField VehicleProperties[0].TheoreticalMaxSpeed 1
+SetField VehicleProperties[0].AiAllowableAimDeviationAngle 10
+
+SaveTagChanges
+Exit

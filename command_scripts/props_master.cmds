@@ -1,0 +1,67 @@
+## Category that all new objects will go under
+AddForgeCategory "MOVIE PROPS" -1
+
+## Scripting
+RunCommands "working_directory\command_scripts\props\script_props.cmds"
+RunCommands "working_directory\command_scripts\props\fx_attachments.cmds"
+
+## Reforge
+RunCommands "working_directory\command_scripts\reforge\new_materials.cmds"
+RunCommands "working_directory\command_scripts\reforge\new_blocks.cmds"
+
+## Tools
+AddForgeCategory "TOOLS" "MOVIE PROPS"
+RunCommands "working_directory\command_scripts\props\misc_tools.cmds"
+
+## Custom
+RunCommands "working_directory\command_scripts\props\misc_props.cmds"
+RunCommands "working_directory\command_scripts\props\sky_box_props.cmds"
+RunCommands "working_directory\command_scripts\props\spherical_harmonics.cmds"
+RunCommands "working_directory\command_scripts\props\animated_scenery_props.cmds"
+
+## Extras
+AddForgeCategory "EXTRA BASE PROPS" "MOVIE PROPS"
+RunCommands "working_directory\command_scripts\props\extra_scenery.cmds"
+RunCommands "working_directory\command_scripts\props\extra_machines.cmds"
+RunCommands "working_directory\command_scripts\props\extra_controls.cmds"
+RunCommands "working_directory\command_scripts\props\extra_vehicles.cmds"
+
+## Map geo
+AddForgeCategory "MAP GEO" "MOVIE PROPS"
+RunCommands "working_directory\command_scripts\geo_props\icebox_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\diamondback_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\reactor_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\standoff_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\narrows_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\last_resort_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\the_pit_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\high_ground_geo_props.cmds"
+RunCommands "working_directory\command_scripts\geo_props\valhalla_geo_props.cmds"
+## RunCommands "working_directory\command_scripts\geo_props\edge_geo_props.cmds"
+## RunCommands "working_directory\command_scripts\geo_props\sandtrap_geo_props.cmds"
+
+## Create ai related tags
+RunCommands "working_directory\command_scripts\ai\create_ai_dash_melee.cmds"
+RunCommands "working_directory\command_scripts\ai\create_dervish_melee_ai.cmds"
+RunCommands "working_directory\command_scripts\ai\create_melee_acceleration.cmds"
+RunCommands "working_directory\command_scripts\ai\create_style_tags.cmds"
+RunCommands "working_directory\command_scripts\ai\create_mp_generic_char.cmds"
+RunCommands "working_directory\command_scripts\ai\create_spartan_char.cmds"
+RunCommands "working_directory\command_scripts\ai\spartan_player_loadouts.cmds"
+RunCommands "working_directory\command_scripts\ai\create_elite_char.cmds"
+RunCommands "working_directory\command_scripts\ai\create_script_bipd_ai_flying.cmds"
+RunCommands "working_directory\command_scripts\ai\create_script_bipd_ai_walking.cmds"
+
+## Ported (comment out if you don't have the map caches)
+AddForgeCategory "PORTED PROPS" "MOVIE PROPS"
+RunCommands "working_directory\command_scripts\ported\sky_bridge_master.cmds"
+RunCommands "working_directory\command_scripts\ported\coastal_highway_master.cmds"
+RunCommands "working_directory\command_scripts\ported\crows_nest_master.cmds"
+RunCommands "working_directory\command_scripts\ported\voi_master.cmds"
+
+## Makes filtered model tags now only distance cull from bounding radius + LOD distance setting in game
+## Objects with a radius greater than 6 set to 0, less than set to 200
+CS < "working_directory\command_scripts\render_distance.cs" 6.0 lte 0
+CS < "working_directory\command_scripts\render_distance.cs" 6.0 gte 200
+## ForEach hlmt SetField DisappearDistance 0
+## ForEach hlmt SetField BeginFadeDistance 0

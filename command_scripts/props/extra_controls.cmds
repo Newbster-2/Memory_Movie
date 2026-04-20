@@ -1,0 +1,10 @@
+## Gate Control
+DuplicateTag objects\levels\multi\zanzibar\gate_control\house_gate_control.device_control objects\levels\multi\zanzibar\gate_control\house_gate_control_forge
+EditTag objects\levels\multi\zanzibar\gate_control\house_gate_control_forge.device_control
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+AddForgeCategory "EXTRA CONTROLS" "EXTRA BASE PROPS"
+
+AddForgeItem "Gate Control" "EXTRA CONTROLS" objects\levels\multi\zanzibar\gate_control\house_gate_control_forge.device_control

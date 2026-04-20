@@ -1,0 +1,7 @@
+## Global spherical harmonic lighting of objects is controlled by this:
+SetField SkyReferences[0].SkyObject objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted.scenery
+
+## Atmosphere
+SetField SkyParameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+
+## Camera effects

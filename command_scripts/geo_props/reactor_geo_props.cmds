@@ -1,0 +1,269 @@
+## REACTOR
+EditTag levels\multi\s3d_reactor\s3d_reactor.scenario
+
+## DOORWAYS  
+ConvertInstancedGeometry 0 10 objects\movie\forge\s3d_reactor\doorway_1  
+ConvertInstancedGeometry 0 107 objects\movie\forge\s3d_reactor\doorway_2  
+ConvertInstancedGeometry 0 191 objects\movie\forge\s3d_reactor\doorway_3  
+ConvertInstancedGeometry 0 193 objects\movie\forge\s3d_reactor\doorway_4  
+ConvertInstancedGeometry 0 415 objects\movie\forge\s3d_reactor\doorway_5  
+ConvertInstancedGeometry 0 419 objects\movie\forge\s3d_reactor\doorway_6  
+ConvertInstancedGeometry 0 407 objects\movie\forge\s3d_reactor\doorway_7  
+ConvertInstancedGeometry 0 35 objects\movie\forge\s3d_reactor\doorway_8  
+ConvertInstancedGeometry 0 101 objects\movie\forge\s3d_reactor\doorway_9  
+ConvertInstancedGeometry 0 103 objects\movie\forge\s3d_reactor\doorway_10  
+
+## PANELS  
+ConvertInstancedGeometry 0 109 objects\movie\forge\s3d_reactor\panel_1  
+ConvertInstancedGeometry 0 395 objects\movie\forge\s3d_reactor\panel_2  
+ConvertInstancedGeometry 0 396 objects\movie\forge\s3d_reactor\panel_3  
+ConvertInstancedGeometry 0 409 objects\movie\forge\s3d_reactor\panel_4  
+ConvertInstancedGeometry 0 422 objects\movie\forge\s3d_reactor\panel_5  
+ConvertInstancedGeometry 0 517 objects\movie\forge\s3d_reactor\panel_6  
+ConvertInstancedGeometry 0 520 objects\movie\forge\s3d_reactor\panel_7  
+ConvertInstancedGeometry 0 634 objects\movie\forge\s3d_reactor\panel_8  
+ConvertInstancedGeometry 0 784 objects\movie\forge\s3d_reactor\panel_9  
+ConvertInstancedGeometry 0 785 objects\movie\forge\s3d_reactor\panel_10  
+ConvertInstancedGeometry 0 389 objects\movie\forge\s3d_reactor\panel_11  
+ConvertInstancedGeometry 0 397 objects\movie\forge\s3d_reactor\panel_12  
+ConvertInstancedGeometry 0 403 objects\movie\forge\s3d_reactor\panel_13  
+ConvertInstancedGeometry 0 484 objects\movie\forge\s3d_reactor\panel_14  
+ConvertInstancedGeometry 0 509 objects\movie\forge\s3d_reactor\panel_15  
+ConvertInstancedGeometry 0 563 objects\movie\forge\s3d_reactor\panel_16  
+ConvertInstancedGeometry 0 899 objects\movie\forge\s3d_reactor\panel_17  
+ConvertInstancedGeometry 0 900 objects\movie\forge\s3d_reactor\panel_18  
+ConvertInstancedGeometry 0 995 objects\movie\forge\s3d_reactor\panel_19  
+ConvertInstancedGeometry 0 1020 objects\movie\forge\s3d_reactor\panel_20  
+ConvertInstancedGeometry 0 1061 objects\movie\forge\s3d_reactor\panel_21  
+ConvertInstancedGeometry 0 1062 objects\movie\forge\s3d_reactor\panel_22  
+
+## PIPES  
+ConvertInstancedGeometry 0 9 objects\movie\forge\s3d_reactor\pipe_1  
+ConvertInstancedGeometry 0 111 objects\movie\forge\s3d_reactor\pipe_2  
+ConvertInstancedGeometry 0 616 objects\movie\forge\s3d_reactor\pipe_3  
+ConvertInstancedGeometry 0 862 objects\movie\forge\s3d_reactor\pipe_4  
+ConvertInstancedGeometry 0 863 objects\movie\forge\s3d_reactor\pipe_5  
+ConvertInstancedGeometry 0 870 objects\movie\forge\s3d_reactor\pipe_6  
+ConvertInstancedGeometry 0 871 objects\movie\forge\s3d_reactor\pipe_7  
+ConvertInstancedGeometry 0 1019 objects\movie\forge\s3d_reactor\pipe_8  
+ConvertInstancedGeometry 0 1024 objects\movie\forge\s3d_reactor\pipe_9  
+ConvertInstancedGeometry 0 77 objects\movie\forge\s3d_reactor\pipe_10  
+ConvertInstancedGeometry 0 87 objects\movie\forge\s3d_reactor\pipe_11  
+ConvertInstancedGeometry 0 344 objects\movie\forge\s3d_reactor\pipe_12  
+ConvertInstancedGeometry 0 394 objects\movie\forge\s3d_reactor\pipe_13  
+ConvertInstancedGeometry 0 523 objects\movie\forge\s3d_reactor\pipe_14  
+ConvertInstancedGeometry 0 530 objects\movie\forge\s3d_reactor\pipe_15  
+ConvertInstancedGeometry 0 536 objects\movie\forge\s3d_reactor\pipe_16  
+ConvertInstancedGeometry 0 756 objects\movie\forge\s3d_reactor\pipe_17  
+ConvertInstancedGeometry 0 868 objects\movie\forge\s3d_reactor\pipe_18  
+
+## SUPPORT  
+ConvertInstancedGeometry 0 11 objects\movie\forge\s3d_reactor\support_1  
+ConvertInstancedGeometry 0 13 objects\movie\forge\s3d_reactor\support_2  
+ConvertInstancedGeometry 0 59 objects\movie\forge\s3d_reactor\support_3  
+ConvertInstancedGeometry 0 128 objects\movie\forge\s3d_reactor\support_4  
+ConvertInstancedGeometry 0 262 objects\movie\forge\s3d_reactor\support_5  
+ConvertInstancedGeometry 0 326 objects\movie\forge\s3d_reactor\support_6  
+ConvertInstancedGeometry 0 328 objects\movie\forge\s3d_reactor\support_7  
+ConvertInstancedGeometry 0 515 objects\movie\forge\s3d_reactor\support_8  
+ConvertInstancedGeometry 0 816 objects\movie\forge\s3d_reactor\support_9  
+ConvertInstancedGeometry 0 617 objects\movie\forge\s3d_reactor\support_10  
+ConvertInstancedGeometry 0 223 objects\movie\forge\s3d_reactor\support_11  
+ConvertInstancedGeometry 0 420 objects\movie\forge\s3d_reactor\support_12  
+ConvertInstancedGeometry 0 846 objects\movie\forge\s3d_reactor\support_13  
+
+## BUILDINGS  
+ConvertInstancedGeometry 0 514 objects\movie\forge\s3d_reactor\building_1  
+ConvertInstancedGeometry 0 810 objects\movie\forge\s3d_reactor\building_2  
+ConvertInstancedGeometry 0 812 objects\movie\forge\s3d_reactor\building_3  
+ConvertInstancedGeometry 0 864 objects\movie\forge\s3d_reactor\building_4  
+ConvertInstancedGeometry 0 897 objects\movie\forge\s3d_reactor\building_5  
+ConvertInstancedGeometry 0 913 objects\movie\forge\s3d_reactor\building_6  
+ConvertInstancedGeometry 0 914 objects\movie\forge\s3d_reactor\building_7  
+ConvertInstancedGeometry 0 1022 objects\movie\forge\s3d_reactor\building_8  
+ConvertInstancedGeometry 0 1023 objects\movie\forge\s3d_reactor\building_9  
+ConvertInstancedGeometry 0 1059 objects\movie\forge\s3d_reactor\building_10  
+ConvertInstancedGeometry 0 1060 objects\movie\forge\s3d_reactor\building_11  
+ConvertInstancedGeometry 0 854 objects\movie\forge\s3d_reactor\building_12  
+ConvertInstancedGeometry 0 855 objects\movie\forge\s3d_reactor\building_13  
+ConvertInstancedGeometry 0 866 objects\movie\forge\s3d_reactor\building_14  
+ConvertInstancedGeometry 0 979 objects\movie\forge\s3d_reactor\building_15  
+
+## SHELL  
+ConvertInstancedGeometry 0 45 objects\movie\forge\s3d_reactor\shell_1  
+ConvertInstancedGeometry 0 49 objects\movie\forge\s3d_reactor\shell_2  
+ConvertInstancedGeometry 0 187 objects\movie\forge\s3d_reactor\shell_3  
+ConvertInstancedGeometry 0 214 objects\movie\forge\s3d_reactor\shell_4  
+ConvertInstancedGeometry 0 216 objects\movie\forge\s3d_reactor\shell_5  
+ConvertInstancedGeometry 0 550 objects\movie\forge\s3d_reactor\shell_6  
+ConvertInstancedGeometry 0 556 objects\movie\forge\s3d_reactor\shell_7  
+ConvertInstancedGeometry 0 814 objects\movie\forge\s3d_reactor\shell_8  
+ConvertInstancedGeometry 0 253 objects\movie\forge\s3d_reactor\shell_9  
+
+## TERRAIN  
+ConvertInstancedGeometry 0 912 objects\movie\forge\s3d_reactor\terrain_1  
+ConvertInstancedGeometry 0 760 objects\movie\forge\s3d_reactor\terrain_2  
+ConvertInstancedGeometry 0 786 objects\movie\forge\s3d_reactor\terrain_3  
+
+## MISC  
+ConvertInstancedGeometry 0 393 objects\movie\forge\s3d_reactor\misc_1  
+ConvertInstancedGeometry 0 544 objects\movie\forge\s3d_reactor\misc_2  
+ConvertInstancedGeometry 0 554 objects\movie\forge\s3d_reactor\misc_3  
+ConvertInstancedGeometry 0 637 objects\movie\forge\s3d_reactor\misc_4  
+ConvertInstancedGeometry 0 1067 objects\movie\forge\s3d_reactor\misc_5  
+ConvertInstancedGeometry 0 1066 objects\movie\forge\s3d_reactor\misc_6  
+ConvertInstancedGeometry 0 195 objects\movie\forge\s3d_reactor\misc_7  
+ConvertInstancedGeometry 0 312 objects\movie\forge\s3d_reactor\misc_8  
+ConvertInstancedGeometry 0 635 objects\movie\forge\s3d_reactor\misc_9  
+ConvertInstancedGeometry 0 638 objects\movie\forge\s3d_reactor\misc_10  
+ConvertInstancedGeometry 0 787 objects\movie\forge\s3d_reactor\misc_11  
+ConvertInstancedGeometry 0 856 objects\movie\forge\s3d_reactor\misc_12  
+ConvertInstancedGeometry 0 939 objects\movie\forge\s3d_reactor\misc_13  
+ConvertInstancedGeometry 0 951 objects\movie\forge\s3d_reactor\misc_14  
+ConvertInstancedGeometry 0 1025 objects\movie\forge\s3d_reactor\misc_15  
+ConvertInstancedGeometry 0 1055 objects\movie\forge\s3d_reactor\misc_16  
+
+Exit
+
+AddForgeCategory "REACTOR GEO" "MAP GEO"
+
+AddForgeCategory "DOORWAYS REACTOR" "REACTOR GEO"
+AddForgeCategory "PANELS REACTOR" "REACTOR GEO"
+AddForgeCategory "PIPES REACTOR" "REACTOR GEO"
+AddForgeCategory "SUPPORT REACTOR" "REACTOR GEO"
+AddForgeCategory "BUILDINGS REACTOR" "REACTOR GEO"
+AddForgeCategory "SHELL REACTOR" "REACTOR GEO"
+AddForgeCategory "TERRAIN REACTOR" "REACTOR GEO"
+AddForgeCategory "MISC REACTOR" "REACTOR GEO"
+
+AddForgeItem "Entrance" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_1.scenery  
+AddForgeItem "UNSC Doorway" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_2.scenery  
+AddForgeItem "Ultra Wide Doorway" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_3.scenery  
+AddForgeItem "Ultra Wide Doorway 2" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_4.scenery  
+AddForgeItem "Door Way Segment" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_5.scenery  
+AddForgeItem "Small Doorway and Floor" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_6.scenery  
+AddForgeItem "Small Doorway" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_7.scenery  
+AddForgeItem "Wide Door Frame" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_8.scenery  
+AddForgeItem "Standard Door Frame" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_9.scenery  
+AddForgeItem "Standard Door Frame 2" "DOORWAYS REACTOR" objects\movie\forge\s3d_reactor\doorway_10.scenery  
+
+AddForgeItem "Round Floor" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_1.scenery  
+AddForgeItem "Surrounding Floor" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_2.scenery  
+AddForgeItem "Exposed Wall" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_3.scenery  
+AddForgeItem "Circular Floor" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_4.scenery  
+AddForgeItem "Floor Segment" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_5.scenery  
+AddForgeItem "Damaged Circular Floor" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_6.scenery  
+AddForgeItem "Damaged Circular Floor 2" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_7.scenery  
+AddForgeItem "Interior Walls" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_8.scenery  
+AddForgeItem "Hex Wall Left" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_9.scenery  
+AddForgeItem "Hex Wall Right" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_10.scenery  
+AddForgeItem "Inset Wall Panel" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_11.scenery  
+AddForgeItem "Curved Inset Wall" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_12.scenery  
+AddForgeItem "Double Inset Wall" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_13.scenery  
+AddForgeItem "Floor Panel" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_14.scenery  
+AddForgeItem "Floor Panel 2" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_15.scenery  
+AddForgeItem "Vented Wall Panel" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_16.scenery  
+AddForgeItem "Wall and Railing" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_17.scenery  
+AddForgeItem "Wall and Railing 2" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_18.scenery  
+AddForgeItem "Slim Window" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_19.scenery  
+AddForgeItem "Long Vented Wall" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_20.scenery  
+AddForgeItem "Caution Panel" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_21.scenery  
+AddForgeItem "Fence Panel" "PANELS REACTOR" objects\movie\forge\s3d_reactor\panel_22.scenery  
+
+AddForgeItem "Entrance Pipes" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_1.scenery  
+AddForgeItem "UNSC Piping" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_2.scenery  
+AddForgeItem "Damaged Pipe Floor" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_3.scenery  
+AddForgeItem "Rounded Wall Pipe Left" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_4.scenery  
+AddForgeItem "Rounded Wall Pipe Right" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_5.scenery  
+AddForgeItem "Large Rounded Pipe Left" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_6.scenery  
+AddForgeItem "Large Rounded Pipe Right" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_7.scenery  
+AddForgeItem "Base 1 Piping" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_8.scenery  
+AddForgeItem "Base 2 Piping" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_9.scenery  
+AddForgeItem "Curved 90 Pipe" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_10.scenery  
+AddForgeItem "Short Pipe" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_11.scenery  
+AddForgeItem "Wall Slotted Pipe" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_12.scenery  
+AddForgeItem "Broken Pipe Set" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_13.scenery  
+AddForgeItem "Big Shielded Piping" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_14.scenery  
+AddForgeItem "Shielded Piping 2" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_15.scenery  
+AddForgeItem "Broken Pipe Ending" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_16.scenery  
+AddForgeItem "Bundled Piping" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_17.scenery  
+AddForgeItem "Square Pipe Loop" "PIPES REACTOR" objects\movie\forge\s3d_reactor\pipe_18.scenery  
+
+AddForgeItem "Exposed Framing" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_1.scenery  
+AddForgeItem "Joist" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_2.scenery  
+AddForgeItem "Joist 2" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_3.scenery  
+AddForgeItem "Squiggly Brace" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_4.scenery  
+AddForgeItem "Support Beam" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_5.scenery  
+AddForgeItem "Exposed Support Right" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_6.scenery  
+AddForgeItem "Support Structure" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_7.scenery  
+AddForgeItem "Exposed Support Left" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_8.scenery  
+AddForgeItem "Railing and Bracing" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_9.scenery  
+AddForgeItem "Straight Brace" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_10.scenery  
+AddForgeItem "Curved Framing" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_11.scenery  
+AddForgeItem "Support with Vents" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_12.scenery  
+AddForgeItem "Capped Pillar" "SUPPORT REACTOR" objects\movie\forge\s3d_reactor\support_13.scenery  
+
+AddForgeItem "Ramps and Platforms" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_1.scenery  
+AddForgeItem "Bridge Segment" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_2.scenery  
+AddForgeItem "Bridge and Ramp" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_3.scenery  
+AddForgeItem "Side Building" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_4.scenery  
+AddForgeItem "Building" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_5.scenery  
+AddForgeItem "Base 1" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_6.scenery  
+AddForgeItem "Base 1 Detail" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_7.scenery  
+AddForgeItem "Base 2" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_8.scenery  
+AddForgeItem "Base 2 Detail" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_9.scenery  
+AddForgeItem "Central Base Decor" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_10.scenery  
+AddForgeItem "Central Base" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_11.scenery  
+AddForgeItem "Corner Room Left" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_12.scenery  
+AddForgeItem "Corner Room Right" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_13.scenery  
+AddForgeItem "Roof Cap" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_14.scenery  
+AddForgeItem "Glass Platform" "BUILDINGS REACTOR" objects\movie\forge\s3d_reactor\building_15.scenery  
+
+AddForgeItem "Outer Shell" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_1.scenery  
+AddForgeItem "Shell Beam" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_2.scenery  
+AddForgeItem "Outer Shell Entry" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_3.scenery  
+AddForgeItem "Damaged Shell Right" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_4.scenery  
+AddForgeItem "Damaged Shell Left" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_5.scenery  
+AddForgeItem "Exterior Base Shell" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_6.scenery  
+AddForgeItem "Exterior Shell Short" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_7.scenery  
+AddForgeItem "Railing and Shell" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_8.scenery  
+AddForgeItem "Curved Exterior Ring" "SHELL REACTOR" objects\movie\forge\s3d_reactor\shell_9.scenery  
+
+AddForgeItem "Mountains and Valley" "TERRAIN REACTOR" objects\movie\forge\s3d_reactor\terrain_1.scenery  
+AddForgeItem "Medium Rock" "TERRAIN REACTOR" objects\movie\forge\s3d_reactor\terrain_2.scenery  
+AddForgeItem "Bordering Cliffs" "TERRAIN REACTOR" objects\movie\forge\s3d_reactor\terrain_3.scenery  
+
+AddForgeItem "Surrounding Glass" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_1.scenery  
+AddForgeItem "IDK Segment" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_2.scenery  
+AddForgeItem "Small Entry Hall" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_3.scenery  
+AddForgeItem "Reactor Core Base" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_4.scenery  
+AddForgeItem "Left Base Fencing" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_5.scenery  
+AddForgeItem "Right Base Fencing" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_6.scenery  
+AddForgeItem "Cable" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_7.scenery  
+AddForgeItem "UNSC Condenser" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_8.scenery  
+AddForgeItem "Crate Bundle" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_9.scenery  
+AddForgeItem "Reactor Monitor" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_10.scenery  
+AddForgeItem "Car Stopper" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_11.scenery  
+AddForgeItem "Fancy Antenna" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_12.scenery  
+AddForgeItem "Computer Terminal" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_13.scenery  
+AddForgeItem "Data Pad" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_14.scenery  
+AddForgeItem "Slotted Light" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_15.scenery  
+AddForgeItem "Computer Terminal 2" "MISC REACTOR" objects\movie\forge\s3d_reactor\misc_16.scenery
+
+EditTag objects\movie\forge\s3d_reactor\panel_2.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\s3d_reactor\terrain_1.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

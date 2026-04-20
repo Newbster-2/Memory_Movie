@@ -1,0 +1,183 @@
+## The elite/dervish does not require animation mode changes as it is already normally setup for ai use, with the "melee" action block always at index 0 for all weapons
+## Except for the unarmed, flag, and hammer...
+DuplicateTag objects\characters\elite\elite.model_animation_graph objects\characters\elite\elite_ai
+CS < "working_directory\command_scripts\ai\add_animation_events.cs" objects\characters\elite\elite_ai.model_animation_graph objects\eldewrito\movie\ai\melee_acceleration.effect head melee
+
+DuplicateTag objects\characters\dervish\dervish.model_animation_graph objects\characters\dervish\dervish_ai
+CS < "working_directory\command_scripts\ai\change_animation_labels.cs" objects\characters\dervish\dervish_ai.model_animation_graph *melee_strike_1 melee flag,unarmed
+CS < "working_directory\command_scripts\ai\change_animation_labels.cs" objects\characters\dervish\dervish_ai.model_animation_graph *melee_lunge melee hammer
+CS < "working_directory\command_scripts\ai\sort_weapon_class.cs" objects\characters\dervish\dervish_ai.model_animation_graph flag,unarmed,hammer
+CS < "working_directory\command_scripts\ai\add_animation_events.cs" objects\characters\dervish\dervish_ai.model_animation_graph objects\eldewrito\movie\ai\melee_acceleration.effect head melee
+
+EditTag objects\characters\dervish\dervish_ai.model_animation_graph
+SetField ParentAnimationGraph objects\characters\elite\elite_ai.model_animation_graph
+SaveTagChanges
+Exit
+
+DuplicateTag objects\characters\elite\mp_elite\mp_elite.model objects\characters\elite\mp_elite\mp_elite_ai
+EditTag objects\characters\elite\mp_elite\mp_elite_ai.model
+SetField Animation objects\characters\dervish\dervish_ai.model_animation_graph
+SaveTagChanges
+Exit
+
+DuplicateTag objects\characters\elite\mp_elite\mp_elite.biped objects\characters\elite\mp_elite\mp_elite_ai
+EditTag objects\characters\elite\mp_elite\mp_elite_ai.biped
+SetField Model objects\characters\elite\mp_elite\mp_elite_ai.model
+SetField UnitFlags.Flags MeleeAttackersCannotAttach,FlashlightPowerDoesntTransferToWeapon,RunsAroundFlaming,ShieldsFryInfectionForms
+SetField MeleeDamage objects\characters\dervish\damage_effects\dervish_melee_ai.damage_effect
+SetField ObstacleSmashMeleeDamage objects\characters\dervish\damage_effects\dervish_melee_ai.damage_effect
+SetField GrenadeCount 2
+SetField PhysicsFlags.Halo3ODST None
+SaveTagChanges
+Exit
+
+CreateTag char objects\eldewrito\movie\ai\mp_elite
+EditTag objects\eldewrito\movie\ai\mp_elite.character
+
+SetField ParentCharacter ai\generic_mp.character
+SetField Unit objects\characters\elite\mp_elite\mp_elite_ai.biped
+SetField Style objects\characters\dervish\ai\dervish.style
+
+AddBlockElements Variants
+SetField Variants[0].VariantName default
+AddBlockElements Variants[0].Voices
+SetField Variants[0].Voices[0].Dialogue sound\dialog\combat\elite_mp.dialogue
+
+AddBlockElements Voice
+AddBlockElements Voice[0].DialogueVariations
+SetField Voice[0].DialogueVariations[0].Dialogue sound\dialog\combat\elite_mp.dialogue
+
+AddBlockElements GeneralProperties
+SetField GeneralProperties[0].Flags DualWields,HasActiveCamo
+SetField GeneralProperties[0].ActorType Player
+SetField GeneralProperties[0].Rank 200
+SetField GeneralProperties[0].Scariness 4
+
+AddBlockElements VitalityProperties
+SetField VitalityProperties[0].NormalBodyVitality 45
+SetField VitalityProperties[0].NormalShieldVitality 70
+SetField VitalityProperties[0].LegendaryBodyVitality 45
+SetField VitalityProperties[0].LegendaryShieldVitality 70
+SetField VitalityProperties[0].BodyRechargeFraction 1
+SetField VitalityProperties[0].SoftPingMinInterruptTime 0.15
+SetField VitalityProperties[0].HardPingShieldedThreshold 1
+SetField VitalityProperties[0].HardPingUnshieldedThreshold 0.3
+SetField VitalityProperties[0].HardPingMinInterruptTime 3
+SetField VitalityProperties[0].CurrentDamageDecayDelay 0.2
+SetField VitalityProperties[0].CurrentDamageDecayTime 0.2
+SetField VitalityProperties[0].RecentDamageDecayDelay 2
+SetField VitalityProperties[0].RecentDamageDecayTime 2
+SetField VitalityProperties[0].BodyRechargeDelayTime 0.5
+SetField VitalityProperties[0].BodyRechargeTime 1
+SetField VitalityProperties[0].ShieldRechargeDelayTime 7
+SetField VitalityProperties[0].ShieldRechargeTime 1
+SetField VitalityProperties[0].ExtendedShieldDamageThreshold 0.3
+SetField VitalityProperties[0].ExtendedBodyDamageThreshold 0.3
+SetField VitalityProperties[0].RuntimeBodyRechargeVelocity 1
+SetField VitalityProperties[0].RuntimeShieldRechargeVelocity 1
+SetField VitalityProperties[0].ResurrectWeapon objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+
+AddBlockElements MovementProperties
+SetField MovementProperties[0].Flags AlwaysUseSearchPoints
+SetField MovementProperties[0].PathfindingRadius 0.23
+SetField MovementProperties[0].DestinationRadius 0.25
+SetField MovementProperties[0].DiveGrenadeChance 0.5
+SetField MovementProperties[0].ObstacleLeapMinSize Medium
+SetField MovementProperties[0].ObstacleLeapMaxSize Medium
+SetField MovementProperties[0].ObstacleIgnoreSize Tiny
+SetField MovementProperties[0].ObstaceSmashableSize Small
+SetField MovementProperties[0].JumpHeight Stand
+SetField MovementProperties[0].MovementHints VaultCrouch,MountStep,MountCrouch,HoistCrouch,HoistStand
+SetField MovementProperties[0].WalkDistance 3
+
+AddBlockElements ChargeProperties
+SetField ChargeProperties[0].MeleeConsiderRange 1.35
+SetField ChargeProperties[0].MeleeChance 1
+SetField ChargeProperties[0].MeleeAttackRange 1.25
+SetField ChargeProperties[0].MeleeAbortRange 1.75
+SetField ChargeProperties[0].MeleeAttackTimeout 1
+SetField ChargeProperties[0].MeleeAttackDelayTimer 2
+SetField ChargeProperties[0].ShieldDownBerserkChance 0.75 1
+SetField ChargeProperties[0].ShielddownBerserkRanges 5 2.5
+SetField ChargeProperties[0].BerserkWeapon objects\weapons\melee\energy_blade\energy_blade.weapon
+SetField ChargeProperties[0].BeserkCooldown 6
+
+AddBlockElements CoverProperties
+SetField CoverProperties[0].HideBehindCoverTime 2 4
+SetField CoverProperties[0].CoverShieldFraction 0.5
+SetField CoverProperties[0].CoverVitalityThreshold 1
+SetField CoverProperties[0].CoverDangerThreshold 4
+SetField CoverProperties[0].DangerUpperThreshold 7
+SetField CoverProperties[0].CoverChanceBounds 0.5 1
+SetField CoverProperties[0].ShieldedCoverChance 0.5 1
+SetField CoverProperties[0].EmergeShieldThreshold 1
+SetField CoverProperties[0].ProximitySelfPreserve 2
+SetField CoverProperties[0].ProximityMeleeDistance 2
+SetField CoverProperties[0].UnreachableEnemyDangerThreshold 7
+SetField CoverProperties[0].ScaryTargetThreshold 6
+SetField CoverProperties[0].VitalityFractionShieldEquipment 1
+
+AddBlockElements SearchProperties
+SetField SearchProperties[0].Flags SearchForever
+SetField SearchProperties[0].SearchTime 30 45
+SetField SearchProperties[0].UncoverDistanceBounds 0 7
+
+AddBlockElements PreSearchProperties
+SetField PreSearchProperties[0].MinimumPreSearchTime 2 4
+SetField PreSearchProperties[0].MaximumPreSearchTime 4 8
+SetField PreSearchProperties[0].MinimumCertaintyRadius 3
+SetField PreSearchProperties[0].MinimumSuppressingTime 3 4
+
+AddBlockElements WeaponsProperties 2
+SetField WeaponsProperties[0].Weapon objects\weapons\melee\energy_blade\energy_blade.weapon
+SetField WeaponsProperties[0].MaximumFiringRange 3
+SetField WeaponsProperties[0].NormalCombatRange 0.5 3
+SetField WeaponsProperties[0].MaxSpecialTargetDistance 3
+SetField WeaponsProperties[0].TimidCombatRange 0.5 5
+SetField WeaponsProperties[0].AggressiveCombatRange 0.5 3
+SetField WeaponsProperties[0].SurpriseDelayTime 0.4
+SetField WeaponsProperties[0].DropWeaponLoadedBounds 0.01 0.05
+SetField WeaponsProperties[0].NormalAccuracyBounds 0 0.6
+SetField WeaponsProperties[0].NormalAccuracyTime 5
+SetField WeaponsProperties[0].HeroicAccuracyBounds 0.4 0.8
+SetField WeaponsProperties[0].HeroicAccuracyTime 3
+SetField WeaponsProperties[0].LegendaryAccuracyBounds 0.6 1
+SetField WeaponsProperties[0].LegendaryAccuracyTime 1
+SetField WeaponsProperties[0].WeaponMeleeDamage objects\weapons\damage_effects\ai_dash_melee.damage_effect
+SetField WeaponsProperties[1].Weapon objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+SetField WeaponsProperties[1].MaximumFiringRange 23
+SetField WeaponsProperties[1].MinimumFiringRange 0.5
+SetField WeaponsProperties[1].NormalCombatRange 6 9
+SetField WeaponsProperties[1].MaxSpecialTargetDistance 23
+SetField WeaponsProperties[1].TimidCombatRange 8 10
+SetField WeaponsProperties[1].AggressiveCombatRange 5 7
+SetField WeaponsProperties[1].FirstBurstDelayTimeBounds 0.1 0.8
+SetField WeaponsProperties[1].SurpriseDelayTime 1
+SetField WeaponsProperties[1].SurpriseFireWildlyTime 0.5
+SetField WeaponsProperties[1].DeathFireWildlyChance 0.2
+SetField WeaponsProperties[1].DeathFireWildlyTime 0.5
+SetField WeaponsProperties[1].DropWeaponLoadedBounds 0.4 0.8
+SetField WeaponsProperties[1].DropWeaponAmmoBounds 27 36
+SetField WeaponsProperties[1].NormalAccuracyBounds 0.75 1
+SetField WeaponsProperties[1].NormalAccuracyTime 3
+SetField WeaponsProperties[1].HeroicAccuracyBounds 0.75 1
+SetField WeaponsProperties[1].HeroicAccuracyTime 3
+SetField WeaponsProperties[1].LegendaryAccuracyBounds 0.75 1
+SetField WeaponsProperties[1].LegendaryAccuracyTime 3
+
+AddBlockElements GrenadesProperties
+SetField GrenadesProperties[0].GrenadeType CovenantPlasma
+SetField GrenadesProperties[0].MinimumEnemyCount 1
+SetField GrenadesProperties[0].EnemyRadius 4
+SetField GrenadesProperties[0].GrenadeIdealVelocity 3
+SetField GrenadesProperties[0].GrenadeVelocity 4.5
+SetField GrenadesProperties[0].GrenadeRange 2 8
+SetField GrenadesProperties[0].CollateralDamageRadius 2
+SetField GrenadesProperties[0].GrenadeChance 0.5
+SetField GrenadesProperties[0].GrenadeThrowCooldown 12
+SetField GrenadesProperties[0].GrenadeUncoverChance 0.5
+SetField GrenadesProperties[0].AntiVehicleGrenadeChance 0.5
+SetField GrenadesProperties[0].NoGrenadesDroppedChance 1
+
+SaveTagChanges
+Exit

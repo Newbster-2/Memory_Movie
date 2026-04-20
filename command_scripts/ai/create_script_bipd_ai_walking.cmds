@@ -1,0 +1,81 @@
+DuplicateTag objects\eldewrito\movie\scripting\script_bipd.biped objects\eldewrito\movie\scripting\script_bipd_walking
+EditTag objects\eldewrito\movie\scripting\script_bipd_walking.biped
+
+AddBlockElements PathfindingSpheres
+SetField PathfindingSpheres[0].Node -1
+SetField PathfindingSpheres[0].Center 0 0 0.175
+SetField PathfindingSpheres[0].Radius 0.175
+
+SetField BipedFlags TurnsWithoutAnimating,OrientFacingToMovement,UsePredictiveStationaryTurns
+SetField StationaryTurningThreshold 80
+SetField JumpVelocity 3
+SetField PhysicsFlags.Halo3ODST CenteredAtOrigin,UsePlayerPhysics,DeadCharacterCollisionGroup
+SetField HeightStanding 0.725
+SetField HeightCrouching 0.5
+SetField Radius 0.175
+
+SetField PillShapes[0].ShapeBase.Radius 0.175
+SetField PillShapes[0].Bottom 0 0 0.55
+SetField PillShapes[0].BottomRadius 0.175
+SetField PillShapes[0].Top 0 0 0.175
+SetField PillShapes[0].TopRadius 0.175
+SetField PillShapes[1].ShapeBase.Radius 0.175
+SetField PillShapes[1].Bottom 0 0 0.325
+SetField PillShapes[1].BottomRadius 0.175
+SetField PillShapes[1].Top 0 0 0.175
+SetField PillShapes[1].TopRadius 0.175
+
+SetField BipedGroundPhysics.MaximumSlopeAngle 50
+SetField BipedGroundPhysics.DownhillFalloffAngle 45
+SetField BipedGroundPhysics.DownhillCutoffAngle 50
+SetField BipedGroundPhysics.UphillFalloffAngle 45
+SetField BipedGroundPhysics.UphillCutoffAngle 50
+SetField BipedGroundPhysics.DownhillVelocityScale 1.5
+SetField BipedGroundPhysics.UphillVelocityScale 0.5
+SetField BipedGroundPhysics.RuntimeMinimumNormalK 0.65
+SetField BipedGroundPhysics.RuntimeDownhillK0 -0.71
+SetField BipedGroundPhysics.RuntimeDownhillK1 -0.77
+SetField BipedGroundPhysics.RuntimeUphillK0 0.71
+SetField BipedGroundPhysics.RuntimeUphillK1 0.77
+SetField BipedGroundPhysics.ClimbInflectionAngle -20
+
+SetField BipedGroundFittingData.GroundNormalDampening 0.75
+SetField BipedGroundFittingData.RootOffsetMaxScale 0.6
+SetField BipedGroundFittingData.RootOffsetDampening 0.8
+SetField BipedGroundFittingData.FollowingCamScale 0.5
+SetField BipedGroundFittingData.RootLeaningScale 0.1
+SetField BipedGroundFittingData.FootRollMax 5
+SetField BipedGroundFittingData.FootPitchMax 40
+SetField BipedGroundFittingData.PivotonfootScale 1
+SetField BipedGroundFittingData.PivotMinFootDelta 0.005
+SetField BipedGroundFittingData.PivotStrideLengthScale 1
+SetField BipedGroundFittingData.PivotThrottleScale 0.5
+SetField BipedGroundFittingData.PivotOffsetDampening 0.1
+
+SaveTagChanges
+Exit
+
+CreateTag char objects\eldewrito\movie\scripting\script_bipd_ai_walking
+EditTag objects\eldewrito\movie\scripting\script_bipd_ai_walking.character
+
+SetField ParentCharacter ai\generic_mp.character
+SetField Unit objects\eldewrito\movie\scripting\script_bipd_walking.biped
+SetField Style objects\characters\dervish\ai\dervish.style
+
+AddBlockElements GeneralProperties
+SetField GeneralProperties[0].ActorType Player
+
+AddBlockElements MovementProperties
+SetField MovementProperties[0].PathfindingRadius 0.23
+SetField MovementProperties[0].DestinationRadius 0.25
+SetField MovementProperties[0].ObstacleLeapMinSize Medium
+SetField MovementProperties[0].ObstacleLeapMaxSize Medium
+SetField MovementProperties[0].ObstacleIgnoreSize Tiny
+SetField MovementProperties[0].ObstaceSmashableSize Small
+SetField MovementProperties[0].JumpHeight Infinite
+SetField MovementProperties[0].WalkDistance 3
+
+SaveTagChanges
+Exit
+
+AddForgeItem "SCRIPT BIPD WALKING" "PROPS" objects\eldewrito\movie\scripting\script_bipd_walking.biped

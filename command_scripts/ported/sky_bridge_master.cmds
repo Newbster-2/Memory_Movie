@@ -1,0 +1,10 @@
+OpenCacheFile "h3ek_directory\s3d_sky_bridgenew.map"
+
+AddForgeCategory "SKY BRIDGE" "PORTED PROPS"
+
+RunCommands "working_directory\command_scripts\ported\sky_bridge_sky_box.cmds"
+RunCommands "working_directory\command_scripts\ported\sky_bridge_scenery.cmds"
+RunCommands "working_directory\command_scripts\ported\sky_bridge_machines.cmds"
+RunCommands "working_directory\command_scripts\ported\sky_bridge_geo_props.cmds"
+
+Exit

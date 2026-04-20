@@ -1,0 +1,406 @@
+## Sink texcam
+DuplicateTag levels\multi\chill\shaders\chill_waste_metal_a.shader objects\eldewrito\movie\props\sink_texcam
+EditTag objects\eldewrito\movie\props\sink_texcam.shader
+SetArgument base_map 0.6 0.99 0.2 0.005
+SetArgument detail_map 0.8 0.8 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument specular_coefficient 0.3
+SetArgument albedo_specular_tint_blend 1
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode TextureCamera
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\solo\020_base\sink\sink.render_model objects\eldewrito\movie\props\sink_texcam
+EditTag objects\eldewrito\movie\props\sink_texcam.render_model
+ReplaceRenderGeometry "working_directory\models\props\sink_texcam.dae"
+SetField Materials[1].RenderMethod objects\eldewrito\movie\props\sink_texcam.shader
+StringID add tex_cam
+AddBlockElements MarkerGroups
+SetField MarkerGroups[0].Name tex_cam
+AddBlockElements MarkerGroups[0].Markers
+SetField MarkerGroups[0].Markers[0].RegionIndex -1
+SetField MarkerGroups[0].Markers[0].PermutationIndex -1
+SetField MarkerGroups[0].Markers[0].Translation 0 0 0.5
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\solo\020_base\sink\sink.collision_model objects\eldewrito\movie\props\sink_texcam
+EditTag objects\eldewrito\movie\props\sink_texcam.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\solo\020_base\sink\sink.model objects\eldewrito\movie\props\sink_texcam
+EditTag objects\eldewrito\movie\props\sink_texcam.model
+SetField RenderModel objects\eldewrito\movie\props\sink_texcam.render_model
+SetField CollisionModel objects\eldewrito\movie\props\sink_texcam.collision_model
+SetField PhysicsModel null
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\solo\020_base\sink\sink.scenery objects\eldewrito\movie\props\sink_texcam
+EditTag objects\eldewrito\movie\props\sink_texcam.scenery
+SetField Model objects\eldewrito\movie\props\sink_texcam.model
+SaveTagChanges
+Exit
+
+## Monitor texcam
+GenerateBitmap objects\eldewrito\movie\props\monitor_hud_overlay "working_directory\bitmaps\monitor\hud_overlay.dds"
+DuplicateTag objects\eldewrito\reforge\shaders\alpha_blend_scope_camera.shader_halogram objects\eldewrito\movie\props\monitor_hud_overlay
+EditTag objects\eldewrito\movie\props\monitor_hud_overlay.shader_halogram
+SetBitmap base_map objects\eldewrito\movie\props\monitor_hud_overlay.bitmap
+SetField ShaderProperties[0].TextureConstants[0].ExternTextureMode UseBitmapAsNormal
+SetArgument self_illum_intensity 5
+RemoveBlockElements ShaderProperties[0].EntryPoints 0 *
+RemoveBlockElements ShaderProperties[0].Passes 0 *
+RemoveBlockElements ShaderProperties[0].RoutingInfo 0 *
+RemoveBlockElements ShaderProperties[0].Functions 0 *
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\reforge\shaders\opaque_texture_camera.shader_halogram objects\eldewrito\movie\props\monitor_texcam
+EditTag objects\eldewrito\movie\props\monitor_texcam.shader_halogram
+SetArgument base_map 0.99 0.99 0.005 0.005
+SetArgument self_illum_intensity 2
+RemoveBlockElements ShaderProperties[0].EntryPoints 0 *
+RemoveBlockElements ShaderProperties[0].Passes 0 *
+RemoveBlockElements ShaderProperties[0].RoutingInfo 0 *
+RemoveBlockElements ShaderProperties[0].Functions 0 *
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_monitor\office_monitor.render_model objects\eldewrito\movie\props\monitor_texcam
+EditTag objects\eldewrito\movie\props\monitor_texcam.render_model
+AddBlockElements Materials
+SetField Materials[0].RenderMethod objects\eldewrito\movie\props\monitor_hud_overlay.shader_halogram
+SetField Materials[1].RenderMethod objects\eldewrito\movie\props\monitor_texcam.shader_halogram
+SetField Materials[2].RenderMethod ms30\objects\gear\human\residential\shaders\office_wood.shader
+SetField Materials[3].RenderMethod ms30\objects\gear\human\residential\shaders\office_metal.shader
+ReplaceRenderGeometry "working_directory\models\props\monitor_texcam.dae" trianglestrip
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_monitor\office_monitor.collision_model objects\eldewrito\movie\props\monitor_texcam
+EditTag objects\eldewrito\movie\props\monitor_texcam.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_monitor\office_monitor.model objects\eldewrito\movie\props\monitor_texcam
+EditTag objects\eldewrito\movie\props\monitor_texcam.model
+SetField RenderModel objects\eldewrito\movie\props\monitor_texcam.render_model
+SetField CollisionModel objects\eldewrito\movie\props\monitor_texcam.collision_model
+SetField PhysicsModel null
+SaveTagChanges
+Exit
+
+SwitchObjectType objects\gear\human\residential\office_monitor\office_monitor.crate
+NameTag * objects\eldewrito\movie\props\monitor_texcam
+EditTag objects\eldewrito\movie\props\monitor_texcam.scenery
+SetField Model objects\eldewrito\movie\props\monitor_texcam.model
+SaveTagChanges
+Exit
+
+## ElDewrito sign
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\movie\props\eldewrito_sign
+EditTag objects\eldewrito\movie\props\eldewrito_sign.render_model
+AddBlockElements Materials
+SetField Materials[0].RenderMethod ms30\objects\eldewrito\reforge\shaders\glass_emissive.shader_halogram
+ReplaceRenderGeometry "working_directory\models\props\eldewrito.dae" trianglestrip
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\props\eldewrito_sign
+EditTag objects\eldewrito\movie\props\eldewrito_sign.model
+SetField RenderModel objects\eldewrito\movie\props\eldewrito_sign.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\aiming_vector_collision.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SaveTagChanges
+Exit
+
+CreateTag bloc objects\eldewrito\movie\props\eldewrito_sign
+EditTag objects\eldewrito\movie\props\eldewrito_sign.crate
+SetField ObjectType.Halo3ODST Crate
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 10
+SetField Model objects\eldewrito\movie\props\eldewrito_sign.model
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[*].InitialPermutations
+SetField ChangeColors[*].InitialPermutations[*].Weight 1
+SetField ChangeColors[*].InitialPermutations[*].ColorLowerBound 1 1 1
+SetField ChangeColors[*].InitialPermutations[*].ColorUpperBound 1 1 1
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Scalable desk
+DuplicateTag objects\gear\human\residential\office_table\office_table.collision_model objects\eldewrito\movie\props\office_table
+EditTag objects\eldewrito\movie\props\office_table.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_table\office_table.model objects\eldewrito\movie\props\office_table
+EditTag objects\eldewrito\movie\props\office_table.model
+SetField CollisionModel objects\eldewrito\movie\props\office_table.collision_model
+SetField PhysicsModel null
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_table\office_table.scenery objects\eldewrito\movie\props\office_table
+EditTag objects\eldewrito\movie\props\office_table.scenery
+SetField Model objects\eldewrito\movie\props\office_table.model
+SaveTagChanges
+Exit
+
+## Scalable keyboard
+DuplicateTag objects\gear\human\residential\office_keyboard\office_keyboard.collision_model objects\eldewrito\movie\props\office_keyboard
+EditTag objects\eldewrito\movie\props\office_keyboard.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_keyboard\office_keyboard.model objects\eldewrito\movie\props\office_keyboard
+EditTag objects\eldewrito\movie\props\office_keyboard.model
+SetField CollisionModel objects\eldewrito\movie\props\office_keyboard.collision_model
+SetField PhysicsModel null
+SaveTagChanges
+Exit
+
+SwitchObjectType objects\gear\human\residential\office_keyboard\office_keyboard.crate 
+NameTag * objects\eldewrito\movie\props\office_keyboard
+EditTag objects\eldewrito\movie\props\office_keyboard.scenery
+SetField Model objects\eldewrito\movie\props\office_keyboard.model
+SaveTagChanges
+Exit
+
+## Scaled vehicle chair
+DuplicateTag objects\gear\human\residential\office_chair\office_chair.render_model objects\eldewrito\movie\props\office_chair
+EditTag objects\eldewrito\movie\props\office_chair.render_model
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name seat
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Translation -0.015 0 0.21
+SetField MarkerGroups[*].Markers[0].Rotation 0.04932527 0.04932527 -0.7053843 0.7053843
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name mauler_d_left_foot_chief
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Translation 0.1 -0.2 0
+SetField MarkerGroups[*].Markers[0].Rotation 0 0 -0.6087614 0.7933533
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name mauler_d_right_foot_chief
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Translation -0.1 -0.2 0
+SetField MarkerGroups[*].Markers[0].Rotation 0 0 -0.7933533 0.6087614
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name mauler_d_left_hand_chief
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Translation 0.1 -0.185 0.3
+SetField MarkerGroups[*].Markers[0].Rotation 0.4545195 -0.5416752 -0.4545195 0.5416752
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name mauler_d_right_hand_chief
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[0].RegionIndex -1
+SetField MarkerGroups[*].Markers[0].PermutationIndex -1
+SetField MarkerGroups[*].Markers[0].Translation -0.13 -0.185 0.3
+SetField MarkerGroups[*].Markers[0].Rotation -0.5416752 0.4545195 -0.5416752 0.4545195
+SetField RuntimeNodeOrientations[0].Scale 1.2
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_chair\office_chair.collision_model objects\eldewrito\movie\props\office_chair
+EditTag objects\eldewrito\movie\props\office_chair.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_chair\office_chair.physics_model objects\eldewrito\movie\props\office_chair
+EditTag objects\eldewrito\movie\props\office_chair.physics_model
+SetField RigidBodies[0].MotionType Keyframed
+SaveTagChanges
+Exit
+
+DuplicateTag objects\gear\human\residential\office_chair\office_chair.model objects\eldewrito\movie\props\office_chair
+EditTag objects\eldewrito\movie\props\office_chair.model
+SetField RenderModel objects\eldewrito\movie\props\office_chair.render_model
+SetField CollisionModel objects\eldewrito\movie\props\office_chair.collision_model
+SetField PhysicsModel objects\eldewrito\movie\props\office_chair.physics_model
+SetField Animation objects\levels\dlc\shared\soccer_ball\soccer_ball.model_animation_graph
+SaveTagChanges
+Exit
+
+CreateTag vehi objects\eldewrito\movie\props\office_chair
+EditTag objects\eldewrito\movie\props\office_chair.vehicle
+
+SetField ObjectType.Halo3ODST Vehicle
+SetField ObjectFlags NotAPathfindingObstacle
+SetField BoundingRadius 0.5
+SetField Model objects\eldewrito\movie\props\office_chair.model
+
+AddBlockElements MultiplayerObject
+
+AddBlockElements Seats
+SetField Seats[0].Flags ThirdPersonCamera
+SetField Seats[0].Label mauler_d
+SetField Seats[0].MarkerName seat
+SetField Seats[0].EntryMarkerName seat
+SetField Seats[0].BoardingSeat -1
+SetField Seats[0].FlippedEvictionTime -1
+SetField Seats[0].AiSeatType Passenger
+SetField Seats[0].PitchRateBounds -90 90
+SetField Seats[0].UnitCamera.PitchRange -90 90
+SetField Seats[0].UnitCamera.CameraMarkerName seat
+AddBlockElements Seats[0].UnitCamera.CameraTracks
+SetField Seats[0].UnitCamera.CameraTracks[0].Track camera\mongoose_d_camera.camera_track
+SetField Seats[0].RuntimeInvisibleSeatRegionIndex -1
+SetField Seats[0].EntryRadius 1
+SetField Seats[0].EntryMarkerConeAngle 60
+SetField Seats[0].EntryMarkerFacingAngle 60
+SetField Seats[0].MaximumRelativeVelocity 3
+## SetField Seats[0].EnterSeatString mongoose_enter_driver
+
+AddBlockElements PhysicsTypes.Turret
+SetField FlippingAngularVelocityRangeNew 5 5
+SetField Hoojytsu 1000
+
+SaveTagChanges
+Exit
+
+## Scalable "mouse"
+DuplicateTag objects\levels\multi\s3d_turf\s3d_turf_trash_can\s3d_turf_trash_can.collision_model objects\eldewrito\movie\props\computer_mouse
+EditTag objects\eldewrito\movie\props\computer_mouse.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\multi\s3d_turf\s3d_turf_trash_can\s3d_turf_trash_can.model objects\eldewrito\movie\props\computer_mouse
+EditTag objects\eldewrito\movie\props\computer_mouse.model
+SetField CollisionModel objects\eldewrito\movie\props\computer_mouse.collision_model
+SetField PhysicsModel null
+SaveTagChanges
+Exit
+
+SwitchObjectType objects\levels\multi\s3d_turf\s3d_turf_trash_can\s3d_turf_trash_can.crate
+NameTag * objects\eldewrito\movie\props\computer_mouse
+EditTag objects\eldewrito\movie\props\computer_mouse.scenery
+SetField Model objects\eldewrito\movie\props\computer_mouse.model
+SaveTagChanges
+Exit
+
+## Eldewrito wall banner
+GenerateBitmap objects\eldewrito\movie\props\eldewrito_banner "working_directory\bitmaps\wall_banner\eldewrito_banner.dds"
+DuplicateTag shaders\invalid.shader objects\eldewrito\movie\props\eldewrito_banner
+EditTag objects\eldewrito\movie\props\eldewrito_banner.shader
+SetBitmap base_map objects\eldewrito\movie\props\eldewrito_banner.bitmap
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\multiplayer\flag\flag.cloth objects\eldewrito\movie\props\eldewrito_banner
+## (Order: Cloth Tag, Grid X, Grid Y, Spacing X, Spacing Y)
+CS < "working_directory\command_scripts\cloth_generator.cs" objects\eldewrito\movie\props\eldewrito_banner.cloth 10 10 0.051 0.091
+EditTag objects\eldewrito\movie\props\eldewrito_banner.cloth
+SetField Flags UsesGridAttachTop
+SetField SecondaryAxisAttachmentName null
+SetField Shader objects\eldewrito\movie\props\eldewrito_banner.shader
+SetField Properties.WindScale 0
+SetField Properties.WindFlappinessScale 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\multi\box_m\box_m.render_model objects\eldewrito\movie\props\eldewrito_banner
+EditTag objects\eldewrito\movie\props\eldewrito_banner.render_model
+SetField Nodes[0].Name root
+AddBlockElements MarkerGroups
+SetField MarkerGroups[*].Name flag_attach
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[*].RegionIndex -1
+SetField MarkerGroups[*].Markers[*].PermutationIndex -1
+SetField MarkerGroups[*].Markers[*].Translation 0.42 0 0
+SetField MarkerGroups[*].Markers[*].Rotation 0 0 0 0
+AddBlockElements MarkerGroups[*].Markers
+SetField MarkerGroups[*].Markers[*].RegionIndex -1
+SetField MarkerGroups[*].Markers[*].PermutationIndex -1
+SetField MarkerGroups[*].Markers[*].Translation -0.42 0 0
+SetField MarkerGroups[*].Markers[*].Rotation 0 0 0 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\props\eldewrito_banner
+EditTag objects\eldewrito\movie\props\eldewrito_banner.model
+SetField RenderModel objects\eldewrito\movie\props\eldewrito_banner.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+SaveTagChanges
+Exit
+
+CreateTag scen objects\eldewrito\movie\props\eldewrito_banner
+EditTag objects\eldewrito\movie\props\eldewrito_banner.scenery
+SetField ObjectType.Halo3ODST Scenery
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 1.5
+SetField Model objects\eldewrito\movie\props\eldewrito_banner.model
+AddBlockElements Widgets
+SetField Widgets[*].Instance objects\eldewrito\movie\props\eldewrito_banner.cloth
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Eldewrito flag
+GenerateBitmap objects\eldewrito\movie\props\eldewrito_flag "working_directory\bitmaps\flag\eldewrito_flag.dds"
+DuplicateTag shaders\invalid.shader objects\eldewrito\movie\props\eldewrito_flag
+EditTag objects\eldewrito\movie\props\eldewrito_flag.shader
+SetBitmap base_map objects\eldewrito\movie\props\eldewrito_flag.bitmap
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\props\eldewrito_banner.cloth objects\eldewrito\movie\props\eldewrito_flag
+CS < "working_directory\command_scripts\cloth_generator.cs" objects\eldewrito\movie\props\eldewrito_flag.cloth 10 10 0.091 0.051
+EditTag objects\eldewrito\movie\props\eldewrito_flag.cloth
+SetField Flags 0
+SetField Shader objects\eldewrito\movie\props\eldewrito_flag.shader
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\multiplayer\flag\flag.render_model objects\eldewrito\movie\props\eldewrito_flag
+EditTag objects\eldewrito\movie\props\eldewrito_flag.render_model
+ReplaceRenderGeometry "working_directory\models\eldewrito_flag\flag_pole.fbx" Markers
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\multiplayer\flag\flag.model objects\eldewrito\movie\props\eldewrito_flag
+EditTag objects\eldewrito\movie\props\eldewrito_flag.model
+SetField RenderModel objects\eldewrito\movie\props\eldewrito_flag.render_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\multiplayer\flag\flag.weapon objects\eldewrito\movie\props\eldewrito_flag
+EditTag objects\eldewrito\movie\props\eldewrito_flag.weapon
+SetField Model objects\eldewrito\movie\props\eldewrito_flag.model
+SetField Widgets[*].Instance objects\eldewrito\movie\props\eldewrito_flag.cloth
+SaveTagChanges
+Exit
+
+AddForgeCategory "MISC" "MOVIE PROPS"
+
+AddForgeItem "TEXCAM SINK" "MISC" objects\eldewrito\movie\props\sink_texcam.scenery
+AddForgeItem "TEXCAM MONITOR" "MISC" objects\eldewrito\movie\props\monitor_texcam.scenery
+AddForgeItem "ELDEWRITO SIGN" "MISC" objects\eldewrito\movie\props\eldewrito_sign.crate
+AddForgeItem "Scalable Desk" "MISC" objects\eldewrito\movie\props\office_table.scenery
+AddForgeItem "Scalable keyboard" "MISC" objects\eldewrito\movie\props\office_keyboard.scenery
+AddForgeItem "Vehicle Chair" "MISC" objects\eldewrito\movie\props\office_chair.vehicle
+AddForgeItem "Scalable Mouse" "MISC" objects\eldewrito\movie\props\computer_mouse.scenery
+AddForgeItem "Eldewrito Banner" "MISC" objects\eldewrito\movie\props\eldewrito_banner.scenery
+AddForgeItem "Eldewrito Flag" "MISC" objects\eldewrito\movie\props\eldewrito_flag.weapon

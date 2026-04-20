@@ -1,0 +1,61 @@
+"D:\Halo\Eldewrito\Game\maps\tags.dat"
+
+## So we don't get annoying warning messages on animation importing and shader/bitmap conversion
+LogLevel Error
+
+## Variables to change if someone else is building this! (Map Caches needed so far: s3d_sky_bridgenew Sky Bridge, l300 Coastal Highway, 020_base Crow's Nest, 040_voi The Storm)
+SetVariable working_directory "D:\Development\Mods\BladeRunnerMovie"
+SetVariable h3ek_directory "C:\Users\Fox\Desktop\H3 and ODST EK\H3EK\maps"
+SetVariable odst_directory "C:\Users\Fox\Desktop\ODST"
+SetVariable h3_directory "C:\Users\Fox\Desktop\h3_extract\maps"
+
+## Open base mod package to modify
+OpenModPackage "working_directory\MovieNight.pak"
+ 
+UpdateDescription
+Movie Night
+Better grab some popcorn! Thanks To Killnothing For all his awesome help in making this happen!
+All Honor And Glory To God
+1.0
+Multiplayer
+
+## Create our scenario that everything will be setup in
+GenerateCanvas
+levels\eldewrito\movie_set\movie_set
+Film Premiere
+Lights! Camera! Action!
+Glory To God
+50777
+
+## Increase world bounds
+RunCommands "working_directory\command_scripts\world_bounds.cmds"
+
+## Add and change some stuff for the chief model
+RunCommands "working_directory\command_scripts\models\chief_changes.cmds"
+
+## Empty render model to clone and write to for our basic custom models
+RunCommands "working_directory\command_scripts\models\empty_render_model.cmds"
+
+## Basic collision model so all converted scenery objects can be moved around and scaled smoothly
+RunCommands "working_directory\command_scripts\models\basic_scenery_collision.cmds"
+
+## Aiming vector model that all script objects will use and share
+RunCommands "working_directory\command_scripts\models\aiming_vector_model_setup.cmds"
+
+## Various tag fixes
+RunCommands "working_directory\command_scripts\various_fixes.cmds"
+
+## Create and port various props for our movie to use in forge
+RunCommands "working_directory\command_scripts\props_master.cmds"
+
+## Setup scripting stuff
+RunCommands "working_directory\command_scripts\scripting_master.cmds"
+
+## Alert user mod package generation has finished
+cs
+Console.Beep();
+:x
+
+SaveModPackage
+ExitModPackage
+Quit

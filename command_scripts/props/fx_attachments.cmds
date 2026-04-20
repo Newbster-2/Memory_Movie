@@ -1,0 +1,179 @@
+GenerateShader contrail diffuse_only opaque off off
+
+DuplicateTag objects\vehicles\ghost\fx\running\boost_trails.contrail_system objects\eldewrito\movie\fx\fine_point_pen
+EditTag objects\eldewrito\movie\fx\fine_point_pen.contrail_system
+
+SetField Contrails[0].RenderMethod.ShaderProperties[0].Template shaders\contrail_templates\_0_0_0_0.render_method_template
+SetField Contrails[0].RenderMethod.ShaderProperties[0].TextureConstants[0].Bitmap shaders\default_bitmaps\bitmaps\color_white.bitmap
+SetField Contrails[0].RenderMethod.ShaderProperties[0].BlendMode Opaque
+
+SetField Contrails[0].EmissionRate.RuntimeMConstantValue 90
+SetField Contrails[0].ProfileLifespan.RuntimeMConstantValue 40
+
+## Profile size
+SetField Contrails[0].RuntimeMGpuData.Functions[0].Elements[0].Color 4 0.2525 0.01
+SetField Contrails[0].RuntimeMGpuData.Functions[0].Elements[0].Magnitude 0.01
+
+## Profile color change
+SetField Contrails[0].RuntimeMGpuData.Functions[2].Elements[0].Color 7 3.402823E+38 1
+SetField Contrails[0].RuntimeMGpuData.Functions[2].Elements[0].Magnitude 1
+
+## Colors
+SetField Contrails[0].RuntimeMGpuData.Colors[4].Color 0 0.6969392 1
+SetField Contrails[0].RuntimeMGpuData.Colors[5].Color 0 1 1
+
+## Profile alpha
+SetField Contrails[0].RuntimeMGpuData.Functions[3].Elements[0].Color 7 0.1325 1
+SetField Contrails[0].RuntimeMGpuData.Functions[3].Elements[0].Magnitude 1
+
+## Profile intensity
+SetField Contrails[0].RuntimeMGpuData.Properties[9].Color 1 2097152 0
+
+SaveTagChanges
+Exit
+
+DuplicateTag objects\vehicles\ghost\fx\running\boost_trails.effect objects\eldewrito\movie\fx\fine_point_pen
+EditTag objects\eldewrito\movie\fx\fine_point_pen.effect
+SetField Locations[0].MarkerName replace
+SetField Events[0].Parts[0].Type objects\eldewrito\movie\fx\fine_point_pen.contrail_system
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\fx\fine_point_pen.contrail_system objects\eldewrito\movie\fx\welding_trail
+EditTag objects\eldewrito\movie\fx\welding_trail.contrail_system
+
+## Profile size 
+SetField Contrails[0].RuntimeMGpuData.Functions[0].Elements[0].Color 4 0.2525 0.05
+SetField Contrails[0].RuntimeMGpuData.Functions[0].Elements[0].Magnitude 0.05
+
+## Profile color change
+SetField Contrails[0].RuntimeMGpuData.Functions[2].Elements[0].Color 7 3.402823E+38 0
+SetField Contrails[0].RuntimeMGpuData.Functions[2].Elements[0].Magnitude 1
+
+## Colors
+SetField Contrails[0].RuntimeMGpuData.Colors[4].Color 1 0 0
+SetField Contrails[0].RuntimeMGpuData.Colors[5].Color 1 0.647 0
+
+## Profile intensity compiled function data
+SetField Contrails[0].RuntimeMGpuData.Properties[9].Color 2 2097152 0
+
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\fx\fine_point_pen.effect objects\eldewrito\movie\fx\welding_trail
+EditTag objects\eldewrito\movie\fx\welding_trail.effect
+SetField Events[0].Parts[0].Type objects\eldewrito\movie\fx\welding_trail.contrail_system
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\support_high\spartan_laser\fx\firing_tracer_3p.beam_system objects\eldewrito\movie\fx\welding_laser
+EditTag objects\eldewrito\movie\fx\welding_laser.beam_system
+
+SetField Beams[0].RenderMethod.ShaderProperties[0].BlendMode Additive
+SetField Beams[0].RenderMethod.SortLayer PostPass
+
+SetField Beams[0].AppearanceFlags OriginFaded
+SetField Beams[0].OriginFadeRange 0.05
+SetField Beams[0].OriginFadeCutoff 0.05
+
+SetField Beams[0].Length.RuntimeMConstantValue 120
+
+## Thickness
+SetField Beams[0].RuntimeMGpuData.Properties[2].Color 0.05 2097152 0
+
+## Alpha
+SetField Beams[0].RuntimeMGpuData.Properties[4].Color 1 2097152 0
+
+## Intensity
+SetField Beams[0].RuntimeMGpuData.Properties[7].Color 10 2097152 0
+
+## Color
+SetField Beams[0].RuntimeMGpuData.Colors[2].Color 1 0.25 0
+
+SaveTagChanges
+Exit
+
+DuplicateTag objects\weapons\support_high\spartan_laser\fx\firing_tracer.effect objects\eldewrito\movie\fx\welding_laser
+EditTag objects\eldewrito\movie\fx\welding_laser.effect
+SetField Locations[0].MarkerName replace
+RemoveBlockElements Events[0].Parts 0 1
+SetField Events[0].Parts[0].CameraMode IndependentOfCameraMode
+SetField Events[0].Parts[0].Type objects\eldewrito\movie\fx\welding_laser.beam_system
+SaveTagChanges
+Exit
+
+DuplicateTag levels\solo\040_voi\fx\sparks_far\sparks_far_large\sparks_far_large.effect objects\eldewrito\movie\fx\welding_sparks
+EditTag objects\eldewrito\movie\fx\welding_sparks.effect
+
+SetField Locations[0].MarkerName replace
+
+SetField Events[0].DurationBounds 0.01 0.01
+
+RemoveBlockElements Events[0].Parts 1 1
+
+## Sparks particle scale
+SetField Events[0].ParticleSystems[0].Emitters[0].RuntimeMGpu.Functions[5].RangeMin 0.35
+SetField Events[0].ParticleSystems[0].Emitters[0].RuntimeMGpu.Functions[5].RangeMax 0.35
+
+## Sparks particle velocity
+SetField Events[0].ParticleSystems[0].Emitters[0].ParticleInitialVelocity.Function.Data 013500000000403F0000E03F000000000000000048E1FA3E0000003F00000000
+
+## Burst size
+SetField Events[0].ParticleSystems[1].Emitters[0].RuntimeMGpu.Properties[2].MConstantValue 0.12
+
+## Flash size
+SetField Events[0].ParticleSystems[2].Emitters[0].RuntimeMGpu.Properties[2].MConstantValue 0.12
+
+## Ember particle velocity
+SetField Events[0].ParticleSystems[3].Emitters[0].ParticleInitialVelocity.Function.Data 013500000000C03F00002040000000000000000048E1FA3E0000003F00000000
+
+SetField LoopingSound sound\materials\energy\elec_looping\elec_looping.sound_looping
+SetField LocationIndex 0
+
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\scripting\script_scen.scenery 
+
+StringId Add fine_point_pen
+AddBlockElements Functions
+SetField Functions[*].ImportName zero
+SetField Functions[*].ExportName fine_point_pen
+SetField Functions[*].DefaultFunction.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+AddBlockElements Attachments
+SetField Attachments[*].Type objects\eldewrito\movie\fx\fine_point_pen.effect
+SetField Attachments[*].Marker origin
+SetField Attachments[*].PrimaryScale fine_point_pen
+
+StringId Add welding_trail
+AddBlockElements Functions
+SetField Functions[*].ImportName zero
+SetField Functions[*].ExportName welding_trail
+SetField Functions[*].DefaultFunction.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+AddBlockElements Attachments
+SetField Attachments[*].Type objects\eldewrito\movie\fx\welding_trail.effect
+SetField Attachments[*].Marker origin
+SetField Attachments[*].PrimaryScale welding_trail
+
+StringId Add welding_laser
+AddBlockElements Functions
+SetField Functions[*].ImportName zero
+SetField Functions[*].ExportName welding_laser
+SetField Functions[*].DefaultFunction.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+AddBlockElements Attachments
+SetField Attachments[*].Type objects\eldewrito\movie\fx\welding_laser.effect
+SetField Attachments[*].Marker origin_qtr_down
+SetField Attachments[*].PrimaryScale welding_laser
+
+StringId Add welding_sparks
+AddBlockElements Functions
+SetField Functions[*].ImportName zero
+SetField Functions[*].ExportName welding_sparks
+SetField Functions[*].DefaultFunction.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+AddBlockElements Attachments
+SetField Attachments[*].Type objects\eldewrito\movie\fx\welding_sparks.effect
+SetField Attachments[*].Marker origin
+SetField Attachments[*].PrimaryScale welding_sparks
+
+SaveTagChanges
+Exit

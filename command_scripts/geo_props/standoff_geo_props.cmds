@@ -1,0 +1,184 @@
+## STANDOFF
+EditTag levels\dlc\bunkerworld\bunkerworld.scenario
+
+## SILO  
+ConvertInstancedGeometry 0 41 objects\movie\forge\bunkerworld\silo_1  
+ConvertInstancedGeometry 0 42 objects\movie\forge\bunkerworld\silo_2  
+ConvertInstancedGeometry 0 43 objects\movie\forge\bunkerworld\silo_3  
+ConvertInstancedGeometry 0 44 objects\movie\forge\bunkerworld\silo_4  
+ConvertInstancedGeometry 0 46 objects\movie\forge\bunkerworld\silo_5  
+
+## WIRES  
+ConvertInstancedGeometry 0 196 objects\movie\forge\bunkerworld\wire_1  
+ConvertInstancedGeometry 0 198 objects\movie\forge\bunkerworld\wire_2  
+ConvertInstancedGeometry 0 466 objects\movie\forge\bunkerworld\wire_3  
+ConvertInstancedGeometry 0 467 objects\movie\forge\bunkerworld\wire_4  
+
+## TECH  
+ConvertInstancedGeometry 0 438 objects\movie\forge\bunkerworld\tech_1  
+ConvertInstancedGeometry 0 358 objects\movie\forge\bunkerworld\tech_2  
+ConvertInstancedGeometry 0 389 objects\movie\forge\bunkerworld\tech_3  
+ConvertInstancedGeometry 0 405 objects\movie\forge\bunkerworld\tech_4  
+ConvertInstancedGeometry 0 409 objects\movie\forge\bunkerworld\tech_5  
+ConvertInstancedGeometry 0 413 objects\movie\forge\bunkerworld\tech_6  
+ConvertInstancedGeometry 0 417 objects\movie\forge\bunkerworld\tech_7  
+ConvertInstancedGeometry 0 423 objects\movie\forge\bunkerworld\tech_8  
+ConvertInstancedGeometry 0 431 objects\movie\forge\bunkerworld\tech_9  
+ConvertInstancedGeometry 0 441 objects\movie\forge\bunkerworld\tech_10  
+ConvertInstancedGeometry 0 453 objects\movie\forge\bunkerworld\tech_11  
+ConvertInstancedGeometry 0 457 objects\movie\forge\bunkerworld\tech_12  
+ConvertInstancedGeometry 0 471 objects\movie\forge\bunkerworld\tech_13  
+
+## STRUCTURE  
+ConvertInstancedGeometry 0 2 objects\movie\forge\bunkerworld\structure_1  
+ConvertInstancedGeometry 0 12 objects\movie\forge\bunkerworld\structure_2  
+ConvertInstancedGeometry 0 20 objects\movie\forge\bunkerworld\structure_3  
+ConvertInstancedGeometry 0 21 objects\movie\forge\bunkerworld\structure_4  
+ConvertInstancedGeometry 0 35 objects\movie\forge\bunkerworld\structure_5  
+ConvertInstancedGeometry 0 50 objects\movie\forge\bunkerworld\structure_6  
+ConvertInstancedGeometry 0 53 objects\movie\forge\bunkerworld\structure_7  
+ConvertInstancedGeometry 0 114 objects\movie\forge\bunkerworld\structure_8  
+ConvertInstancedGeometry 0 290 objects\movie\forge\bunkerworld\structure_9  
+ConvertInstancedGeometry 0 310 objects\movie\forge\bunkerworld\structure_10  
+ConvertInstancedGeometry 0 311 objects\movie\forge\bunkerworld\structure_11  
+ConvertInstancedGeometry 0 312 objects\movie\forge\bunkerworld\structure_12  
+ConvertInstancedGeometry 0 314 objects\movie\forge\bunkerworld\structure_13  
+ConvertInstancedGeometry 0 350 objects\movie\forge\bunkerworld\structure_14  
+ConvertInstancedGeometry 0 485 objects\movie\forge\bunkerworld\structure_15  
+
+Exit
+
+AddForgeCategory "STANDOFF GEO" "MAP GEO"
+
+AddForgeCategory "SILO STANDOFF" "STANDOFF GEO"
+AddForgeCategory "WIRES STANDOFF" "STANDOFF GEO"
+AddForgeCategory "TECH STANDOFF" "STANDOFF GEO"
+AddForgeCategory "STRUCTURE STANDOFF" "STANDOFF GEO"
+
+AddForgeItem "Missile Silo" "SILO STANDOFF" objects\movie\forge\bunkerworld\silo_1.scenery  
+AddForgeItem "Silo Shielding" "SILO STANDOFF" objects\movie\forge\bunkerworld\silo_2.scenery  
+AddForgeItem "Silo Vents" "SILO STANDOFF" objects\movie\forge\bunkerworld\silo_3.scenery  
+AddForgeItem "Silo Hatch" "SILO STANDOFF" objects\movie\forge\bunkerworld\silo_4.scenery  
+AddForgeItem "Silo 2 Closed" "SILO STANDOFF" objects\movie\forge\bunkerworld\silo_5.scenery  
+
+AddForgeItem "Wire Bundle" "WIRES STANDOFF" objects\movie\forge\bunkerworld\wire_1.scenery  
+AddForgeItem "Long Wire Bundle" "WIRES STANDOFF" objects\movie\forge\bunkerworld\wire_2.scenery  
+AddForgeItem "Smaller Wire Bundle" "WIRES STANDOFF" objects\movie\forge\bunkerworld\wire_3.scenery  
+AddForgeItem "Curving Wire Bundle" "WIRES STANDOFF" objects\movie\forge\bunkerworld\wire_4.scenery  
+
+AddForgeItem "Tech Unit" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_1.scenery  
+AddForgeItem "Tech Unit 2" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_2.scenery  
+AddForgeItem "Tech Unit 3" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_3.scenery  
+AddForgeItem "Tech Unit 4" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_4.scenery  
+AddForgeItem "Tech Unit 5" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_5.scenery  
+AddForgeItem "Tech Unit 6" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_6.scenery  
+AddForgeItem "Tech Unit 7" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_7.scenery  
+AddForgeItem "Tech Unit 8" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_8.scenery  
+AddForgeItem "Tech Console" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_9.scenery  
+AddForgeItem "Tech Console 2" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_10.scenery  
+AddForgeItem "Tech Console 3" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_11.scenery  
+AddForgeItem "Tech Console 4" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_12.scenery  
+AddForgeItem "Tech Hub" "TECH STANDOFF" objects\movie\forge\bunkerworld\tech_13.scenery  
+
+AddForgeItem "Radar Dome" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_1.scenery  
+AddForgeItem "Gate" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_2.scenery  
+AddForgeItem "Gate Bars" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_3.scenery  
+AddForgeItem "Wide Doorframe" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_4.scenery  
+AddForgeItem "Narrow Doorframe" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_5.scenery  
+AddForgeItem "Antenna Base" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_6.scenery  
+AddForgeItem "Antenna Array" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_7.scenery  
+AddForgeItem "Vented Panel" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_8.scenery  
+AddForgeItem "Grab Bar" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_9.scenery  
+AddForgeItem "Circular Grating" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_10.scenery  
+AddForgeItem "Grating Frame" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_11.scenery  
+AddForgeItem "Grating Segment" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_12.scenery  
+AddForgeItem "Double Grating" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_13.scenery  
+AddForgeItem "90 End Pipe" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_14.scenery  
+AddForgeItem "Flood Light" "STRUCTURE STANDOFF" objects\movie\forge\bunkerworld\structure_15.scenery  
+
+ForEach hlmt contains: objects\movie\forge\bunkerworld\wire SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+ForEach hlmt contains: objects\movie\forge\bunkerworld\wire AddBlockElements Materials
+ForEach hlmt contains: objects\movie\forge\bunkerworld\wire SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\movie\forge\bunkerworld\wire SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\movie\forge\bunkerworld\wire SetField Materials[0].GlobalMaterialIndex 54
+
+EditTag objects\movie\forge\bunkerworld\tech_2.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_4.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_5.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_6.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_7.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_8.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_9.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_10.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit
+
+EditTag objects\movie\forge\bunkerworld\tech_11.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+SaveTagChanges
+Exit

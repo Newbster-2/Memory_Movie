@@ -1,0 +1,10 @@
+## Shrine Defender
+EditTag multiplayer\forge_globals.forge_globals_definition
+RemoveBlockElements Palette 457 1
+SaveTagChanges
+Exit
+
+AddForgeCategory "EXTRA VEHICLES" "EXTRA BASE PROPS"
+
+AddForgeItem "Security Camera" "EXTRA VEHICLES" objects\levels\multi\cyberdyne\security_camera\security_camera.vehicle
+AddForgeItem "Shrine Defender" "EXTRA VEHICLES" objects\levels\multi\shrine\shrine_defender\shrine_defender.vehicle

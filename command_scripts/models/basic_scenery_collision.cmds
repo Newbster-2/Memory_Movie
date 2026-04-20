@@ -1,0 +1,53 @@
+CreateTag hlmt objects\eldewrito\forge\misc\dummy_model
+EditTag objects\eldewrito\forge\misc\dummy_model.model
+
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry mopp "working_directory\models\basic_scenery\simple_bsp_coll.dae" objects\eldewrito\forge\misc\simple_bsp_coll
+EditTag objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+ForEach Regions[0].Permutations[0].Bsps[0].Geometry.Surfaces SetField Flags Invisible
+
+MoppData import "working_directory\models\null_mopp_data.txt"
+
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry mopp "working_directory\models\basic_scenery\simple_bsp_coll_small.dae" objects\eldewrito\forge\misc\simple_bsp_coll_small
+EditTag objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+ForEach Regions[0].Permutations[0].Bsps[0].Geometry.Surfaces SetField Flags Invisible
+
+MoppData import "working_directory\models\null_mopp_data.txt"
+
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry mopp "working_directory\models\basic_scenery\simple_bsp_coll_tiny.dae" objects\eldewrito\forge\misc\simple_bsp_coll_tiny
+EditTag objects\eldewrito\forge\misc\simple_bsp_coll_tiny.collision_model
+
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+ForEach Regions[0].Permutations[0].Bsps[0].Geometry.Surfaces SetField Flags Invisible
+
+MoppData import "working_directory\models\null_mopp_data.txt"
+
+SaveTagChanges
+Exit
+
+ImportCollisionGeometry mopp "working_directory\models\basic_scenery\simple_bsp_coll_large.dae" objects\eldewrito\forge\misc\simple_bsp_coll_large
+EditTag objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+ForEach Regions[0].Permutations[0].Bsps[0].Geometry.Surfaces SetField Flags Invisible
+
+MoppData import "working_directory\models\null_mopp_data.txt"
+
+SaveTagChanges
+Exit

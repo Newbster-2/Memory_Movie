@@ -1,0 +1,73 @@
+## Turf train
+DuplicateTag levels\multi\s3d_turf\turf_train.model levels\multi\s3d_turf\turf_train_forge
+EditTag levels\multi\s3d_turf\turf_train_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_turf\turf_train.scenery levels\multi\s3d_turf\turf_train_forge
+EditTag levels\multi\s3d_turf\turf_train_forge.scenery
+SetField Model levels\multi\s3d_turf\turf_train_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Turf hornet
+DuplicateTag levels\multi\s3d_turf\turf_hornet.collision_model levels\multi\s3d_turf\turf_hornet_forge
+EditTag levels\multi\s3d_turf\turf_hornet_forge.collision_model
+GenerateBspPhysics
+MoppData import "working_directory\models\null_mopp_data.txt"
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_turf\turf_hornet.model levels\multi\s3d_turf\turf_hornet_forge
+EditTag levels\multi\s3d_turf\turf_hornet_forge.model
+SetField CollisionModel levels\multi\s3d_turf\turf_hornet_forge.collision_model
+SetField PhysicsModel null
+SetField ShadowFadeDistance 0
+SaveTagChanges
+Exit
+
+DuplicateTag levels\multi\s3d_turf\turf_hornet.scenery levels\multi\s3d_turf\turf_hornet_forge
+EditTag levels\multi\s3d_turf\turf_hornet_forge.scenery
+SetField Model levels\multi\s3d_turf\turf_hornet_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Pelican
+DuplicateTag objects\vehicles\pelican\pelican.collision_model objects\vehicles\pelican\pelican_forge
+EditTag objects\vehicles\pelican\pelican_forge.collision_model
+GenerateBspPhysics
+MoppData import "working_directory\models\null_mopp_data.txt"
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\eldewrito\forge\misc\dummy_model.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\vehicles\pelican\pelican.model objects\vehicles\pelican\pelican_forge
+EditTag objects\vehicles\pelican\pelican_forge.model
+SetField CollisionModel objects\vehicles\pelican\pelican_forge.collision_model
+SetField PhysicsModel null
+SetField ShadowFadeDistance 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\ui\mainmenu\menu_pelican\menu_pelican.scenery objects\levels\ui\mainmenu\menu_pelican\menu_pelican_forge
+EditTag objects\levels\ui\mainmenu\menu_pelican\menu_pelican_forge.scenery
+SetField Model objects\vehicles\pelican\pelican_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+AddForgeCategory "ANIMATED SCENERY" "MOVIE PROPS"
+
+AddForgeItem "Monorail Train" "ANIMATED SCENERY" levels\multi\s3d_turf\turf_train_forge.scenery
+AddForgeItem "Search Hornet" "ANIMATED SCENERY" levels\multi\s3d_turf\turf_hornet_forge.scenery
+AddForgeItem "Pelican" "ANIMATED SCENERY" objects\levels\ui\mainmenu\menu_pelican\menu_pelican_forge.scenery

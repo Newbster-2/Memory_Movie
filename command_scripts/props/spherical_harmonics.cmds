@@ -1,0 +1,131 @@
+## Blade runner blue muted
+DuplicateTag objects\multi\box_m\box_m.render_model objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted
+EditTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model
+SetField Name null
+SetField Checksum 0
+SetField Regions[0].Name default
+SetField Regions[0].Permutations[0].Name default
+SetField Nodes[0].Name root
+SetField SHRed 0.60 0.0 0.90 0.0 0.0 0.0 -0.30 0.0 0 0.0 0.0 0.0 1.40 0.0 0.0 0.0
+SetField SHGreen 0.80 0.0 1.20 0.0 0.0 0.0 -0.40 0.0 0 0.0 0.0 0.0 1.80 0.0 0.0 0.0
+SetField SHBlue 0.95 0.0 1.40 0.0 0.0 0.0 -0.45 0.0 0 0.0 0.0 0.0 2.10 0.0 0.0 0.0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted
+EditTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.model
+SetField RenderModel objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model
+SaveTagChanges
+Exit
+
+CreateTag scen objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted
+EditTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.scenery
+SetField ObjectType.Halo3ODST Scenery
+SetField Model objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.model
+SaveTagChanges
+Exit
+
+## Blade runner pink muted
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted
+EditTag objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted.render_model
+SetField SHRed 0.95 0.0 1.40 0.0 0.0 0.0 -0.45 0.0 0 0.0 0.0 0.0 2.10 0.0 0.0 0.0
+SetField SHGreen 0.65 0.0 0.95 0.0 0.0 0.0 -0.32 0.0 0 0.0 0.0 0.0 1.45 0.0 0.0 0.0
+SetField SHBlue 0.90 0.0 1.30 0.0 0.0 0.0 -0.42 0.0 0 0.0 0.0 0.0 1.95 0.0 0.0 0.0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted
+EditTag objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted.model
+SetField RenderModel objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted.render_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.scenery objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted
+EditTag objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted.scenery
+SetField Model objects\eldewrito\movie\lighting\sh_blade_runner_pink_muted.model
+SaveTagChanges
+Exit
+
+## Neutral rainy day
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model objects\eldewrito\movie\lighting\sh_neutral_rainy_day
+EditTag objects\eldewrito\movie\lighting\sh_neutral_rainy_day.render_model
+SetField SHRed 1.80 0.0 0.90 0.0 0.0 0.0 -0.25 0.0 0 0.0 0.0 0.0 1.20 0.0 0.0 0.0
+SetField SHGreen 1.95 0.0 1.00 0.0 0.0 0.0 -0.28 0.0 0 0.0 0.0 0.0 1.35 0.0 0.0 0.0
+SetField SHBlue 2.10 0.0 1.10 0.0 0.0 0.0 -0.30 0.0 0 0.0 0.0 0.0 1.50 0.0 0.0 0.0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\lighting\sh_neutral_rainy_day
+EditTag objects\eldewrito\movie\lighting\sh_neutral_rainy_day.model
+SetField RenderModel objects\eldewrito\movie\lighting\sh_neutral_rainy_day.render_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.scenery objects\eldewrito\movie\lighting\sh_neutral_rainy_day
+EditTag objects\eldewrito\movie\lighting\sh_neutral_rainy_day.scenery
+SetField Model objects\eldewrito\movie\lighting\sh_neutral_rainy_day.model
+SaveTagChanges
+Exit
+
+## Overcast rainy night
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model objects\eldewrito\movie\lighting\sh_overcast_rainy_night
+EditTag objects\eldewrito\movie\lighting\sh_overcast_rainy_night.render_model
+SetField SHRed 0.45 0.0 0.35 0.0 0.0 0.0 -0.10 0.0 0 0.0 0.0 0.0 0.50 0.0 0.0 0.0
+SetField SHGreen 0.50 0.0 0.40 0.0 0.0 0.0 -0.12 0.0 0 0.0 0.0 0.0 0.60 0.0 0.0 0.0
+SetField SHBlue 0.60 0.0 0.50 0.0 0.0 0.0 -0.15 0.0 0 0.0 0.0 0.0 0.75 0.0 0.0 0.0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\lighting\sh_overcast_rainy_night
+EditTag objects\eldewrito\movie\lighting\sh_overcast_rainy_night.model
+SetField RenderModel objects\eldewrito\movie\lighting\sh_overcast_rainy_night.render_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.scenery objects\eldewrito\movie\lighting\sh_overcast_rainy_night
+EditTag objects\eldewrito\movie\lighting\sh_overcast_rainy_night.scenery
+SetField Model objects\eldewrito\movie\lighting\sh_overcast_rainy_night.model
+SaveTagChanges
+Exit
+
+## Warm sun
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model objects\eldewrito\movie\lighting\sh_warm_sun
+EditTag objects\eldewrito\movie\lighting\sh_warm_sun.render_model
+SetField SHRed 3.25 0.0 1.61 0.0 0.0 0.0 -0.51 0.0 0 0.0 0.0 0.0 2.45 0.0 0.0 0.0
+SetField SHGreen 3.18 0.0 1.58 0.0 0.0 0.0 -0.50 0.0 0 0.0 0.0 0.0 2.40 0.0 0.0 0.0
+SetField SHBlue 3.05 0.0 1.51 0.0 0.0 0.0 -0.48 0.0 0 0.0 0.0 0.0 2.30 0.0 0.0 0.0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\lighting\sh_warm_sun
+EditTag objects\eldewrito\movie\lighting\sh_warm_sun.model
+SetField RenderModel objects\eldewrito\movie\lighting\sh_warm_sun.render_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.scenery objects\eldewrito\movie\lighting\sh_warm_sun
+EditTag objects\eldewrito\movie\lighting\sh_warm_sun.scenery
+SetField Model objects\eldewrito\movie\lighting\sh_warm_sun.model
+SaveTagChanges
+Exit
+
+## Sunset
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.render_model objects\eldewrito\movie\lighting\sh_sunset
+EditTag objects\eldewrito\movie\lighting\sh_sunset.render_model
+SetField SHRed 1.20 0.0 0.50 2.80 0.0 0.0 -0.20 0.0 0 0.0 0.0 0.0 0.40 0.0 0.0 0.0 
+SetField SHGreen 0.90 0.0 0.40 1.60 0.0 0.0 -0.15 0.0 0 0.0 0.0 0.0 0.30 0.0 0.0 0.0 
+SetField SHBlue 1.50 0.0 0.60 0.50 0.0 0.0 -0.10 0.0 0 0.0 0.0 0.0 0.20 0.0 0.0 0.0 
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\lighting\sh_sunset
+EditTag objects\eldewrito\movie\lighting\sh_sunset.model
+SetField RenderModel objects\eldewrito\movie\lighting\sh_sunset.render_model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\lighting\sh_blade_runner_blue_muted.scenery objects\eldewrito\movie\lighting\sh_sunset
+EditTag objects\eldewrito\movie\lighting\sh_sunset.scenery
+SetField Model objects\eldewrito\movie\lighting\sh_sunset.model
+SaveTagChanges
+Exit

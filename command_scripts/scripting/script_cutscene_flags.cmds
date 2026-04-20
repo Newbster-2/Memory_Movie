@@ -1,0 +1,38 @@
+StringId Add gps1
+StringId Add gps2
+StringId Add gps3
+StringId Add gps4
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name gps1
+SetField CutsceneFlags[*].Position 0 0 0
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name gps2
+SetField CutsceneFlags[*].Position 1 0 0
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name gps3
+SetField CutsceneFlags[*].Position 0 1 0
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name gps4
+SetField CutsceneFlags[*].Position 0 0 1
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name front
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name back
+SetField CutsceneFlags[*].Facing 180 0
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name left
+SetField CutsceneFlags[*].Facing 90 0
+
+AddBlockElements CutsceneFlags
+SetField CutsceneFlags[*].Name right
+SetField CutsceneFlags[*].Facing -90 0
+
+ForEach CutsceneFlags SetField EditorFolderIndex -1
+ForEach CutsceneFlags SetField SourceBspIndex -1

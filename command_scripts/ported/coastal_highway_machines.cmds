@@ -1,0 +1,32 @@
+Porttag MPobject objects\vehicles\cov_cruiser\cov_cruiser.device_machine
+Porttag MPobject objects\levels\atlas\l300\highway_door\highway_door.device_machine
+Porttag MPobject objects\levels\atlas\h100\hub_door\hub_door.device_machine
+Porttag MPobject objects\levels\atlas\h100\glass_door_split01\glass_door_split01.device_machine
+Porttag MPobject objects\levels\atlas\gate_security\gate_security_small\gate_security_small.device_machine
+Porttag MPobject objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
+Porttag MPobject objects\levels\atlas\l300\highway_park_door\highway_park_door.device_machine
+Porttag MPobject objects\levels\atlas\l300\survival_lift\survival_lift.device_machine
+Porttag MPobject objects\levels\atlas\l300\l300_garage_door_wide\l300_garage_door_wide.device_machine
+Porttag MPobject objects\levels\atlas\l300\l300_garage_door\l300_garage_door.device_machine
+
+## Cov Cruiser
+EditTag objects\vehicles\cov_cruiser\cov_cruiser.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+AddForgeCategory "COASTAL HIGHWAY MACHINES" "COASTAL HIGHWAY"
+
+AddForgeItem "Cov Cruiser" "COASTAL HIGHWAY MACHINES" objects\vehicles\cov_cruiser\cov_cruiser.device_machine
+AddForgeItem "Highway Mega Door" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\l300\highway_door\highway_door.device_machine
+AddForgeItem "City Mega Door" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\h100\hub_door\hub_door.device_machine
+AddForgeItem "Sliding Doors" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\h100\glass_door_split01\glass_door_split01.device_machine
+AddForgeItem "Vertical Door" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\gate_security\gate_security_small\gate_security_small.device_machine
+AddForgeItem "Sliding Doors 2" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
+AddForgeItem "Swinging Doors" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\l300\highway_park_door\highway_park_door.device_machine
+AddForgeItem "Big Jump Fan" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\l300\survival_lift\survival_lift.device_machine
+AddForgeItem "Garage Door Wide" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\l300\l300_garage_door_wide\l300_garage_door_wide.device_machine
+AddForgeItem "Garage Door" "COASTAL HIGHWAY MACHINES" objects\levels\atlas\l300\l300_garage_door\l300_garage_door.device_machine

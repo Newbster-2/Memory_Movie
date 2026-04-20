@@ -1,0 +1,1146 @@
+## Clear atmosphere
+CreateTag skya objects\eldewrito\movie\props\sky_clear_atmosphere
+EditTag objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements AtmosphereSettings
+SaveTagChanges
+Exit
+
+## Sky sphere (SHADED SMOOTH)
+EditTag objects\eldewrito\reforge\block_1x1x1.render_model
+CopyBlockElements Materials 0 *
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\movie\props\sphere_sky
+EditTag objects\eldewrito\movie\props\sphere_sky.render_model
+AddBlockElements Materials
+SetField Materials[*].RenderMethod levels\multi\s3d_turf\shaders\checker.shader
+ReplaceRenderGeometry "working_directory\models\props\sky_sphere.dae" trianglestrip
+RemoveBlockElements Materials 0 *
+PasteBlockElements Materials
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\props\sphere_sky
+EditTag objects\eldewrito\movie\props\sphere_sky.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky.render_model
+RemoveBlockElements Materials 0 *
+SaveTagChanges
+Exit
+
+CreateTag scen objects\eldewrito\movie\props\sphere_sky
+EditTag objects\eldewrito\movie\props\sphere_sky.scenery
+SetField ObjectType.Halo3ODST Scenery
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 10000
+SetField Model objects\eldewrito\movie\props\sphere_sky.model
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_model.model objects\eldewrito\movie\props\sphere_sky_crate
+EditTag objects\eldewrito\movie\props\sphere_sky_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky.render_model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+SaveTagChanges
+Exit
+
+CreateTag bloc objects\eldewrito\movie\props\sphere_sky_crate
+EditTag objects\eldewrito\movie\props\sphere_sky_crate.crate
+SetField ObjectType.Halo3ODST Crate
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 10000
+SetField Model objects\eldewrito\movie\props\sphere_sky_crate.model
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[*].InitialPermutations
+SetField ChangeColors[*].InitialPermutations[*].Weight 1
+SetField ChangeColors[*].InitialPermutations[*].ColorLowerBound 1 1 1
+SetField ChangeColors[*].InitialPermutations[*].ColorUpperBound 1 1 1
+AddBlockElements MultiplayerObject
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+SaveTagChanges
+Exit
+
+## Sky sphere extra extra small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.render_model objects\eldewrito\movie\props\sphere_sky_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\sphere_sky_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\sphere_sky_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.125
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_small.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_small.scenery
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_extra_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate.crate
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky sphere extra small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.render_model objects\eldewrito\movie\props\sphere_sky_extra_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\sphere_sky_extra_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\sphere_sky_extra_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\sphere_sky_extra_small_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\sphere_sky_extra_small_crate
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.25
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_small.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_small.scenery
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_small_crate.crate
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky sphere small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.render_model objects\eldewrito\movie\props\sphere_sky_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\sphere_sky_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\sphere_sky_small
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\sphere_sky_small_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\sphere_sky_small_crate
+
+EditTag objects\eldewrito\movie\props\sphere_sky_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.5
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_small.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_small.scenery
+SetField Model objects\eldewrito\movie\props\sphere_sky_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_small_crate.crate
+SetField Model objects\eldewrito\movie\props\sphere_sky_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky sphere large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.render_model objects\eldewrito\movie\props\sphere_sky_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\sphere_sky_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\sphere_sky_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\sphere_sky_large_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\sphere_sky_large_crate
+
+EditTag objects\eldewrito\movie\props\sphere_sky_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 2
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_large.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_large.scenery
+SetField Model objects\eldewrito\movie\props\sphere_sky_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_large_crate.crate
+SetField Model objects\eldewrito\movie\props\sphere_sky_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky sphere extra large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.render_model objects\eldewrito\movie\props\sphere_sky_extra_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\sphere_sky_extra_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\sphere_sky_extra_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\sphere_sky_extra_large_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\sphere_sky_extra_large_crate
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 4
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_large.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_large.scenery
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_large_crate.crate
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky sphere extra extra large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.render_model objects\eldewrito\movie\props\sphere_sky_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\sphere_sky_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\sphere_sky_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 8
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_large.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_large.scenery
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_extra_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\sphere_sky_extra_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate.crate
+SetField Model objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube (SHADED SMOOTH)
+EditTag objects\eldewrito\reforge\block_1x1x1.render_model
+CopyBlockElements Materials 0 *
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\movie\props\cube_sky
+EditTag objects\eldewrito\movie\props\cube_sky.render_model
+AddBlockElements Materials
+SetField Materials[*].RenderMethod levels\multi\s3d_turf\shaders\checker.shader
+ReplaceRenderGeometry "working_directory\models\props\sky_cube.dae" trianglestrip
+RemoveBlockElements Materials 0 *
+PasteBlockElements Materials
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\cube_sky
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\cube_sky
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\cube_sky_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\cube_sky_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube extra extra small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.render_model objects\eldewrito\movie\props\cube_sky_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.model objects\eldewrito\movie\props\cube_sky_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.scenery objects\eldewrito\movie\props\cube_sky_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.model objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.crate objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.125
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_small.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_small.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_extra_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube extra small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.render_model objects\eldewrito\movie\props\cube_sky_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.model objects\eldewrito\movie\props\cube_sky_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.scenery objects\eldewrito\movie\props\cube_sky_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.model objects\eldewrito\movie\props\cube_sky_extra_small_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.crate objects\eldewrito\movie\props\cube_sky_extra_small_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.25
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_small.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_small.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_small_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.render_model objects\eldewrito\movie\props\cube_sky_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.model objects\eldewrito\movie\props\cube_sky_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky.scenery objects\eldewrito\movie\props\cube_sky_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.model objects\eldewrito\movie\props\cube_sky_small_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.crate objects\eldewrito\movie\props\cube_sky_small_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.5
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_small.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_small.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_small_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.render_model objects\eldewrito\movie\props\cube_sky_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.model objects\eldewrito\movie\props\cube_sky_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.scenery objects\eldewrito\movie\props\cube_sky_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.model objects\eldewrito\movie\props\cube_sky_large_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.crate objects\eldewrito\movie\props\cube_sky_large_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 2
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_large.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_large.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_large_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube extra large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.render_model objects\eldewrito\movie\props\cube_sky_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.model objects\eldewrito\movie\props\cube_sky_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.scenery objects\eldewrito\movie\props\cube_sky_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.model objects\eldewrito\movie\props\cube_sky_extra_large_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.crate objects\eldewrito\movie\props\cube_sky_extra_large_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 4
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_large.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_large.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_large_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube extra extra large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.render_model objects\eldewrito\movie\props\cube_sky_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.model objects\eldewrito\movie\props\cube_sky_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky.scenery objects\eldewrito\movie\props\cube_sky_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.model objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_crate.crate objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 8
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_large.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_large.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_extra_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_extra_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat (SHADED FLAT)
+EditTag objects\eldewrito\reforge\block_1x1x1.render_model
+CopyBlockElements Materials 0 *
+Exit
+
+DuplicateTag objects\eldewrito\forge\misc\empty_render_model.render_model objects\eldewrito\movie\props\cube_sky_flat
+EditTag objects\eldewrito\movie\props\cube_sky_flat.render_model
+AddBlockElements Materials
+SetField Materials[*].RenderMethod levels\multi\s3d_turf\shaders\checker.shader
+ReplaceRenderGeometry "working_directory\models\props\sky_cube_flat.dae" trianglestrip
+RemoveBlockElements Materials 0 *
+PasteBlockElements Materials
+SaveTagChanges
+Exit
+
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.model objects\eldewrito\movie\props\cube_sky_flat
+DuplicateTag objects\eldewrito\movie\props\sphere_sky.scenery objects\eldewrito\movie\props\cube_sky_flat
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.model objects\eldewrito\movie\props\cube_sky_flat_crate
+DuplicateTag objects\eldewrito\movie\props\sphere_sky_crate.crate objects\eldewrito\movie\props\cube_sky_flat_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat extra extra small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.render_model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.scenery objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.125
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat extra small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.render_model objects\eldewrito\movie\props\cube_sky_flat_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.model objects\eldewrito\movie\props\cube_sky_flat_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.scenery objects\eldewrito\movie\props\cube_sky_flat_extra_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.model objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.25
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_small.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_small.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.render_model objects\eldewrito\movie\props\cube_sky_flat_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.model objects\eldewrito\movie\props\cube_sky_flat_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.scenery objects\eldewrito\movie\props\cube_sky_flat_small
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.model objects\eldewrito\movie\props\cube_sky_flat_small_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate objects\eldewrito\movie\props\cube_sky_flat_small_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_small.render_model
+SetField RuntimeNodeOrientations[0].Scale 0.5
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_small.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_small.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_small.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_small_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_small.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_small_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_small_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.render_model objects\eldewrito\movie\props\cube_sky_flat_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.model objects\eldewrito\movie\props\cube_sky_flat_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.scenery objects\eldewrito\movie\props\cube_sky_flat_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.model objects\eldewrito\movie\props\cube_sky_flat_large_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate objects\eldewrito\movie\props\cube_sky_flat_large_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 2
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_large.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_large.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_large_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat extra large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.render_model objects\eldewrito\movie\props\cube_sky_flat_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.model objects\eldewrito\movie\props\cube_sky_flat_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.scenery objects\eldewrito\movie\props\cube_sky_flat_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.model objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 4
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_large.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_large.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate.model
+SaveTagChanges
+Exit
+
+## Sky cube flat extra extra large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.render_model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat.scenery objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate
+DuplicateTag objects\eldewrito\movie\props\cube_sky_flat_crate.crate objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.render_model
+SetField RuntimeNodeOrientations[0].Scale 8
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.scenery
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate.model
+SetField RenderModel objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.render_model
+SaveTagChanges
+Exit
+
+EditTag objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate.crate
+SetField Model objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate.model
+SaveTagChanges
+Exit
+
+## Bunkerworld
+DuplicateTag levels\dlc\bunkerworld\sky\sky_bunkerworld.model objects\eldewrito\movie\props\sky_bunkerworld
+DuplicateTag levels\dlc\bunkerworld\sky\bunkerworld.scenery objects\eldewrito\movie\props\sky_bunkerworld
+EditTag objects\eldewrito\movie\props\sky_bunkerworld.scenery
+SetField Model objects\eldewrito\movie\props\sky_bunkerworld.model
+SaveTagChanges
+Exit
+
+## Bunkerworld Sat Dish
+DuplicateTag levels\dlc\bunkerworld\sky\dish\dish.model objects\eldewrito\movie\props\sky_dish
+DuplicateTag levels\dlc\bunkerworld\sky\dish\dish.scenery objects\eldewrito\movie\props\sky_dish
+EditTag objects\eldewrito\movie\props\sky_dish.scenery
+SetField Model objects\eldewrito\movie\props\sky_dish.model
+SaveTagChanges
+Exit
+
+## Bunkerworld Sat Dish 2
+DuplicateTag levels\dlc\bunkerworld\sky\dish\dish_no_sound.model objects\eldewrito\movie\props\sky_dish_2
+DuplicateTag levels\dlc\bunkerworld\sky\dish\dish_no_sound.scenery objects\eldewrito\movie\props\sky_dish_2
+EditTag objects\eldewrito\movie\props\sky_dish_2.scenery
+SetField Model objects\eldewrito\movie\props\sky_dish_2.model
+SaveTagChanges
+Exit
+
+## Chill
+DuplicateTag levels\multi\chill\sky\sky.model objects\eldewrito\movie\props\sky_chill
+DuplicateTag levels\multi\chill\sky\sky.scenery objects\eldewrito\movie\props\sky_chill
+EditTag objects\eldewrito\movie\props\sky_chill.scenery
+SetField Model objects\eldewrito\movie\props\sky_chill.model
+SaveTagChanges
+Exit
+
+## Cyberdyne
+DuplicateTag levels\multi\cyberdyne\sky\sky.model objects\eldewrito\movie\props\sky_cyberdyne
+DuplicateTag levels\multi\cyberdyne\sky\sky.scenery objects\eldewrito\movie\props\sky_cyberdyne
+EditTag objects\eldewrito\movie\props\sky_cyberdyne.scenery
+SetField Model objects\eldewrito\movie\props\sky_cyberdyne.model
+SaveTagChanges
+Exit
+
+## Deadlock
+DuplicateTag levels\multi\deadlock\sky\deadlock.model objects\eldewrito\movie\props\sky_deadlock
+DuplicateTag levels\multi\deadlock\sky\deadlock.scenery objects\eldewrito\movie\props\sky_deadlock
+EditTag objects\eldewrito\movie\props\sky_deadlock.scenery
+SetField Model objects\eldewrito\movie\props\sky_deadlock.model
+SaveTagChanges
+Exit
+
+## Guardian
+DuplicateTag levels\multi\guardian\sky\sky.model objects\eldewrito\movie\props\sky_guardian
+DuplicateTag levels\multi\guardian\sky\sky.scenery objects\eldewrito\movie\props\sky_guardian
+EditTag objects\eldewrito\movie\props\sky_guardian.scenery
+SetField Model objects\eldewrito\movie\props\sky_guardian.model
+SaveTagChanges
+Exit
+
+## Riverworld
+DuplicateTag levels\multi\riverworld\sky\riverworld.model objects\eldewrito\movie\props\sky_riverworld
+DuplicateTag levels\multi\riverworld\sky\riverworld.scenery objects\eldewrito\movie\props\sky_riverworld
+EditTag objects\eldewrito\movie\props\sky_riverworld.scenery
+SetField Model objects\eldewrito\movie\props\sky_riverworld.model
+SaveTagChanges
+Exit
+
+## s3d_avalanche
+DuplicateTag levels\multi\s3d_avalanche\sky\sky.model objects\eldewrito\movie\props\sky_s3d_avalanche
+DuplicateTag levels\multi\s3d_avalanche\sky\sky.scenery objects\eldewrito\movie\props\sky_s3d_avalanche
+EditTag objects\eldewrito\movie\props\sky_s3d_avalanche.scenery
+SetField Model objects\eldewrito\movie\props\sky_s3d_avalanche.model
+SaveTagChanges
+Exit
+
+## s3d_edge
+DuplicateTag levels\multi\s3d_edge\sky\sky.model objects\eldewrito\movie\props\sky_s3d_edge
+DuplicateTag levels\multi\s3d_edge\sky\sky.scenery objects\eldewrito\movie\props\sky_s3d_edge
+EditTag objects\eldewrito\movie\props\sky_s3d_edge.scenery
+SetField Model objects\eldewrito\movie\props\sky_s3d_edge.model
+SaveTagChanges
+Exit
+
+## s3d_reactor
+DuplicateTag levels\multi\s3d_reactor\sky\sky.model objects\eldewrito\movie\props\sky_s3d_reactor
+DuplicateTag levels\multi\s3d_reactor\sky\sky.scenery objects\eldewrito\movie\props\sky_s3d_reactor
+EditTag objects\eldewrito\movie\props\sky_s3d_reactor.scenery
+SetField Model objects\eldewrito\movie\props\sky_s3d_reactor.model
+SaveTagChanges
+Exit
+
+## s3d_turf
+DuplicateTag levels\multi\s3d_turf\sky\sky.model objects\eldewrito\movie\props\sky_s3d_turf
+DuplicateTag levels\multi\s3d_turf\sky\sky.scenery objects\eldewrito\movie\props\sky_s3d_turf
+EditTag objects\eldewrito\movie\props\sky_s3d_turf.scenery
+SetField Model objects\eldewrito\movie\props\sky_s3d_turf.model
+SaveTagChanges
+Exit
+
+## Shrine
+DuplicateTag levels\multi\shrine\sky\sky.model objects\eldewrito\movie\props\sky_shrine
+DuplicateTag levels\multi\shrine\sky\sky.scenery objects\eldewrito\movie\props\sky_shrine
+EditTag objects\eldewrito\movie\props\sky_shrine.scenery
+SetField Model objects\eldewrito\movie\props\sky_shrine.model
+SaveTagChanges
+Exit
+
+## Zanzibar
+DuplicateTag levels\multi\zanzibar\sky\sky.model objects\eldewrito\movie\props\sky_zanzibar
+DuplicateTag levels\multi\zanzibar\sky\sky.scenery objects\eldewrito\movie\props\sky_zanzibar
+EditTag objects\eldewrito\movie\props\sky_zanzibar.scenery
+SetField Model objects\eldewrito\movie\props\sky_zanzibar.model
+SaveTagChanges
+Exit
+
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_ SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_ AddBlockElements Materials
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_ SetField Materials[0].DamageSectionIndex -1
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_ SetField Materials[0].RuntimeDamagerMaterialIndex -1
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_ ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_ ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+ForEach hlmt contains: objects\eldewrito\movie\props\sky_dish SetField ModelObjectData[0].Offset 0 0 0
+
+ForEach scen contains: objects\eldewrito\movie\props\sky_ SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+ForEach scen contains: objects\eldewrito\movie\props\sky_ SetField BoundingRadius 10000
+ForEach scen contains: objects\eldewrito\movie\props\sky_ SetField BoundingOffset 0 0 0
+ForEach scen contains: objects\eldewrito\movie\props\sky_ AddBlockElements MultiplayerObject
+ForEach scen contains: objects\eldewrito\movie\props\sky_ SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+
+## Add to palette
+AddForgeCategory "SKY DOMES" "MOVIE PROPS"
+
+AddForgeItem "SKY SPHERE" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_crate.crate
+AddForgeItem "SKY SPHERE XXSMALL" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate.crate
+AddForgeItem "SKY SPHERE XSMALL" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_extra_small_crate.crate
+AddForgeItem "SKY SPHERE SMALL" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_small_crate.crate
+AddForgeItem "SKY SPHERE LARGE" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_large_crate.crate
+AddForgeItem "SKY SPHERE XLARGE" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_extra_large_crate.crate
+AddForgeItem "SKY SPHERE XXLARGE" "SKY DOMES" objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate.crate
+
+AddForgeItem "SKY CUBE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_crate.crate
+AddForgeItem "SKY CUBE XXSMALL" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate.crate
+AddForgeItem "SKY CUBE XSMALL" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_extra_small_crate.crate
+AddForgeItem "SKY CUBE SMALL" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_small_crate.crate
+AddForgeItem "SKY CUBE LARGE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_large_crate.crate
+AddForgeItem "SKY CUBE XLARGE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_extra_large_crate.crate
+AddForgeItem "SKY CUBE XXLARGE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate.crate
+
+AddForgeItem "SKY CUBE FLAT" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_crate.crate
+AddForgeItem "SKY CUBE FLAT XXSMALL" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate.crate
+AddForgeItem "SKY CUBE FLAT XSMALL" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate.crate
+AddForgeItem "SKY CUBE FLAT SMALL" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_small_crate.crate
+AddForgeItem "SKY CUBE FLAT LARGE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_large_crate.crate
+AddForgeItem "SKY CUBE FLAT XLARGE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate.crate
+AddForgeItem "SKY CUBE FLAT XXLARGE" "SKY DOMES" objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate.crate
+
+AddForgeItem "STANDOFF" "SKY DOMES" objects\eldewrito\movie\props\sky_bunkerworld.scenery
+AddForgeItem "STANDOFF SAT DISH" "SKY DOMES" objects\eldewrito\movie\props\sky_dish.scenery
+AddForgeItem "STANDOFF SAT DISH 2" "SKY DOMES" objects\eldewrito\movie\props\sky_dish_2.scenery
+AddForgeItem "NARROWS" "SKY DOMES" objects\eldewrito\movie\props\sky_chill.scenery
+AddForgeItem "THE PIT" "SKY DOMES" objects\eldewrito\movie\props\sky_cyberdyne.scenery
+AddForgeItem "HIGH GROUND" "SKY DOMES" objects\eldewrito\movie\props\sky_deadlock.scenery
+AddForgeItem "GUARDIAN" "SKY DOMES" objects\eldewrito\movie\props\sky_guardian.scenery
+AddForgeItem "VALHALLA" "SKY DOMES" objects\eldewrito\movie\props\sky_riverworld.scenery
+AddForgeItem "DIAMONDBACK" "SKY DOMES" objects\eldewrito\movie\props\sky_s3d_avalanche.scenery
+AddForgeItem "EDGE" "SKY DOMES" objects\eldewrito\movie\props\sky_s3d_edge.scenery
+AddForgeItem "REACTOR" "SKY DOMES" objects\eldewrito\movie\props\sky_s3d_reactor.scenery
+AddForgeItem "ICE BOX" "SKY DOMES" objects\eldewrito\movie\props\sky_s3d_turf.scenery
+AddForgeItem "SANDTRAP" "SKY DOMES" objects\eldewrito\movie\props\sky_shrine.scenery
+AddForgeItem "LAST RESORT" "SKY DOMES" objects\eldewrito\movie\props\sky_zanzibar.scenery
+
+EditTag multiplayer\forge_globals.forge_globals_definition
+
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_extra_extra_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_extra_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_large_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_extra_large_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\sphere_sky_extra_extra_large_crate.crate
+
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_extra_extra_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_extra_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_large_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_extra_large_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_extra_extra_large_crate.crate
+
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_extra_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_small_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_large_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_extra_large_crate.crate
+AddBlockElements ReForgeObjects
+SetField ReForgeObjects[*].Instance objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large_crate.crate
+
+## More sky options
+AddBlockElements Skies
+SetField Skies[*].Name "Guardian Clear"
+SetField Skies[*].Object levels\multi\guardian\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Guardian Lite"
+SetField Skies[*].Parameters levels\multi\guardian\sky\guardian.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\guardian\guardian.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\guardian\guardian.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Valhalla Clear"
+SetField Skies[*].Object levels\multi\riverworld\sky\riverworld.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Valhalla Lite"
+SetField Skies[*].Parameters levels\multi\riverworld\sky\riverworld.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\riverworld\riverworld.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\riverworld\riverworld.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Diamondback Clear"
+SetField Skies[*].Object levels\multi\s3d_avalanche\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Diamondback Lite"
+SetField Skies[*].Parameters levels\multi\s3d_avalanche\sky\s3d_avalanche.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\s3d_avalanche\s3d_avalanche.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\s3d_avalanche\s3d_avalanche.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Edge Clear"
+SetField Skies[*].Object levels\multi\s3d_edge\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Edge Lite"
+SetField Skies[*].Parameters levels\multi\s3d_edge\sky\s3d_edge.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\s3d_edge\s3d_edge.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\s3d_edge\s3d_edge.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Reactor Clear"
+SetField Skies[*].Object levels\multi\s3d_reactor\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Reactor Lite"
+SetField Skies[*].Parameters levels\multi\s3d_reactor\sky\s3d_reactor.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\s3d_reactor\s3d_reactor_indoor.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\s3d_reactor\s3d_reactor.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Icebox Clear"
+SetField Skies[*].Object levels\multi\s3d_turf\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Icebox Lite"
+SetField Skies[*].Parameters levels\multi\s3d_turf\sky\s3d_turf.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\s3d_turf\s3d_turf.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\s3d_turf\s3d_turf.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "The Pit Clear"
+SetField Skies[*].Object levels\multi\cyberdyne\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "The Pit Lite"
+SetField Skies[*].Parameters levels\multi\cyberdyne\sky\cyberdyne.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\cyberdyne\cyberdyne.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\cyberdyne\cyberdyne.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Narrows Clear"
+SetField Skies[*].Object levels\multi\chill\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Narrows Lite"
+SetField Skies[*].Parameters levels\multi\chill\sky\chill.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\chill\chill.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\chill\chill.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Standoff Clear"
+SetField Skies[*].Object levels\dlc\bunkerworld\sky\bunkerworld.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Standoff Lite"
+SetField Skies[*].Parameters levels\dlc\bunkerworld\sky\bunkerworld.sky_atm_parameters
+SetField Skies[*].CameraFX levels\dlc\bunkerworld\bunkerworld.camera_fx_settings
+
+AddBlockElements Skies
+SetField Skies[*].Name "Last Resort Clear"
+SetField Skies[*].Object levels\multi\zanzibar\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Last Resort Lite"
+SetField Skies[*].Parameters levels\multi\zanzibar\sky\zanzibar.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\zanzibar\sky\zanzibar.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\zanzibar\zanzibar.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "High Ground Clear"
+SetField Skies[*].Object levels\multi\deadlock\sky\deadlock.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "High Ground Lite"
+SetField Skies[*].Parameters levels\multi\deadlock\sky\deadlock.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\deadlock\deadlock.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\deadlock\deadlock.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Sandtrap Clear"
+SetField Skies[*].Object levels\multi\shrine\sky\sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sandtrap Lite"
+SetField Skies[*].Parameters levels\multi\shrine\sky\shrine.sky_atm_parameters
+SetField Skies[*].CameraFX levels\multi\shrine\shrine.camera_fx_settings
+SetField Skies[*].GlobalLighting levels\multi\shrine\shrine.chocolate_mountain_new
+
+AddBlockElements Skies
+SetField Skies[*].Name "Clear"
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere XXSmall Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky_extra_extra_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere XSmall Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky_extra_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere Small Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere Large Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere XLarge Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky_extra_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Sphere XXLarge Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\sphere_sky_extra_extra_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube XXSmall Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_extra_extra_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube XSmall Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_extra_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Small Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Large Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube XLarge Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_extra_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube XXLarge Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_extra_extra_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat XXSmall Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat_extra_extra_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat XSmall Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat_extra_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat Small Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat_small.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat Large Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat XLarge Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat_extra_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+AddBlockElements Skies
+SetField Skies[*].Name "Cube Flat XXLarge Clear"
+SetField Skies[*].Object objects\eldewrito\movie\props\cube_sky_flat_extra_extra_large.scenery
+SetField Skies[*].Parameters objects\eldewrito\movie\props\sky_clear_atmosphere.sky_atm_parameters
+
+SaveTagChanges
+Exit

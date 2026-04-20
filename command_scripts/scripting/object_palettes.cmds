@@ -1,0 +1,20 @@
+AddBlockElements CratePalette
+SetField CratePalette[*].Object objects\eldewrito\movie\scripting\script_bloc.crate
+
+AddBlockElements SceneryPalette
+SetField SceneryPalette[*].Object objects\eldewrito\movie\scripting\script_scen.scenery
+
+AddBlockElements VehiclePalette
+SetField VehiclePalette[*].Object objects\eldewrito\movie\scripting\script_vehi.vehicle
+
+AddBlockElements BipedPalette
+SetField BipedPalette[*].Object objects\eldewrito\movie\scripting\script_bipd.biped
+
+AddBlockElements CharacterPalette
+SetField CharacterPalette[*].Instance objects\eldewrito\movie\scripting\script_bipd_ai_flying.character
+AddBlockElements CharacterPalette
+SetField CharacterPalette[*].Instance objects\eldewrito\movie\scripting\script_bipd_ai_walking.character
+AddBlockElements CharacterPalette
+SetField CharacterPalette[*].Instance objects\eldewrito\movie\ai\mp_masterchief.character
+AddBlockElements CharacterPalette
+SetField CharacterPalette[*].Instance objects\eldewrito\movie\ai\mp_elite.character

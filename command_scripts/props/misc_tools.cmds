@@ -1,0 +1,28 @@
+## Invisible teleporters to move around players
+DuplicateTag objects\multi\teleporter_2way\teleporter_2way.crate objects\eldewrito\movie\tools\teleporter_2way_invis
+DuplicateTag objects\multi\teleporter_2way\teleporter_2way_vehicle.crate objects\eldewrito\movie\tools\teleporter_2way_vehicle_invis
+DuplicateTag objects\multi\teleporter_2way\teleporter_2way_vehicle_only.crate objects\eldewrito\movie\tools\teleporter_2way_vehicle_only_invis
+DuplicateTag objects\multi\teleporter_reciever\teleporter_reciever.crate objects\eldewrito\movie\tools\teleporter_reciever_invis
+DuplicateTag objects\multi\teleporter_receiver\teleporter_receiver_vehicle.crate objects\eldewrito\movie\tools\teleporter_receiver_vehicle_invis
+DuplicateTag objects\multi\teleporter_receiver\teleporter_receiver_vehicle_only.crate objects\eldewrito\movie\tools\teleporter_receiver_vehicle_only_invis
+DuplicateTag objects\multi\teleporter_sender\teleporter_sender.crate objects\eldewrito\movie\tools\teleporter_sender_invis
+DuplicateTag objects\multi\teleporter_sender\teleporter_sender_vehicle.crate objects\eldewrito\movie\tools\teleporter_sender_vehicle_invis
+DuplicateTag objects\multi\teleporter_sender\teleporter_sender_vehicle_only.crate objects\eldewrito\movie\tools\teleporter_sender_vehicle_only_invis
+
+ForEach bloc contains: objects\eldewrito\movie\tools\teleporter SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+ForEach bloc contains: objects\eldewrito\movie\tools\teleporter RemoveBlockElements Functions 0 *
+ForEach bloc contains: objects\eldewrito\movie\tools\teleporter RemoveBlockElements Attachments 0 *
+ForEach bloc contains: objects\eldewrito\movie\tools\teleporter SetField MultiplayerObject[0].Flags OnlyVisibleInEditor,CandyMonitorShouldIgnore
+ForEach bloc contains: objects\eldewrito\movie\tools\teleporter RemoveBlockElements PathfindingSpheres 0 *
+
+AddForgeCategory "INVISIBLE TELEPORTERS" "TOOLS"
+
+AddForgeItem "2 WAY" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_2way_invis.crate
+AddForgeItem "2 WAY VEHICLE" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_2way_vehicle_invis.crate
+AddForgeItem "2 WAY VEHICLE ONLY" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_2way_vehicle_only_invis.crate
+AddForgeItem "RECEIVER" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_reciever_invis.crate
+AddForgeItem "RECEIVER VEHICLE" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_receiver_vehicle_invis.crate
+AddForgeItem "RECEIVER VEHICLE ONLY" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_receiver_vehicle_only_invis.crate
+AddForgeItem "SENDER" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_sender_invis.crate
+AddForgeItem "SENDER VEHICLE" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_sender_vehicle_invis.crate
+AddForgeItem "SENDER VEHICLE ONLY" "INVISIBLE TELEPORTERS" objects\eldewrito\movie\tools\teleporter_sender_vehicle_only_invis.crate

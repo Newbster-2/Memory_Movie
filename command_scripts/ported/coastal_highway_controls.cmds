@@ -1,0 +1,7 @@
+Porttag MPobject objects\levels\atlas\h100\hub_small_door_switch\hub_small_door_switch.device_control
+Porttag MPobject objects\levels\atlas\h100\panel_tech_elevator\panel_tech_elevator_switch.device_control
+
+AddForgeCategory "COASTAL HIGHWAY CONTROLS" "COASTAL HIGHWAY"
+
+AddForgeItem "Button Pad" "COASTAL HIGHWAY CONTROLS" objects\levels\atlas\h100\hub_small_door_switch\hub_small_door_switch.device_control
+AddForgeItem "Elevator Pad" "COASTAL HIGHWAY CONTROLS" objects\levels\atlas\h100\panel_tech_elevator\panel_tech_elevator_switch.device_control

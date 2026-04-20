@@ -1,0 +1,39 @@
+Porttag MPobject objects\levels\multi\s3d_sky_bridgenew\farplane_buildings\farplane_buildings.scenery
+Porttag MPobject objects\levels\multi\s3d_sky_bridgenew\crate_tech_semi_2\crate_tech_semi_2.scenery
+Porttag MPobject objects\levels\multi\s3d_sky_bridgenew\crate_tech_semi_2_blue\crate_tech_semi_2_blue.scenery
+
+## Farplane buildings
+EditTag objects\levels\multi\s3d_sky_bridgenew\farplane_buildings\farplane_buildings.render_model
+SetField Materials[0].RenderMethod levels\multi\s3d_turf\shaders\unsc_panel_indus_05.shader
+SetField Nodes[0].DefaultTranslation 0 0 0
+SetField Nodes[0].Inverse 1 0 0 0 1 0 0 0 1 0 0 0
+SetField RuntimeNodeOrientations[0].Translation 0 0 0
+SaveTagChanges
+Exit
+
+EditTag objects\levels\multi\s3d_sky_bridgenew\farplane_buildings\farplane_buildings.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_large.collision_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SetField Nodes[0].DefaultTranslation 0 0 0
+SetField Nodes[0].Inverse 1 0 0 0 1 0 0 0 1 0 0 0
+SaveTagChanges
+Exit
+
+EditTag objects\levels\multi\s3d_sky_bridgenew\farplane_buildings\farplane_buildings.scenery
+SetField ObjectFlags DoesNotCastShadow,NotAPathfindingObstacle
+SetField BoundingRadius 10000
+SetField BoundingOffset 0 0 0
+SetField MultiplayerObject[0].Flags CandyMonitorShouldIgnore
+SaveTagChanges
+Exit
+
+AddForgeCategory "SKY BRIDGE SCENERY" "SKY BRIDGE"
+
+AddForgeItem "SkyScraper Far Plane" "SKY BRIDGE SCENERY" objects\levels\multi\s3d_sky_bridgenew\farplane_buildings\farplane_buildings.scenery
+AddForgeItem "Container, Open V2" "SKY BRIDGE SCENERY" objects\levels\multi\s3d_sky_bridgenew\crate_tech_semi_2\crate_tech_semi_2.scenery
+AddForgeItem "Container, Open V2 Blue" "SKY BRIDGE SCENERY" objects\levels\multi\s3d_sky_bridgenew\crate_tech_semi_2_blue\crate_tech_semi_2_blue.scenery

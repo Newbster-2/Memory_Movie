@@ -1,0 +1,646 @@
+EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief_ai.model
+
+## Newbie
+StringId Add newbie
+AddBlockElements Variants
+SetField Variants[*].Name newbie
+SetField Variants[*].ModelRegionIndices -1 -1 1 -1 0 2 -1 3 -1 -1 -1 -1 -1 -1 -1 -1
+AddBlockElements Variants[*].Regions
+SetField Variants[*].Regions[*].Name helmet
+SetField Variants[*].Regions[*].RenderModelRegionIndex 4
+SetField Variants[*].Regions[*].ParentVariant -1
+AddBlockElements Variants[*].Regions[*].Permutations
+SetField Variants[*].Regions[*].Permutations[*].Name mp_odst
+SetField Variants[*].Regions[*].Permutations[*].RenderModelPermutationIndex 12
+SetField Variants[*].Regions[*].Permutations[*].Probability 1
+AddBlockElements Variants[*].Regions
+SetField Variants[*].Regions[*].Name chest
+SetField Variants[*].Regions[*].RenderModelRegionIndex 2
+SetField Variants[*].Regions[*].ParentVariant -1
+AddBlockElements Variants[*].Regions[*].Permutations
+SetField Variants[*].Regions[*].Permutations[*].Name mp_cobra
+SetField Variants[*].Regions[*].Permutations[*].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[*].Permutations[*].Probability 1
+AddBlockElements Variants[*].Regions
+SetField Variants[*].Regions[*].Name leftshoulder
+SetField Variants[*].Regions[*].RenderModelRegionIndex 5
+SetField Variants[*].Regions[*].ParentVariant -1
+AddBlockElements Variants[*].Regions[*].Permutations
+SetField Variants[*].Regions[*].Permutations[*].Name mp_regulator
+SetField Variants[*].Regions[*].Permutations[*].RenderModelPermutationIndex 4
+SetField Variants[*].Regions[*].Permutations[*].Probability 1
+AddBlockElements Variants[*].Regions
+SetField Variants[*].Regions[*].Name rightshoulder
+SetField Variants[*].Regions[*].RenderModelRegionIndex 7
+SetField Variants[*].Regions[*].ParentVariant -1
+AddBlockElements Variants[*].Regions[*].Permutations
+SetField Variants[*].Regions[*].Permutations[*].Name mp_regulator
+SetField Variants[*].Regions[*].Permutations[*].RenderModelPermutationIndex 4
+SetField Variants[*].Regions[*].Permutations[*].Probability 1
+
+## Minelelol
+StringId Add minelelol
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name minelelol
+SetField Variants[*].Regions[0].Permutations[0].Name mp_scout
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 11
+SetField Variants[*].Regions[1].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 2
+SetField Variants[*].Regions[2].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 3
+SetField Variants[*].Regions[3].Permutations[0].Name mp_scout
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 7
+
+## Zekken
+StringId Add zekken
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name zekken
+SetField Variants[*].Regions[0].Permutations[0].Name mp_regulator
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 5
+SetField Variants[*].Regions[1].Permutations[0].Name mp_cobra
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[2].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 5
+SetField Variants[*].Regions[3].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 3
+
+## Tpf
+StringId Add tpf
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name tpf
+SetField Variants[*].Regions[0].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 7
+SetField Variants[*].Regions[1].Permutations[0].Name mp_katana
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 6
+SetField Variants[*].Regions[2].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 5
+SetField Variants[*].Regions[3].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 5
+
+## Liver_K
+StringId Add liver_k
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name liver_k
+SetField Variants[*].Regions[0].Permutations[0].Name mp_scout
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 11
+SetField Variants[*].Regions[1].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 4
+SetField Variants[*].Regions[2].Permutations[0].Name mp_marathon
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 6
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Sirius
+StringId Add sirius
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name sirius
+SetField Variants[*].Regions[0].Permutations[0].Name base
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[1].Permutations[0].Name null
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex -1
+SetField Variants[*].Regions[2].Permutations[0].Name base
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Forgot
+StringId Add forgot
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name forgot
+SetField Variants[*].Regions[0].Permutations[0].Name mp_odst
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 12
+SetField Variants[*].Regions[1].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 2
+SetField Variants[*].Regions[2].Permutations[0].Name mp_intruder
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 2
+SetField Variants[*].Regions[3].Permutations[0].Name mp_intruder
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 2
+
+## Dirkkane
+StringId Add dirkkane
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name dirkkane
+SetField Variants[*].Regions[0].Permutations[0].Name mp_markv
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 9
+SetField Variants[*].Regions[1].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 2
+SetField Variants[*].Regions[2].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 3
+SetField Variants[*].Regions[3].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 3
+
+## Canadiator
+StringId Add canadiator
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name canadiator
+SetField Variants[*].Regions[0].Permutations[0].Name base
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[1].Permutations[0].Name mp_katana
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 6
+SetField Variants[*].Regions[2].Permutations[0].Name mp_intruder
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 2
+SetField Variants[*].Regions[3].Permutations[0].Name mp_intruder
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 2
+
+## Sarge
+StringId Add sarge
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name sarge
+SetField Variants[*].Regions[0].Permutations[0].Name mp_markv
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 9
+SetField Variants[*].Regions[1].Permutations[0].Name mp_regulator
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 3
+SetField Variants[*].Regions[2].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 5
+SetField Variants[*].Regions[3].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 5
+
+## Big guy
+StringId Add big_guy
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name big_guy
+SetField Variants[*].Regions[0].Permutations[0].Name base
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[1].Permutations[0].Name null
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex -1
+SetField Variants[*].Regions[2].Permutations[0].Name base
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Maroon maze
+StringId Add maroon_maze
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name maroon_maze
+SetField Variants[*].Regions[0].Permutations[0].Name mp_odst
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 12
+SetField Variants[*].Regions[1].Permutations[0].Name mp_cobra
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[2].Permutations[0].Name base
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Blade of anduril
+StringId Add blade_of_anduril
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name blade_of_anduril
+SetField Variants[*].Regions[0].Permutations[0].Name base
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[1].Permutations[0].Name mp_katana
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 6
+SetField Variants[*].Regions[2].Permutations[0].Name base
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Microwave oven
+StringId Add microwave_oven
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name microwave_oven
+SetField Variants[*].Regions[0].Permutations[0].Name mp_markv
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 9
+SetField Variants[*].Regions[1].Permutations[0].Name null
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex -1
+SetField Variants[*].Regions[2].Permutations[0].Name base
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Mtndewit
+StringId Add mtndewit
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name mtndewit
+SetField Variants[*].Regions[0].Permutations[0].Name base
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[1].Permutations[0].Name null
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex -1
+SetField Variants[*].Regions[2].Permutations[0].Name base
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[3].Permutations[0].Name base
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 0
+
+## Twisted flog
+StringId Add twisted_flog
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name twisted_flog
+SetField Variants[*].Regions[0].Permutations[0].Name mp_scout
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 11
+SetField Variants[*].Regions[1].Permutations[0].Name mp_katana
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 6
+SetField Variants[*].Regions[2].Permutations[0].Name mp_ninja
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 3
+SetField Variants[*].Regions[3].Permutations[0].Name mp_ryu
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 5
+
+## Duck
+StringId Add duck
+CopyBlockElements Variants 9
+PasteBlockElements Variants
+SetField Variants[*].Name duck
+SetField Variants[*].Regions[0].Permutations[0].Name base
+SetField Variants[*].Regions[0].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[1].Permutations[0].Name mp_cobra
+SetField Variants[*].Regions[1].Permutations[0].RenderModelPermutationIndex 0
+SetField Variants[*].Regions[2].Permutations[0].Name mp_intruder
+SetField Variants[*].Regions[2].Permutations[0].RenderModelPermutationIndex 2
+SetField Variants[*].Regions[3].Permutations[0].Name mp_intruder
+SetField Variants[*].Regions[3].Permutations[0].RenderModelPermutationIndex 2
+
+SaveTagChanges
+Exit
+
+EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief_ai.biped
+
+## Newbie
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 1 1 1
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 1 1 1
+SetField ChangeColors[0].InitialPermutations[*].VariantName newbie
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.1568628 0.1568628 0.1568628
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.1568628 0.1568628 0.1568628
+SetField ChangeColors[1].InitialPermutations[*].VariantName newbie
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.3294118 0.4313726 0.1490196
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.3294118 0.4313726 0.1490196
+SetField ChangeColors[2].InitialPermutations[*].VariantName newbie
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.09019608 0.5490196 0.5843138
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.09019608 0.5490196 0.5843138
+SetField ChangeColors[3].InitialPermutations[*].VariantName newbie
+
+## Minelelol
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.3294118 0.8666667 0.8588235
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.3294118 0.8666667 0.8588235
+SetField ChangeColors[0].InitialPermutations[*].VariantName minelelol
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.03921569 0.2313726 0.2470588
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.03921569 0.2313726 0.2470588
+SetField ChangeColors[1].InitialPermutations[*].VariantName minelelol
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.7372549 0.3019608 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.7372549 0.3019608 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName minelelol
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.1137255 0.2941177 0.7372549
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.1137255 0.2941177 0.7372549
+SetField ChangeColors[3].InitialPermutations[*].VariantName minelelol
+
+## Zekken
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.2941176 0.2392157 0.5490196
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.2941176 0.2392157 0.5490196
+SetField ChangeColors[0].InitialPermutations[*].VariantName zekken
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.8235294 0.5333333 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.8235294 0.5333333 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName zekken
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.8235294 0.5333333 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.8235294 0.5333333 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName zekken
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.3450980 0.3411765 0.3450980
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.3450980 0.3411765 0.3450980
+SetField ChangeColors[3].InitialPermutations[*].VariantName zekken
+
+## Tpf
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].VariantName tpf
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName tpf
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName tpf
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName tpf
+
+## Liver_K
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0901961 0.1215686 0.0549020
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0901961 0.1215686 0.0549020
+SetField ChangeColors[0].InitialPermutations[*].VariantName liver_k
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0901961 0.1215686 0.0549020
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0901961 0.1215686 0.0549020
+SetField ChangeColors[1].InitialPermutations[*].VariantName liver_k
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.0823529 0.4980392 0.2156863
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.0823529 0.4980392 0.2156863
+SetField ChangeColors[2].InitialPermutations[*].VariantName liver_k
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.5882353 0.5215686 1.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.5882353 0.5215686 1.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName liver_k
+
+## Sirius
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.1568627 0.1568627 0.1568627
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.1568627 0.1568627 0.1568627
+SetField ChangeColors[0].InitialPermutations[*].VariantName sirius
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.4862745 0.4862745 0.4862745
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.4862745 0.4862745 0.4862745
+SetField ChangeColors[1].InitialPermutations[*].VariantName sirius
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName sirius
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName sirius
+
+## Forgot
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.2000000 0.4862745 0.3529412
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.2000000 0.4862745 0.3529412
+SetField ChangeColors[0].InitialPermutations[*].VariantName forgot
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0784313 0.7019608 0.7294118
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0784313 0.7019608 0.7294118
+SetField ChangeColors[1].InitialPermutations[*].VariantName forgot
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.8941176 0.3411765 0.4980392
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.8941176 0.3411765 0.4980392
+SetField ChangeColors[2].InitialPermutations[*].VariantName forgot
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.3725490 0.6980392 0.6745098
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.3725490 0.6980392 0.6745098
+SetField ChangeColors[3].InitialPermutations[*].VariantName forgot
+
+## Dirkkane
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0000000 0.3647059 0.5921569
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0000000 0.3647059 0.5921569
+SetField ChangeColors[0].InitialPermutations[*].VariantName dirkkane
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName dirkkane
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 1.0000000 0.4980392 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 1.0000000 0.4980392 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName dirkkane
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.0000000 0.1137255 0.1843137
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.0000000 0.1137255 0.1843137
+SetField ChangeColors[3].InitialPermutations[*].VariantName dirkkane
+
+## Canadiator
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0431373 0.1294118 0.3372549
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0431373 0.1294118 0.3372549
+SetField ChangeColors[0].InitialPermutations[*].VariantName canadiator
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.7647059 0.7647059 0.7647059
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.7647059 0.7647059 0.7647059
+SetField ChangeColors[1].InitialPermutations[*].VariantName canadiator
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.7647059 0.7647059 0.7647059
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.7647059 0.7647059 0.7647059
+SetField ChangeColors[2].InitialPermutations[*].VariantName canadiator
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.7647059 0.7647059 0.7647059
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.7647059 0.7647059 0.7647059
+SetField ChangeColors[3].InitialPermutations[*].VariantName canadiator
+
+## Sarge
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].VariantName sarge
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 1.0000000 1.0000000 1.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 1.0000000 1.0000000 1.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName sarge
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.1019607 0.0000000 0.8823529
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.1019607 0.0000000 0.8823529
+SetField ChangeColors[2].InitialPermutations[*].VariantName sarge
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 1.0000000 1.0000000 1.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 1.0000000 1.0000000 1.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName sarge
+
+## Big guy
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0235294 0.0235294 0.0235294
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0235294 0.0235294 0.0235294
+SetField ChangeColors[0].InitialPermutations[*].VariantName big_guy
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0156863 0.0392157 0.4823529
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0156863 0.0392157 0.4823529
+SetField ChangeColors[1].InitialPermutations[*].VariantName big_guy
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 1.0000000 0.6156863 0.2392157
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 1.0000000 0.6156863 0.2392157
+SetField ChangeColors[2].InitialPermutations[*].VariantName big_guy
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.2235294 0.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.2235294 0.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName big_guy
+
+## Maroon maze
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0705882 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0705882 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].VariantName maroon_maze
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0705882 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0705882 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName maroon_maze
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.1568627 0.1215686 0.3490196
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.1568627 0.1215686 0.3490196
+SetField ChangeColors[2].InitialPermutations[*].VariantName maroon_maze
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.3843137 0.0431373 0.0431373
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.3843137 0.0431373 0.0431373
+SetField ChangeColors[3].InitialPermutations[*].VariantName maroon_maze
+
+## Blade of anduril
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0078431 0.0156863 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0078431 0.0156863 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].VariantName blade_of_anduril
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0078431 0.0156863 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0078431 0.0156863 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName blade_of_anduril
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 1.0000000 0.4980392 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 1.0000000 0.4980392 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName blade_of_anduril
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.1215686 0.2117647 0.0078431
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.1215686 0.2117647 0.0078431
+SetField ChangeColors[3].InitialPermutations[*].VariantName blade_of_anduril
+
+## Microwave oven
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].VariantName microwave_oven
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName microwave_oven
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 1.0000000 0.3098039 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 1.0000000 0.3098039 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName microwave_oven
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.7568627 0.1411765 0.0039216
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.7568627 0.1411765 0.0039216
+SetField ChangeColors[3].InitialPermutations[*].VariantName microwave_oven
+
+## Mtndewit
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0000000 0.0000000 0.0000000
+SetField ChangeColors[0].InitialPermutations[*].VariantName mtndewit
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.2666667 1.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.2666667 1.0000000 0.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName mtndewit
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.2666667 1.0000000 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.2666667 1.0000000 0.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName mtndewit
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.5176471 1.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.5176471 1.0000000 0.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName mtndewit
+
+## Twisted flog
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0627451 0.0627451 0.0627451
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0627451 0.0627451 0.0627451
+SetField ChangeColors[0].InitialPermutations[*].VariantName twisted_flog
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.0000000 0.8666667 1.0000000
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.0000000 0.8666667 1.0000000
+SetField ChangeColors[1].InitialPermutations[*].VariantName twisted_flog
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.0000000 1.0000000 1.0000000
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.0000000 1.0000000 1.0000000
+SetField ChangeColors[2].InitialPermutations[*].VariantName twisted_flog
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.0000000 0.9843137 1.0000000
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.0000000 0.9843137 1.0000000
+SetField ChangeColors[3].InitialPermutations[*].VariantName twisted_flog
+
+## Duck
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[*].Weight 1
+SetField ChangeColors[0].InitialPermutations[*].ColorLowerBound 0.0431373 0.1294118 0.3372549
+SetField ChangeColors[0].InitialPermutations[*].ColorUpperBound 0.0431373 0.1294118 0.3372549
+SetField ChangeColors[0].InitialPermutations[*].VariantName duck
+AddBlockElements ChangeColors[1].InitialPermutations
+SetField ChangeColors[1].InitialPermutations[*].Weight 1
+SetField ChangeColors[1].InitialPermutations[*].ColorLowerBound 0.1137255 0.2941176 0.7372549
+SetField ChangeColors[1].InitialPermutations[*].ColorUpperBound 0.1137255 0.2941176 0.7372549
+SetField ChangeColors[1].InitialPermutations[*].VariantName duck
+AddBlockElements ChangeColors[2].InitialPermutations
+SetField ChangeColors[2].InitialPermutations[*].Weight 1
+SetField ChangeColors[2].InitialPermutations[*].ColorLowerBound 0.3843137 0.0431373 0.0431373
+SetField ChangeColors[2].InitialPermutations[*].ColorUpperBound 0.3843137 0.0431373 0.0431373
+SetField ChangeColors[2].InitialPermutations[*].VariantName duck
+AddBlockElements ChangeColors[3].InitialPermutations
+SetField ChangeColors[3].InitialPermutations[*].Weight 1
+SetField ChangeColors[3].InitialPermutations[*].ColorLowerBound 0.3843137 0.0431373 0.0431373
+SetField ChangeColors[3].InitialPermutations[*].ColorUpperBound 0.3843137 0.0431373 0.0431373
+SetField ChangeColors[3].InitialPermutations[*].VariantName duck
+
+SaveTagChanges
+Exit
+

@@ -1,0 +1,12 @@
+## Keep somewhere below 1000 for minimization of projectile precision loss jitter
+EditTag levels\eldewrito\movie_set\movie_set_bsp_0.scenario_structure_bsp
+SetField WorldBoundsX -500 500
+SetField WorldBoundsY -500 500
+SetField WorldBoundsZ -500 500
+SetField Clusters[0].BoundsX -500 500
+SetField Clusters[0].BoundsY -500 500
+SetField Clusters[0].BoundsZ -500 500
+SetField Physics.MoppBoundsMin -500 -500 -500
+SetField Physics.MoppBoundsMax 500 500 500
+SaveTagChanges
+Exit

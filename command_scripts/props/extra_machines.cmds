@@ -1,0 +1,122 @@
+## Tarp 1
+DuplicateTag objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving.model objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving_forge
+EditTag objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving.device_machine objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving_forge
+EditTag objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving_forge.device_machine
+SetField Model objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Tarp 2
+DuplicateTag objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving.model objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving_forge
+EditTag objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving.device_machine objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving_forge
+EditTag objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving_forge.device_machine
+SetField Model objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Tarp 3
+DuplicateTag objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving.model objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving_forge
+EditTag objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving.device_machine objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving_forge
+EditTag objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving_forge.device_machine
+SetField Model objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Reactor Rod
+DuplicateTag objects\levels\multi\s3d_reactor\rod\rod.device_machine objects\levels\multi\s3d_reactor\rod\rod_forge
+EditTag objects\levels\multi\s3d_reactor\rod\rod_forge.device_machine
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Reactor Arcing
+DuplicateTag objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings.model objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings_forge
+EditTag objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings_forge.model
+SetField CollisionModel objects\eldewrito\forge\misc\simple_bsp_coll_small.collision_model
+SetField PhysicsModel objects\eldewrito\forge\misc\minimal_keyframed_physics.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField Materials[0].GlobalMaterialIndex 54
+ForEach CollisionRegions SetField CollisionRegionIndex 0
+ForEach CollisionRegions ForEach Permutations SetField CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+DuplicateTag objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings.device_machine objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings_forge
+EditTag objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings_forge.device_machine
+SetField Model objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings_forge.model
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Diamondback Man Cannon 1
+DuplicateTag objects\levels\multi\s3d_avalanche\avalanche_man_cannon_01\avalanche_man_cannon_01.device_machine objects\levels\multi\s3d_avalanche\avalanche_man_cannon_01\avalanche_man_cannon_01_forge
+EditTag objects\levels\multi\s3d_avalanche\avalanche_man_cannon_01\avalanche_man_cannon_01_forge.device_machine
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Diamondback Man Cannon 2
+DuplicateTag objects\levels\multi\s3d_avalanche\avalanche_man_cannon_02\avalanche_man_cannon_02.device_machine objects\levels\multi\s3d_avalanche\avalanche_man_cannon_02\avalanche_man_cannon_02_forge
+EditTag objects\levels\multi\s3d_avalanche\avalanche_man_cannon_02\avalanche_man_cannon_02_forge.device_machine
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+## Jump Fan
+DuplicateTag objects\levels\multi\cyberdyne\jump_fan\jump_fan.device_machine objects\levels\multi\cyberdyne\jump_fan\jump_fan_forge
+EditTag objects\levels\multi\cyberdyne\jump_fan\jump_fan_forge.device_machine
+AddBlockElements MultiplayerObject
+SaveTagChanges
+Exit
+
+AddForgeCategory "EXTRA MACHINES" "EXTRA BASE PROPS"
+
+AddForgeItem "Tarp 1" "EXTRA MACHINES" objects\levels\multi\s3d_turf\fabric_01_moving\fabric_01_moving_forge.device_machine
+AddForgeItem "Tarp 2" "EXTRA MACHINES" objects\levels\multi\s3d_turf\fabric_04_moving\fabric_04_moving_forge.device_machine
+AddForgeItem "Tarp 3" "EXTRA MACHINES" objects\levels\multi\s3d_turf\fabric_15_moving\fabric_15_moving_forge.device_machine
+AddForgeItem "Reactor Rod" "EXTRA MACHINES" objects\levels\multi\s3d_reactor\rod\rod_forge.device_machine
+AddForgeItem "Reactor Arcing" "EXTRA MACHINES" objects\levels\multi\s3d_reactor\reactor_lightnings\reactor_lightnings_forge.device_machine
+AddForgeItem "Diamondback Man Cannon 1" "EXTRA MACHINES" objects\levels\multi\s3d_avalanche\avalanche_man_cannon_01\avalanche_man_cannon_01_forge.device_machine
+AddForgeItem "Diamondback Man Cannon 2" "EXTRA MACHINES" objects\levels\multi\s3d_avalanche\avalanche_man_cannon_02\avalanche_man_cannon_02_forge.device_machine
+AddForgeItem "Jump Fan" "EXTRA MACHINES" objects\levels\multi\cyberdyne\jump_fan\jump_fan_forge.device_machine
