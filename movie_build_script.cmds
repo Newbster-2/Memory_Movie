@@ -56,6 +56,9 @@ cs
 Console.Beep();
 :x
 
+## Log to check if we encountered any errors (that didn't crash tagtool lol)
+DumpLog "working_directory\Report.log"
+
 SaveModPackage
 ExitModPackage
 Quit

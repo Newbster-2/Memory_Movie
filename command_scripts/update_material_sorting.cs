@@ -33,17 +33,10 @@ using (var stream = Cache.OpenCacheReadWrite())
 	{  
 		if (material.RenderMethod != null)  
 		{  
-			// Create the specific shader type instance  
-			var shaderType = Cache.TagCache.TagDefinitions.GetTagDefinitionType(material.RenderMethod.Group);  
-			var shader_definition = (RenderMethod)Activator.CreateInstance(shaderType);  
-			
-			// Deserialize to the specific type  
-			shader_definition = (RenderMethod)Cache.Deserialize(stream, material.RenderMethod, shader_definition);  
-			
-			// Set the common property  
+			// Runtime type will be Shader, ShaderDecal, etc. — not RenderMethod  
+			var shader_definition = (RenderMethod)Cache.Deserialize(stream, material.RenderMethod);  
 			shader_definition.SortLayer = TagTool.Shaders.SortingLayerValue.PrePass;  
-			
-			// Serialize back  
+			// Serializer uses .GetType() → specific shader type → correct structure  
 			Cache.Serialize(stream, material.RenderMethod, shader_definition);  
 		}  
 	}
