@@ -989,3 +989,26 @@
 (script static void beh_test
 	(ai_place "sq0/sp0")
 )
+
+(global weapon integrated_chaingun none)
+(global unit machinegun_turret none)
+(global objectdefinition chaingun "objects\weapons\turret\machinegun_turret\machinegun_turret_integrated.weapon")
+
+(script static void tur_test
+	(set machinegun_turret (unit (list_get (volume_return_objects_by_type "scen0" 2) 0)))
+	(if (!= machinegun_turret none)
+		(set integrated_chaingun (unit_get_primary_weapon machinegun_turret))
+		(print "failed to grab turret object")
+	)
+	(if (!= integrated_chaingun none)
+		(weapon_hold_trigger integrated_chaingun 0 true)
+		(print "unsafe to fire weapon")
+	)
+)
+
+(script static void tur_test2
+	(if (!= integrated_chaingun none)
+		(weapon_hold_trigger integrated_chaingun 0 false)
+		(print "unsafe to stop weapon")
+	)
+)

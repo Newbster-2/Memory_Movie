@@ -19,6 +19,9 @@ All Honor And Glory To God
 1.0
 Multiplayer
 
+## Cef ui images for mod and level display
+AddModFiles "working_directory\ui"
+
 ## Create our scenario that everything will be setup in
 GenerateCanvas
 levels\eldewrito\movie_set\movie_set
